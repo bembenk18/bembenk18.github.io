@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Just /var/log/*</title>
+    <link>https://bembenk18.github.io/</link>
+    <description>Recent content on Just /var/log/*</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 23 Nov 2022 18:17:44 +0700</lastBuildDate><atom:link href="https://bembenk18.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Build Kernel openSUSE 15 4</title>
+      <link>https://bembenk18.github.io/post/build-kernel-opensuse-15-4/</link>
+      <pubDate>Wed, 23 Nov 2022 18:17:44 +0700</pubDate>
+      
+      <guid>https://bembenk18.github.io/post/build-kernel-opensuse-15-4/</guid>
+      <description>Karena openSUSE Leap mengutamakan kestabilan maka untuk dapat mencoba kernel 6.* kita harus menunggu cukup lama, pada coretan kali ini kita akan coba build kernel 6.* di openSUSE Leap 15.4
+1. Persiapan
+Install Requirements dan buat folder yang diperlukan
+sudo zypper ref &amp;amp;&amp;amp; sudo zypper update sudo zypper in -t pattern devel_basis bc openssl openssl-devel dwarves rpm-build libelf-devel elfutils-libelf-devel sudo mkdir ~/kernel 2. Download kernel
+Download kernel dari https://kernel.org/
+Pindahkan &amp;amp; Extract kernel yang sudah di download</description>
+    </item>
+    
+    <item>
+      <title>Indonesia Linux Confrence 2022</title>
+      <link>https://bembenk18.github.io/post/indonesia-linux-confrence-2022/</link>
+      <pubDate>Mon, 07 Nov 2022 18:13:33 +0700</pubDate>
+      
+      <guid>https://bembenk18.github.io/post/indonesia-linux-confrence-2022/</guid>
+      <description>Akhirnya setelah menunggu cukup lama saya bisa mengikuti acara Opensource untuk pertama kali, acara kali ini adalah Indonesia Linux Confrence 2022 yang diselenggarakan di Universitas Muhammadiyah Sidoarjo pada hari Sabtu tanggal 5 November 2022. Day 0 (4 November 2022)
+Sekitar jam 4 sore saya berangkat dari kantor menuju rumah teman yang telah janjian untuk berangkat bareng, sebenanrnya kita akan berangkat ber 3 tapi ternyata salah satu teman saya sudah berangkat sejak pagi karena ada urusan pekerjaan.</description>
+    </item>
+    
+  </channel>
+</rss>
