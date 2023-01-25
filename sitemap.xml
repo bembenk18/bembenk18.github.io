@@ -2,20 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://bembenk18.github.io/tags/2022/</loc>
+    <lastmod>2022-11-23T18:17:44+07:00</lastmod>
+  </url><url>
     <loc>https://bembenk18.github.io/post/build-kernel-opensuse-15-4/</loc>
     <lastmod>2022-11-23T18:17:44+07:00</lastmod>
   </url><url>
     <loc>https://bembenk18.github.io/</loc>
     <lastmod>2022-11-23T18:17:44+07:00</lastmod>
   </url><url>
+    <loc>https://bembenk18.github.io/tags/labs/</loc>
+    <lastmod>2022-11-23T18:17:44+07:00</lastmod>
+  </url><url>
+    <loc>https://bembenk18.github.io/tags/linux/</loc>
+    <lastmod>2022-11-23T18:17:44+07:00</lastmod>
+  </url><url>
     <loc>https://bembenk18.github.io/post/</loc>
+    <lastmod>2022-11-23T18:17:44+07:00</lastmod>
+  </url><url>
+    <loc>https://bembenk18.github.io/tags/</loc>
     <lastmod>2022-11-23T18:17:44+07:00</lastmod>
   </url><url>
     <loc>https://bembenk18.github.io/post/indonesia-linux-confrence-2022/</loc>
     <lastmod>2022-11-07T18:13:33+07:00</lastmod>
   </url><url>
     <loc>https://bembenk18.github.io/categories/</loc>
-  </url><url>
-    <loc>https://bembenk18.github.io/tags/</loc>
   </url>
 </urlset>
