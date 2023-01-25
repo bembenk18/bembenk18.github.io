@@ -6,6 +6,7 @@
     <description>Recent content in Posts on Just /var/log/*</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <copyright>Bayu Putra Herlambang | Powered by [Hugo](https://gohugo.io/) &amp; [Cactus](https://www.takuzen.me/hugo-theme-cactus/)</copyright>
     <lastBuildDate>Wed, 23 Nov 2022 18:17:44 +0700</lastBuildDate><atom:link href="https://bembenk18.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Build Kernel openSUSE 15 4</title>
