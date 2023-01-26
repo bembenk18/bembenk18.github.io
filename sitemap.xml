@@ -2,13 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://bembenk18.github.io/post/build-kernel-opensuse-15-4/</loc>
-    <lastmod>2022-11-23T18:17:44+07:00</lastmod>
-  </url><url>
     <loc>https://bembenk18.github.io/</loc>
-    <lastmod>2022-11-23T18:17:44+07:00</lastmod>
+    <lastmod>2023-01-26T14:29:55+07:00</lastmod>
   </url><url>
     <loc>https://bembenk18.github.io/post/</loc>
+    <lastmod>2023-01-26T14:29:55+07:00</lastmod>
+  </url><url>
+    <loc>https://bembenk18.github.io/post/zypper-everyday/</loc>
+    <lastmod>2023-01-26T14:29:55+07:00</lastmod>
+  </url><url>
+    <loc>https://bembenk18.github.io/post/build-kernel-opensuse-15-4/</loc>
     <lastmod>2022-11-23T18:17:44+07:00</lastmod>
   </url><url>
     <loc>https://bembenk18.github.io/post/indonesia-linux-confrence-2022/</loc>

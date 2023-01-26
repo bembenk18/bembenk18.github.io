@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Bayu Putra Herlambang | Powered by [Hugo](https://gohugo.io/) &amp; [Cactus](https://www.takuzen.me/hugo-theme-cactus/)</copyright>
-    <lastBuildDate>Wed, 23 Nov 2022 18:17:44 +0700</lastBuildDate><atom:link href="https://bembenk18.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 26 Jan 2023 14:29:55 +0700</lastBuildDate><atom:link href="https://bembenk18.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Zypper Everyday</title>
+      <link>https://bembenk18.github.io/post/zypper-everyday/</link>
+      <pubDate>Thu, 26 Jan 2023 14:29:55 +0700</pubDate>
+      
+      <guid>https://bembenk18.github.io/post/zypper-everyday/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Build Kernel openSUSE 15 4</title>
       <link>https://bembenk18.github.io/post/build-kernel-opensuse-15-4/</link>
