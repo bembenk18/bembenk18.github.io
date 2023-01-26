@@ -6,34 +6,6 @@
     <description>Recent content in Tags on Just /var/log/*</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>Bayu Putra Herlambang | Powered by [Hugo](https://gohugo.io/) &amp; [Cactus](https://www.takuzen.me/hugo-theme-cactus/)</copyright>
-    <lastBuildDate>Wed, 23 Nov 2022 18:17:44 +0700</lastBuildDate><atom:link href="https://bembenk18.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>2022</title>
-      <link>https://bembenk18.github.io/tags/2022/</link>
-      <pubDate>Wed, 23 Nov 2022 18:17:44 +0700</pubDate>
-      
-      <guid>https://bembenk18.github.io/tags/2022/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Labs</title>
-      <link>https://bembenk18.github.io/tags/labs/</link>
-      <pubDate>Wed, 23 Nov 2022 18:17:44 +0700</pubDate>
-      
-      <guid>https://bembenk18.github.io/tags/labs/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Linux</title>
-      <link>https://bembenk18.github.io/tags/linux/</link>
-      <pubDate>Wed, 23 Nov 2022 18:17:44 +0700</pubDate>
-      
-      <guid>https://bembenk18.github.io/tags/linux/</guid>
-      <description></description>
-    </item>
-    
+    <copyright>Bayu Putra Herlambang | Powered by [Hugo](https://gohugo.io/) &amp; [Cactus](https://www.takuzen.me/hugo-theme-cactus/)</copyright><atom:link href="https://bembenk18.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
