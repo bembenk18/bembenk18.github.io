@@ -5,6 +5,7 @@ draft: false
 tags:
 - Linux
 - Server
+- Log
 ---
 **0.**
 
