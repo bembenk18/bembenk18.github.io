@@ -42,6 +42,9 @@ params:
     issueTerm: title
     theme: github-light
 
+
+
+
 menu:
   nav:
     - name: Home

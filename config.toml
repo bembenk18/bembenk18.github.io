@@ -1,4 +1,4 @@
-baseURL = "https://example.com"
+baseURL = "https://bembenk18.github.io"
 languageCode = "en-us"
 title = "Just /var/log/"
 theme = "hugo-theme-cactus"
