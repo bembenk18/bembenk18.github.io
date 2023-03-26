@@ -8,7 +8,7 @@ tags:
 - Log
 ---
 
-Karena openSUSE Leap mengutamakan kestabilan maka untuk dapat mencoba kernel 6.* kita harus menunggu cukup lama, pada coretan kali ini kita akan coba build kernel 6.* di openSUSE Leap 15.4
+Karena openSUSE Leap mengutamakan kestabilan maka untuk dapat mencoba kernel 6.* saya harus menunggu cukup lama, pada catatan kali ini saya akan coba build kernel 6.* di openSUSE Leap 15.4
 
 **1. Persiapan**
 
@@ -46,7 +46,7 @@ Berikan comment pada **CONFIG_MODULE_SIG_KEY** di file *.config*
 
     sudo make clean
 
-Selanjutnya adalah proses yang paling lama, saya sendiri memakan waktu sekitar 4 jam. Pada langkah ini silahkan sesuaikan dengan hardware kalian,
+Selanjutnya adalah proses yang paling lama, saya sendiri memakan waktu sesayar 4 jam. Pada langkah ini silahkan sesuaikan dengan hardware kalian,
    
     sudo make rpm-pkg
 
@@ -59,11 +59,11 @@ Setelah selesai silahkan cek dengan perintah
 
 **5. Install kernel**
 
-Setelah semua selesai saatnya install kernel yang sudah kita build
+Setelah semua selesai saatnya install kernel yang sudah saya build
 
     sudo su -c "zypper in /usr/src/packages/RPMS/x86_64/kernel*.rpm"
 
-Setelah berhasil install saatnya kita update bootloader dan reboot
+Setelah berhasil install saatnya saya update bootloader dan reboot
 
     grub2-mkconfig -o /boot/grub2/grub.cfg
     sudo reboot
