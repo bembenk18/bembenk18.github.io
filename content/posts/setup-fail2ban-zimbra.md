@@ -19,6 +19,8 @@ tags:
 
 **2. Buat file jail.conf**
 
+*Jika ingin whitelist IP tambahkan pada baris ignoreip
+
 nano /etc/fail2ban/jail.local
 
     [DEFAULT]
@@ -26,7 +28,7 @@ nano /etc/fail2ban/jail.local
     # Fail2ban will not ban a host which matches an address in this list.
     # Several addresses can be defined using space (and/or comma) separator.
     #ignoreip = 127.0.0.1/8 ::1 10.137.26.29/32
-    ignoreip = 127.0.0.1/8 IP-ADDRESS-OF-ZIMBRA-SERVER/32
+    ignoreip = 127.0.0.1/8 IP-ADDRESS-OF-ZIMBRA-SERVER/32 WHITELIST-IP
 
     banaction = route
 
