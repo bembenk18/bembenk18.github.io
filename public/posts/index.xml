@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Cupper</title>
+    <link>https://example.com/posts/</link>
+    <description>Recent content in Posts on Cupper</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 07 Nov 2022 18:13:33 +0700</lastBuildDate><atom:link href="https://example.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Indonesia Linux Confrence 2022</title>
+      <link>https://example.com/posts/ilc-2022/</link>
+      <pubDate>Mon, 07 Nov 2022 18:13:33 +0700</pubDate>
+      
+      <guid>https://example.com/posts/ilc-2022/</guid>
+      <description>Akhirnya setelah menunggu cukup lama saya bisa mengikuti acara Opensource untuk pertama kali, acara kali ini adalah Indonesia Linux Confrence 2022 yang diselenggarakan di Universitas Muhammadiyah Sidoarjo pada hari Sabtu tanggal 5 November 2022. Day 0 (4 November 2022)
+Sekitar jam 4 sore saya berangkat dari kantor menuju rumah teman yang telah janjian untuk berangkat bareng, sebenanrnya kita akan berangkat ber 3 tapi ternyata salah satu teman saya sudah berangkat sejak pagi karena ada urusan pekerjaan.</description>
+    </item>
+    
+  </channel>
+</rss>

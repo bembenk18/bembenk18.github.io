@@ -1,0 +1,10 @@
+{
+    "list": [
+       {
+          "name":"Zypper Everyday",
+          "url":"/projects/zypper-everyday/",
+          "desc":"Eksperimen menjalankan zypper update setiap hari selama 1 tahun"
+       }
+      
+    ]
+ }
