@@ -26,7 +26,7 @@ weight = 4
 
 [[menu.main]]
 name = "About Me"
-url = "/about/me.md"
+url = "/about"
 weight = 5
 
 [[menu.main]]
