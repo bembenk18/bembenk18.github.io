@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <link rel="preload" href="/lib/font-awesome/webfonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="/lib/font-awesome/webfonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="/lib/font-awesome/webfonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="/lib/JetBrainsMono/web/woff2/JetBrainsMono-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <script type="text/javascript" src="https://latest.cactus.chat/cactus.js"></script>
+  <link rel="stylesheet" href="https://latest.cactus.chat/style.css" type="text/css">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title> Build Kernel openSUSE 15.4 | Just /var/log/</title>
+  <link rel = 'canonical' href = 'https://bembenk18.github.io/posts/build-kernel-opensuse-15-4/'>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="all,follow">
+  <meta name="googlebot" content="index,follow,snippet,archive">
+  <meta property="og:title" content="Build Kernel openSUSE 15.4" />
+<meta property="og:description" content="Karena openSUSE Leap mengutamakan kestabilan maka untuk dapat mencoba kernel 6.* saya harus menunggu cukup lama, pada catatan kali ini saya akan coba build kernel 6.* di openSUSE Leap 15.4
+1. Persiapan Install Requirements dan buat folder yang diperlukan spesifikasi sudo zypper ref &amp;&amp; sudo zypper update sudo zypper in -t pattern devel_basis bc openssl openssl-devel dwarves rpm-build libelf-devel elfutils-libelf-devel sudo mkdir ~/kernel
+2. Download kernel Download kernel dari https://kernel.org/, saat blog ini dibuat kernel terbaru yaitu 6." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://bembenk18.github.io/posts/build-kernel-opensuse-15-4/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-11-23T18:17:44+07:00" />
+<meta property="article:modified_time" content="2022-11-23T18:17:44+07:00" />
+
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Build Kernel openSUSE 15.4"/>
+<meta name="twitter:description" content="Karena openSUSE Leap mengutamakan kestabilan maka untuk dapat mencoba kernel 6.* saya harus menunggu cukup lama, pada catatan kali ini saya akan coba build kernel 6.* di openSUSE Leap 15.4
+1. Persiapan Install Requirements dan buat folder yang diperlukan spesifikasi sudo zypper ref &amp;&amp; sudo zypper update sudo zypper in -t pattern devel_basis bc openssl openssl-devel dwarves rpm-build libelf-devel elfutils-libelf-devel sudo mkdir ~/kernel
+2. Download kernel Download kernel dari https://kernel.org/, saat blog ini dibuat kernel terbaru yaitu 6."/>
+
+  
+  
+    
+  
+  
+  <link rel="stylesheet" href="https://bembenk18.github.io/css/styles.4c2b9aa1d874d6766f554b2d404e8fd62ab4761f51ee9b3f358d12e81e7fa43a1b4378db995bc1926bbe5ed98c060be5e7bd4f2470504cf94f22b4b3a74e62b6.css" integrity="sha512-TCuaodh01nZvVUstQE6P1iq0dh9R7ps/NY0S6B5/pDobQ3jbmVvBkmu&#43;XtmMBgvl571PJHBQTPlPIrSzp05itg=="> 
+
+  
+  
+  
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  
+
+  
+<link rel="icon" type="image/png" href="https://bembenk18.github.io/images/favicon.ico" />
+
+  
+  
+  
+  
+  
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'G-438PNW325R', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+  
+  
+</head>
+
+<body class="max-width mx-auto px3 ltr">
+  <div class="content index py4">
+
+  <div id="header-post">
+  <a id="menu-icon" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;" aria-label="Top of Page"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+        <li><a href="/">Home</a></li>
+         
+        <li><a href="/posts">Writings</a></li>
+         
+        <li><a href="/projects">Projects</a></li>
+         
+        <li><a href="/tags">Tags</a></li>
+         
+        <li><a href="/about">About Me</a></li>
+        
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        <li>
+          <a class="icon" href=" https://bembenk18.github.io/posts/indonesia-linux-confrence-2022/" aria-label="Previous">
+            <i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i>
+          </a>
+        </li>
+        
+        
+        <li>
+          <a class="icon" href="https://bembenk18.github.io/projects/zypper-everyday/" aria-label="Next">
+            <i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i>
+          </a>
+        </li>
+        
+        <li>
+          <a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" aria-label="Top of Page">
+            <i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i>
+          </a>
+        </li>
+        <li>
+          <a class="icon" href="#" aria-label="Share">
+            <i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i>
+          </a>
+        </li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      
+      <ul>
+  
+  
+    
+  
+  
+  <li>
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fbembenk18.github.io%2fposts%2fbuild-kernel-opensuse-15-4%2f" aria-label="Facebook">
+      <i class="fab fa-facebook " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fbembenk18.github.io%2fposts%2fbuild-kernel-opensuse-15-4%2f&text=Build%20Kernel%20openSUSE%2015.4" aria-label="Twitter">
+      <i class="fab fa-twitter " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fbembenk18.github.io%2fposts%2fbuild-kernel-opensuse-15-4%2f&title=Build%20Kernel%20openSUSE%2015.4" aria-label="Linkedin">
+      <i class="fab fa-linkedin " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fbembenk18.github.io%2fposts%2fbuild-kernel-opensuse-15-4%2f&is_video=false&description=Build%20Kernel%20openSUSE%2015.4" aria-label="Pinterest">
+      <i class="fab fa-pinterest " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="mailto:?subject=Build%20Kernel%20openSUSE%2015.4&body=Check out this article: https%3a%2f%2fbembenk18.github.io%2fposts%2fbuild-kernel-opensuse-15-4%2f" aria-label="Email">
+      <i class="fas fa-envelope " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fbembenk18.github.io%2fposts%2fbuild-kernel-opensuse-15-4%2f&title=Build%20Kernel%20openSUSE%2015.4" aria-label="Pocket">
+      <i class="fab fa-get-pocket " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fbembenk18.github.io%2fposts%2fbuild-kernel-opensuse-15-4%2f&title=Build%20Kernel%20openSUSE%2015.4" aria-label="reddit">
+      <i class="fab fa-reddit " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fbembenk18.github.io%2fposts%2fbuild-kernel-opensuse-15-4%2f&name=Build%20Kernel%20openSUSE%2015.4&description=Karena%20openSUSE%20Leap%20mengutamakan%20kestabilan%20maka%20untuk%20dapat%20mencoba%20kernel%206.%2a%20saya%20harus%20menunggu%20cukup%20lama%2c%20pada%20catatan%20kali%20ini%20saya%20akan%20coba%20build%20kernel%206.%2a%20di%20openSUSE%20Leap%2015.4%0a1.%20Persiapan%20Install%20Requirements%20dan%20buat%20folder%20yang%20diperlukan%20spesifikasi%20sudo%20zypper%20ref%20%26amp%3b%26amp%3b%20sudo%20zypper%20update%20sudo%20zypper%20in%20-t%20pattern%20devel_basis%20bc%20openssl%20openssl-devel%20dwarves%20rpm-build%20libelf-devel%20elfutils-libelf-devel%20sudo%20mkdir%20~%2fkernel%0a2.%20Download%20kernel%20Download%20kernel%20dari%20https%3a%2f%2fkernel.org%2f%2c%20saat%20blog%20ini%20dibuat%20kernel%20terbaru%20yaitu%206." aria-label="Tumblr">
+      <i class="fab fa-tumblr " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fbembenk18.github.io%2fposts%2fbuild-kernel-opensuse-15-4%2f&t=Build%20Kernel%20openSUSE%2015.4" aria-label="Hacker News">
+      <i class="fab fa-hacker-news " aria-hidden="true"></i>
+    </a>
+  </li>
+</ul>
+
+    </div>
+    
+    <div id="toc">
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#1-persiapan"><strong>1. Persiapan</strong></a></li>
+    <li><a href="#2-download-kernel"><strong>2. Download kernel</strong></a></li>
+    <li><a href="#3-konfigurasi"><strong>3. Konfigurasi</strong></a></li>
+    <li><a href="#4-build-kernel"><strong>4. Build Kernel</strong></a></li>
+    <li><a href="#5-install-kernel"><strong>5. Install kernel</strong></a></li>
+  </ul>
+</nav>
+    </div>
+    
+  </span>
+</div>
+
+
+  <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+    <header>
+      <h1 class="posttitle" itemprop="name headline">
+        Build Kernel openSUSE 15.4
+      </h1>
+      <div class="meta">
+        
+        <div class="postdate">
+          
+          <time datetime="2022-11-23 18:17:44 &#43;0700 WIB" itemprop="datePublished">2022-11-23</time>
+          
+        </div>
+        
+        
+        <div class="article-read-time">
+          <i class="far fa-clock"></i>
+          
+          1 minute read
+        </div>
+        
+        
+        
+        <div class="article-tag">
+            <i class="fas fa-tag"></i>
+            
+            
+            <a class="tag-link" href="/tags/linux" rel="tag">Linux</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/log" rel="tag">Log</a>
+            
+        </div>
+        
+      </div>
+    </header>
+
+  
+    
+    <div class="content" itemprop="articleBody">
+      <p>Karena openSUSE Leap mengutamakan kestabilan maka untuk dapat mencoba kernel 6.* saya harus menunggu cukup lama, pada catatan kali ini saya akan coba build kernel 6.* di openSUSE Leap 15.4</p>
+<h2 id="1-persiapan"><strong>1. Persiapan</strong></h2>
+<p>Install Requirements dan buat folder yang diperlukan
+spesifikasi
+sudo zypper ref &amp;&amp; sudo zypper update
+sudo zypper in -t pattern devel_basis bc openssl openssl-devel dwarves rpm-build libelf-devel elfutils-libelf-devel
+sudo mkdir ~/kernel</p>
+<h2 id="2-download-kernel"><strong>2. Download kernel</strong></h2>
+<p>Download kernel dari <a href="https://kernel.org/">https://kernel.org/</a>, saat blog ini dibuat kernel terbaru yaitu 6.0.9</p>
+<p><img src="https://raw.githubusercontent.com/bembenk18/Images/main/Build-Kernel/image-2-1024x558.png" alt=""></p>
+<p>Pindahkan &amp; Extract kernel yang sudah di download</p>
+<pre><code>cd ~/kernel
+sudo mv ~/Download/linux*.tar.xz .
+tar -xafv linux*.tar.xz
+</code></pre>
+<h2 id="3-konfigurasi"><strong>3. Konfigurasi</strong></h2>
+<pre><code>cd linux*
+sudo find /boot/ \( -iname &quot;*config*&quot; -a -iname &quot;*`uname -r`*&quot; \) -exec cp -i -t ./ {} \;
+mv *`uname -r`* .config
+</code></pre>
+<p>Berikan comment pada <strong>CONFIG_MODULE_SIG_KEY</strong> di file <em>.config</em></p>
+<pre><code>ls /boot | konfigurasi grep
+sudo nano .config
+sudo make menuconfig
+</code></pre>
+<h2 id="4-build-kernel"><strong>4. Build Kernel</strong></h2>
+<pre><code>sudo make clean
+</code></pre>
+<p>Selanjutnya adalah proses yang paling lama, saya sendiri memakan waktu sesayar 4 jam. Pada langkah ini silahkan sesuaikan dengan spesifikasi hardware,</p>
+<pre><code>sudo make rpm-pkg
+</code></pre>
+<p>Setelah selesai silahkan cek dengan perintah</p>
+<pre><code>sudo ls /usr/src/packages/RPMS/x86_64/ | grep kernel
+</code></pre>
+<p><img src="https://raw.githubusercontent.com/bembenk18/Images/main/Build-Kernel/image-3.png" alt=""></p>
+<h2 id="5-install-kernel"><strong>5. Install kernel</strong></h2>
+<p>Setelah semua selesai saatnya install kernel yang sudah saya build</p>
+<pre><code>sudo su -c &quot;zypper in /usr/src/packages/RPMS/x86_64/kernel*.rpm&quot;
+</code></pre>
+<p>Setelah berhasil install saatnya saya update bootloader dan reboot</p>
+<pre><code>grub2-mkconfig -o /boot/grub2/grub.cfg
+sudo reboot
+</code></pre>
+<p>Cek apakah sudah berhasil terpasang</p>
+<pre><code>uname -r
+</code></pre>
+<p><img src="https://raw.githubusercontent.com/bembenk18/Images/main/Build-Kernel/image-4.png" alt=""></p>
+<p><strong>Do it at your own risk</strong></p>
+<p>~Bayu</p>
+
+    </div>
+  </article>
+
+  
+  
+
+
+
+
+
+
+  <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/posts">Writings</a></li>
+         
+          <li><a href="/projects">Projects</a></li>
+         
+          <li><a href="/tags">Tags</a></li>
+         
+          <li><a href="/about">About Me</a></li>
+        
+      </ul>
+    </div>
+
+    
+    <div id="toc-footer" style="display: none">
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#1-persiapan"><strong>1. Persiapan</strong></a></li>
+    <li><a href="#2-download-kernel"><strong>2. Download kernel</strong></a></li>
+    <li><a href="#3-konfigurasi"><strong>3. Konfigurasi</strong></a></li>
+    <li><a href="#4-build-kernel"><strong>4. Build Kernel</strong></a></li>
+    <li><a href="#5-install-kernel"><strong>5. Install kernel</strong></a></li>
+  </ul>
+</nav>
+    </div>
+    
+
+    <div id="share-footer" style="display: none">
+      
+      <ul>
+  
+  
+    
+  
+  
+  <li>
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fbembenk18.github.io%2fposts%2fbuild-kernel-opensuse-15-4%2f" aria-label="Facebook">
+      <i class="fab fa-facebook fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fbembenk18.github.io%2fposts%2fbuild-kernel-opensuse-15-4%2f&text=Build%20Kernel%20openSUSE%2015.4" aria-label="Twitter">
+      <i class="fab fa-twitter fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fbembenk18.github.io%2fposts%2fbuild-kernel-opensuse-15-4%2f&title=Build%20Kernel%20openSUSE%2015.4" aria-label="Linkedin">
+      <i class="fab fa-linkedin fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fbembenk18.github.io%2fposts%2fbuild-kernel-opensuse-15-4%2f&is_video=false&description=Build%20Kernel%20openSUSE%2015.4" aria-label="Pinterest">
+      <i class="fab fa-pinterest fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="mailto:?subject=Build%20Kernel%20openSUSE%2015.4&body=Check out this article: https%3a%2f%2fbembenk18.github.io%2fposts%2fbuild-kernel-opensuse-15-4%2f" aria-label="Email">
+      <i class="fas fa-envelope fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fbembenk18.github.io%2fposts%2fbuild-kernel-opensuse-15-4%2f&title=Build%20Kernel%20openSUSE%2015.4" aria-label="Pocket">
+      <i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fbembenk18.github.io%2fposts%2fbuild-kernel-opensuse-15-4%2f&title=Build%20Kernel%20openSUSE%2015.4" aria-label="reddit">
+      <i class="fab fa-reddit fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fbembenk18.github.io%2fposts%2fbuild-kernel-opensuse-15-4%2f&name=Build%20Kernel%20openSUSE%2015.4&description=Karena%20openSUSE%20Leap%20mengutamakan%20kestabilan%20maka%20untuk%20dapat%20mencoba%20kernel%206.%2a%20saya%20harus%20menunggu%20cukup%20lama%2c%20pada%20catatan%20kali%20ini%20saya%20akan%20coba%20build%20kernel%206.%2a%20di%20openSUSE%20Leap%2015.4%0a1.%20Persiapan%20Install%20Requirements%20dan%20buat%20folder%20yang%20diperlukan%20spesifikasi%20sudo%20zypper%20ref%20%26amp%3b%26amp%3b%20sudo%20zypper%20update%20sudo%20zypper%20in%20-t%20pattern%20devel_basis%20bc%20openssl%20openssl-devel%20dwarves%20rpm-build%20libelf-devel%20elfutils-libelf-devel%20sudo%20mkdir%20~%2fkernel%0a2.%20Download%20kernel%20Download%20kernel%20dari%20https%3a%2f%2fkernel.org%2f%2c%20saat%20blog%20ini%20dibuat%20kernel%20terbaru%20yaitu%206." aria-label="Tumblr">
+      <i class="fab fa-tumblr fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fbembenk18.github.io%2fposts%2fbuild-kernel-opensuse-15-4%2f&t=Build%20Kernel%20openSUSE%2015.4" aria-label="Hacker News">
+      <i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+      
+        <a id="menu-toggle" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;" aria-label="Menu">
+          <i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        
+        <a id="toc-toggle" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;" aria-label="TOC">
+          <i class="fas fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        
+        <a id="share-toggle" class="icon" href="#" onclick="$('#share-footer').toggle();return false;" aria-label="Share">
+          <i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" aria-label="Top of Page">
+          <i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+
+  <footer id="footer">
+  <div class="footer-left">
+    Copyright  &copy; 2023  Bayu Putra Herlambang 
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+         
+        <li><a href="/">Home</a></li>
+         
+        <li><a href="/posts">Writings</a></li>
+         
+        <li><a href="/projects">Projects</a></li>
+         
+        <li><a href="/tags">Tags</a></li>
+         
+        <li><a href="/about">About Me</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+
+  </div>
+</body>
+
+<link rel="stylesheet" href=/lib/font-awesome/css/all.min.css>
+<script src=/lib/jquery/jquery.min.js></script>
+<script src=/js/main.js></script>
+
+<script src=/js/code-copy.js></script>
+
+
+
+
+</html>

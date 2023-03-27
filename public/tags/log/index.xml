@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Log on Just /var/log/</title>
+    <link>https://bembenk18.github.io/tags/log/</link>
+    <description>Recent content in Log on Just /var/log/</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Bayu Putra Herlambang</copyright>
+    <lastBuildDate>Sun, 26 Mar 2023 13:47:58 +0700</lastBuildDate><atom:link href="https://bembenk18.github.io/tags/log/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Setup Fail2Ban Zimbra</title>
+      <link>https://bembenk18.github.io/posts/setup-fail2ban-zimbra/</link>
+      <pubDate>Sun, 26 Mar 2023 13:47:58 +0700</pubDate>
+      
+      <guid>https://bembenk18.github.io/posts/setup-fail2ban-zimbra/</guid>
+      <description>0. sudo -u zimbra - zmprov mcf +zimbraMailTrustedIP 127.0.0.1 +zimbraMailTrustedIP {IP of Server} zmcontrol restart 1. Install Fail2Ban yum install epel-release -y yum install fail2ban -y 2. Buat file jail.conf *Jika ingin whitelist IP tambahkan pada baris ignoreip
+nano /etc/fail2ban/jail.local
+[DEFAULT] # &amp;quot;ignoreip&amp;quot; can be a list of IP addresses, CIDR masks or DNS hosts. # Fail2ban will not ban a host which matches an address in this list. # Several addresses can be defined using space (and/or comma) separator.</description>
+    </item>
+    
+    <item>
+      <title>Expose jaringan lokal ke internet dengan SSH Forwading</title>
+      <link>https://bembenk18.github.io/posts/ssh-forwading/</link>
+      <pubDate>Sun, 26 Mar 2023 11:40:48 +0700</pubDate>
+      
+      <guid>https://bembenk18.github.io/posts/ssh-forwading/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Build Kernel openSUSE 15.4</title>
+      <link>https://bembenk18.github.io/posts/build-kernel-opensuse-15-4/</link>
+      <pubDate>Wed, 23 Nov 2022 18:17:44 +0700</pubDate>
+      
+      <guid>https://bembenk18.github.io/posts/build-kernel-opensuse-15-4/</guid>
+      <description>Karena openSUSE Leap mengutamakan kestabilan maka untuk dapat mencoba kernel 6.* saya harus menunggu cukup lama, pada catatan kali ini saya akan coba build kernel 6.* di openSUSE Leap 15.4
+1. Persiapan Install Requirements dan buat folder yang diperlukan spesifikasi sudo zypper ref &amp;amp;&amp;amp; sudo zypper update sudo zypper in -t pattern devel_basis bc openssl openssl-devel dwarves rpm-build libelf-devel elfutils-libelf-devel sudo mkdir ~/kernel
+2. Download kernel Download kernel dari https://kernel.org/, saat blog ini dibuat kernel terbaru yaitu 6.</description>
+    </item>
+    
+  </channel>
+</rss>
