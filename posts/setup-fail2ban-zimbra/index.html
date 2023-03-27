@@ -16,10 +16,7 @@
   <meta name="robots" content="all,follow">
   <meta name="googlebot" content="index,follow,snippet,archive">
   <meta property="og:title" content="Setup Fail2Ban Zimbra" />
-<meta property="og:description" content="0.
-sudo -u zimbra - zmprov mcf &#43;zimbraMailTrustedIP 127.0.0.1 &#43;zimbraMailTrustedIP {IP of Server} zmcontrol restart 1. Install Fail2Ban
-yum install epel-release -y yum install fail2ban -y 2. Buat file jail.conf
-*Jika ingin whitelist IP tambahkan pada baris ignoreip
+<meta property="og:description" content="0. sudo -u zimbra - zmprov mcf &#43;zimbraMailTrustedIP 127.0.0.1 &#43;zimbraMailTrustedIP {IP of Server} zmcontrol restart 1. Install Fail2Ban yum install epel-release -y yum install fail2ban -y 2. Buat file jail.conf *Jika ingin whitelist IP tambahkan pada baris ignoreip
 nano /etc/fail2ban/jail.local
 [DEFAULT] # &quot;ignoreip&quot; can be a list of IP addresses, CIDR masks or DNS hosts. # Fail2ban will not ban a host which matches an address in this list. # Several addresses can be defined using space (and/or comma) separator." />
 <meta property="og:type" content="article" />
@@ -29,10 +26,7 @@ nano /etc/fail2ban/jail.local
 
   <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Setup Fail2Ban Zimbra"/>
-<meta name="twitter:description" content="0.
-sudo -u zimbra - zmprov mcf &#43;zimbraMailTrustedIP 127.0.0.1 &#43;zimbraMailTrustedIP {IP of Server} zmcontrol restart 1. Install Fail2Ban
-yum install epel-release -y yum install fail2ban -y 2. Buat file jail.conf
-*Jika ingin whitelist IP tambahkan pada baris ignoreip
+<meta name="twitter:description" content="0. sudo -u zimbra - zmprov mcf &#43;zimbraMailTrustedIP 127.0.0.1 &#43;zimbraMailTrustedIP {IP of Server} zmcontrol restart 1. Install Fail2Ban yum install epel-release -y yum install fail2ban -y 2. Buat file jail.conf *Jika ingin whitelist IP tambahkan pada baris ignoreip
 nano /etc/fail2ban/jail.local
 [DEFAULT] # &quot;ignoreip&quot; can be a list of IP addresses, CIDR masks or DNS hosts. # Fail2ban will not ban a host which matches an address in this list. # Several addresses can be defined using space (and/or comma) separator."/>
 
@@ -171,7 +165,7 @@ if (!doNotTrack) {
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fbembenk18.github.io%2fposts%2fsetup-fail2ban-zimbra%2f&name=Setup%20Fail2Ban%20Zimbra&description=0.%0asudo%20-u%20zimbra%20-%20zmprov%20mcf%20%2bzimbraMailTrustedIP%20127.0.0.1%20%2bzimbraMailTrustedIP%20%7bIP%20of%20Server%7d%20zmcontrol%20restart%201.%20Install%20Fail2Ban%0ayum%20install%20epel-release%20-y%20yum%20install%20fail2ban%20-y%202.%20Buat%20file%20jail.conf%0a%2aJika%20ingin%20whitelist%20IP%20tambahkan%20pada%20baris%20ignoreip%0anano%20%2fetc%2ffail2ban%2fjail.local%0a%5bDEFAULT%5d%20%23%20%26quot%3bignoreip%26quot%3b%20can%20be%20a%20list%20of%20IP%20addresses%2c%20CIDR%20masks%20or%20DNS%20hosts.%20%23%20Fail2ban%20will%20not%20ban%20a%20host%20which%20matches%20an%20address%20in%20this%20list.%20%23%20Several%20addresses%20can%20be%20defined%20using%20space%20%28and%2for%20comma%29%20separator." aria-label="Tumblr">
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fbembenk18.github.io%2fposts%2fsetup-fail2ban-zimbra%2f&name=Setup%20Fail2Ban%20Zimbra&description=0.%20sudo%20-u%20zimbra%20-%20zmprov%20mcf%20%2bzimbraMailTrustedIP%20127.0.0.1%20%2bzimbraMailTrustedIP%20%7bIP%20of%20Server%7d%20zmcontrol%20restart%201.%20Install%20Fail2Ban%20yum%20install%20epel-release%20-y%20yum%20install%20fail2ban%20-y%202.%20Buat%20file%20jail.conf%20%2aJika%20ingin%20whitelist%20IP%20tambahkan%20pada%20baris%20ignoreip%0anano%20%2fetc%2ffail2ban%2fjail.local%0a%5bDEFAULT%5d%20%23%20%26quot%3bignoreip%26quot%3b%20can%20be%20a%20list%20of%20IP%20addresses%2c%20CIDR%20masks%20or%20DNS%20hosts.%20%23%20Fail2ban%20will%20not%20ban%20a%20host%20which%20matches%20an%20address%20in%20this%20list.%20%23%20Several%20addresses%20can%20be%20defined%20using%20space%20%28and%2for%20comma%29%20separator." aria-label="Tumblr">
       <i class="fab fa-tumblr " aria-hidden="true"></i>
     </a>
   </li>
@@ -185,7 +179,19 @@ if (!doNotTrack) {
     </div>
     
     <div id="toc">
-      <nav id="TableOfContents"></nav>
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#0"><strong>0.</strong></a></li>
+    <li><a href="#1-install-fail2ban"><strong>1. Install Fail2Ban</strong></a></li>
+    <li><a href="#2-buat-file-jailconf"><strong>2. Buat file jail.conf</strong></a></li>
+    <li><a href="#3-buat-file-jail-untuk-zimbra"><strong>3. Buat file jail untuk Zimbra</strong></a></li>
+    <li><a href="#4-buat-file-jail-untuk-ssh"><strong>4. Buat file jail untuk SSH</strong></a></li>
+    <li><a href="#5-buat-filter-untuk-zimbra"><strong>5. Buat filter untuk Zimbra</strong></a></li>
+    <li><a href="#6-enable"><strong>6. Enable</strong></a></li>
+    <li><a href="#7-cek-status"><strong>7. Cek status</strong></a></li>
+    <li><a href="#ban--unban"><em><strong>Ban &amp; Unban</strong></em></a></li>
+  </ul>
+</nav>
     </div>
     
   </span>
@@ -234,16 +240,16 @@ if (!doNotTrack) {
   
     
     <div class="content" itemprop="articleBody">
-      <p><strong>0.</strong></p>
+      <h2 id="0"><strong>0.</strong></h2>
 <pre><code>sudo -u zimbra -
 zmprov mcf +zimbraMailTrustedIP 127.0.0.1 +zimbraMailTrustedIP {IP of Server}
 zmcontrol restart
 </code></pre>
-<p><strong>1. Install Fail2Ban</strong></p>
+<h2 id="1-install-fail2ban"><strong>1. Install Fail2Ban</strong></h2>
 <pre><code>yum install epel-release -y
 yum install fail2ban -y
 </code></pre>
-<p><strong>2. Buat file jail.conf</strong></p>
+<h2 id="2-buat-file-jailconf"><strong>2. Buat file jail.conf</strong></h2>
 <p>*Jika ingin whitelist IP tambahkan pada baris ignoreip</p>
 <p>nano /etc/fail2ban/jail.local</p>
 <pre><code>[DEFAULT]
@@ -255,7 +261,7 @@ ignoreip = 127.0.0.1/8 IP-ADDRESS-OF-ZIMBRA-SERVER/32 WHITELIST-IP
 
 banaction = route
 </code></pre>
-<p><strong>3. Buat file jail untuk Zimbra</strong></p>
+<h2 id="3-buat-file-jail-untuk-zimbra"><strong>3. Buat file jail untuk Zimbra</strong></h2>
 <p>nano /etc/fail2ban/jail.d/zimbra.local</p>
 <pre><code>[zimbra-smtp]
 enabled = true
@@ -277,7 +283,7 @@ findtime = 86400
 bantime = 86400
 action = route
 </code></pre>
-<p><strong>4. Buat file jail untuk SSH</strong></p>
+<h2 id="4-buat-file-jail-untuk-ssh"><strong>4. Buat file jail untuk SSH</strong></h2>
 <p>nano /etc/fail2ban/jail.d/sshd.local</p>
 <pre><code>[sshd]
 enabled = true
@@ -286,7 +292,7 @@ maxretry = 3
 findtime = 600
 bantime = 3600
 </code></pre>
-<p><strong>5. Buat filter untuk Zimbra</strong></p>
+<h2 id="5-buat-filter-untuk-zimbra"><strong>5. Buat filter untuk Zimbra</strong></h2>
 <p>nano /etc/fail2ban/filter.d/zimbra-web.conf</p>
 <pre><code>[Definition]
 failregex = .*ip=&lt;HOST&gt;;.*authentication failed for .*$
@@ -300,15 +306,15 @@ failregex = postfix\/submission\/smtpd\[\d+\]: warning: .*\[&lt;HOST&gt;\]: SASL
 
 ignoreregex =
 </code></pre>
-<p><strong>6. Enable</strong></p>
+<h2 id="6-enable"><strong>6. Enable</strong></h2>
 <pre><code>systemctl restart fail2ban
 systemctl status fail2ban
 systemctl enable fail2ban
 </code></pre>
-<p><strong>7. Cek status</strong></p>
+<h2 id="7-cek-status"><strong>7. Cek status</strong></h2>
 <pre><code>fail2ban-client status
 </code></pre>
-<p><em><strong>Ban &amp; Unban</strong></em></p>
+<h2 id="ban--unban"><em><strong>Ban &amp; Unban</strong></em></h2>
 <pre><code>fail2ban-client set sshd banip 10.137.26.29
 fail2ban-client set sshd unbanip 10.137.26.29
 </code></pre>
@@ -346,7 +352,19 @@ fail2ban-client set sshd unbanip 10.137.26.29
 
     
     <div id="toc-footer" style="display: none">
-      <nav id="TableOfContents"></nav>
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#0"><strong>0.</strong></a></li>
+    <li><a href="#1-install-fail2ban"><strong>1. Install Fail2Ban</strong></a></li>
+    <li><a href="#2-buat-file-jailconf"><strong>2. Buat file jail.conf</strong></a></li>
+    <li><a href="#3-buat-file-jail-untuk-zimbra"><strong>3. Buat file jail untuk Zimbra</strong></a></li>
+    <li><a href="#4-buat-file-jail-untuk-ssh"><strong>4. Buat file jail untuk SSH</strong></a></li>
+    <li><a href="#5-buat-filter-untuk-zimbra"><strong>5. Buat filter untuk Zimbra</strong></a></li>
+    <li><a href="#6-enable"><strong>6. Enable</strong></a></li>
+    <li><a href="#7-cek-status"><strong>7. Cek status</strong></a></li>
+    <li><a href="#ban--unban"><em><strong>Ban &amp; Unban</strong></em></a></li>
+  </ul>
+</nav>
     </div>
     
 
@@ -394,7 +412,7 @@ fail2ban-client set sshd unbanip 10.137.26.29
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fbembenk18.github.io%2fposts%2fsetup-fail2ban-zimbra%2f&name=Setup%20Fail2Ban%20Zimbra&description=0.%0asudo%20-u%20zimbra%20-%20zmprov%20mcf%20%2bzimbraMailTrustedIP%20127.0.0.1%20%2bzimbraMailTrustedIP%20%7bIP%20of%20Server%7d%20zmcontrol%20restart%201.%20Install%20Fail2Ban%0ayum%20install%20epel-release%20-y%20yum%20install%20fail2ban%20-y%202.%20Buat%20file%20jail.conf%0a%2aJika%20ingin%20whitelist%20IP%20tambahkan%20pada%20baris%20ignoreip%0anano%20%2fetc%2ffail2ban%2fjail.local%0a%5bDEFAULT%5d%20%23%20%26quot%3bignoreip%26quot%3b%20can%20be%20a%20list%20of%20IP%20addresses%2c%20CIDR%20masks%20or%20DNS%20hosts.%20%23%20Fail2ban%20will%20not%20ban%20a%20host%20which%20matches%20an%20address%20in%20this%20list.%20%23%20Several%20addresses%20can%20be%20defined%20using%20space%20%28and%2for%20comma%29%20separator." aria-label="Tumblr">
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fbembenk18.github.io%2fposts%2fsetup-fail2ban-zimbra%2f&name=Setup%20Fail2Ban%20Zimbra&description=0.%20sudo%20-u%20zimbra%20-%20zmprov%20mcf%20%2bzimbraMailTrustedIP%20127.0.0.1%20%2bzimbraMailTrustedIP%20%7bIP%20of%20Server%7d%20zmcontrol%20restart%201.%20Install%20Fail2Ban%20yum%20install%20epel-release%20-y%20yum%20install%20fail2ban%20-y%202.%20Buat%20file%20jail.conf%20%2aJika%20ingin%20whitelist%20IP%20tambahkan%20pada%20baris%20ignoreip%0anano%20%2fetc%2ffail2ban%2fjail.local%0a%5bDEFAULT%5d%20%23%20%26quot%3bignoreip%26quot%3b%20can%20be%20a%20list%20of%20IP%20addresses%2c%20CIDR%20masks%20or%20DNS%20hosts.%20%23%20Fail2ban%20will%20not%20ban%20a%20host%20which%20matches%20an%20address%20in%20this%20list.%20%23%20Several%20addresses%20can%20be%20defined%20using%20space%20%28and%2for%20comma%29%20separator." aria-label="Tumblr">
       <i class="fab fa-tumblr fa-lg" aria-hidden="true"></i>
     </a>
   </li>
