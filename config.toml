@@ -25,7 +25,7 @@ url = "/tags"
 weight = 4
 
 [[menu.main]]
-name = "About Me"
+name = "About"
 url = "/about"
 weight = 5
 
