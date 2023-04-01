@@ -1,7 +1,10 @@
 ---
 title: "Cisco Packet Tracer Opensuse"
 date: 2023-03-27T15:20:56+07:00
-draft: true
+draft: false
+tags:
+- Linux
+- Networking
 ---
 
 
