@@ -2,22 +2,28 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://bembenk18.github.io/posts/home-server-armbian/</loc>
+    <lastmod>2023-04-10T14:48:52+07:00</lastmod>
+  </url><url>
+    <loc>https://bembenk18.github.io/</loc>
+    <lastmod>2023-04-10T14:48:52+07:00</lastmod>
+  </url><url>
+    <loc>https://bembenk18.github.io/tags/linux/</loc>
+    <lastmod>2023-04-10T14:48:52+07:00</lastmod>
+  </url><url>
+    <loc>https://bembenk18.github.io/posts/</loc>
+    <lastmod>2023-04-10T14:48:52+07:00</lastmod>
+  </url><url>
+    <loc>https://bembenk18.github.io/tags/server/</loc>
+    <lastmod>2023-04-10T14:48:52+07:00</lastmod>
+  </url><url>
+    <loc>https://bembenk18.github.io/tags/</loc>
+    <lastmod>2023-04-10T14:48:52+07:00</lastmod>
+  </url><url>
     <loc>https://bembenk18.github.io/posts/cisco-packet-tracer-opensuse/</loc>
     <lastmod>2023-03-27T15:20:56+07:00</lastmod>
   </url><url>
-    <loc>https://bembenk18.github.io/</loc>
-    <lastmod>2023-03-27T15:20:56+07:00</lastmod>
-  </url><url>
-    <loc>https://bembenk18.github.io/tags/linux/</loc>
-    <lastmod>2023-03-27T15:20:56+07:00</lastmod>
-  </url><url>
     <loc>https://bembenk18.github.io/tags/networking/</loc>
-    <lastmod>2023-03-27T15:20:56+07:00</lastmod>
-  </url><url>
-    <loc>https://bembenk18.github.io/posts/</loc>
-    <lastmod>2023-03-27T15:20:56+07:00</lastmod>
-  </url><url>
-    <loc>https://bembenk18.github.io/tags/</loc>
     <lastmod>2023-03-27T15:20:56+07:00</lastmod>
   </url><url>
     <loc>https://bembenk18.github.io/about/</loc>
@@ -27,9 +33,6 @@
     <lastmod>2023-03-27T11:32:42+07:00</lastmod>
   </url><url>
     <loc>https://bembenk18.github.io/tags/log/</loc>
-    <lastmod>2023-03-26T13:47:58+07:00</lastmod>
-  </url><url>
-    <loc>https://bembenk18.github.io/tags/server/</loc>
     <lastmod>2023-03-26T13:47:58+07:00</lastmod>
   </url><url>
     <loc>https://bembenk18.github.io/posts/setup-fail2ban-zimbra/</loc>

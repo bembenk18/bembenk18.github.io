@@ -7,7 +7,18 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Bayu Putra Herlambang</copyright>
-    <lastBuildDate>Sun, 26 Mar 2023 13:47:58 +0700</lastBuildDate><atom:link href="https://bembenk18.github.io/tags/server/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 10 Apr 2023 14:48:52 +0700</lastBuildDate><atom:link href="https://bembenk18.github.io/tags/server/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Home Server Armbian</title>
+      <link>https://bembenk18.github.io/posts/home-server-armbian/</link>
+      <pubDate>Mon, 10 Apr 2023 14:48:52 +0700</pubDate>
+      
+      <guid>https://bembenk18.github.io/posts/home-server-armbian/</guid>
+      <description>Armbian adalah salah satu distro linux yang mendukung processor arm64 dengan
+spesifikasi rendah, salah satunya adalah STB HG680P yang banyak beredar dengan harga under 300k. STB ini juga bisa dijadikan alternative dari Raspberry Pi yang harganya semakin naik.
+Spesifikasi RAM : 2 GB ROM Internal : 8 GB CPU : Amlogic s905x Cortex-A53 @ up to 1.51 GHz GPU : 5-Core GPU Dengan spesifikasi tersebut sudah cukup untuk menjalankan Armbian. Untuk Armbian saya pasang pada microSD Sandisk Ultra UHS-I 32GB.</description>
+    </item>
+    
     <item>
       <title>Setup Fail2Ban Zimbra</title>
       <link>https://bembenk18.github.io/posts/setup-fail2ban-zimbra/</link>
