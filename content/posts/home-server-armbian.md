@@ -2,6 +2,9 @@
 title: "Home Server Armbian"
 date: 2023-04-10T14:48:52+07:00
 draft: true
+tags:
+- Linux
+- Server
 ---
 
 Armbian adalah salah satu distro linux yang mendukung processor arm64 dengan  
