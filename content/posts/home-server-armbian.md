@@ -10,7 +10,7 @@ tags:
 Armbian adalah salah satu distro linux yang mendukung processor arm64 dengan  
 spesifikasi rendah, salah satunya adalah STB HG680P yang banyak beredar dengan harga under 300k. STB ini juga bisa dijadikan alternative dari Raspberry Pi yang harganya semakin naik.
 
-![Mobo STB HG680P](https://raw.githubusercontent.com/bembenk18/Images/main/Armbian%20Server/photo_2023-04-10_15-15-27.jpg)
+![Mobo STB HG680P](https://raw.githubusercontent.com/bembenk18/Images/main/Armbian-Server/photo_2023-04-10_15-15-27.jpg)
 
 # Spesifikasi
     RAM : 2 GB
@@ -22,7 +22,7 @@ Dengan spesifikasi tersebut sudah cukup untuk menjalankan Armbian. Untuk Armbian
 
 # Topologi
 
-![Topologi](https://raw.githubusercontent.com/bembenk18/Images/main/Armbian%20Server/topologi%20stb.drawio%20(2).png)
+![Topologi](https://raw.githubusercontent.com/bembenk18/Images/main/Armbian-Server/topologi%20stb.drawio%20(2).png)
 
 ### Grafana
 Jalan di port 3030
