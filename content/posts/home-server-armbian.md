@@ -1,7 +1,7 @@
 ---
 title: "Home Server Armbian"
 date: 2023-04-10T14:48:52+07:00
-draft: true
+draft: false
 tags:
 - Linux
 - Server
