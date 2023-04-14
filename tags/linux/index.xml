@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Bayu Putra Herlambang</copyright>
-    <lastBuildDate>Mon, 10 Apr 2023 14:48:52 +0700</lastBuildDate><atom:link href="https://bembenk18.github.io/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 14 Apr 2023 09:04:06 +0700</lastBuildDate><atom:link href="https://bembenk18.github.io/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>SSH Ke Mesin Lokal Dengan Tailscale</title>
+      <link>https://bembenk18.github.io/posts/ssh-ke-mesin-lokal-dengan-tailscale/</link>
+      <pubDate>Fri, 14 Apr 2023 09:04:06 +0700</pubDate>
+      
+      <guid>https://bembenk18.github.io/posts/ssh-ke-mesin-lokal-dengan-tailscale/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Home Server Armbian</title>
       <link>https://bembenk18.github.io/posts/home-server-armbian/</link>
