@@ -5,8 +5,9 @@ draft: false
 tags:
 - Linux
 - Server
-- Logs
+- Log
 ---
+![Tailscale Logo](https://brands.home-assistant.io/_/tailscale/logo.png)
 
 Tailscale adalah aplikasi opensource berbasis WireGuard, tailscale memungkinkan untuk membangun jaringan peer to peer private. Dalam case saya gunakan untuk akses [Home server](https://bembenk18.github.io/posts/home-server-armbian/).
 
