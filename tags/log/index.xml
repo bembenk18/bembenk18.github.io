@@ -7,7 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Bayu Putra Herlambang</copyright>
-    <lastBuildDate>Fri, 14 Apr 2023 09:04:06 +0700</lastBuildDate><atom:link href="https://bembenk18.github.io/tags/log/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 14 Apr 2023 10:36:25 +0700</lastBuildDate><atom:link href="https://bembenk18.github.io/tags/log/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Akses SSH Dengan Google Authenticator</title>
+      <link>https://bembenk18.github.io/posts/ssh-dengan-google-authenticator/</link>
+      <pubDate>Fri, 14 Apr 2023 10:36:25 +0700</pubDate>
+      
+      <guid>https://bembenk18.github.io/posts/ssh-dengan-google-authenticator/</guid>
+      <description>Ada banyak cara yang dapat dilakukan untuk mengamankan akses SSH ke server, salah satunya dengan Google Authenticator.
+Installasi sudo apt install libpam-google-authenticator -y Tambahkan Google Authenticator ke HP google-authenticator -s ~/.ssh/google_auth Setelah muncul QR code scan dengan Google Authenticator pada HP, Kemudian masukan kode yang muncul ke terminal
+dan ikuti panduannya hingga selesai.
+Konfigurasi 2FA SSH Tambahkan baris berikut pada file /etc/pam.d/sshd
+auth required pam_google_authenticator.so secret=/home/${USER}/.ssh/google_authenticator nullok Edit baris berikut pada file /etc/ssh/sshd_config</description>
+    </item>
+    
     <item>
       <title>SSH Ke Mesin Lokal Dengan Tailscale</title>
       <link>https://bembenk18.github.io/posts/ssh-ke-mesin-lokal-dengan-tailscale/</link>
