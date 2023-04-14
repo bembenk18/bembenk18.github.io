@@ -15,7 +15,7 @@
       
       <guid>https://bembenk18.github.io/posts/ssh-ke-mesin-lokal-dengan-tailscale/</guid>
       <description>Tailscale adalah aplikasi opensource berbasis WireGuard, tailscale memungkinkan untuk membangun jaringan peer to peer private. Dalam case saya gunakan untuk akses Home server.
-Installasi curl -fsSL https://tailscale.com/install.sh | sh Start Tailscale service sudo tailscale up Saat pertama kali akan diminta login, silahkan login dengan link yang muncul dikonsole, jika berhasil dijalankan kita akan mendapatkan ip seperti dibawah ini: Web Interface Akses web interface di link berikut </description>
+Installasi curl -fsSL https://tailscale.com/install.sh | sh Start Tailscale service sudo tailscale up Saat pertama kali akan diminta login, silahkan login dengan link yang muncul dikonsole, jika berhasil dijalankan kita akan mendapatkan ip seperti dibawah ini: Web Interface Untuk mempermudah mengelola service Tailscale menyediakan web interface di link berikut Test akses SSH Test akses SSH ke server Dokumentasi Repo dan dokumentasi tentang Tailscale bisa diakses di https://github.</description>
     </item>
     
   </channel>
