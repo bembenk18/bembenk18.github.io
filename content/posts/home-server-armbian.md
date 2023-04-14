@@ -18,6 +18,8 @@ spesifikasi rendah, salah satunya adalah STB HG680P yang banyak beredar dengan h
     CPU : Amlogic s905x Cortex-A53 @ up to 1.51 GHz
     GPU : 5-Core GPU
 
+![Neofetch](https://raw.githubusercontent.com/bembenk18/Images/main/Armbian-Server/neofetch.png)
+
 Dengan spesifikasi tersebut sudah cukup untuk menjalankan Armbian. Untuk Armbian saya pasang pada microSD Sandisk Ultra UHS-I 32GB.
 
 # Topologi
@@ -25,8 +27,10 @@ Dengan spesifikasi tersebut sudah cukup untuk menjalankan Armbian. Untuk Armbian
 ![Topologi](https://raw.githubusercontent.com/bembenk18/Images/main/Armbian-Server/topologi%20stb.drawio%20(2).png)
 
 ### Grafana
-Jalan di port 3030
+Untuk visualisasi data
 ### MQTT
+Untuk record data perangkat IoT, dikombinasikan dengan Grafana & Influxdb
 ### Adguard Home
 Untuk blokir iklan dan konten negatif, web interface jalan di port 4040.
 ### Influxdb
+Untuk record data perangkat IoT, dikombinasikan dengan Grafana & MQTT
