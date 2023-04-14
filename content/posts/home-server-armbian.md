@@ -31,7 +31,7 @@ Untuk visualisasi data
 ### MQTT
 Untuk record data perangkat IoT, dikombinasikan dengan Grafana & Influxdb
 ### Adguard Home
-Untuk blokir iklan dan konten negatif, web interface jalan di port 4040.
+Untuk blokir iklan (kecuali iklan youtube) dan konten negatif.
 ![Adguard](https://raw.githubusercontent.com/bembenk18/Images/main/Armbian-Server/adguard.png)
 ### Influxdb
 Untuk record data perangkat IoT, dikombinasikan dengan Grafana & MQTT
