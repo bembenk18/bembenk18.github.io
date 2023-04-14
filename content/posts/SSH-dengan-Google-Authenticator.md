@@ -1,7 +1,7 @@
 ---
 title: "Akses SSH Dengan Google Authenticator"
 date: 2023-04-14T10:36:25+07:00
-draft: true
+draft: false
 tags:
 - Linux
 - Log
