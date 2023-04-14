@@ -8,7 +8,7 @@ tags:
 - Logs
 ---
 
-Tailscale adalah aplikasi opensource berbasis WireGuard, tailscale memungkinkan untuk membangun jaringan peer to peer private. Dalam case saya gunakan untuk akses server lokal dirumah.
+Tailscale adalah aplikasi opensource berbasis WireGuard, tailscale memungkinkan untuk membangun jaringan peer to peer private. Dalam case saya gunakan untuk akses [Home server](https://bembenk18.github.io/posts/home-server-armbian/).
 
 # Installasi
     curl -fsSL https://tailscale.com/install.sh | sh
@@ -16,4 +16,8 @@ Tailscale adalah aplikasi opensource berbasis WireGuard, tailscale memungkinkan 
 # Start Tailscale service
     sudo tailscale up
 Saat pertama kali akan diminta login, silahkan login dengan link yang muncul dikonsole, jika berhasil dijalankan kita akan mendapatkan ip seperti dibawah ini:
-![Neofetch](https://raw.githubusercontent.com/bembenk18/Images/main/Tailscale/ip.png)
+![IP](https://raw.githubusercontent.com/bembenk18/Images/main/Tailscale/ip.png)
+
+# Web Interface
+Akses web interface di [link berikut](https://login.tailscale.com/admin/machines)
+![Web Interface](https://raw.githubusercontent.com/bembenk18/Images/main/Tailscale/web.png)
