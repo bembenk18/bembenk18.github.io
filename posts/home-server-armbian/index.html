@@ -214,7 +214,7 @@ if (!doNotTrack) {
         <div class="article-read-time">
           <i class="far fa-clock"></i>
           
-          0 minute read
+          1 minute read
         </div>
         
         
@@ -245,15 +245,18 @@ ROM Internal : 8 GB
 CPU : Amlogic s905x Cortex-A53 @ up to 1.51 GHz
 GPU : 5-Core GPU
 </code></pre>
+<p><img src="https://raw.githubusercontent.com/bembenk18/Images/main/Armbian-Server/neofetch.png" alt="Neofetch"></p>
 <p>Dengan spesifikasi tersebut sudah cukup untuk menjalankan Armbian. Untuk Armbian saya pasang pada microSD Sandisk Ultra UHS-I 32GB.</p>
 <h1 id="topologi">Topologi</h1>
 <p><img src="https://raw.githubusercontent.com/bembenk18/Images/main/Armbian-Server/topologi%20stb.drawio%20(2).png" alt="Topologi"></p>
 <h3 id="grafana">Grafana</h3>
-<p>Jalan di port 3030</p>
+<p>Untuk visualisasi data</p>
 <h3 id="mqtt">MQTT</h3>
+<p>Untuk record data perangkat IoT, dikombinasikan dengan Grafana &amp; Influxdb</p>
 <h3 id="adguard-home">Adguard Home</h3>
 <p>Untuk blokir iklan dan konten negatif, web interface jalan di port 4040.</p>
 <h3 id="influxdb">Influxdb</h3>
+<p>Untuk record data perangkat IoT, dikombinasikan dengan Grafana &amp; MQTT</p>
 
     </div>
   </article>
