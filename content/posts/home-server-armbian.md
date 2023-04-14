@@ -27,12 +27,12 @@ Dengan spesifikasi tersebut sudah cukup untuk menjalankan Armbian. Untuk Armbian
 
 ### Grafana
 Untuk visualisasi data
-![Neofetch](https://raw.githubusercontent.com/bembenk18/Images/main/Armbian-Server/grafana.png)
+![Grafana](https://raw.githubusercontent.com/bembenk18/Images/main/Armbian-Server/grafana.png)
 ### MQTT
 Untuk record data perangkat IoT, dikombinasikan dengan Grafana & Influxdb
 ### Adguard Home
 Untuk blokir iklan dan konten negatif, web interface jalan di port 4040.
-![Neofetch](https://raw.githubusercontent.com/bembenk18/Images/main/Armbian-Server/adguard.png)
+![Adguard](https://raw.githubusercontent.com/bembenk18/Images/main/Armbian-Server/adguard.png)
 ### Influxdb
 Untuk record data perangkat IoT, dikombinasikan dengan Grafana & MQTT
 
