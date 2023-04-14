@@ -60,7 +60,7 @@ weight = 3
   showAllPostsArchive = false # default
 
   # Home page settings
-  description = "Halo"
+  description = "Bukan sebuah tutorial, hanya catatan pribadi tentang hobby."
   mainSection = "posts" # your main section
   showAllPostsOnHomePage = true # default
   postsOnHomePage = 5 # this option will be ignored if showAllPostsOnHomePage is set to true
