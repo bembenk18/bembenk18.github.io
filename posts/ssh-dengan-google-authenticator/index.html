@@ -20,7 +20,7 @@
 Installasi sudo apt install libpam-google-authenticator -y Tambahkan Google Authenticator ke HP google-authenticator -s ~/.ssh/google_auth Setelah muncul QR code scan dengan Google Authenticator pada HP, Kemudian masukan kode yang muncul ke terminal
 dan ikuti panduannya hingga selesai.
 Konfigurasi 2FA SSH Tambahkan baris berikut pada file /etc/pam.d/sshd
-auth required pam_google_authenticator.so secret=/home/${USER}/.ssh/google_authenticator nullok Edit baris berikut pada file /etc/ssh/sshd_config" />
+auth required pam_google_authenticator.so secret=/home/${USER}/.ssh/google_auth nullok Edit baris berikut pada file /etc/ssh/sshd_config" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://bembenk18.github.io/posts/ssh-dengan-google-authenticator/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2023-04-14T10:36:25+07:00" />
@@ -32,7 +32,7 @@ auth required pam_google_authenticator.so secret=/home/${USER}/.ssh/google_authe
 Installasi sudo apt install libpam-google-authenticator -y Tambahkan Google Authenticator ke HP google-authenticator -s ~/.ssh/google_auth Setelah muncul QR code scan dengan Google Authenticator pada HP, Kemudian masukan kode yang muncul ke terminal
 dan ikuti panduannya hingga selesai.
 Konfigurasi 2FA SSH Tambahkan baris berikut pada file /etc/pam.d/sshd
-auth required pam_google_authenticator.so secret=/home/${USER}/.ssh/google_authenticator nullok Edit baris berikut pada file /etc/ssh/sshd_config"/>
+auth required pam_google_authenticator.so secret=/home/${USER}/.ssh/google_auth nullok Edit baris berikut pada file /etc/ssh/sshd_config"/>
 
   
   
@@ -169,7 +169,7 @@ if (!doNotTrack) {
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fbembenk18.github.io%2fposts%2fssh-dengan-google-authenticator%2f&name=Akses%20SSH%20Dengan%20Google%20Authenticator&description=Ada%20banyak%20cara%20yang%20dapat%20dilakukan%20untuk%20mengamankan%20akses%20SSH%20ke%20server%2c%20salah%20satunya%20dengan%20Google%20Authenticator.%0aInstallasi%20sudo%20apt%20install%20libpam-google-authenticator%20-y%20Tambahkan%20Google%20Authenticator%20ke%20HP%20google-authenticator%20-s%20~%2f.ssh%2fgoogle_auth%20Setelah%20muncul%20QR%20code%20scan%20dengan%20Google%20Authenticator%20pada%20HP%2c%20Kemudian%20masukan%20kode%20yang%20muncul%20ke%20terminal%0adan%20ikuti%20panduannya%20hingga%20selesai.%0aKonfigurasi%202FA%20SSH%20Tambahkan%20baris%20berikut%20pada%20file%20%2fetc%2fpam.d%2fsshd%0aauth%20required%20pam_google_authenticator.so%20secret%3d%2fhome%2f%24%7bUSER%7d%2f.ssh%2fgoogle_authenticator%20nullok%20Edit%20baris%20berikut%20pada%20file%20%2fetc%2fssh%2fsshd_config" aria-label="Tumblr">
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fbembenk18.github.io%2fposts%2fssh-dengan-google-authenticator%2f&name=Akses%20SSH%20Dengan%20Google%20Authenticator&description=Ada%20banyak%20cara%20yang%20dapat%20dilakukan%20untuk%20mengamankan%20akses%20SSH%20ke%20server%2c%20salah%20satunya%20dengan%20Google%20Authenticator.%0aInstallasi%20sudo%20apt%20install%20libpam-google-authenticator%20-y%20Tambahkan%20Google%20Authenticator%20ke%20HP%20google-authenticator%20-s%20~%2f.ssh%2fgoogle_auth%20Setelah%20muncul%20QR%20code%20scan%20dengan%20Google%20Authenticator%20pada%20HP%2c%20Kemudian%20masukan%20kode%20yang%20muncul%20ke%20terminal%0adan%20ikuti%20panduannya%20hingga%20selesai.%0aKonfigurasi%202FA%20SSH%20Tambahkan%20baris%20berikut%20pada%20file%20%2fetc%2fpam.d%2fsshd%0aauth%20required%20pam_google_authenticator.so%20secret%3d%2fhome%2f%24%7bUSER%7d%2f.ssh%2fgoogle_auth%20nullok%20Edit%20baris%20berikut%20pada%20file%20%2fetc%2fssh%2fsshd_config" aria-label="Tumblr">
       <i class="fab fa-tumblr " aria-hidden="true"></i>
     </a>
   </li>
@@ -244,7 +244,7 @@ Ada banyak cara yang dapat dilakukan untuk mengamankan akses SSH ke server, sala
 <p><img src="https://raw.githubusercontent.com/bembenk18/Images/main/Google-Auth/3.png" alt="Scan"></p>
 <h1 id="konfigurasi-2fa-ssh">Konfigurasi 2FA SSH</h1>
 <p>Tambahkan baris berikut pada file  <strong>/etc/pam.d/sshd</strong></p>
-<pre><code>auth required pam_google_authenticator.so secret=/home/${USER}/.ssh/google_authenticator nullok
+<pre><code>auth required pam_google_authenticator.so secret=/home/${USER}/.ssh/google_auth nullok
 </code></pre>
 <p><img src="https://raw.githubusercontent.com/bembenk18/Images/main/Google-Auth/4.png" alt="Hehe"></p>
 <p>Edit baris berikut pada file  <strong>/etc/ssh/sshd_config</strong></p>
@@ -341,7 +341,7 @@ Ada banyak cara yang dapat dilakukan untuk mengamankan akses SSH ke server, sala
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fbembenk18.github.io%2fposts%2fssh-dengan-google-authenticator%2f&name=Akses%20SSH%20Dengan%20Google%20Authenticator&description=Ada%20banyak%20cara%20yang%20dapat%20dilakukan%20untuk%20mengamankan%20akses%20SSH%20ke%20server%2c%20salah%20satunya%20dengan%20Google%20Authenticator.%0aInstallasi%20sudo%20apt%20install%20libpam-google-authenticator%20-y%20Tambahkan%20Google%20Authenticator%20ke%20HP%20google-authenticator%20-s%20~%2f.ssh%2fgoogle_auth%20Setelah%20muncul%20QR%20code%20scan%20dengan%20Google%20Authenticator%20pada%20HP%2c%20Kemudian%20masukan%20kode%20yang%20muncul%20ke%20terminal%0adan%20ikuti%20panduannya%20hingga%20selesai.%0aKonfigurasi%202FA%20SSH%20Tambahkan%20baris%20berikut%20pada%20file%20%2fetc%2fpam.d%2fsshd%0aauth%20required%20pam_google_authenticator.so%20secret%3d%2fhome%2f%24%7bUSER%7d%2f.ssh%2fgoogle_authenticator%20nullok%20Edit%20baris%20berikut%20pada%20file%20%2fetc%2fssh%2fsshd_config" aria-label="Tumblr">
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fbembenk18.github.io%2fposts%2fssh-dengan-google-authenticator%2f&name=Akses%20SSH%20Dengan%20Google%20Authenticator&description=Ada%20banyak%20cara%20yang%20dapat%20dilakukan%20untuk%20mengamankan%20akses%20SSH%20ke%20server%2c%20salah%20satunya%20dengan%20Google%20Authenticator.%0aInstallasi%20sudo%20apt%20install%20libpam-google-authenticator%20-y%20Tambahkan%20Google%20Authenticator%20ke%20HP%20google-authenticator%20-s%20~%2f.ssh%2fgoogle_auth%20Setelah%20muncul%20QR%20code%20scan%20dengan%20Google%20Authenticator%20pada%20HP%2c%20Kemudian%20masukan%20kode%20yang%20muncul%20ke%20terminal%0adan%20ikuti%20panduannya%20hingga%20selesai.%0aKonfigurasi%202FA%20SSH%20Tambahkan%20baris%20berikut%20pada%20file%20%2fetc%2fpam.d%2fsshd%0aauth%20required%20pam_google_authenticator.so%20secret%3d%2fhome%2f%24%7bUSER%7d%2f.ssh%2fgoogle_auth%20nullok%20Edit%20baris%20berikut%20pada%20file%20%2fetc%2fssh%2fsshd_config" aria-label="Tumblr">
       <i class="fab fa-tumblr fa-lg" aria-hidden="true"></i>
     </a>
   </li>

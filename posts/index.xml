@@ -18,7 +18,7 @@
 Installasi sudo apt install libpam-google-authenticator -y Tambahkan Google Authenticator ke HP google-authenticator -s ~/.ssh/google_auth Setelah muncul QR code scan dengan Google Authenticator pada HP, Kemudian masukan kode yang muncul ke terminal
 dan ikuti panduannya hingga selesai.
 Konfigurasi 2FA SSH Tambahkan baris berikut pada file /etc/pam.d/sshd
-auth required pam_google_authenticator.so secret=/home/${USER}/.ssh/google_authenticator nullok Edit baris berikut pada file /etc/ssh/sshd_config</description>
+auth required pam_google_authenticator.so secret=/home/${USER}/.ssh/google_auth nullok Edit baris berikut pada file /etc/ssh/sshd_config</description>
     </item>
     
     <item>
@@ -81,7 +81,7 @@ nano /etc/fail2ban/jail.local
       <guid>https://bembenk18.github.io/posts/build-kernel-opensuse-15-4/</guid>
       <description>Karena openSUSE Leap mengutamakan kestabilan maka untuk dapat mencoba kernel 6.* saya harus menunggu cukup lama, pada catatan kali ini saya akan coba build kernel 6.* di openSUSE Leap 15.4
 1. Persiapan Install Requirements dan buat folder yang diperlukan spesifikasi sudo zypper ref &amp;amp;&amp;amp; sudo zypper update sudo zypper in -t pattern devel_basis bc openssl openssl-devel dwarves rpm-build libelf-devel elfutils-libelf-devel sudo mkdir ~/kernel
-2. Download kernel Download kernel dari https://kernel.org/, saat blog ini dibuat kernel terbaru yaitu 6.</description>
+2. Download kernel Download kernel dari https://kernel.</description>
     </item>
     
     <item>
