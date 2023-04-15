@@ -7,6 +7,7 @@ tags:
 - Event
 
 ---
+![Logo](https://ilc.opensuse.id/img/ilc-logo/ilc__main-logo.svg)
 
 Akhirnya setelah menunggu cukup lama saya bisa mengikuti acara Opensource untuk pertama kali, acara kali ini adalah Indonesia Linux Confrence 2022 yang diselenggarakan di Universitas Muhammadiyah Sidoarjo pada hari Sabtu tanggal 5 November 2022.
 ![Image alt](https://raw.githubusercontent.com/bembenk18/Images/main/ILC/gerbang.jpg)

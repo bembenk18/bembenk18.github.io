@@ -7,6 +7,8 @@ tags:
 - Server
 - Log
 ---
+
+![Logo](https://upload.wikimedia.org/wikipedia/commons/d/db/Fail2ban_logo.png)
 ## **0.**
 
     sudo -u zimbra -

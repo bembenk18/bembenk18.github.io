@@ -7,6 +7,7 @@ tags:
 - Linux
 - Log
 ---
+![Logo](https://en.opensuse.org/images/7/7c/Button-monochrome.png)
 
 Karena openSUSE Leap mengutamakan kestabilan maka untuk dapat mencoba kernel 6.* saya harus menunggu cukup lama, pada catatan kali ini saya akan coba build kernel 6.* di openSUSE Leap 15.4
 

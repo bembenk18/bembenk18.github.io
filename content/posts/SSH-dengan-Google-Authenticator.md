@@ -26,7 +26,7 @@ dan ikuti panduannya hingga selesai.
 # Konfigurasi 2FA SSH
 Tambahkan baris berikut pada file  **/etc/pam.d/sshd**
 
-    auth required pam_google_authenticator.so secret=/home/${USER}/.ssh/google_authenticator nullok
+    auth required pam_google_authenticator.so secret=/home/${USER}/.ssh/google_auth nullok
 ![Hehe](https://raw.githubusercontent.com/bembenk18/Images/main/Google-Auth/4.png)
 
 Edit baris berikut pada file  **/etc/ssh/sshd_config**
