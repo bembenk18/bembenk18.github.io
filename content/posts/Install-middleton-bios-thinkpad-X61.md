@@ -32,6 +32,9 @@ Dari 2 cara diatas akhirnya pilih cara ke 2 karena thinkpad saya tidak ada bater
 ## Review
 Perbedaan cukup kerasa adalah di speed SATA nya yang sudah bisa SATA II, speed sebelumnya mentok di 70MB/s setelah mod bios bisa sampai 300MB/s.
 
+Baca lebih jelas disini:
+https://www.thinkwiki.org/wiki/Middleton%27s_BIOS
+
 **Do it at your own risk**
 
 Dah gitu aja
