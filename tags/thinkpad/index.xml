@@ -24,7 +24,9 @@ Mods Setelah nyala akhirnya niat iseng muncul juga untuk flash Midleton Bios aga
       <pubDate>Tue, 29 Mar 2022 21:04:09 +0700</pubDate>
       
       <guid>https://bembenk18.github.io/posts/install-middleton-bios-thinkpad-x61/</guid>
-      <description>Masih dengan mesin x61, setelah menyelam di reddit ketemu sebuah postingan tentang thinkpad x61 dengan bios mod. Setelah baca ternyata fiturnya lumayan banyak daripada bios bawaan.</description>
+      <description>Masih dengan mesin x61, setelah menyelam di reddit ketemu sebuah postingan tentang thinkpad x61 dengan bios mod. Setelah baca ternyata fiturnya lumayan banyak daripada bios bawaan. 2 fitur yang menarik adalah unlock SATA II dan RAM yang bisa max 8GB (Walaupun sekeping 4GB DDR2 harganya hampir sejuta).
+Proses Flash Ada 2 cara:
+Cara 1 Download Iso bios Burn ke flashdisk Boot ke flaskdisk Gabisa pakai cara ini karena harus ada baterai</description>
     </item>
     
   </channel>
