@@ -2,3 +2,6 @@
 	path = Images
 	url = https://github.com/bembenk18/Images
 	branch = main
+[submodule "themes/hugo-chart"]
+	path = themes/hugo-chart
+	url = https://github.com/Shen-Yu/hugo-chart.git

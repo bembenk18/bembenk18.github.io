@@ -14,3 +14,7 @@ Install Requirements dan buat folder yang diperlukan
     sudo zypper ref && sudo zypper update 
     sudo zypper in -t pattern devel_basis bc openssl openssl-devel dwarves rpm-build libelf-devel elfutils-libelf-devel
     sudo mkdir ~/kernel
+
+
+
+
