@@ -12,18 +12,28 @@ Masih dengan mesin x61, setelah menyelam di reddit ketemu sebuah postingan tenta
 ![Fitur](https://raw.githubusercontent.com/bembenk18/Images/main/Bios-x61/fitur.png)
 
 
-# Proses Flash
+## Proses Flash
 Ada 2 cara:
-## Cara 1
+### Cara 1
 - Download Iso bios
 - Burn ke flashdisk
 - Boot ke flaskdisk
 
 Gabisa pakai cara ini karena harus ada baterai
 
-## Cara 2
+### Cara 2
 - Download aplikasi flash bios
 - Install aplikasinya
 - Laptop akan restart beberapa kali dan bios otomatis terpasang
 
 Dari 2 cara diatas akhirnya pilih cara ke 2 karena thinkpad saya tidak ada baterainya, aplikasi hanya jalan di windows 7 32 bit maka opsi 1 adalah pinjam hardisk windows 7 punya teman atau opsi 2 tunggu besok buat download ISO (Sinyal dikampung jelek wkwkkw).
+
+
+## Review
+Perbedaan cukup kerasa adalah di speed SATA nya yang sudah bisa SATA II, speed sebelumnya mentok di 70MB/s setelah mod bios bisa sampai 300MB/s.
+
+**Do it at your own risk**
+
+Dah gitu aja
+
+~Bayu
