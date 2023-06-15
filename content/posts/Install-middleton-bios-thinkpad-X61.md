@@ -3,7 +3,7 @@ title: "Install Middleton Bios Thinkpad X61"
 date: 2022-03-29T21:04:09+07:00
 draft: false
 tags:
-- thinkpad
+- Thinkpad
 ---
 
 Masih dengan mesin x61, setelah menyelam di reddit ketemu sebuah postingan tentang thinkpad x61 dengan bios mod. Setelah baca ternyata fiturnya lumayan banyak daripada bios bawaan. 2 fitur yang menarik adalah unlock SATA II dan RAM yang bisa max 8GB (Walaupun sekeping 4GB DDR2 harganya hampir sejuta). 
@@ -31,6 +31,8 @@ Dari 2 cara diatas akhirnya pilih cara ke 2 karena thinkpad saya tidak ada bater
 
 ## Review
 Perbedaan cukup kerasa adalah di speed SATA nya yang sudah bisa SATA II, speed sebelumnya mentok di 70MB/s setelah mod bios bisa sampai 300MB/s.
+
+
 
 Baca lebih jelas disini:
 https://www.thinkwiki.org/wiki/Middleton%27s_BIOS
