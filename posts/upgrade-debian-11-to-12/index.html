@@ -17,8 +17,8 @@
   <meta name="googlebot" content="index,follow,snippet,archive">
   <meta property="og:title" content="Upgrade Debian 11 to 12" />
 <meta property="og:description" content="Testing upgrade dari debian 11 ke debian 12 di STB HG680P
-Proses Ganti repo Ganti ke repository berikut ini
-# sudo nano /etc/apt/sources.list deb http://deb.debian.org/debian bookworm main contrib non-free deb http://deb.debian.org/debian bookworm -updates main contrib non-free deb http://security.debian.org/debian-security bookworm-security main deb http://ftp.debian.org/debian bookworm-backports main contrib non-free sudo apt update sudo apt upgrade &ndash;without-new-pkgs sudo apt full-upgrade sudo systemctl reboot " />
+Posisi sebelum update Ganti repo Ganti ke bullseye menjadi bookworm seperti berikut ini
+# sudo nano /etc/apt/sources.list deb http://deb.debian.org/debian bookworm main contrib non-free deb http://deb.debian.org/debian bookworm -updates main contrib non-free deb http://security.debian.org/debian-security bookworm-security main deb http://ftp.debian.org/debian bookworm-backports main contrib non-free Setelah ganti repository lakukan update repository baru sudo apt update Upgrade sudo apt upgrade --without-new-pkgs sudo apt full-upgrade Reboot sudo systemctl reboot Debian 11 berhasil terpasang Do it at your own risk" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://bembenk18.github.io/posts/upgrade-debian-11-to-12/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2023-06-15T07:06:00+07:00" />
@@ -27,8 +27,8 @@ Proses Ganti repo Ganti ke repository berikut ini
   <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Upgrade Debian 11 to 12"/>
 <meta name="twitter:description" content="Testing upgrade dari debian 11 ke debian 12 di STB HG680P
-Proses Ganti repo Ganti ke repository berikut ini
-# sudo nano /etc/apt/sources.list deb http://deb.debian.org/debian bookworm main contrib non-free deb http://deb.debian.org/debian bookworm -updates main contrib non-free deb http://security.debian.org/debian-security bookworm-security main deb http://ftp.debian.org/debian bookworm-backports main contrib non-free sudo apt update sudo apt upgrade &ndash;without-new-pkgs sudo apt full-upgrade sudo systemctl reboot "/>
+Posisi sebelum update Ganti repo Ganti ke bullseye menjadi bookworm seperti berikut ini
+# sudo nano /etc/apt/sources.list deb http://deb.debian.org/debian bookworm main contrib non-free deb http://deb.debian.org/debian bookworm -updates main contrib non-free deb http://security.debian.org/debian-security bookworm-security main deb http://ftp.debian.org/debian bookworm-backports main contrib non-free Setelah ganti repository lakukan update repository baru sudo apt update Upgrade sudo apt upgrade --without-new-pkgs sudo apt full-upgrade Reboot sudo systemctl reboot Debian 11 berhasil terpasang Do it at your own risk"/>
 
   
   
@@ -167,7 +167,7 @@ if (!doNotTrack) {
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fbembenk18.github.io%2fposts%2fupgrade-debian-11-to-12%2f&name=Upgrade%20Debian%2011%20to%2012&description=Testing%20upgrade%20dari%20debian%2011%20ke%20debian%2012%20di%20STB%20HG680P%0aProses%20Ganti%20repo%20Ganti%20ke%20repository%20berikut%20ini%0a%23%20sudo%20nano%20%2fetc%2fapt%2fsources.list%20deb%20http%3a%2f%2fdeb.debian.org%2fdebian%20bookworm%20main%20contrib%20non-free%20deb%20http%3a%2f%2fdeb.debian.org%2fdebian%20bookworm%20-updates%20main%20contrib%20non-free%20deb%20http%3a%2f%2fsecurity.debian.org%2fdebian-security%20bookworm-security%20main%20deb%20http%3a%2f%2fftp.debian.org%2fdebian%20bookworm-backports%20main%20contrib%20non-free%20sudo%20apt%20update%20sudo%20apt%20upgrade%20%26ndash%3bwithout-new-pkgs%20sudo%20apt%20full-upgrade%20sudo%20systemctl%20reboot%20" aria-label="Tumblr">
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fbembenk18.github.io%2fposts%2fupgrade-debian-11-to-12%2f&name=Upgrade%20Debian%2011%20to%2012&description=Testing%20upgrade%20dari%20debian%2011%20ke%20debian%2012%20di%20STB%20HG680P%0aPosisi%20sebelum%20update%20Ganti%20repo%20Ganti%20ke%20bullseye%20menjadi%20bookworm%20seperti%20berikut%20ini%0a%23%20sudo%20nano%20%2fetc%2fapt%2fsources.list%20deb%20http%3a%2f%2fdeb.debian.org%2fdebian%20bookworm%20main%20contrib%20non-free%20deb%20http%3a%2f%2fdeb.debian.org%2fdebian%20bookworm%20-updates%20main%20contrib%20non-free%20deb%20http%3a%2f%2fsecurity.debian.org%2fdebian-security%20bookworm-security%20main%20deb%20http%3a%2f%2fftp.debian.org%2fdebian%20bookworm-backports%20main%20contrib%20non-free%20Setelah%20ganti%20repository%20lakukan%20update%20repository%20baru%20sudo%20apt%20update%20Upgrade%20sudo%20apt%20upgrade%20--without-new-pkgs%20sudo%20apt%20full-upgrade%20Reboot%20sudo%20systemctl%20reboot%20Debian%2011%20berhasil%20terpasang%20Do%20it%20at%20your%20own%20risk" aria-label="Tumblr">
       <i class="fab fa-tumblr " aria-hidden="true"></i>
     </a>
   </li>
@@ -185,13 +185,9 @@ if (!doNotTrack) {
   <ul>
     <li>
       <ul>
-        <li><a href="#proses">Proses</a>
+        <li>
           <ul>
-            <li><a href="#ganti-repo">Ganti repo</a></li>
-            <li><a href="#sudo-apt-update">sudo apt update</a></li>
-            <li><a href="#sudo-apt-upgrade---without-new-pkgs">sudo apt upgrade &ndash;without-new-pkgs</a></li>
-            <li><a href="#sudo-apt-full-upgrade">sudo apt full-upgrade</a></li>
-            <li><a href="#sudo-systemctl-reboot">sudo systemctl reboot</a></li>
+            <li></li>
           </ul>
         </li>
       </ul>
@@ -243,10 +239,13 @@ if (!doNotTrack) {
   
     
     <div class="content" itemprop="articleBody">
-      <p>Testing upgrade dari debian 11 ke debian 12 di STB HG680P</p>
-<h3 id="proses">Proses</h3>
-<h4 id="ganti-repo">Ganti repo</h4>
-<p>Ganti ke repository berikut ini</p>
+      <p><img src="https://raw.githubusercontent.com/bembenk18/Images/main/upgrade-debian/home.png" alt="Logo"></p>
+<p>Testing upgrade dari debian 11 ke debian 12 di STB HG680P</p>
+<h5 id="posisi-sebelum-update">Posisi sebelum update</h5>
+<p><img src="https://raw.githubusercontent.com/bembenk18/Images/main/upgrade-debian/lsb.png" alt="Repo"></p>
+<h5 id="ganti-repo">Ganti repo</h5>
+<p><img src="https://raw.githubusercontent.com/bembenk18/Images/main/upgrade-debian/Screenshot_20230615_071807.png" alt="Repo"></p>
+<p>Ganti ke <strong>bullseye</strong> menjadi <strong>bookworm</strong> seperti berikut ini</p>
 <pre><code># sudo nano /etc/apt/sources.list
 
 deb http://deb.debian.org/debian bookworm main contrib non-free
@@ -254,10 +253,20 @@ deb http://deb.debian.org/debian bookworm -updates main contrib non-free
 deb http://security.debian.org/debian-security bookworm-security main
 deb http://ftp.debian.org/debian bookworm-backports main contrib non-free
 </code></pre>
-<h4 id="sudo-apt-update">sudo apt update</h4>
-<h4 id="sudo-apt-upgrade---without-new-pkgs">sudo apt upgrade &ndash;without-new-pkgs</h4>
-<h4 id="sudo-apt-full-upgrade">sudo apt full-upgrade</h4>
-<h4 id="sudo-systemctl-reboot">sudo systemctl reboot</h4>
+<h5 id="setelah-ganti-repository-lakukan-update-repository-baru">Setelah ganti repository lakukan update repository baru</h5>
+<pre><code>sudo apt update
+</code></pre>
+<h5 id="upgrade">Upgrade</h5>
+<pre><code>sudo apt upgrade --without-new-pkgs
+sudo apt full-upgrade
+</code></pre>
+<h5 id="reboot">Reboot</h5>
+<pre><code>sudo systemctl reboot
+</code></pre>
+<h5 id="debian-11-berhasil-terpasang">Debian 11 berhasil terpasang</h5>
+<p><img src="https://raw.githubusercontent.com/bembenk18/Images/main/upgrade-debian/home.png" alt="Logo"></p>
+<p><strong>Do it at your own risk</strong></p>
+<p>~Bayu</p>
 
     </div>
   </article>
@@ -297,13 +306,9 @@ deb http://ftp.debian.org/debian bookworm-backports main contrib non-free
   <ul>
     <li>
       <ul>
-        <li><a href="#proses">Proses</a>
+        <li>
           <ul>
-            <li><a href="#ganti-repo">Ganti repo</a></li>
-            <li><a href="#sudo-apt-update">sudo apt update</a></li>
-            <li><a href="#sudo-apt-upgrade---without-new-pkgs">sudo apt upgrade &ndash;without-new-pkgs</a></li>
-            <li><a href="#sudo-apt-full-upgrade">sudo apt full-upgrade</a></li>
-            <li><a href="#sudo-systemctl-reboot">sudo systemctl reboot</a></li>
+            <li></li>
           </ul>
         </li>
       </ul>
@@ -357,7 +362,7 @@ deb http://ftp.debian.org/debian bookworm-backports main contrib non-free
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fbembenk18.github.io%2fposts%2fupgrade-debian-11-to-12%2f&name=Upgrade%20Debian%2011%20to%2012&description=Testing%20upgrade%20dari%20debian%2011%20ke%20debian%2012%20di%20STB%20HG680P%0aProses%20Ganti%20repo%20Ganti%20ke%20repository%20berikut%20ini%0a%23%20sudo%20nano%20%2fetc%2fapt%2fsources.list%20deb%20http%3a%2f%2fdeb.debian.org%2fdebian%20bookworm%20main%20contrib%20non-free%20deb%20http%3a%2f%2fdeb.debian.org%2fdebian%20bookworm%20-updates%20main%20contrib%20non-free%20deb%20http%3a%2f%2fsecurity.debian.org%2fdebian-security%20bookworm-security%20main%20deb%20http%3a%2f%2fftp.debian.org%2fdebian%20bookworm-backports%20main%20contrib%20non-free%20sudo%20apt%20update%20sudo%20apt%20upgrade%20%26ndash%3bwithout-new-pkgs%20sudo%20apt%20full-upgrade%20sudo%20systemctl%20reboot%20" aria-label="Tumblr">
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fbembenk18.github.io%2fposts%2fupgrade-debian-11-to-12%2f&name=Upgrade%20Debian%2011%20to%2012&description=Testing%20upgrade%20dari%20debian%2011%20ke%20debian%2012%20di%20STB%20HG680P%0aPosisi%20sebelum%20update%20Ganti%20repo%20Ganti%20ke%20bullseye%20menjadi%20bookworm%20seperti%20berikut%20ini%0a%23%20sudo%20nano%20%2fetc%2fapt%2fsources.list%20deb%20http%3a%2f%2fdeb.debian.org%2fdebian%20bookworm%20main%20contrib%20non-free%20deb%20http%3a%2f%2fdeb.debian.org%2fdebian%20bookworm%20-updates%20main%20contrib%20non-free%20deb%20http%3a%2f%2fsecurity.debian.org%2fdebian-security%20bookworm-security%20main%20deb%20http%3a%2f%2fftp.debian.org%2fdebian%20bookworm-backports%20main%20contrib%20non-free%20Setelah%20ganti%20repository%20lakukan%20update%20repository%20baru%20sudo%20apt%20update%20Upgrade%20sudo%20apt%20upgrade%20--without-new-pkgs%20sudo%20apt%20full-upgrade%20Reboot%20sudo%20systemctl%20reboot%20Debian%2011%20berhasil%20terpasang%20Do%20it%20at%20your%20own%20risk" aria-label="Tumblr">
       <i class="fab fa-tumblr fa-lg" aria-hidden="true"></i>
     </a>
   </li>
