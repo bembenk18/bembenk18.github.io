@@ -105,6 +105,19 @@ nano /etc/fail2ban/jail.local
     </item>
     
     <item>
+      <title>Zypper Everyday</title>
+      <link>https://bembenk18.github.io/projects/zypper-everyday/</link>
+      <pubDate>Thu, 26 Jan 2023 14:29:55 +0700</pubDate>
+      
+      <guid>https://bembenk18.github.io/projects/zypper-everyday/</guid>
+      <description>Tujuan:
+Menguji kestabilan openSUSE Tumbleweed untuk pemakaian sehari hari sepanjang tahun dengan melakukan update system dengan zypper cli setiap hari.
+Inspirasi:
+Project ini terinspirasi dari #PackmanEveryday milik Mas Bandithijo.
+001 _____________________________________________________________ 16/06/23 Day: 1 Upgradeable: Downloads Size: Link: Status: Note: 001 _____________________________________________________________ 16/06/23 Day: 1 Upgradeable: Downloads Size: Link: Status: Note: </description>
+    </item>
+    
+    <item>
       <title>Build Kernel openSUSE 15.4</title>
       <link>https://bembenk18.github.io/posts/build-kernel-opensuse-15-4/</link>
       <pubDate>Wed, 23 Nov 2022 18:17:44 +0700</pubDate>
