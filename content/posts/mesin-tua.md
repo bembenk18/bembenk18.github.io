@@ -21,7 +21,7 @@ Setelah nyala akhirnya niat iseng muncul juga untuk flash Midleton Bios agar bis
 
 
 ## Mesin tua 2 (Thinkpad x41 tablet)
-
+![X41](https://raw.githubusercontent.com/bembenk18/Images/main/Mesin%20Tua/photo_2023-06-16_11-37-59.jpg)
 ### Spesifikasi
     Intel Pentium M Prosesor (1.5GHz)
     512MB
