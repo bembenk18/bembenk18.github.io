@@ -49,7 +49,7 @@ tags:
 
 ## Mesin tua 1  (Thinkpad x61)
 
-{{< detail-tag "Spesifikasi" "Intel Core 2 Duo CPU T8100 (2.10 GHz)" "2GB DDR2" "128MB VRAM" "80GB HDD">}}
+{{< detail-tag "Spesifikasi "  "Intel Core 2 Duo CPU T8100 (2.10 GHz)" "2GB DDR2" "128MB VRAM" "80GB HDD">}}
 
 Gak sengaja nemu di FB marketplace dengan harga 150k dengan kondisi matot, dugaan awal matot karena baterai konslet. Setelah beli dan oprek sana sini belum berhasil nyala juga, akhrinya ketemu teman di group tele Pegel Thinkpad yang nyaranin ganti mobo. Setelah ganti mobo akhirnya berhasil nyala.
 ### Mods
