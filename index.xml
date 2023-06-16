@@ -105,19 +105,6 @@ nano /etc/fail2ban/jail.local
     </item>
     
     <item>
-      <title>Zypper Everyday</title>
-      <link>https://bembenk18.github.io/projects/zypper-everyday/</link>
-      <pubDate>Thu, 26 Jan 2023 14:29:55 +0700</pubDate>
-      
-      <guid>https://bembenk18.github.io/projects/zypper-everyday/</guid>
-      <description>Tes
-Karena openSUSE Leap mengutamakan kestabilan maka untuk dapat mencoba kernel 6.* kita harus menunggu cukup lama, pada coretan kali ini kita akan coba build kernel 6.* di openSUSE Leap 15.4
-1. Persiapan
-Install Requirements dan buat folder yang diperlukan
-sudo zypper ref &amp;amp;&amp;amp; sudo zypper update sudo zypper in -t pattern devel_basis bc openssl openssl-devel dwarves rpm-build libelf-devel elfutils-libelf-devel sudo mkdir ~/kernel </description>
-    </item>
-    
-    <item>
       <title>Build Kernel openSUSE 15.4</title>
       <link>https://bembenk18.github.io/posts/build-kernel-opensuse-15-4/</link>
       <pubDate>Wed, 23 Nov 2022 18:17:44 +0700</pubDate>
