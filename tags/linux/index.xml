@@ -7,7 +7,18 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Bayu Putra Herlambang</copyright>
-    <lastBuildDate>Fri, 14 Apr 2023 10:36:25 +0700</lastBuildDate><atom:link href="https://bembenk18.github.io/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 15 Jun 2023 07:06:00 +0700</lastBuildDate><atom:link href="https://bembenk18.github.io/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Upgrade Debian 11 to 12</title>
+      <link>https://bembenk18.github.io/posts/upgrade-debian-11-to-12/</link>
+      <pubDate>Thu, 15 Jun 2023 07:06:00 +0700</pubDate>
+      
+      <guid>https://bembenk18.github.io/posts/upgrade-debian-11-to-12/</guid>
+      <description>Testing upgrade dari debian 11 ke debian 12 di STB HG680P
+Proses Ganti repo Ganti ke repository berikut ini
+# sudo nano /etc/apt/sources.list deb http://deb.debian.org/debian bookworm main contrib non-free deb http://deb.debian.org/debian bookworm -updates main contrib non-free deb http://security.debian.org/debian-security bookworm-security main deb http://ftp.debian.org/debian bookworm-backports main contrib non-free sudo apt update sudo apt upgrade &amp;ndash;without-new-pkgs sudo apt full-upgrade sudo systemctl reboot </description>
+    </item>
+    
     <item>
       <title>Akses SSH Dengan Google Authenticator</title>
       <link>https://bembenk18.github.io/posts/ssh-dengan-google-authenticator/</link>
