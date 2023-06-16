@@ -1,0 +1,9 @@
+<div id="myDiv1"></div>
+<figure class="figure">
+    {{- if .Get "figureNumber" -}}
+    <figcaption class="figure-caption py-1 text-start mx-auto d-block" style="width: 85%;">
+        <span><b>Figure {{ .Get "figureNumber" -}}</b> | </span
+      >{{- .Get "caption" -}}
+    </figcaption>
+  {{- end -}}
+</figure>
