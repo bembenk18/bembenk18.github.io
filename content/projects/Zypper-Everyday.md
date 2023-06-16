@@ -1,7 +1,7 @@
 ---
 title: "Zypper Everyday"
 date: 2023-01-26T14:29:55+07:00
-draft: true
+draft: false
 ---
 **Tujuan:**
 
