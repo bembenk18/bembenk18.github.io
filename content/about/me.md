@@ -27,6 +27,7 @@ draft: false
 # Skill
 
 # Certificate
+- **Certificate:** [Alibaba Cloud Certified Profesional](https://edu.alibabacloud.com/clouder/Certificate/search?type=1&num=IACP01230800097790)
 - **Certificate:** [IT Support Google](https://www.coursera.org/account/accomplishments/professional-cert/5Q8DD2QR8LNG)
 - **Certificate:** [CCNA: Switching, Routing, and Wireless Essentials](https://www.credly.com/badges/1f4e9f80-3504-4fe2-81ac-7b6caa9e54a3)
 - **Certificate:** NSE 1 Network Security Associate (**ID Kredensial:** JfKu8cub4B)
