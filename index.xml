@@ -9,14 +9,14 @@
     <copyright>Bayu Putra Herlambang</copyright>
     <lastBuildDate>Thu, 07 Sep 2023 13:33:53 +0700</lastBuildDate><atom:link href="https://bembenk18.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>RCE Upload PDF</title>
-      <link>https://bembenk18.github.io/posts/rce-upload-pdf/</link>
+      <title>RCE Upload CSV</title>
+      <link>https://bembenk18.github.io/posts/rce-upload-csv/</link>
       <pubDate>Thu, 07 Sep 2023 13:33:53 +0700</pubDate>
       
-      <guid>https://bembenk18.github.io/posts/rce-upload-pdf/</guid>
+      <guid>https://bembenk18.github.io/posts/rce-upload-csv/</guid>
       <description>Abstraksi Bug ini memungkinkan attacker untuk mengupload file backdoor. Bug ini muncul karena tidak ada filtering type file yang diupload sehingga memungkinkan attacker untuk mengupload file backdoor berekstensi .php.
 &amp;lt;div class=&amp;quot;col-12 pb-2&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;input-group&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;custom-file&amp;quot;&amp;gt; &amp;lt;input type=&amp;quot;file&amp;quot; class=&amp;quot;custom-file-input&amp;quot; name=&amp;quot;filedata&amp;quot; id=&amp;quot;exampleInputF&amp;quot;&amp;gt; &amp;lt;label class=&amp;quot;custom-file-label&amp;quot; for=&amp;quot;exampleInput&amp;quot;&amp;gt;Choose file&amp;lt;/label&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; Impact Remote Code Execution
-Proof of Concept: Login ke https://www.redacted.com/ Masuk ke menu Edite Profile Klik Ganti foto profile dan pilih file php Timeline Report: 10/08/2023 Response: 10/08/2023 Rewards: - </description>
+Proof of Concept: Login ke https://www.redacted.com/ Masuk ke menu Upload data pelanggan Klik Choose file dan pilih file .</description>
     </item>
     
     <item>
