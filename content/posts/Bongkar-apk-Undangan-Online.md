@@ -26,3 +26,13 @@ Bermula dari seseorang yang mengirimkan aplikasi dengan nama UNDANGAN.apk di sal
 Setelah decompile bisa kita lihat terdapat file Manifest dengan nama AndroidManifest.xml, difile ini berisi informasi dasar terkait aplikasi android seperti izin dan nama package
 ![Decompile](https://raw.githubusercontent.com/bembenk18/Images/main/Bongkar%20apk%20undangan%20online/Screenshot_20230927_151105.png)
 ## Analisa AndroidManifest.xml
+Dari sini terlihat SDK yang digunakan adalah versi 32 yaitu Android 13 (Tiramisu), spesifikasi minimum yaitu SDK 26 yaitu Android 8 (Oreo).
+Nama package dari aplikasi ini adalah **com.google.androidsmsotpteski**.
+
+![](https://github.com/bembenk18/Images/blob/main/Bongkar%20apk%20undangan%20online/Screenshot_20230927_151033.png?raw=true)
+
+Izin yang diperlukan aplikasi ini antara lain:
+
+1. **Izin menerima SMS:** dengan akses ini pelaku dapat membaca SMS dari hp si korban yang mana sangat berbahaya jika SMS tersebut adalah kode OTP
+2. **Izin akses Internet:** ini mengizinkan aplikasi untuk mengakses internet yang mana akan digunakan untuk forward SMS ke telegram pelaku
+3. 
