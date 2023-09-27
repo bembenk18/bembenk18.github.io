@@ -1,21 +1,31 @@
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
-  <link rel="preload" href="/lib/font-awesome/webfonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-  <link rel="preload" href="/lib/font-awesome/webfonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-  <link rel="preload" href="/lib/font-awesome/webfonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-  <link rel="preload" href="/lib/JetBrainsMono/web/woff2/JetBrainsMono-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-  <script type="text/javascript" src="https://latest.cactus.chat/cactus.js"></script>
-  <link rel="stylesheet" href="https://latest.cactus.chat/style.css" type="text/css">
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title> Setup Fail2Ban Zimbra | Just /var/log/</title>
-  <link rel = 'canonical' href = 'https://bembenk18.github.io/posts/setup-fail2ban-zimbra/'>
-  
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="robots" content="all,follow">
-  <meta name="googlebot" content="index,follow,snippet,archive">
-  <meta property="og:title" content="Setup Fail2Ban Zimbra" />
+    <link rel="preload" href="/%20lib/font-awesome/webfonts/fa-brands-400.woff2%20" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="/%20lib/font-awesome/webfonts/fa-regular-400.woff2%20" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="/%20lib/font-awesome/webfonts/fa-solid-900.woff2%20" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="/%20lib/JetBrainsMono/web/woff2/JetBrainsMono-Regular.woff2%20" as="font" type="font/woff2" crossorigin="anonymous">
+    <script type="text/javascript" src="https://latest.cactus.chat/cactus.js"></script>
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-438PNW325R"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-438PNW325R');
+    </script>
+    <link rel="stylesheet" href="https://latest.cactus.chat/style.css" type="text/css">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title> Setup Fail2Ban Zimbra | Just /var/log/</title>
+    <link rel='canonical' href='https://bembenk18.github.io/posts/setup-fail2ban-zimbra/'> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="all,follow">
+    <meta name="googlebot" content="index,follow,snippet,archive"> <meta property="og:title" content="Setup Fail2Ban Zimbra" />
 <meta property="og:description" content="0. sudo -u zimbra - zmprov mcf &#43;zimbraMailTrustedIP 127.0.0.1 &#43;zimbraMailTrustedIP {IP of Server} zmcontrol restart 1. Install Fail2Ban yum install epel-release -y yum install fail2ban -y 2. Buat file jail.conf *Jika ingin whitelist IP tambahkan pada baris ignoreip
 nano /etc/fail2ban/jail.local
 [DEFAULT] # &quot;ignoreip&quot; can be a list of IP addresses, CIDR masks or DNS hosts. # Fail2ban will not ban a host which matches an address in this list. # Several addresses can be defined using space (and/or comma) separator." />
@@ -23,38 +33,23 @@ nano /etc/fail2ban/jail.local
 <meta property="og:url" content="https://bembenk18.github.io/posts/setup-fail2ban-zimbra/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2023-03-26T13:47:58+07:00" />
 <meta property="article:modified_time" content="2023-03-26T13:47:58+07:00" />
-
-  <meta name="twitter:card" content="summary"/>
+ <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Setup Fail2Ban Zimbra"/>
 <meta name="twitter:description" content="0. sudo -u zimbra - zmprov mcf &#43;zimbraMailTrustedIP 127.0.0.1 &#43;zimbraMailTrustedIP {IP of Server} zmcontrol restart 1. Install Fail2Ban yum install epel-release -y yum install fail2ban -y 2. Buat file jail.conf *Jika ingin whitelist IP tambahkan pada baris ignoreip
 nano /etc/fail2ban/jail.local
 [DEFAULT] # &quot;ignoreip&quot; can be a list of IP addresses, CIDR masks or DNS hosts. # Fail2ban will not ban a host which matches an address in this list. # Several addresses can be defined using space (and/or comma) separator."/>
+     
+    <link rel="stylesheet" href="https://bembenk18.github.io/css/styles.c05d68261bf086a9d7713c4f8a6215a3601608e267a816a7ee58f139b3d1aae51222aae2081c8e0c6bd35e1334773b7a16283022f31f92afd93bb37e5e822e66.css" integrity="sha512-wF1oJhvwhqnXcTxPimIVo2AWCOJnqBan7ljxObPRquUSIqriCByODGvTXhM0dzt6FigwIvMfkq/ZO7N&#43;XoIuZg==">
 
-  
-  
     
-  
-  
-  <link rel="stylesheet" href="https://bembenk18.github.io/css/styles.c05d68261bf086a9d7713c4f8a6215a3601608e267a816a7ee58f139b3d1aae51222aae2081c8e0c6bd35e1334773b7a16283022f31f92afd93bb37e5e822e66.css" integrity="sha512-wF1oJhvwhqnXcTxPimIVo2AWCOJnqBan7ljxObPRquUSIqriCByODGvTXhM0dzt6FigwIvMfkq/ZO7N&#43;XoIuZg=="> 
-
-  
-  
-  
+     
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-  
-
-  
+     
 <link rel="icon" type="image/png" href="https://bembenk18.github.io/images/favicon.ico" />
-
-  
-  
-  
-  
-  
-    
+      
 <script type="application/javascript">
 var doNotTrack = false;
 if (!doNotTrack) {
@@ -65,11 +60,8 @@ if (!doNotTrack) {
 }
 </script>
 <script async src='https://www.google-analytics.com/analytics.js'></script>
-
-  
   
 </head>
-
 <body class="max-width mx-auto px3 ltr">
   <div class="content index py4">
 
