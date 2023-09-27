@@ -24,6 +24,7 @@ Bermula dari seseorang yang mengirimkan aplikasi dengan nama UNDANGAN.apk di sal
 
 ## Hasil decompile file apk
 Setelah decompile bisa kita lihat terdapat file Manifest dengan nama AndroidManifest.xml, difile ini berisi informasi dasar terkait aplikasi android seperti izin dan nama package
+
 ![Decompile](https://raw.githubusercontent.com/bembenk18/Images/main/Bongkar%20apk%20undangan%20online/Screenshot_20230927_151105.png)
 ## Analisa AndroidManifest.xml
 Dari sini terlihat SDK yang digunakan adalah versi 32 yaitu Android 13 (Tiramisu), spesifikasi minimum yaitu SDK 26 yaitu Android 8 (Oreo).
@@ -42,3 +43,22 @@ Terdapat pula potongan kode yang mengindikasikan source aplikasi ini berasal dar
 ![](https://github.com/bembenk18/Images/blob/main/Bongkar%20apk%20undangan%20online/SMS.png?raw=true)
 
 ## Analisa Akun Telegram Pelaku
+Ketika kita buka folder assets kita akan menemukan file yang menarik bernama url.txt, token.txt, dan id.txt
+
+![](https://github.com/bembenk18/Images/blob/main/Bongkar%20apk%20undangan%20online/assets.png?raw=true)
+
+**Isi dari file diatas adalah sebagai berikut:**
+1. url.txt
+
+![](https://github.com/bembenk18/Images/blob/main/Bongkar%20apk%20undangan%20online/url.png?raw=true)
+
+2. token.txt
+File ini berisi informasi token telegram bot pelaku yang digunakan untuk mengirim kode OTP ke akun telegram pelaku
+
+![](https://github.com/bembenk18/Images/blob/main/Bongkar%20apk%20undangan%20online/token.png?raw=true)
+
+3. id.txt
+File ini berisi id telegram pelaku yang digunakan menerima pesan dari bot, terlihat id telegram pelaku adalah **6215803741**
+
+
+![](https://github.com/bembenk18/Images/blob/main/Bongkar%20apk%20undangan%20online/id.png?raw=true)
