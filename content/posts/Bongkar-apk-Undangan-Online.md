@@ -71,8 +71,6 @@ Ketika melakukan request dengan podman akan didapatkan informasi sebagai berikut
 
 ![](https://github.com/bembenk18/Images/blob/main/Bongkar%20apk%20undangan%20online/token-podman.png?raw=true)
 
-![](https://github.com/bembenk18/Images/blob/main/Bongkar%20apk%20undangan%20online/bot.png?raw=true)
-
 | Nama bot      : | Nasibtakkunjung2_bot | 
 |--------|------|
 |   |    | 
@@ -81,6 +79,22 @@ Ketika melakukan request dengan podman akan didapatkan informasi sebagai berikut
 |--------|------|
 |   |    | 
 
+
+![](https://github.com/bembenk18/Images/blob/main/Bongkar%20apk%20undangan%20online/bot.png?raw=true)
+
+
+
 2. **Informasi akun telegram pelaku:**
 
 ![](https://github.com/bembenk18/Images/blob/main/Bongkar%20apk%20undangan%20online/id-podman.png?raw=true)
+
+
+| Nama       : | Agung Samr | 
+|--------|------|
+|   |    | 
+
+| Username       : | Animemun87 | 
+|--------|------|
+|   |    | 
+
+![](https://github.com/bembenk18/Images/blob/main/Bongkar%20apk%20undangan%20online/pelaku.png?raw=true)
