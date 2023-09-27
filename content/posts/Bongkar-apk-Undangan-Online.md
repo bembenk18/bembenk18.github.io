@@ -62,3 +62,19 @@ File ini berisi id telegram pelaku yang digunakan menerima pesan dari bot, terli
 
 
 ![](https://github.com/bembenk18/Images/blob/main/Bongkar%20apk%20undangan%20online/id.png?raw=true)
+
+
+## Mencoba mencari pelaku
+Ketika melakukan request dengan podman akan didapatkan informasi sebagai berikut:
+
+1. **Informasi bot pelaku:**
+
+![](https://github.com/bembenk18/Images/blob/main/Bongkar%20apk%20undangan%20online/token-podman.png?raw=true)
+
+| Nama bot      : | Nasibtakkunjung2_bot | 
+|--------|------|
+|   |    | 
+
+| Username bot        : | Nasibtakkunjung2_bot | 
+|--------|------|
+|   |    | 
