@@ -33,6 +33,8 @@ Nama package dari aplikasi ini adalah **com.google.androidsmsotpteski**.
 
 Izin yang diperlukan aplikasi ini antara lain:
 
+![](https://github.com/bembenk18/Images/blob/main/Bongkar%20apk%20undangan%20online/Screenshot_20230927_151136.png?raw=true)
 1. **Izin menerima SMS:** dengan akses ini pelaku dapat membaca SMS dari hp si korban yang mana sangat berbahaya jika SMS tersebut adalah kode OTP
 2. **Izin akses Internet:** ini mengizinkan aplikasi untuk mengakses internet yang mana akan digunakan untuk forward SMS ke telegram pelaku
-3. 
+
+Terdapat pula potongan kode yang mengindikasikan source aplikasi ini berasal dari [**SmsEye**](https://github.com/AbyssalArmy/SmsEye)
