@@ -74,7 +74,7 @@ File ini berisi id telegram pelaku yang digunakan menerima pesan dari bot, terli
 
 
 ## Mencoba mencari pelaku
-Ketika melakukan request dengan podman akan didapatkan informasi sebagai berikut:
+Ketika melakukan request dengan postman akan didapatkan informasi sebagai berikut:
 
 1. **Informasi bot pelaku:**
 
