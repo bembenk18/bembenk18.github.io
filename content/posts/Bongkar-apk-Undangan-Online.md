@@ -1,7 +1,9 @@
 ---
 title: "Bongkar Apk Undangan Online"
 date: 2023-09-27T16:15:20+07:00
-draft: true
+draft: false
+tags: 
+- osint
 ---
 # Abstraksi
 Bermula dari seseorang yang mengirimkan aplikasi dengan nama UNDANGAN.apk di salah satu group, lalu saya kepikiran untuk membongkar aplikasi tersebut.
@@ -51,7 +53,11 @@ Ketika kita buka folder assets kita akan menemukan file yang menarik bernama url
 1. url.txt
 
 ![](https://github.com/bembenk18/Images/blob/main/Bongkar%20apk%20undangan%20online/url.png?raw=true)
+ 
+ File ini berisi sebuah url yang jika kita buka maka akan tampil seperti ini:
 
+![](https://github.com/bembenk18/Images/blob/main/Bongkar%20apk%20undangan%20online/url-cap.png?raw=true)
+ 
 2. token.txt
 File ini berisi informasi token telegram bot pelaku yang digunakan untuk mengirim kode OTP ke akun telegram pelaku
 
@@ -98,3 +104,8 @@ Ketika melakukan request dengan podman akan didapatkan informasi sebagai berikut
 |   |    | 
 
 ![](https://github.com/bembenk18/Images/blob/main/Bongkar%20apk%20undangan%20online/pelaku.png?raw=true)
+
+
+# Disclaimer:
+Semua yang terlulis disini hanya untuk tujuan pembelajaran, penulis tidak bertanggung jawab jika terjadi penyalahgunaan informasi.
+### Do it at your own risk
