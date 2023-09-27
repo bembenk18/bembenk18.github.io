@@ -6,7 +6,7 @@ tags:
 - osint
 ---
 # Abstraksi
-Bermula dari seseorang yang mengirimkan aplikasi dengan nama UNDANGAN.apk di salah satu group, lalu saya kepikiran untuk membongkar aplikasi tersebut.
+Sudah lama saya ingin bongkar aplikasi penipuan semacam ini, tetapi tak kunjunag ada penipu yang mengirimkannya wkwkw. Akhirnya ada seseorang yang mengirimkan aplikasi dengan nama UNDANGAN.apk di salah satu group, lalu tanpa pikir panjang saya memutuskan untuk mencoba bongkar aplikasi ini.
 ## Informasi dasar file
 | Nama      : | UNDANGAN.apk | 
 |--------|------|
