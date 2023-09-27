@@ -7,6 +7,9 @@ tags:
 ---
 # Abstraksi
 Sudah lama saya ingin bongkar aplikasi penipuan semacam ini, tetapi tak kunjunag ada penipu yang mengirimkannya wkwkw. Akhirnya ada seseorang yang mengirimkan aplikasi dengan nama UNDANGAN.apk di salah satu group, lalu tanpa pikir panjang saya memutuskan untuk mencoba bongkar aplikasi ini.
+
+![](https://github.com/bembenk18/Images/blob/main/Bongkar%20apk%20undangan%20online/WhatsApp%20Image%202023-09-27%20at%205.27.18%20PM.jpeg?raw=true)
+
 ## Informasi dasar file
 | Nama      : | UNDANGAN.apk | 
 |--------|------|

@@ -2,7 +2,7 @@ baseURL = "https://bembenk18.github.io"
 languageCode = "en-us"
 title = "Just /var/log/"
 theme = ["hugo-chart", "hugo-theme-cactus"]
-copyright = "Bayu Putra Herlambang" 
+copyright = "Bembenk" 
 disqusShortname = "Bembenk"
 googleAnalytics = "G-438PNW325R"
 
@@ -65,7 +65,7 @@ weight = 4
   showAllPostsArchive = false # default
 
   # Home page settings
-  description = "Bukan sebuah tutorial, hanya catatan pribadi tentang hobby."
+  description = ""
   mainSection = "posts" # your main section
   showAllPostsOnHomePage = true # default
   postsOnHomePage = 5 # this option will be ignored if showAllPostsOnHomePage is set to true
