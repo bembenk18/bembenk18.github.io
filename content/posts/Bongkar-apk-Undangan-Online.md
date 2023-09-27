@@ -24,4 +24,5 @@ Bermula dari seseorang yang mengirimkan aplikasi dengan nama UNDANGAN.apk di sal
 
 ## Hasil decompile file apk
 Setelah decompile bisa kita lihat terdapat file Manifest dengan nama AndroidManifest.xml, difile ini berisi informasi dasar terkait aplikasi android seperti izin dan nama package
+![Decompile](https://raw.githubusercontent.com/bembenk18/Images/main/Bongkar%20apk%20undangan%20online/Screenshot_20230927_151105.png)
 ## Analisa AndroidManifest.xml
