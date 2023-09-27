@@ -39,4 +39,6 @@ Izin yang diperlukan aplikasi ini antara lain:
 
 Terdapat pula potongan kode yang mengindikasikan source aplikasi ini berasal dari [**SmsEye**](https://github.com/AbyssalArmy/SmsEye)
 
-![](https://github.com/bembenk18/Images/blob/main/Bongkar%20apk%20undangan%20online/SMS.png)
+![](https://github.com/bembenk18/Images/blob/main/Bongkar%20apk%20undangan%20online/SMS.png?raw=true)
+
+## Analisa Akun Telegram Pelaku
