@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Networking on Just /var/log/</title>
-    <link>https://bembenk18.github.io/tags/networking/</link>
+    <link>https://bembenk.tech/tags/networking/</link>
     <description>Recent content in Networking on Just /var/log/</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Bembenk</copyright>
-    <lastBuildDate>Mon, 27 Mar 2023 15:20:56 +0700</lastBuildDate><atom:link href="https://bembenk18.github.io/tags/networking/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 27 Mar 2023 15:20:56 +0700</lastBuildDate><atom:link href="https://bembenk.tech/tags/networking/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Cisco Packet Tracer Opensuse</title>
-      <link>https://bembenk18.github.io/posts/cisco-packet-tracer-opensuse/</link>
+      <link>https://bembenk.tech/posts/cisco-packet-tracer-opensuse/</link>
       <pubDate>Mon, 27 Mar 2023 15:20:56 +0700</pubDate>
       
-      <guid>https://bembenk18.github.io/posts/cisco-packet-tracer-opensuse/</guid>
+      <guid>https://bembenk.tech/posts/cisco-packet-tracer-opensuse/</guid>
       <description>Di website netacad Cisco Packet Tracer hanya tersedia untuk Ubuntu/Debian dengan format .deb, jadi secara default tidak tersedia di distro rpm based. Untuk itu perlu memasang secara manual.
 1. Download Download file installasi untuk Ubuntu/Debian dari web netacad
 2. Unpack file .deb mkdir /tmp/cpt cp CiscoPacketTracer_820_Ubuntu_64bit.deb /tmp/cpt ar -xv CiscoPacketTracer_820_Ubuntu_64bit.deb mkdir control tar -C control -Jxf control.tar.xz mkdir data tar -C control -Jxf data.tar.xz cd data 3. Install cp -r usr / cp -r opt / Tumbleweed</description>

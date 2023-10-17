@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Projects on Just /var/log/</title>
-    <link>https://bembenk18.github.io/projects/</link>
+    <link>https://bembenk.tech/projects/</link>
     <description>Recent content in Projects on Just /var/log/</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Bembenk</copyright>
-    <lastBuildDate>Thu, 26 Jan 2023 14:29:55 +0700</lastBuildDate><atom:link href="https://bembenk18.github.io/projects/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 26 Jan 2023 14:29:55 +0700</lastBuildDate><atom:link href="https://bembenk.tech/projects/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Zypper Everyday</title>
-      <link>https://bembenk18.github.io/projects/zypper-everyday/</link>
+      <link>https://bembenk.tech/projects/zypper-everyday/</link>
       <pubDate>Thu, 26 Jan 2023 14:29:55 +0700</pubDate>
       
-      <guid>https://bembenk18.github.io/projects/zypper-everyday/</guid>
+      <guid>https://bembenk.tech/projects/zypper-everyday/</guid>
       <description>Tujuan:
 Menguji kestabilan openSUSE Tumbleweed untuk pemakaian sehari hari sepanjang tahun dengan melakukan update system dengan zypper cli setiap hari.
 Inspirasi:

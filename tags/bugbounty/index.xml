@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>bugbounty on Just /var/log/</title>
-    <link>https://bembenk18.github.io/tags/bugbounty/</link>
+    <link>https://bembenk.tech/tags/bugbounty/</link>
     <description>Recent content in bugbounty on Just /var/log/</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Bembenk</copyright>
-    <lastBuildDate>Thu, 07 Sep 2023 13:33:53 +0700</lastBuildDate><atom:link href="https://bembenk18.github.io/tags/bugbounty/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 07 Sep 2023 13:33:53 +0700</lastBuildDate><atom:link href="https://bembenk.tech/tags/bugbounty/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>RCE Upload CSV</title>
-      <link>https://bembenk18.github.io/posts/rce-upload-csv/</link>
+      <link>https://bembenk.tech/posts/rce-upload-csv/</link>
       <pubDate>Thu, 07 Sep 2023 13:33:53 +0700</pubDate>
       
-      <guid>https://bembenk18.github.io/posts/rce-upload-csv/</guid>
+      <guid>https://bembenk.tech/posts/rce-upload-csv/</guid>
       <description>Abstraksi Bug ini memungkinkan attacker untuk mengupload file backdoor. Bug ini muncul karena tidak ada filtering type file yang diupload sehingga memungkinkan attacker untuk mengupload file backdoor berekstensi .php.
 &amp;lt;div class=&amp;quot;col-12 pb-2&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;input-group&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;custom-file&amp;quot;&amp;gt; &amp;lt;input type=&amp;quot;file&amp;quot; class=&amp;quot;custom-file-input&amp;quot; name=&amp;quot;filedata&amp;quot; id=&amp;quot;exampleInputF&amp;quot;&amp;gt; &amp;lt;label class=&amp;quot;custom-file-label&amp;quot; for=&amp;quot;exampleInput&amp;quot;&amp;gt;Choose file&amp;lt;/label&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; Impact Remote Code Execution
 Proof of Concept: Login ke https://www.redacted.com/ Masuk ke menu Upload data pelanggan Klik Choose file dan pilih file .</description>

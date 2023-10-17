@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Abouts on Just /var/log/</title>
-    <link>https://bembenk18.github.io/about/</link>
+    <link>https://bembenk.tech/about/</link>
     <description>Recent content in Abouts on Just /var/log/</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Bembenk</copyright>
-    <lastBuildDate>Mon, 27 Mar 2023 11:32:42 +0700</lastBuildDate><atom:link href="https://bembenk18.github.io/about/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 27 Mar 2023 11:32:42 +0700</lastBuildDate><atom:link href="https://bembenk.tech/about/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Resume</title>
-      <link>https://bembenk18.github.io/about/me/</link>
+      <link>https://bembenk.tech/about/me/</link>
       <pubDate>Mon, 27 Mar 2023 11:32:42 +0700</pubDate>
       
-      <guid>https://bembenk18.github.io/about/me/</guid>
+      <guid>https://bembenk.tech/about/me/</guid>
       <description>Bayu Putra Herlambang Contact Email: putrabayu0180@gmail.com Github: https://github.com/bembenk18 Linkedin: https://www.linkedin.com/in/bayuputraherlambang Work Experiences Garuda Media Telematika (Feb 2022 - Present) Network Engineer Network device configuration (Router, Switch, Modem, etc.) Deployment, configuration and management of Network tools for monitoring Server configuration (mail, httpd, radius, etc) Server and network device installation Education Level Universitas Terbuka (Mar 2022 - Mar 2026 (Expected))
 Undergraduate in Information Systems SMKN 3 Jombang (Jun 2018 - Jun 2021)</description>
     </item>
