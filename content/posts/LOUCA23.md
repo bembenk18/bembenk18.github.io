@@ -1,7 +1,7 @@
 ---
 title: "Solo to Solo | LOUCA 2023"
 date: 2023-10-17T16:05:36+07:00
-draft: true
+draft: false
 tags:
 - linux
 - event
