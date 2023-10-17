@@ -18,13 +18,19 @@ Sekitar jam 14:30 aku berangkat dari tempat kerja ke stasiun dan kereta berangka
 
 ## Day 1 (Sabtu 07 Oktober 2023)
 ![](https://raw.githubusercontent.com/bembenk18/Images/main/Louca23/lepi.jpg)
-Akhirnya hari yang ditunggu tunggu tiba, setelah menyelesaikan pekerjaan kantor dari jam 5 sampai jam 08:30 akirnya berangkat ke venue, jarak ke venue dari penginapan ±8KM. Sekitar jam 9 akhirnya sampai juga didepan gerbang LOUCA.
+Akhirnya hari yang ditunggu tunggu tiba, setelah menyelesaikan pekerjaan kantor dari jam 5 sampai jam 08:30 akirnya berangkat ke venue, jarak ke venue dari penginapan ±8KM. Setelah diskusi panjang lebar dengan abang gojek sekitar jam 9 akhirnya sampai juga didepan gerbang LOUCA.
 
 
 ![](https://raw.githubusercontent.com/bembenk18/Images/main/Louca23/gerbang.jpg)
 
-Setelah registrasi akhirnya sampai di main hall 
+Setelah registrasi akhirnya sampai di main hall yang sudah hampir penuh. Setelah beberapa keynote dan lightning talk sampai juga pada jadwal yang ditunggu yaitu makan siang wkwkw. Setelah makan siang terdapat beberapa kelas paralel. Kelas paralel yang saya ikuti antara lain:
 
+### [Build Your Own Custom Mechanical Keyboard in Ubuntu oleh **Sendy Aditya Suryana**](https://louca.id/sessions/?id=18)
+Kayaknya kelas ini yang paling berkesan di hari pertama karena berhasil bikin saya keracunan buil numpad lagi wkwkw (sebelumnya saya pernah build numpat 1x2 key untuk main OSU).
+### [A Quick Guide to Contribute to Open Source Documentation oleh **Navendu Pottekkat**](https://louca.id/sessions/?id=24)
+### [Intro eBPF: Write a Simple eBPF oleh **Aldin Setiawan**](https://louca.id/sessions/?id=25)
+
+Setelah beberapa kelas paralel yang sangat menarik dilanjutkan dengan sesi coffe break
 
 ### Rincian Biaya
 
