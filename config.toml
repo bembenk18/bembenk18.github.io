@@ -1,4 +1,4 @@
-baseURL = "https://bembenk18.github.io"
+baseURL = "https://bembenk.tech"
 languageCode = "en-us"
 title = "Just /var/log/"
 theme = ["hugo-chart", "hugo-theme-cactus"]
