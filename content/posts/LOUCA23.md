@@ -17,6 +17,7 @@ Sekitar pukul 14:30 aku berangkat dari tempat kerja ke stasiun dan kereta berang
 ![](https://raw.githubusercontent.com/bembenk18/Images/main/Louca23/Solo.jpg)
 
 ## Day 1 (Sabtu 07 Oktober 2023)
+![](https://raw.githubusercontent.com/bembenk18/Images/main/Louca23/lepi.jpg)
 Akhirnya hari yang ditunggu tunggu tiba, setelah menyelesaikan pekerjaan kantor dari pukul 05:00 sampai pukul 08:30 akirnya berangkat ke venue, jarak ke venue dari penginapan ± 8KM
 
 
