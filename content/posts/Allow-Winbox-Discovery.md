@@ -1,7 +1,7 @@
 ---
 title: "Allow Winbox Discovery"
 date: 2023-11-18T13:18:23+07:00
-draft: true
+draft: false
 tags:
 - Linux
 - OpenSUSE
