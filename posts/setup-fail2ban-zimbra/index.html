@@ -33,6 +33,7 @@ nano /etc/fail2ban/jail.local
 <meta property="og:url" content="https://bembenk.tech/posts/setup-fail2ban-zimbra/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2023-03-26T13:47:58+07:00" />
 <meta property="article:modified_time" content="2023-03-26T13:47:58+07:00" />
+
  <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Setup Fail2Ban Zimbra"/>
 <meta name="twitter:description" content="0. sudo -u zimbra - zmprov mcf &#43;zimbraMailTrustedIP 127.0.0.1 &#43;zimbraMailTrustedIP {IP of Server} zmcontrol restart 1. Install Fail2Ban yum install epel-release -y yum install fail2ban -y 2. Buat file jail.conf *Jika ingin whitelist IP tambahkan pada baris ignoreip
