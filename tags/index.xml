@@ -7,20 +7,34 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Bembenk</copyright>
-    <lastBuildDate>Tue, 17 Oct 2023 16:05:36 +0700</lastBuildDate>
+    <lastBuildDate>Sat, 18 Nov 2023 13:18:23 +0700</lastBuildDate>
     <atom:link href="https://bembenk.tech/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Event</title>
-      <link>https://bembenk.tech/tags/event/</link>
-      <pubDate>Tue, 17 Oct 2023 16:05:36 +0700</pubDate>
-      <guid>https://bembenk.tech/tags/event/</guid>
+      <title>Firewall</title>
+      <link>https://bembenk.tech/tags/firewall/</link>
+      <pubDate>Sat, 18 Nov 2023 13:18:23 +0700</pubDate>
+      <guid>https://bembenk.tech/tags/firewall/</guid>
       <description></description>
     </item>
     <item>
       <title>Linux</title>
       <link>https://bembenk.tech/tags/linux/</link>
-      <pubDate>Tue, 17 Oct 2023 16:05:36 +0700</pubDate>
+      <pubDate>Sat, 18 Nov 2023 13:18:23 +0700</pubDate>
       <guid>https://bembenk.tech/tags/linux/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>OpenSUSE</title>
+      <link>https://bembenk.tech/tags/opensuse/</link>
+      <pubDate>Sat, 18 Nov 2023 13:18:23 +0700</pubDate>
+      <guid>https://bembenk.tech/tags/opensuse/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Event</title>
+      <link>https://bembenk.tech/tags/event/</link>
+      <pubDate>Tue, 17 Oct 2023 16:05:36 +0700</pubDate>
+      <guid>https://bembenk.tech/tags/event/</guid>
       <description></description>
     </item>
     <item>

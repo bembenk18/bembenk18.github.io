@@ -2,22 +2,31 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://bembenk.tech/posts/allow-winbox-discovery/</loc>
+    <lastmod>2023-11-18T13:18:23+07:00</lastmod>
+  </url><url>
+    <loc>https://bembenk.tech/tags/firewall/</loc>
+    <lastmod>2023-11-18T13:18:23+07:00</lastmod>
+  </url><url>
+    <loc>https://bembenk.tech/</loc>
+    <lastmod>2023-11-18T13:18:23+07:00</lastmod>
+  </url><url>
+    <loc>https://bembenk.tech/tags/linux/</loc>
+    <lastmod>2023-11-18T13:18:23+07:00</lastmod>
+  </url><url>
+    <loc>https://bembenk.tech/tags/opensuse/</loc>
+    <lastmod>2023-11-18T13:18:23+07:00</lastmod>
+  </url><url>
+    <loc>https://bembenk.tech/posts/</loc>
+    <lastmod>2023-11-18T13:18:23+07:00</lastmod>
+  </url><url>
+    <loc>https://bembenk.tech/tags/</loc>
+    <lastmod>2023-11-18T13:18:23+07:00</lastmod>
+  </url><url>
     <loc>https://bembenk.tech/tags/event/</loc>
     <lastmod>2023-10-17T16:05:36+07:00</lastmod>
   </url><url>
-    <loc>https://bembenk.tech/</loc>
-    <lastmod>2023-10-17T16:05:36+07:00</lastmod>
-  </url><url>
-    <loc>https://bembenk.tech/tags/linux/</loc>
-    <lastmod>2023-10-17T16:05:36+07:00</lastmod>
-  </url><url>
-    <loc>https://bembenk.tech/posts/</loc>
-    <lastmod>2023-10-17T16:05:36+07:00</lastmod>
-  </url><url>
     <loc>https://bembenk.tech/posts/louca23/</loc>
-    <lastmod>2023-10-17T16:05:36+07:00</lastmod>
-  </url><url>
-    <loc>https://bembenk.tech/tags/</loc>
     <lastmod>2023-10-17T16:05:36+07:00</lastmod>
   </url><url>
     <loc>https://bembenk.tech/posts/bongkar-apk-undangan-online/</loc>
