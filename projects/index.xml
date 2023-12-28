@@ -14,11 +14,7 @@
       <link>https://bembenk.tech/projects/zypper-everyday/</link>
       <pubDate>Thu, 26 Jan 2023 14:29:55 +0700</pubDate>
       <guid>https://bembenk.tech/projects/zypper-everyday/</guid>
-      <description>Tujuan:
-Menguji kestabilan openSUSE Tumbleweed untuk pemakaian sehari hari sepanjang tahun dengan melakukan update system dengan zypper cli setiap hari.
-Inspirasi:
-Project ini terinspirasi dari #PackmanEveryday milik Mas Bandithijo.
-001 ____________________________ 17/06/23 Day: 1 Upgradeable: 2215 Downloads Size: 3.01 GiB Link: Status: Note: 001 ____________________________ 16/06/23 Day: 1 Upgradeable: Downloads Size: Link: Status: Note: </description>
+      <description>Tujuan:&#xA;Menguji kestabilan openSUSE Tumbleweed untuk pemakaian sehari hari sepanjang tahun dengan melakukan update system dengan zypper cli setiap hari.&#xA;Inspirasi:&#xA;Project ini terinspirasi dari #PackmanEveryday milik Mas Bandithijo.&#xA;001 ____________________________ 17/06/23 Day: 1 Upgradeable: 2215 Downloads Size: 3.01 GiB Link: Status: Note: 001 ____________________________ 16/06/23 Day: 1 Upgradeable: Downloads Size: Link: Status: Note: </description>
     </item>
   </channel>
 </rss>

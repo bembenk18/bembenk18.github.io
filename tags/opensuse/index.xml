@@ -14,8 +14,7 @@
       <link>https://bembenk.tech/posts/allow-winbox-discovery/</link>
       <pubDate>Sat, 18 Nov 2023 13:18:23 +0700</pubDate>
       <guid>https://bembenk.tech/posts/allow-winbox-discovery/</guid>
-      <description>Secara default winbox di openSUSE tidak menampilkan Neighbors karena terblokir oleh firewall. Kita harus allow manual.
-sudo firewall-cmd --permanent --service=winbox-discover --add-port=5678/udp sudo firewall-cmd --zone=public --add-service=winbox-discover --permanent sudo firewall-cmd --reload </description>
+      <description>Secara default winbox di openSUSE tidak menampilkan Neighbors karena terblokir oleh firewall. Kita harus allow manual.&#xA;sudo firewall-cmd --permanent --service=winbox-discover --add-port=5678/udp sudo firewall-cmd --zone=public --add-service=winbox-discover --permanent sudo firewall-cmd --reload </description>
     </item>
   </channel>
 </rss>
