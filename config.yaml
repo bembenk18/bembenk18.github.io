@@ -57,14 +57,11 @@ menu:
       url: /tags/
       weight: 3
     - name: About
-      url: /bug-bounty/
+      url: /about
       weight: 4
     - name: RSS
       url: /index.xml
       weight: 5
-    - name: Bug Bounty
-      url: /bug-bounty/
-      weight: 6
 
 
 

