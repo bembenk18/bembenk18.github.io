@@ -1,7 +1,7 @@
 baseURL = "https://bembenk.tech"
 languageCode = "en-us"
 title = "Just /var/log/"
-theme = ["hugo-chart", "hugo-theme-cactus"]
+theme = ["hugo-chart", "tailwind"]
 copyright = "Bembenk" 
 disqusShortname = "Bembenk"
 googleAnalytics = "G-438PNW325R"

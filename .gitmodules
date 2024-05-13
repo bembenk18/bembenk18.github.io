@@ -5,3 +5,9 @@
 [submodule "themes/hugo-chart"]
 	path = themes/hugo-chart
 	url = https://github.com/Shen-Yu/hugo-chart.git
+[submodule "themes/hugo-theme-console"]
+	path = themes/hugo-theme-console
+	url = https://github.com/mrmierzejewski/hugo-theme-console.git
+[submodule "themes/tailwind"]
+	path = themes/tailwind
+	url = https://github.com/tomowang/hugo-theme-tailwind.git
