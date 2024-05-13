@@ -1,41 +1,40 @@
 <!DOCTYPE html>
 <html lang="en-us" dir="ltr">
-<head>
-  <title>Mesin Tua :: Just /var/log/ - Just /var/log/</title>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <title>Install Kamailio VOIP Server :: Just /var/log/ - Just /var/log/</title>
   
   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta
   name="description"
-  content="Mesin tua 1 (Thinkpad x61) Spesifikasi Intel Core 2 Duo CPU T8100 (2.10 GHz) 2GB DDR2 128MB VRAM 80GB HDD Gak sengaja nemu di FB marketplace dengan harga 150k dengan kondisi matot, dugaan awal matot karena baterai konslet. Setelah beli dan oprek sana sini belum berhasil nyala juga, akhrinya ketemu teman di group tele Pegel Thinkpad yang nyaranin ganti mobo. Setelah ganti mobo akhirnya berhasil nyala.
-Mods Setelah nyala akhirnya niat iseng muncul juga untuk flash Midleton Bios agar bisa menggunakan ram 2x4GB (Walau pun sampai sekarang masih pakai 1x2GB karena harga sekeping 4GB hampir sejuta;v)."
+  content="Pengenalan Kamailio adalah Server SIP Sumber Terbuka yang kuat, dapat menangani ribuan panggilan per detik. Dapat digunakan untuk membangun platform besar VoIP dan komunikasi real-time seperti pesan instan, keberadaan, dan WebRTC. Fiturnya mencakup komunikasi aman, penyeimbangan beban, otentikasi, dan dukungan untuk berbagai sistem backend. Cocok untuk gateway SIP, PBX, dan server media seperti Asterisk dan FreeSWITCH.
+Proses installasi Tambahkan repositori root@aml:~# cat /etc/apt/sources.list deb http://deb.kamailio.org/kamailio55 buster main deb-src http://deb.kamailio.org/kamailio55 buster main Install mariadb dan kamailio apt install mariadb-server kamailio kamailio-mysql-modules kamailio-ims-modules Edit file konfigurasi kamailio (edit baris berikut ini) root@aml:~# cat /etc/kamailio/kamctlrc SIP_DOMAIN=192."
 />
 <meta
   name="keywords"
   content="hugo, tailwind, tailwindcss, hugo theme, hugo theme tailwind"
 />
 <meta name="robots" content="noodp" />
-<meta property="og:url" content="https://bembenk.tech/posts/mesin-tua/">
+<meta property="og:url" content="http://localhost:1313/posts/install-kamailio-voip-server/">
   <meta property="og:site_name" content="Just /var/log/">
-  <meta property="og:title" content="Mesin Tua">
-  <meta property="og:description" content="Mesin tua 1 (Thinkpad x61) Spesifikasi Intel Core 2 Duo CPU T8100 (2.10 GHz) 2GB DDR2 128MB VRAM 80GB HDD Gak sengaja nemu di FB marketplace dengan harga 150k dengan kondisi matot, dugaan awal matot karena baterai konslet. Setelah beli dan oprek sana sini belum berhasil nyala juga, akhrinya ketemu teman di group tele Pegel Thinkpad yang nyaranin ganti mobo. Setelah ganti mobo akhirnya berhasil nyala.
-Mods Setelah nyala akhirnya niat iseng muncul juga untuk flash Midleton Bios agar bisa menggunakan ram 2x4GB (Walau pun sampai sekarang masih pakai 1x2GB karena harga sekeping 4GB hampir sejuta;v).">
+  <meta property="og:title" content="Install Kamailio VOIP Server">
+  <meta property="og:description" content="Pengenalan Kamailio adalah Server SIP Sumber Terbuka yang kuat, dapat menangani ribuan panggilan per detik. Dapat digunakan untuk membangun platform besar VoIP dan komunikasi real-time seperti pesan instan, keberadaan, dan WebRTC. Fiturnya mencakup komunikasi aman, penyeimbangan beban, otentikasi, dan dukungan untuk berbagai sistem backend. Cocok untuk gateway SIP, PBX, dan server media seperti Asterisk dan FreeSWITCH.
+Proses installasi Tambahkan repositori root@aml:~# cat /etc/apt/sources.list deb http://deb.kamailio.org/kamailio55 buster main deb-src http://deb.kamailio.org/kamailio55 buster main Install mariadb dan kamailio apt install mariadb-server kamailio kamailio-mysql-modules kamailio-ims-modules Edit file konfigurasi kamailio (edit baris berikut ini) root@aml:~# cat /etc/kamailio/kamctlrc SIP_DOMAIN=192.">
   <meta property="og:locale" content="en-us">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
-    <meta property="article:published_time" content="2023-04-27T14:17:18+07:00">
-    <meta property="article:modified_time" content="2023-04-27T14:17:18+07:00">
-    <meta property="article:tag" content="Thinkpad">
+    <meta property="article:published_time" content="2024-05-13T11:07:09+07:00">
+    <meta property="article:modified_time" content="2024-05-13T11:07:09+07:00">
 
-<meta name="twitter:card" content="summary"><meta name="twitter:title" content="Mesin Tua">
-<meta name="twitter:description" content="Mesin tua 1 (Thinkpad x61) Spesifikasi Intel Core 2 Duo CPU T8100 (2.10 GHz) 2GB DDR2 128MB VRAM 80GB HDD Gak sengaja nemu di FB marketplace dengan harga 150k dengan kondisi matot, dugaan awal matot karena baterai konslet. Setelah beli dan oprek sana sini belum berhasil nyala juga, akhrinya ketemu teman di group tele Pegel Thinkpad yang nyaranin ganti mobo. Setelah ganti mobo akhirnya berhasil nyala.
-Mods Setelah nyala akhirnya niat iseng muncul juga untuk flash Midleton Bios agar bisa menggunakan ram 2x4GB (Walau pun sampai sekarang masih pakai 1x2GB karena harga sekeping 4GB hampir sejuta;v).">
+<meta name="twitter:card" content="summary"><meta name="twitter:title" content="Install Kamailio VOIP Server">
+<meta name="twitter:description" content="Pengenalan Kamailio adalah Server SIP Sumber Terbuka yang kuat, dapat menangani ribuan panggilan per detik. Dapat digunakan untuk membangun platform besar VoIP dan komunikasi real-time seperti pesan instan, keberadaan, dan WebRTC. Fiturnya mencakup komunikasi aman, penyeimbangan beban, otentikasi, dan dukungan untuk berbagai sistem backend. Cocok untuk gateway SIP, PBX, dan server media seperti Asterisk dan FreeSWITCH.
+Proses installasi Tambahkan repositori root@aml:~# cat /etc/apt/sources.list deb http://deb.kamailio.org/kamailio55 buster main deb-src http://deb.kamailio.org/kamailio55 buster main Install mariadb dan kamailio apt install mariadb-server kamailio kamailio-mysql-modules kamailio-ims-modules Edit file konfigurasi kamailio (edit baris berikut ini) root@aml:~# cat /etc/kamailio/kamctlrc SIP_DOMAIN=192.">
 
 
-<link rel="canonical" href="https://bembenk.tech/posts/mesin-tua/" />
+<link rel="canonical" href="http://localhost:1313/posts/install-kamailio-voip-server/" />
 
 <link rel="shortcut icon" href="/favicon.ico" />
-<link rel="stylesheet" href="/css/index.min.5d96433bd17079764d5a8866addd6d7848ea8295977a06688f43c5be97af544e.css">
+<link rel="stylesheet" href="/css/index.4573e47dcfff49700db206601116cd2f48db1912c244b1d0b312713d4ca4a32e.css">
 
 
 
@@ -69,7 +68,18 @@ Mods Setelah nyala akhirnya niat iseng muncul juga untuk flash Midleton Bios aga
   
 
 </head>
-<body class="flex flex-col min-h-screen w-full bg-slate-50 dark:bg-gray-800"><header class="flex flex-none justify-center z-10">
+<body class="flex flex-col min-h-screen w-full bg-slate-50 dark:bg-gray-800">
+    
+<div class="fixed right-0 top-0 z-50 flex items-center justify-center bg-gray-200 p-2 text-sm uppercase text-black sm:bg-red-200 md:bg-yellow-200 lg:bg-green-200 xl:bg-blue-200 2xl:bg-pink-200">
+  <span class="block sm:hidden">all</span>
+  <span class="hidden sm:block md:hidden">sm</span>
+  <span class="hidden md:block lg:hidden">md</span>
+  <span class="hidden lg:block xl:hidden">lg</span>
+  <span class="hidden xl:block 2xl:hidden">xl</span>
+  <span class="hidden 2xl:block">2xl</span>
+</div>
+
+  <header class="flex flex-none justify-center z-10">
     <div class="flex flex-row gap justify-between w-full max-w-4xl lg:max-w-5xl h-12 mt-3">
   <div class="flex-none ml-2 md:ml-0">
     <a href="/" class="">
@@ -195,41 +205,17 @@ Mods Setelah nyala akhirnya niat iseng muncul juga untuk flash Midleton Bios aga
 <div class="w-full max-w-4xl lg:max-w-5xl">
   <div class="flex flex-col mt-6 mx-2 md:mx-0 rounded-lg overflow-hidden shadow-md bg-white dark:bg-gray-700">
     <div>
-      <a href="/posts/mesin-tua/">
+      <a href="/posts/install-kamailio-voip-server/">
         
       </a>
     </div>
     <div class="flex flex-col gap-y-3 p-6">
       <h1 class="text-4xl font-semibold text-slate-800 dark:text-slate-100">
-        <a href="/posts/mesin-tua/">Mesin Tua</a>
+        <a href="/posts/install-kamailio-voip-server/">Install Kamailio VOIP Server</a>
       </h1>
 
       
       
-  <ul class="flex flex-row flex-wrap text-slate-500 dark:text-slate-300">
-    
-    
-      
-      <li>
-        <a href="/tags/thinkpad/"
-          class="flex flex-row text-sm mr-2 py-1">
-          <i class="h-5 w-5 flex-none">
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-   <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-   <path d="M5 9l14 0"></path>
-   <path d="M5 15l14 0"></path>
-   <path d="M11 4l-4 16"></path>
-   <path d="M17 4l-4 16"></path>
-</svg>
-
-          </i>
-          <span class="ml-0">Thinkpad</span>
-        </a>
-      </li>
-      
-    
-  </ul>
-
 
 
       <div class="flex flex-col gap-y-1 md:flex-row md:gap-y-0 md:gap-x-4 text-slate-500 dark:text-slate-300">
@@ -248,8 +234,8 @@ Mods Setelah nyala akhirnya niat iseng muncul juga untuk flash Midleton Bios aga
 </svg>
 
     </i>
-    <time datetime="2023-04-27T14:17:18&#43;07:00">
-      2023-04-27
+    <time datetime="2024-05-13T11:07:09&#43;07:00">
+      2024-05-13
     </time>
   </div>
 
@@ -276,12 +262,18 @@ Mods Setelah nyala akhirnya niat iseng muncul juga untuk flash Midleton Bios aga
           <h2>Table of Contents</h2>
           <aside><nav id="TableOfContents">
   <ul>
-    <li><a href="#mesin-tua-1--thinkpad-x61">Mesin tua 1  (Thinkpad x61)</a>
+    <li><a href="#pengenalan">Pengenalan</a></li>
+    <li><a href="#proses-installasi">Proses installasi</a>
       <ul>
-        <li><a href="#mods">Mods</a></li>
+        <li><a href="#tambahkan-repositori">Tambahkan repositori</a></li>
+        <li><a href="#install-mariadb-dan-kamailio">Install mariadb dan kamailio</a></li>
+        <li><a href="#edit-file-konfigurasi-kamailio-edit-baris-berikut-ini">Edit file konfigurasi kamailio (edit baris berikut ini)</a></li>
+        <li><a href="#ini-juga">Ini juga</a></li>
+        <li><a href="#restart-service">Restart service</a></li>
+        <li><a href="#jalankan-perintah-untuk-membuat-database-ikuti-semua-intruksi">Jalankan perintah untuk membuat database (ikuti semua intruksi)</a></li>
+        <li><a href="#buat-user-baru">Buat user baru</a></li>
       </ul>
     </li>
-    <li><a href="#mesin-tua-2-thinkpad-x41-tablet">Mesin tua 2 (Thinkpad x41 tablet)</a></li>
   </ul>
 </nav></aside>
         </section>
@@ -289,95 +281,70 @@ Mods Setelah nyala akhirnya niat iseng muncul juga untuk flash Midleton Bios aga
       
 
       <article class="mt-6 w-full max-w-4xl lg:max-w-5xl prose prose-slate dark:prose-invert prose-quoteless post-content">
-        
-
-
-
-
-
-<div style="width: 90%;height: 200px;margin: 0 auto">
-    <canvas id="1eccbab8ed6dc5dcdf82f444a85cccf4"></canvas>
-</div>
-<script src="https://cdn.jsdelivr.net/npm/chart.js/dist/chart.min.js"></script>
-<script type="text/javascript">
-    var ctx = document.getElementById('1eccbab8ed6dc5dcdf82f444a85cccf4').getContext('2d');
-    var options = 
-{
-    type: 'bar',
-    data: {
-        labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
-        datasets: [{
-            label: 'Bar Chart',
-            data: [12, 19, 18, 16, 13, 14],
-            backgroundColor: [
-                'rgba(255, 99, 132, 0.2)',
-                'rgba(54, 162, 235, 0.2)',
-                'rgba(255, 206, 86, 0.2)',
-                'rgba(75, 192, 192, 0.2)',
-                'rgba(153, 102, 255, 0.2)',
-                'rgba(255, 159, 64, 0.2)'
-            ],
-            borderColor: [
-                'rgba(255, 99, 132, 1)',
-                'rgba(54, 162, 235, 1)',
-                'rgba(255, 206, 86, 1)',
-                'rgba(75, 192, 192, 1)',
-                'rgba(153, 102, 255, 1)',
-                'rgba(255, 159, 64, 1)'
-            ],
-            borderWidth: 1
-        }]
-    },
-    options: {
-        maintainAspectRatio: false,
-        scales: {
-            yAxes: [{
-                ticks: {
-                    beginAtZero: true
-                }
-            }]
-        }
-    }
-};
-    new Chart(ctx, options);
-</script>
-
-<h2 id="mesin-tua-1--thinkpad-x61">Mesin tua 1  (Thinkpad x61)</h2>
- 
-
-<details>
-    <summary><b>Spesifikasi </b></summary>
-    <ul>Intel Core 2 Duo CPU T8100 (2.10 GHz)</ul>
-    <ul>2GB DDR2</ul>
-    <ul>128MB VRAM</ul>
-    <ul>80GB HDD</ul>
-    <ul></ul>
-    <ul></ul>
-</details>
-<p>Gak sengaja nemu di FB marketplace dengan harga 150k dengan kondisi matot, dugaan awal matot karena baterai konslet. Setelah beli dan oprek sana sini belum berhasil nyala juga, akhrinya ketemu teman di group tele Pegel Thinkpad yang nyaranin ganti mobo. Setelah ganti mobo akhirnya berhasil nyala.</p>
-<h3 id="mods">Mods</h3>
-<p>Setelah nyala akhirnya niat iseng muncul juga untuk flash Midleton Bios agar bisa menggunakan ram 2x4GB (Walau pun sampai sekarang masih pakai 1x2GB karena harga sekeping 4GB hampir sejuta;v).</p>
-<h2 id="mesin-tua-2-thinkpad-x41-tablet">Mesin tua 2 (Thinkpad x41 tablet)</h2>
-<p><div class="not-prose">
+        <p><div class="not-prose">
 <figure>
-    <img src="https://raw.githubusercontent.com/bembenk18/Images/main/Mesin%20Tua/photo_2023-06-16_11-37-59.jpg"
-      alt="X41" 
+    <img src="https://www.kamailio.org/w/wp-content/uploads/2023/01/kamailio-world-mini-simple-300x134.png"
+      alt="Logo" 
       loading="lazy"
     >
   </figure></div>
 </p>
- 
-
-<details>
-    <summary><b>Spesifikasi</b></summary>
-    <ul>Intel Pentium M Prosesor (1.5GHz)</ul>
-    <ul>512MB</ul>
-    <ul>Windows XP</ul>
-    <ul>40GB IDE </ul>
-    <ul></ul>
-    <ul></ul>
-</details>
-<p>Nemu di FB marketplace dengan kondisi gabisa booting, tanpa pikir panjang langsung CO dan barang sampai setelah 4 hari.</p>
+<h2 id="pengenalan">Pengenalan</h2>
+<p>Kamailio adalah Server SIP Sumber Terbuka yang kuat, dapat menangani ribuan panggilan per detik. Dapat digunakan untuk membangun platform besar VoIP dan komunikasi real-time seperti pesan instan, keberadaan, dan WebRTC. Fiturnya mencakup komunikasi aman, penyeimbangan beban, otentikasi, dan dukungan untuk berbagai sistem backend. Cocok untuk gateway SIP, PBX, dan server media seperti Asterisk dan FreeSWITCH.</p>
+<h2 id="proses-installasi">Proses installasi</h2>
+<h3 id="tambahkan-repositori">Tambahkan repositori</h3>
+<pre><code>root@aml:~# cat /etc/apt/sources.list
+deb http://deb.kamailio.org/kamailio55 buster main
+deb-src http://deb.kamailio.org/kamailio55 buster main
+</code></pre>
+<h3 id="install-mariadb-dan-kamailio">Install mariadb dan kamailio</h3>
+<pre><code>apt install mariadb-server kamailio kamailio-mysql-modules kamailio-ims-modules
+</code></pre>
+<h3 id="edit-file-konfigurasi-kamailio-edit-baris-berikut-ini">Edit file konfigurasi kamailio (edit baris berikut ini)</h3>
+<pre><code>root@aml:~# cat /etc/kamailio/kamctlrc 
+SIP_DOMAIN=192.168.0.100
+DBENGINE=MYSQL
+DBHOST=localhost
+DBPORT=3306
+DBNAME=kamailio
+DB_PATH=&quot;/usr/local/etc/kamailio/dbtext&quot;
+DBRWUSER=&quot;user&quot;
+DBRWPW=&quot;password&quot;
+DBROUSER=&quot;user&quot;
+DBROPW=&quot;password&quot;
+DBACCESSHOST=192.168.0.100
+DBROOTUSER=&quot;root&quot;
+</code></pre>
+<h3 id="ini-juga">Ini juga</h3>
+<pre><code>root@aml:~# cat /etc/default/kamailio
+RUN_KAMAILIO=yes
+USER=kamailio
+GROUP=kamailio
+root@aml:~# 
+</code></pre>
+<h3 id="restart-service">Restart service</h3>
+<pre><code>sudo service kamailio restart
+netstat -ntulp | grep kamailio
+</code></pre>
+<h3 id="jalankan-perintah-untuk-membuat-database-ikuti-semua-intruksi">Jalankan perintah untuk membuat database (ikuti semua intruksi)</h3>
+<pre><code>root@aml:~# kamdbctl  create
+MySQL password for root: 
+root@aml:~# 
+</code></pre>
+<h3 id="buat-user-baru">Buat user baru</h3>
+<pre><code>kamctl add 1234 halo
+* 123: username, halo: password
+</code></pre>
+<h1 id="pengujian-pada-voip-client">Pengujian pada VOIP client</h1>
+<p>Login ke Linphone dengan user tadi seperti ini
+<div class="not-prose">
+<figure>
+    <img src="https://raw.githubusercontent.com/bembenk18/Images/main/Kamailio/1.png"
+      alt="Linphone" 
+      loading="lazy"
+    >
+  </figure></div>
+</p>
 
       </article>
 
@@ -464,7 +431,28 @@ Mods Setelah nyala akhirnya niat iseng muncul juga untuk flash Midleton Bios aga
 </section>
 
   </footer>
-  <script src="/main.min.c6372b6836971865bd94bfde974748aca8415824a2facab6ccd66a87384bfacb.js"></script>
+  <script src="/main.js"></script>
+
+<div class="hidden top-1 right-1" id="code-copy">
+  <i class="h-6 w-6 block">
+    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copy" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M7 7m0 2.667a2.667 2.667 0 0 1 2.667 -2.667h8.666a2.667 2.667 0 0 1 2.667 2.667v8.666a2.667 2.667 0 0 1 -2.667 2.667h-8.666a2.667 2.667 0 0 1 -2.667 -2.667z" />
+  <path d="M4.012 16.737a2.005 2.005 0 0 1 -1.012 -1.737v-10c0 -1.1 .9 -2 2 -2h10c.75 0 1.158 .385 1.5 1" />
+</svg>
+
+  </i>
+</div>
+<div class="hidden top-1 right-1" id="code-copy-done">
+  <i class="h-6 w-6 block">
+    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-check" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M5 12l5 5l10 -10" />
+</svg>
+
+  </i>
+</div><script src="/code-copy.js"></script>
+
 
 
 

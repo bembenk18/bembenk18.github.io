@@ -2,16 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://bembenk.tech/</loc>
+    <lastmod>2024-05-13T11:07:09+07:00</lastmod>
+  </url><url>
+    <loc>https://bembenk.tech/posts/</loc>
+    <lastmod>2024-05-13T11:07:09+07:00</lastmod>
+  </url><url>
     <loc>https://bembenk.tech/tags/bugbounty/</loc>
     <lastmod>2023-12-28T13:39:57+07:00</lastmod>
   </url><url>
-    <loc>https://bembenk.tech/</loc>
-    <lastmod>2023-12-28T13:39:57+07:00</lastmod>
-  </url><url>
     <loc>https://bembenk.tech/posts/sql-injection-form-pendaftaran-rumah-sakit/</loc>
-    <lastmod>2023-12-28T13:39:57+07:00</lastmod>
-  </url><url>
-    <loc>https://bembenk.tech/posts/</loc>
     <lastmod>2023-12-28T13:39:57+07:00</lastmod>
   </url><url>
     <loc>https://bembenk.tech/tags/</loc>
