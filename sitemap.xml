@@ -107,6 +107,30 @@
     <loc>https://bembenk.tech/posts/install-middleton-bios-thinkpad-x61/</loc>
     <lastmod>2022-03-29T21:04:09+07:00</lastmod>
   </url><url>
+    <loc>https://bembenk.tech/search/</loc>
+    <priority>0.1</priority>
+  </url><url>
+    <loc>https://bembenk.tech/search/_index.es/</loc>
+    <priority>0.1</priority>
+  </url><url>
+    <loc>https://bembenk.tech/search/_index.fr/</loc>
+    <priority>0.1</priority>
+  </url><url>
+    <loc>https://bembenk.tech/search/_index.hi/</loc>
+    <priority>0.1</priority>
+  </url><url>
+    <loc>https://bembenk.tech/search/_index.jp/</loc>
+    <priority>0.1</priority>
+  </url><url>
+    <loc>https://bembenk.tech/search/_index.pl/</loc>
+    <priority>0.1</priority>
+  </url><url>
+    <loc>https://bembenk.tech/search/_index.ru/</loc>
+    <priority>0.1</priority>
+  </url><url>
+    <loc>https://bembenk.tech/search/_index.zh-cn/</loc>
+    <priority>0.1</priority>
+  </url><url>
     <loc>https://bembenk.tech/categories/</loc>
   </url>
 </urlset>
