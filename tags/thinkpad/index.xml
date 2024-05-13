@@ -6,22 +6,22 @@
     <description>Recent content in Thinkpad on Just /var/log/</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <managingEditor>user@example.com (Hugo Author)</managingEditor>
-    <webMaster>user@example.com (Hugo Author)</webMaster>
+    <managingEditor>mail@bembenk.tech (Bembenk)</managingEditor>
+    <webMaster>mail@bembenk.tech (Bembenk)</webMaster>
     <copyright>Bembenk</copyright>
     <lastBuildDate>Thu, 27 Apr 2023 14:17:18 +0700</lastBuildDate>
     <atom:link href="https://bembenk.tech/tags/thinkpad/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Mesin Tua</title>
       <link>https://bembenk.tech/posts/mesin-tua/</link>
-      <pubDate>Thu, 27 Apr 2023 14:17:18 +0700</pubDate><author>user@example.com (Hugo Author)</author>
+      <pubDate>Thu, 27 Apr 2023 14:17:18 +0700</pubDate><author>mail@bembenk.tech (Bembenk)</author>
       <guid>https://bembenk.tech/posts/mesin-tua/</guid>
       <description>Mesin tua 1 (Thinkpad x61) Spesifikasi Intel Core 2 Duo CPU T8100 (2.10 GHz) 2GB DDR2 128MB VRAM 80GB HDD Gak sengaja nemu di FB marketplace dengan harga 150k dengan kondisi matot, dugaan awal matot karena baterai konslet. Setelah beli dan oprek sana sini belum berhasil nyala juga, akhrinya ketemu teman di group tele Pegel Thinkpad yang nyaranin ganti mobo. Setelah ganti mobo akhirnya berhasil nyala.&#xA;Mods Setelah nyala akhirnya niat iseng muncul juga untuk flash Midleton Bios agar bisa menggunakan ram 2x4GB (Walau pun sampai sekarang masih pakai 1x2GB karena harga sekeping 4GB hampir sejuta;v).</description>
     </item>
     <item>
       <title>Install Middleton Bios Thinkpad X61</title>
       <link>https://bembenk.tech/posts/install-middleton-bios-thinkpad-x61/</link>
-      <pubDate>Tue, 29 Mar 2022 21:04:09 +0700</pubDate><author>user@example.com (Hugo Author)</author>
+      <pubDate>Tue, 29 Mar 2022 21:04:09 +0700</pubDate><author>mail@bembenk.tech (Bembenk)</author>
       <guid>https://bembenk.tech/posts/install-middleton-bios-thinkpad-x61/</guid>
       <description>Masih dengan mesin x61, setelah menyelam di reddit ketemu sebuah postingan tentang thinkpad x61 dengan bios mod. Setelah baca ternyata fiturnya lumayan banyak daripada bios bawaan. 2 fitur yang menarik adalah unlock SATA II dan RAM yang bisa max 8GB (Walaupun sekeping 4GB DDR2 harganya hampir sejuta).&#xA;Proses Flash Ada 2 cara:&#xA;Cara 1 Download Iso bios Burn ke flashdisk Boot ke flaskdisk Gabisa pakai cara ini karena harus ada baterai</description>
     </item>
