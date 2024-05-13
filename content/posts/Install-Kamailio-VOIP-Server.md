@@ -3,7 +3,7 @@ title: "Install Kamailio VOIP Server"
 date: 2024-05-13T11:07:09+07:00
 draft: true
 ---
-![Logo](https://www.kamailio.org/w/wp-content/uploads/2023/01/kamailio-world-mini-simple-300x134.png)
+![Logo](https://www.kamailio.org/wp-images/kamailio-rock-logo.png)
 ## Pengenalan
 Kamailio adalah Server SIP Sumber Terbuka yang kuat, dapat menangani ribuan panggilan per detik. Dapat digunakan untuk membangun platform besar VoIP dan komunikasi real-time seperti pesan instan, keberadaan, dan WebRTC. Fiturnya mencakup komunikasi aman, penyeimbangan beban, otentikasi, dan dukungan untuk berbagai sistem backend. Cocok untuk gateway SIP, PBX, dan server media seperti Asterisk dan FreeSWITCH.
 
