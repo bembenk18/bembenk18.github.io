@@ -1,7 +1,7 @@
 ---
 title: "Install Kamailio VOIP Server"
 date: 2024-05-13T11:07:09+07:00
-draft: true
+draft: false
 ---
 ![Logo](https://www.kamailio.org/wp-images/kamailio-rock-logo.png)
 ## Pengenalan
