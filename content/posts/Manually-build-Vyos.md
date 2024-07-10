@@ -1,7 +1,7 @@
 ---
 title: "Manually Build Vyos"
 date: 2024-07-10T10:20:20+07:00
-draft: true
+draft: false
 ---
 ![logo](https://vyos.io/images/pages/index/vyos.svg)
 
