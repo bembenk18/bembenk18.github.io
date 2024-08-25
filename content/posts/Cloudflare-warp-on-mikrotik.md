@@ -32,14 +32,18 @@ Karena disini kita akan pakai Wireguard maka wajib menggunakan RouterOS versi 7.
 # Setup Mikrotik
 - Buat Wireguard baru dan sesuaikan dengan config profile yang sudah kita dapatkan (Edit pada bagian MTU & Private key)
 ![](https://raw.githubusercontent.com/bembenk18/Images/main/WARP/2.png)
+
 - Buat Wireguard Peer sesuaikan juga Public Key, Endpoint dan Endpoint Port dengan profile
 ![](https://raw.githubusercontent.com/bembenk18/Images/main/WARP/3.png)
+
 - Buat address baru dengan IP 172.16.0.2/32 dan Interface **WARP**
 ![](https://raw.githubusercontent.com/bembenk18/Images/main/WARP/4.png)
+
 - Ubah DNS ke 1.1.1.1
 - Buat Routing Table baru dengan nama **Cloudflare**
 - Tambahkan Route baru dengan gateway **WARP**
 ![](https://raw.githubusercontent.com/bembenk18/Images/main/WARP/5.png)
+
 - Buat NAT baru dengan Out Interface **WARP** dan action masquerade (Pastikan nat ini berada paling atas)
 ```
  /ip firewall nat add action=masquerade chain=srcnat disabled=no log=no log-prefix="" out-interface=WARP
