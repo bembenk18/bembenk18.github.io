@@ -40,7 +40,7 @@ Karena disini kita akan pakai Wireguard maka wajib menggunakan RouterOS versi 7.
 - Buat Routing Table baru dengan nama **Cloudflare**
 - Tambahkan Route baru dengan gateway **WARP**
 ![](https://raw.githubusercontent.com/bembenk18/Images/main/WARP/5.png)
-- Buat NAT baru dengan Out Interface **WARP** dan action masquerade
+- Buat NAT baru dengan Out Interface **WARP** dan action masquerade (Pastikan nat ini berada paling atas)
 ```
  /ip firewall nat add action=masquerade chain=srcnat disabled=no log=no log-prefix="" out-interface=WARP
 ```
@@ -48,3 +48,19 @@ Karena disini kita akan pakai Wireguard maka wajib menggunakan RouterOS versi 7.
 ```
 /ip firewall mangle set *1 action=mark-routing chain=prerouting disabled=no log=no log-prefix="" new-routing-mark=Cloudflare  passthrough=no src-address=192.168.xx.xx-192.168.xx.xx
 ```
+
+# Testing
+
+### Sebelum Routing
+Terlihat traffic masih mengarah ke ISP
+![](https://raw.githubusercontent.com/bembenk18/Images/main/WARP/6.png)
+
+### Setelah Routing
+Terlihat traffic sudah mengarah ke Cloudflare
+![](https://raw.githubusercontent.com/bembenk18/Images/main/WARP/7.png)
+
+
+# Catatan
+- Ini akan routing semua traffic
+- Untuk apa harus routing dengan VPN? Sesuai arahan pak Anton biar gak bisa di intip oleh ISP dan pemerintah
+
