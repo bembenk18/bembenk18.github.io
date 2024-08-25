@@ -284,7 +284,7 @@ Buat akun Warp Untuk membuat akun disini saya akan pakai tools ini https://githu
 
     </i>
     <span>
-      One minute to read
+      2 minutes to read
     </span>
   </div>
 </div>
@@ -294,7 +294,16 @@ Buat akun Warp Untuk membuat akun disini saya akan pakai tools ini https://githu
         
         <section class="prose prose-slate dark:prose-invert w-full max-w-4xl lg:max-w-5xl mt-6">
           <h2>Table of Contents</h2>
-          <aside><nav id="TableOfContents"></nav></aside>
+          <aside><nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#sebelum-routing">Sebelum Routing</a></li>
+        <li><a href="#setelah-routing">Setelah Routing</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></aside>
         </section>
         
       
@@ -370,14 +379,40 @@ Endpoint = engage.cloudflareclient.com:2408
     >
   </figure></div>
 </li>
-<li>Buat NAT baru dengan Out Interface <strong>WARP</strong> dan action masquerade</li>
+<li>Buat NAT baru dengan Out Interface <strong>WARP</strong> dan action masquerade (Pastikan nat ini berada paling atas)</li>
 </ul>
 <pre tabindex="0"><code> /ip firewall nat add action=masquerade chain=srcnat disabled=no log=no log-prefix=&#34;&#34; out-interface=WARP
 </code></pre><ul>
 <li>Tambahkan mange baru</li>
 </ul>
 <pre tabindex="0"><code>/ip firewall mangle set *1 action=mark-routing chain=prerouting disabled=no log=no log-prefix=&#34;&#34; new-routing-mark=Cloudflare  passthrough=no src-address=192.168.xx.xx-192.168.xx.xx
-</code></pre>
+</code></pre><h1 id="testing">Testing</h1>
+<h3 id="sebelum-routing">Sebelum Routing</h3>
+<p>Terlihat traffic masih mengarah ke ISP
+<div class="not-prose">
+<figure>
+    <img src="https://raw.githubusercontent.com/bembenk18/Images/main/WARP/6.png"
+      alt="" 
+      loading="lazy"
+    >
+  </figure></div>
+</p>
+<h3 id="setelah-routing">Setelah Routing</h3>
+<p>Terlihat traffic sudah mengarah ke Cloudflare
+<div class="not-prose">
+<figure>
+    <img src="https://raw.githubusercontent.com/bembenk18/Images/main/WARP/7.png"
+      alt="" 
+      loading="lazy"
+    >
+  </figure></div>
+</p>
+<h1 id="catatan">Catatan</h1>
+<ul>
+<li>Ini akan routing semua traffic</li>
+<li>Untuk apa harus routing dengan VPN? Sesuai arahan pak Anton biar gak bisa di intip oleh ISP dan pemerintah</li>
+</ul>
+
       </article>
 
       
