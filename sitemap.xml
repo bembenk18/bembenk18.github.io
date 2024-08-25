@@ -5,7 +5,19 @@
     <loc>https://bembenk.tech/</loc>
     <lastmod>2024-08-25T05:46:19+07:00</lastmod>
   </url><url>
+    <loc>https://bembenk.tech/tags/mikrotik/</loc>
+    <lastmod>2024-08-25T05:46:19+07:00</lastmod>
+  </url><url>
+    <loc>https://bembenk.tech/tags/networking/</loc>
+    <lastmod>2024-08-25T05:46:19+07:00</lastmod>
+  </url><url>
     <loc>https://bembenk.tech/posts/</loc>
+    <lastmod>2024-08-25T05:46:19+07:00</lastmod>
+  </url><url>
+    <loc>https://bembenk.tech/posts/cloudflare-warp-on-mikrotik/</loc>
+    <lastmod>2024-08-25T05:46:19+07:00</lastmod>
+  </url><url>
+    <loc>https://bembenk.tech/tags/</loc>
     <lastmod>2024-08-25T05:46:19+07:00</lastmod>
   </url><url>
     <loc>https://bembenk.tech/posts/manually-build-vyos/</loc>
@@ -18,9 +30,6 @@
     <lastmod>2023-12-28T13:39:57+07:00</lastmod>
   </url><url>
     <loc>https://bembenk.tech/posts/sql-injection-form-pendaftaran-rumah-sakit/</loc>
-    <lastmod>2023-12-28T13:39:57+07:00</lastmod>
-  </url><url>
-    <loc>https://bembenk.tech/tags/</loc>
     <lastmod>2023-12-28T13:39:57+07:00</lastmod>
   </url><url>
     <loc>https://bembenk.tech/posts/allow-winbox-discovery/</loc>
@@ -78,9 +87,6 @@
     <lastmod>2023-04-10T14:48:52+07:00</lastmod>
   </url><url>
     <loc>https://bembenk.tech/posts/cisco-packet-tracer-opensuse/</loc>
-    <lastmod>2023-03-27T15:20:56+07:00</lastmod>
-  </url><url>
-    <loc>https://bembenk.tech/tags/networking/</loc>
     <lastmod>2023-03-27T15:20:56+07:00</lastmod>
   </url><url>
     <loc>https://bembenk.tech/about/</loc>

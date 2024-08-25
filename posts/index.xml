@@ -9,8 +9,15 @@
     <managingEditor>mail@bembenk.tech (Bembenk)</managingEditor>
     <webMaster>mail@bembenk.tech (Bembenk)</webMaster>
     <copyright>Bembenk</copyright>
-    <lastBuildDate>Wed, 10 Jul 2024 10:20:20 +0700</lastBuildDate>
+    <lastBuildDate>Sun, 25 Aug 2024 05:46:19 +0700</lastBuildDate>
     <atom:link href="https://bembenk.tech/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Setup Cloudflare Warp on Mikrotik</title>
+      <link>https://bembenk.tech/posts/cloudflare-warp-on-mikrotik/</link>
+      <pubDate>Sun, 25 Aug 2024 05:46:19 +0700</pubDate><author>mail@bembenk.tech (Bembenk)</author>
+      <guid>https://bembenk.tech/posts/cloudflare-warp-on-mikrotik/</guid>
+      <description>Sesuai sabda pak Anton Wibowo tentang VPN dibawah ini, maka saya akan coba setup Cloudflare Warp di Mikrotik Karena disini kita akan pakai Wireguard maka wajib menggunakan RouterOS versi 7.&#xA;Buat akun Warp Untuk membuat akun disini saya akan pakai tools ini https://github.com/ViRb3/wgcf (Silahkan dibaca sendiri tutorialnya:v) Setelah itu kita akan mendapatkan file wgcf-profile.conf yang berisi ➜ Network cat wgcf-profile.conf [Interface] PrivateKey = mAmDoyJ8Qf/2sEyuhjhPytLDtx8ioiEaJh3q8K8iE3u2U= Address = 172.16.0.2/32 Address = 2606:4700:110:84ca:7d82:b1d:7534:56f9/128 DNS = 1.</description>
+    </item>
     <item>
       <title>Manually Build Vyos</title>
       <link>https://bembenk.tech/posts/manually-build-vyos/</link>
