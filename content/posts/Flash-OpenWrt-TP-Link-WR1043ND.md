@@ -43,5 +43,18 @@ Setelah beberapa pertimbangan akhirnya pilih TP-Link dengan harga 128k (diskon j
 1. Login ke web interface router
 2. Masuk ke **System Tools >> Firmware Upgrade**
 
-   ![img](https://raw.githubusercontent.com/bembenk18/Images/main/Openwrt-WR1043ND/1.png)
-3.
+   ![img](https://raw.githubusercontent.com/bembenk18/Images/main/Openwrt-WR1043ND/2.png)
+3. 
+4. Klik **Chose File** dan pilih image yang ada label factory nya, kemudian klik **Upgrade** dan tunggu sampai router terhubung kembali
+
+   ![img](https://raw.githubusercontent.com/bembenk18/Images/main/Openwrt-WR1043ND/3.png)
+
+   ![img](https://raw.githubusercontent.com/bembenk18/Images/main/Openwrt-WR1043ND/4.png)
+
+   ![img](https://raw.githubusercontent.com/bembenk18/Images/main/Openwrt-WR1043ND/5.png)
+5. Jika berhasil maka router akan reboot, dan terhubung kembali dengan IP 192.168.1.*
+6. Akses halaman login, user default root dan password kosong
+
+   ![img](https://raw.githubusercontent.com/bembenk18/Images/main/Openwrt-WR1043ND/6.png)
+
+   ![img](https://raw.githubusercontent.com/bembenk18/Images/main/Openwrt-WR1043ND/7.png)
