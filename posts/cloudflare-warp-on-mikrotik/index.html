@@ -341,8 +341,7 @@ Endpoint = engage.cloudflareclient.com:2408
 </ul>
 <h1 id="setup-mikrotik">Setup Mikrotik</h1>
 <ul>
-<li>
-<p>Buat Wireguard baru dan sesuaikan dengan config profile yang sudah kita dapatkan (Edit pada bagian MTU &amp; Private key)
+<li>Buat Wireguard baru dan sesuaikan dengan config profile yang sudah kita dapatkan (Edit pada bagian MTU &amp; Private key)
 <div class="not-prose">
 <figure>
     <img src="https://raw.githubusercontent.com/bembenk18/Images/main/WARP/2.png"
@@ -350,10 +349,8 @@ Endpoint = engage.cloudflareclient.com:2408
       loading="lazy"
     >
   </figure></div>
-</p>
 </li>
-<li>
-<p>Buat Wireguard Peer sesuaikan juga Public Key, Endpoint dan Endpoint Port dengan profile
+<li>Buat Wireguard Peer sesuaikan juga Public Key, Endpoint dan Endpoint Port dengan profile
 <div class="not-prose">
 <figure>
     <img src="https://raw.githubusercontent.com/bembenk18/Images/main/WARP/3.png"
@@ -361,10 +358,8 @@ Endpoint = engage.cloudflareclient.com:2408
       loading="lazy"
     >
   </figure></div>
-</p>
 </li>
-<li>
-<p>Buat address baru dengan IP 172.16.0.2/32 dan Interface <strong>WARP</strong>
+<li>Buat address baru dengan IP 172.16.0.2/32 dan Interface <strong>WARP</strong>
 <div class="not-prose">
 <figure>
     <img src="https://raw.githubusercontent.com/bembenk18/Images/main/WARP/4.png"
@@ -372,16 +367,10 @@ Endpoint = engage.cloudflareclient.com:2408
       loading="lazy"
     >
   </figure></div>
-</p>
 </li>
-<li>
-<p>Ubah DNS ke 1.1.1.1</p>
-</li>
-<li>
-<p>Buat Routing Table baru dengan nama <strong>Cloudflare</strong></p>
-</li>
-<li>
-<p>Tambahkan Route baru dengan gateway <strong>WARP</strong>
+<li>Ubah DNS ke 1.1.1.1</li>
+<li>Buat Routing Table baru dengan nama <strong>Cloudflare</strong></li>
+<li>Tambahkan Route baru dengan gateway <strong>WARP</strong>
 <div class="not-prose">
 <figure>
     <img src="https://raw.githubusercontent.com/bembenk18/Images/main/WARP/5.png"
@@ -389,11 +378,8 @@ Endpoint = engage.cloudflareclient.com:2408
       loading="lazy"
     >
   </figure></div>
-</p>
 </li>
-<li>
-<p>Buat NAT baru dengan Out Interface <strong>WARP</strong> dan action masquerade (Pastikan nat ini berada paling atas)</p>
-</li>
+<li>Buat NAT baru dengan Out Interface <strong>WARP</strong> dan action masquerade (Pastikan nat ini berada paling atas)</li>
 </ul>
 <pre tabindex="0"><code> /ip firewall nat add action=masquerade chain=srcnat disabled=no log=no log-prefix=&#34;&#34; out-interface=WARP
 </code></pre><ul>
