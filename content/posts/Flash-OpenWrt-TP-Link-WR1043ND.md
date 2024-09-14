@@ -56,5 +56,6 @@ Setelah beberapa pertimbangan akhirnya pilih TP-Link dengan harga 128k (diskon j
 6. Akses halaman login, user default root dan password kosong
 
    ![img](https://raw.githubusercontent.com/bembenk18/Images/main/Openwrt-WR1043ND/6.png)
+7. Selamat router sudah Floss anti spy spy sesuai sabda pak Anton
 
    ![img](https://raw.githubusercontent.com/bembenk18/Images/main/Openwrt-WR1043ND/7.png)
