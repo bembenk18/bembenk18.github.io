@@ -2,19 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://bembenk.tech/posts/flash-openwrt-tp-link-wr1043nd/</loc>
-    <lastmod>2024-09-14T14:57:38+07:00</lastmod>
-  </url><url>
     <loc>https://bembenk.tech/</loc>
+    <lastmod>2024-10-31T10:25:29+07:00</lastmod>
+  </url><url>
+    <loc>https://bembenk.tech/posts/</loc>
+    <lastmod>2024-10-31T10:25:29+07:00</lastmod>
+  </url><url>
+    <loc>https://bembenk.tech/posts/upgrade-home-server/</loc>
+    <lastmod>2024-10-31T10:25:29+07:00</lastmod>
+  </url><url>
+    <loc>https://bembenk.tech/posts/flash-openwrt-tp-link-wr1043nd/</loc>
     <lastmod>2024-09-14T14:57:38+07:00</lastmod>
   </url><url>
     <loc>https://bembenk.tech/tags/linux/</loc>
     <lastmod>2024-09-14T14:57:38+07:00</lastmod>
   </url><url>
     <loc>https://bembenk.tech/tags/networking/</loc>
-    <lastmod>2024-09-14T14:57:38+07:00</lastmod>
-  </url><url>
-    <loc>https://bembenk.tech/posts/</loc>
     <lastmod>2024-09-14T14:57:38+07:00</lastmod>
   </url><url>
     <loc>https://bembenk.tech/tags/</loc>

@@ -9,8 +9,15 @@
     <managingEditor>mail@bembenk.tech (Bembenk)</managingEditor>
     <webMaster>mail@bembenk.tech (Bembenk)</webMaster>
     <copyright>Bembenk</copyright>
-    <lastBuildDate>Sat, 14 Sep 2024 14:57:38 +0700</lastBuildDate>
+    <lastBuildDate>Thu, 31 Oct 2024 10:25:29 +0700</lastBuildDate>
     <atom:link href="https://bembenk.tech/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Upgrade Home Server</title>
+      <link>https://bembenk.tech/posts/upgrade-home-server/</link>
+      <pubDate>Thu, 31 Oct 2024 10:25:29 +0700</pubDate><author>mail@bembenk.tech (Bembenk)</author>
+      <guid>https://bembenk.tech/posts/upgrade-home-server/</guid>
+      <description>Masih ingat dengan postingan home server ini?</description>
+    </item>
     <item>
       <title>Flash OpenWrt TP Link WR1043ND</title>
       <link>https://bembenk.tech/posts/flash-openwrt-tp-link-wr1043nd/</link>
