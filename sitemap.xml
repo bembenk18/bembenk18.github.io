@@ -5,7 +5,16 @@
     <loc>https://bembenk.tech/</loc>
     <lastmod>2024-10-31T10:25:29+07:00</lastmod>
   </url><url>
+    <loc>https://bembenk.tech/tags/linux/</loc>
+    <lastmod>2024-10-31T10:25:29+07:00</lastmod>
+  </url><url>
     <loc>https://bembenk.tech/posts/</loc>
+    <lastmod>2024-10-31T10:25:29+07:00</lastmod>
+  </url><url>
+    <loc>https://bembenk.tech/tags/server/</loc>
+    <lastmod>2024-10-31T10:25:29+07:00</lastmod>
+  </url><url>
+    <loc>https://bembenk.tech/tags/</loc>
     <lastmod>2024-10-31T10:25:29+07:00</lastmod>
   </url><url>
     <loc>https://bembenk.tech/posts/upgrade-home-server/</loc>
@@ -14,13 +23,7 @@
     <loc>https://bembenk.tech/posts/flash-openwrt-tp-link-wr1043nd/</loc>
     <lastmod>2024-09-14T14:57:38+07:00</lastmod>
   </url><url>
-    <loc>https://bembenk.tech/tags/linux/</loc>
-    <lastmod>2024-09-14T14:57:38+07:00</lastmod>
-  </url><url>
     <loc>https://bembenk.tech/tags/networking/</loc>
-    <lastmod>2024-09-14T14:57:38+07:00</lastmod>
-  </url><url>
-    <loc>https://bembenk.tech/tags/</loc>
     <lastmod>2024-09-14T14:57:38+07:00</lastmod>
   </url><url>
     <loc>https://bembenk.tech/tags/mikrotik/</loc>
@@ -82,9 +85,6 @@
   </url><url>
     <loc>https://bembenk.tech/posts/ssh-dengan-google-authenticator/</loc>
     <lastmod>2023-04-14T10:36:25+07:00</lastmod>
-  </url><url>
-    <loc>https://bembenk.tech/tags/server/</loc>
-    <lastmod>2023-04-14T09:04:06+07:00</lastmod>
   </url><url>
     <loc>https://bembenk.tech/posts/ssh-ke-mesin-lokal-dengan-tailscale/</loc>
     <lastmod>2023-04-14T09:04:06+07:00</lastmod>

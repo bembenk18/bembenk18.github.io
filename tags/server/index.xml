@@ -9,8 +9,15 @@
     <managingEditor>mail@bembenk.tech (Bembenk)</managingEditor>
     <webMaster>mail@bembenk.tech (Bembenk)</webMaster>
     <copyright>Bembenk</copyright>
-    <lastBuildDate>Fri, 14 Apr 2023 09:04:06 +0700</lastBuildDate>
+    <lastBuildDate>Thu, 31 Oct 2024 10:25:29 +0700</lastBuildDate>
     <atom:link href="https://bembenk.tech/tags/server/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Upgrade Home Server</title>
+      <link>https://bembenk.tech/posts/upgrade-home-server/</link>
+      <pubDate>Thu, 31 Oct 2024 10:25:29 +0700</pubDate><author>mail@bembenk.tech (Bembenk)</author>
+      <guid>https://bembenk.tech/posts/upgrade-home-server/</guid>
+      <description>Masih ingat dengan postingan home server ini ? Karena makin besar keperluan komputasi akhirnya memutuskan untuk upgrade ke mesin yang lebih besar.&#xA;Ada beberapa pertimbangan diantaranya adalah ukuran yang kecil dan kosumsi daya bisa serendah mungkin tapi tetap powerffull, beberapa kriteria adalah sebagai berikut:&#xA;Dell Wyse 5070 Dell Optiplex 3050 Lenovo Thinkcentre M710Q Dari 3 pilihan diatas akhirnya memutuskan meminang Thinkcentre M710Q dengan spesifikasi:&#xA;Core i3 7100T 2C/4T 3.40 GHz 35W 16 GB DDR4 2400 PC ini saya beli tanpa SSD, karena sudah ada SSD M.</description>
+    </item>
     <item>
       <title>SSH Ke Mesin Lokal Dengan Tailscale</title>
       <link>https://bembenk.tech/posts/ssh-ke-mesin-lokal-dengan-tailscale/</link>
