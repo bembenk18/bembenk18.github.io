@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Learns on Just /var/log/</title>
-    <link>https://bembenk.tech/learn/</link>
+    <link>https://bembenk18.github.io/learn/</link>
     <description>Recent content in Learns on Just /var/log/</description>
     <generator>Hugo</generator>
     <language>en-us</language>
@@ -10,6 +10,6 @@
     <webMaster>mail@bembenk.tech (Bembenk)</webMaster>
     <copyright>Bembenk</copyright>
     <lastBuildDate></lastBuildDate>
-    <atom:link href="https://bembenk.tech/learn/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://bembenk18.github.io/learn/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

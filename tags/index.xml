@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Just /var/log/</title>
-    <link>https://bembenk.tech/tags/</link>
+    <link>https://bembenk18.github.io/tags/</link>
     <description>Recent content in Tags on Just /var/log/</description>
     <generator>Hugo</generator>
     <language>en-us</language>
@@ -10,89 +10,89 @@
     <webMaster>mail@bembenk.tech (Bembenk)</webMaster>
     <copyright>Bembenk</copyright>
     <lastBuildDate>Thu, 31 Oct 2024 10:25:29 +0700</lastBuildDate>
-    <atom:link href="https://bembenk.tech/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://bembenk18.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Linux</title>
-      <link>https://bembenk.tech/tags/linux/</link>
+      <link>https://bembenk18.github.io/tags/linux/</link>
       <pubDate>Thu, 31 Oct 2024 10:25:29 +0700</pubDate><author>mail@bembenk.tech (Bembenk)</author>
-      <guid>https://bembenk.tech/tags/linux/</guid>
+      <guid>https://bembenk18.github.io/tags/linux/</guid>
       <description></description>
     </item>
     <item>
       <title>Server</title>
-      <link>https://bembenk.tech/tags/server/</link>
+      <link>https://bembenk18.github.io/tags/server/</link>
       <pubDate>Thu, 31 Oct 2024 10:25:29 +0700</pubDate><author>mail@bembenk.tech (Bembenk)</author>
-      <guid>https://bembenk.tech/tags/server/</guid>
+      <guid>https://bembenk18.github.io/tags/server/</guid>
       <description></description>
     </item>
     <item>
       <title>Networking</title>
-      <link>https://bembenk.tech/tags/networking/</link>
+      <link>https://bembenk18.github.io/tags/networking/</link>
       <pubDate>Sat, 14 Sep 2024 14:57:38 +0700</pubDate><author>mail@bembenk.tech (Bembenk)</author>
-      <guid>https://bembenk.tech/tags/networking/</guid>
+      <guid>https://bembenk18.github.io/tags/networking/</guid>
       <description></description>
     </item>
     <item>
       <title>Mikrotik</title>
-      <link>https://bembenk.tech/tags/mikrotik/</link>
+      <link>https://bembenk18.github.io/tags/mikrotik/</link>
       <pubDate>Sun, 25 Aug 2024 05:46:19 +0700</pubDate><author>mail@bembenk.tech (Bembenk)</author>
-      <guid>https://bembenk.tech/tags/mikrotik/</guid>
+      <guid>https://bembenk18.github.io/tags/mikrotik/</guid>
       <description></description>
     </item>
     <item>
       <title>Bugbounty</title>
-      <link>https://bembenk.tech/tags/bugbounty/</link>
+      <link>https://bembenk18.github.io/tags/bugbounty/</link>
       <pubDate>Thu, 28 Dec 2023 13:39:57 +0700</pubDate><author>mail@bembenk.tech (Bembenk)</author>
-      <guid>https://bembenk.tech/tags/bugbounty/</guid>
+      <guid>https://bembenk18.github.io/tags/bugbounty/</guid>
       <description></description>
     </item>
     <item>
       <title>Firewall</title>
-      <link>https://bembenk.tech/tags/firewall/</link>
+      <link>https://bembenk18.github.io/tags/firewall/</link>
       <pubDate>Sat, 18 Nov 2023 13:18:23 +0700</pubDate><author>mail@bembenk.tech (Bembenk)</author>
-      <guid>https://bembenk.tech/tags/firewall/</guid>
+      <guid>https://bembenk18.github.io/tags/firewall/</guid>
       <description></description>
     </item>
     <item>
       <title>OpenSUSE</title>
-      <link>https://bembenk.tech/tags/opensuse/</link>
+      <link>https://bembenk18.github.io/tags/opensuse/</link>
       <pubDate>Sat, 18 Nov 2023 13:18:23 +0700</pubDate><author>mail@bembenk.tech (Bembenk)</author>
-      <guid>https://bembenk.tech/tags/opensuse/</guid>
+      <guid>https://bembenk18.github.io/tags/opensuse/</guid>
       <description></description>
     </item>
     <item>
       <title>Event</title>
-      <link>https://bembenk.tech/tags/event/</link>
+      <link>https://bembenk18.github.io/tags/event/</link>
       <pubDate>Tue, 17 Oct 2023 16:05:36 +0700</pubDate><author>mail@bembenk.tech (Bembenk)</author>
-      <guid>https://bembenk.tech/tags/event/</guid>
+      <guid>https://bembenk18.github.io/tags/event/</guid>
       <description></description>
     </item>
     <item>
       <title>Osint</title>
-      <link>https://bembenk.tech/tags/osint/</link>
+      <link>https://bembenk18.github.io/tags/osint/</link>
       <pubDate>Wed, 27 Sep 2023 16:15:20 +0700</pubDate><author>mail@bembenk.tech (Bembenk)</author>
-      <guid>https://bembenk.tech/tags/osint/</guid>
+      <guid>https://bembenk18.github.io/tags/osint/</guid>
       <description></description>
     </item>
     <item>
       <title>Log</title>
-      <link>https://bembenk.tech/tags/log/</link>
+      <link>https://bembenk18.github.io/tags/log/</link>
       <pubDate>Thu, 15 Jun 2023 07:06:00 +0700</pubDate><author>mail@bembenk.tech (Bembenk)</author>
-      <guid>https://bembenk.tech/tags/log/</guid>
+      <guid>https://bembenk18.github.io/tags/log/</guid>
       <description></description>
     </item>
     <item>
       <title>Thinkpad</title>
-      <link>https://bembenk.tech/tags/thinkpad/</link>
+      <link>https://bembenk18.github.io/tags/thinkpad/</link>
       <pubDate>Thu, 27 Apr 2023 14:17:18 +0700</pubDate><author>mail@bembenk.tech (Bembenk)</author>
-      <guid>https://bembenk.tech/tags/thinkpad/</guid>
+      <guid>https://bembenk18.github.io/tags/thinkpad/</guid>
       <description></description>
     </item>
     <item>
       <title>Tutorial</title>
-      <link>https://bembenk.tech/tags/tutorial/</link>
+      <link>https://bembenk18.github.io/tags/tutorial/</link>
       <pubDate>Sun, 26 Mar 2023 13:47:58 +0700</pubDate><author>mail@bembenk.tech (Bembenk)</author>
-      <guid>https://bembenk.tech/tags/tutorial/</guid>
+      <guid>https://bembenk18.github.io/tags/tutorial/</guid>
       <description></description>
     </item>
   </channel>

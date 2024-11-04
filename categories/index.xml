@@ -2,13 +2,13 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Just /var/log/</title>
-    <link>https://bembenk.tech/categories/</link>
+    <link>https://bembenk18.github.io/categories/</link>
     <description>Recent content in Categories on Just /var/log/</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <managingEditor>mail@bembenk.tech (Bembenk)</managingEditor>
     <webMaster>mail@bembenk.tech (Bembenk)</webMaster>
     <copyright>Bembenk</copyright>
-    <atom:link href="https://bembenk.tech/categories/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://bembenk18.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

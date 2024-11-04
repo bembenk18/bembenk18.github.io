@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Osint on Just /var/log/</title>
-    <link>https://bembenk.tech/tags/osint/</link>
+    <link>https://bembenk18.github.io/tags/osint/</link>
     <description>Recent content in Osint on Just /var/log/</description>
     <generator>Hugo</generator>
     <language>en-us</language>
@@ -10,12 +10,12 @@
     <webMaster>mail@bembenk.tech (Bembenk)</webMaster>
     <copyright>Bembenk</copyright>
     <lastBuildDate>Wed, 27 Sep 2023 16:15:20 +0700</lastBuildDate>
-    <atom:link href="https://bembenk.tech/tags/osint/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://bembenk18.github.io/tags/osint/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Bongkar Apk Undangan Online</title>
-      <link>https://bembenk.tech/posts/bongkar-apk-undangan-online/</link>
+      <link>https://bembenk18.github.io/posts/bongkar-apk-undangan-online/</link>
       <pubDate>Wed, 27 Sep 2023 16:15:20 +0700</pubDate><author>mail@bembenk.tech (Bembenk)</author>
-      <guid>https://bembenk.tech/posts/bongkar-apk-undangan-online/</guid>
+      <guid>https://bembenk18.github.io/posts/bongkar-apk-undangan-online/</guid>
       <description>Abstraksi Sudah lama saya ingin bongkar aplikasi penipuan semacam ini, tetapi tak kunjunag ada penipu yang mengirimkannya wkwkw. Akhirnya ada seseorang yang mengirimkan aplikasi dengan nama UNDANGAN.apk di salah satu group, lalu tanpa pikir panjang saya memutuskan untuk mencoba bongkar aplikasi ini.&#xA;Informasi dasar file Nama : UNDANGAN.apk MD5 : 5668b313d21604a67e2b50f58d516dff SHA1 : b60bf67c109ed43a7af4a70ca3a18f8d212a2598 SHA256 : 125c855d439895581bedf1b30bb779313058feb7f114f32167d45d427f27fe0c Hasil decompile file apk Setelah decompile bisa kita lihat terdapat file Manifest dengan nama AndroidManifest.</description>
     </item>
   </channel>
