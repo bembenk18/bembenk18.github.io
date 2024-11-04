@@ -5,8 +5,6 @@ draft: false
 tags:
 - Server
 - Linux
-
-
 ---
 ![IMG](https://raw.githubusercontent.com/bembenk18/Images/refs/heads/main/Upgrade%20Home%20Server/photo_2024-11-03_20-24-07.jpg)
 
@@ -26,3 +24,5 @@ Dari 3 pilihan diatas akhirnya memutuskan meminang Thinkcentre M710Q dengan spes
 PC ini saya beli tanpa SSD, karena sudah ada SSD M.2 Sata copotan laptop (Catat M.2). Setelah sampai gas langsung install Proxmox di mesin ini, karena gak ada keyboard akhirnya install di laptop dulu kemudian pindah ke mesin ini. Setelah booting lah kok gak terdeteksi? dan ternyata hanya support SSD NVME bukan M.2 Sata (LOL).
 
 Untungnya masih ada SSD Sata 128GB copotan laptop, gas langsung install dan berhasil boot dengan aman sentosa.
+
+~
