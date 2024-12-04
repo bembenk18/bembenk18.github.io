@@ -11,3 +11,6 @@
 [submodule "themes/tailwind"]
 	path = themes/tailwind
 	url = https://github.com/tomowang/hugo-theme-tailwind.git
+[submodule "themes/hugo-brutal"]
+	path = themes/hugo-brutal
+	url =https://github.com/tomquirk/hugo-brutal.git
