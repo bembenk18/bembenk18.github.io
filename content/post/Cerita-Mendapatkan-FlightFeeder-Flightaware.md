@@ -22,3 +22,11 @@ Isi paket pengiriman antara lain sebagai berikut:
 - Kabel lan cat 5e 1.5M
 
 Installasinya cukup mudah, hanya perlu colok adaptor dan colok lan ke modem, selanjutnya dia akan dapat ip dhcp.  Setelah sekitar 15 menit online maka akan dapat email kalau feeder kita sudah online, untuk akses web feeder kita bisa buka ip yang tertera di layar feeder.
+![](https://github.com/bembenk18/Images/blob/main/FlightAware/halaman-awal.png?raw=true)
+
+Tampilan tracking jika diakses local:
+![](https://github.com/bembenk18/Images/blob/main/local-tracking.png?raw=true)
+
+Untuk feeder saya ini jarak terjaun saat ini ada di sekitaran palangkaraya, dengan jarak 600km. Penempatan antenna tidak terlalu tinggi, sementara hanya saya tempatkan di pohon dengan ketinggian kurang lebih 5M dengan pandangan LOS kearah Utara dan Barat (jika ditempatkan diatas tower dengan ketinggian 15M mungkin akan lebih luas lagi pandangannya).
+![](https://github.com/bembenk18/Images/blob/main/antenna.png?raw=true)
+
