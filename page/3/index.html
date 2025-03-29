@@ -1,622 +1,233 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <!DOCTYPE html>
-<html lang="en-us" data-theme="light">
+<html lang="en" dir="auto">
 
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
-  <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width">
+<head>
+	<meta name="generator" content="Hugo 0.131.0"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Just /var/log/</title>
 
-<meta name="theme-color" content="" media="(prefers-color-scheme: light)" />
+<meta name="description" content="Linux &amp; Cyber Security enthusiast">
+<meta name="author" content="Bembenk">
+<link rel="canonical" href="http://localhost:1313/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.f49d66caae9ea0fd43f21f29e71a8d3e284517ed770f2aa86fa012953ad3c9ef.css" integrity="sha256-9J1myq6eoP1D8h8p5xqNPihFF&#43;13Dyqob6ASlTrTye8=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/index.xml">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
 
-<meta name="generator" content="Hugo 0.131.0">
-<link rel="shortcut icon" type="image/x-icon" href="">
-<link rel="icon" type="image/x-icon" href="">
-<link rel="icon" type="image/png" sizes="16x16" href="">
-<link rel="icon" type="image/png" sizes="32x32" href="">
-<link rel="apple-touch-icon" sizes="180x180" href="">
-<meta itemprop="name" content="Just /var/log/" />
-<meta itemprop="description" content="" />
-<meta name="description" content="" />
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
 
+            .list {
+                background: var(--theme);
+            }
 
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
 
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
 
-<meta itemprop="image" content="http://localhost:1313/" />
-<meta itemprop="keywords" content="" />
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  <link type="text/css" rel="stylesheet" href="%25!s%28%3cnil%3e%29/font-awesome/6.6.0/css/all.min.css" /> 
-
-  
-  <link type="text/css" rel="stylesheet" href="%25!s%28%3cnil%3e%29/animate.css/4.1.1/animate.min.css" /> 
-
-  
-  <link type="text/css" rel="stylesheet" href="%25!s%28%3cnil%3e%29/viewerjs/1.11.6/viewer.min.css" /> 
-
-
-
-
-
-
-
-<link rel="stylesheet" href="/css/main.scss">
-
-
-
-
-  
-<script type="text/javascript">
-(function(){
-  localDB = {
-    set: function (key, value, ttl) {
-      if (ttl === 0) return;
-      const now = new Date();
-      const expiryDay = ttl * 86400000;
-      const item = {
-        value: value,
-        expiry: now.getTime() + expiryDay
-      };
-      localStorage.setItem(key, JSON.stringify(item));
-    },
-    get: function (key) {
-      const itemStr = localStorage.getItem(key);
-      if (!itemStr) {
-        return undefined;
-      }
-  
-      const item = JSON.parse(itemStr);
-      const now = new Date();
-  
-      if (now.getTime() > item.expiry) {
-        localStorage.removeItem(key);
-        return undefined;
-      }
-      return item.value;
-    }
-  };
-
-  theme = {
-    active: function() {
-      const localState = localDB.get('theme');
-      if (localState == undefined) return;
-      theme.toggle(localState);
-      window.matchMedia("(prefers-color-scheme: dark)").addListener(function (evt) {
-        theme.toggle(evt.matches ? 'dark' : 'light');
-      });
-    },
-
-    toggle: function (theme) {
-      document.documentElement.setAttribute('data-theme',  theme);
-      localDB.set('theme', theme, 2);
-      
-      const iframe = document.querySelector('iframe.giscus-frame');
-      if (iframe) {
-        const config = { setConfig: { theme: theme } };
-        iframe.contentWindow.postMessage({ giscus: config }, 'https://giscus.app');
-      }
-    }
-  };
-
-  theme.active();
-})(window);
-</script>
-
-
-
-
-
-
-
-
-
-
-
-<script class="next-config" data-name="page" type="application/json">{"comments":null,"isHome":true,"isPage":false,"path":"localhost:1313","permalink":"http://localhost:1313/","title":"Just /var/log/"}</script>
-
-
-
-
-
-
-  <title>Just /var/log/</title>
-  <noscript>
-    <link rel="stylesheet" href="/css/noscript.css">
-  </noscript>
+    </style>
+</noscript>
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" >
-  <div class="headband"></div>
-  <main class="main">
-    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner">
-        
-<div class="site-brand-container">
-  <div class="site-nav-toggle">
-    <div class="toggle" aria-label="" role="button">
-        <span class="toggle-line"></span>
-        <span class="toggle-line"></span>
-        <span class="toggle-line"></span>
-    </div>
+<body class="list" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Just /var/log/ (Alt + H)">Just /var/log/</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/" title="Home">
+                    <span class="active">Home</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/learn" title="Learn">
+                    <span>Learn</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/about" title="About">
+                    <span>About</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main"> 
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Indonesia Linux Confrence 2022
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Akhirnya setelah menunggu cukup lama saya bisa mengikuti acara Opensource untuk pertama kali, acara kali ini adalah Indonesia Linux Confrence 2022 yang diselenggarakan di Universitas Muhammadiyah Sidoarjo pada hari Sabtu tanggal 5 November 2022. Day 0 (4 November 2022) Sekitar jam 4 sore saya berangkat dari kantor menuju rumah teman yang telah janjian untuk berangkat bareng, sebenanrnya kami akan berangkat ber 3 tapi ternyata salah satu teman saya sudah berangkat sejak pagi karena ada urusan pekerjaan....</p>
   </div>
+  <footer class="entry-footer"><span title='2022-11-07 18:13:33 +0700 WIB'>2022-11-07</span>&nbsp;·&nbsp;Bembenk</footer>
+  <a class="entry-link" aria-label="post link to Indonesia Linux Confrence 2022" href="http://localhost:1313/post/indonesia-linux-confrence-2022/"></a>
+</article>
 
-  <div class="site-meta">
-    
-
-    <a href="/" class="brand" rel="start">
-      <i class="logo-line"></i>
-      <h1 class="site-title">Just /var/log/</h1>
-      <i class="logo-line"></i>
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Install Middleton Bios Thinkpad X61
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Masih dengan mesin x61, setelah menyelam di reddit ketemu sebuah postingan tentang thinkpad x61 dengan bios mod. Setelah baca ternyata fiturnya lumayan banyak daripada bios bawaan. 2 fitur yang menarik adalah unlock SATA II dan RAM yang bisa max 8GB (Walaupun sekeping 4GB DDR2 harganya hampir sejuta).
+Proses Flash Ada 2 cara:
+Cara 1 Download Iso bios Burn ke flashdisk Boot ke flaskdisk Gabisa pakai cara ini karena harus ada baterai...</p>
+  </div>
+  <footer class="entry-footer"><span title='2022-03-29 21:04:09 +0700 WIB'>2022-03-29</span>&nbsp;·&nbsp;Bembenk</footer>
+  <a class="entry-link" aria-label="post link to Install Middleton Bios Thinkpad X61" href="http://localhost:1313/post/install-middleton-bios-thinkpad-x61/"></a>
+</article>
+<footer class="page-footer">
+  <nav class="pagination">
+    <a class="prev" href="http://localhost:1313/page/2/">
+      «&nbsp;Prev&nbsp;
     </a>
+  </nav>
+</footer>
+    </main>
     
-    
-  </div>
+<footer class="footer">
+        <span>Bembenk</span> · 
 
-  <div class="site-nav-right">
-    <div class="toggle popup-trigger">
-      
-    </div>
-  </div>
-</div>
-
-
-<nav class="site-nav">
-  <ul class="main-menu menu">    
-  
-    
-    <li class="menu-item menu-item-">
-      <a href="/" class=" hvr-icon-pulse " rel="section">
-        Home
-        
-        
-      </a>
-      
-    </li>
-  
-    
-    <li class="menu-item menu-item-">
-      <a href="/posts" class=" hvr-icon-pulse " rel="section">
-        Writings
-        
-        
-      </a>
-      
-    </li>
-  
-    
-    <li class="menu-item menu-item-">
-      <a href="/projects" class=" hvr-icon-pulse " rel="section">
-        Projects
-        
-        
-      </a>
-      
-    </li>
-  
-    
-    <li class="menu-item menu-item-">
-      <a href="/learn" class=" hvr-icon-pulse " rel="section">
-        Learn
-        
-        
-      </a>
-      
-    </li>
-  
-    
-    <li class="menu-item menu-item-">
-      <a href="/tags" class=" hvr-icon-pulse " rel="section">
-        Tags
-        
-        
-      </a>
-      
-    </li>
-  
-    
-    <li class="menu-item menu-item-">
-      <a href="/about" class=" hvr-icon-pulse " rel="section">
-        About
-        
-        
-      </a>
-      
-    </li>
-      
-
-  
-  </ul>
-</nav>
-
-      </div>
-      
-      
-      <div class="toggle sidebar-toggle" role="button">
-  <span class="toggle-line"></span>
-  <span class="toggle-line"></span>
-  <span class="toggle-line"></span>
-</div>
-
-<aside class="sidebar">
-  <div class="sidebar-inner sidebar-overview-active">
-    <ul class="sidebar-nav">
-      <li class="sidebar-nav-toc">
-        TOC
-      </li>
-      <li class="sidebar-nav-overview">
-        Overview
-      </li>
-    </ul>
-    <div class="sidebar-panel-container">
-      
-      <div class="post-toc-wrap sidebar-panel">
-        <div class="post-toc animated"><nav id="TableOfContents"></nav></div>
-      </div>
-      
-      <div class="site-overview-wrap sidebar-panel">
-        
-<div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
-  
-  <p class="site-author-name" itemprop="name"></p>
-  <div class="site-description" itemprop="description"></div>
-</div>
-
-
-
-<div class="links-of-social site-overview-item animated">
-
-
-</div>
-
-
-
-
-        
-        
-        
-      </div>
-    </div>
-  </div>
-
-  
-
-  
-</aside>
-<div class="sidebar-dimmer"></div>
-
-      
-    </header>
-    
-    <div class="tool-buttons" >
-    
-  
-  <div id="toggle-theme" class="button" title="Change Theme">
-    <i class="fas fa-adjust"></i>
-  </div>
-   
-</div>
-
-
-
-
-
-
-
-
-
-<noscript>
-  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
-</noscript>
-    <div class="main-inner index posts-expand">
-      
-      
-
-
-
-  <div class="post-block">
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    
-    <link itemprop="mainEntityOfPage" href="http://localhost:1313/posts/indonesia-linux-confrence-2022/">
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="">
-      <meta itemprop="name" content="">
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
     </span>
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="">
-      <meta itemprop="description" content="">
-    </span>
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="Indonesia Linux Confrence 2022">
-      <meta itemprop="description" content="Akhirnya setelah menunggu cukup lama saya bisa mengikuti acara Opensource untuk pertama kali, acara kali ini adalah Indonesia Linux Confrence 2022 yang diselenggarakan di Universitas Muhammadiyah Sidoarjo pada hari Sabtu tanggal 5 November 2022. Day 0 (4 November 2022) Sekitar jam 4 sore saya berangkat dari kantor menuju rumah teman yang telah janjian untuk berangkat bareng, sebenanrnya kami akan berangkat ber 3 tapi ternyata salah satu teman saya sudah berangkat sejak pagi karena ada urusan pekerjaan.">
-    </span>
-    
-    <header class="post-header">
-      
- <h2  class="post-title" itemprop="name headline">
-  
-  
-  
-  <a href="/posts/indonesia-linux-confrence-2022/" itemprop="url" class="post-title-link">Indonesia Linux Confrence 2022</a>
-  
-  
-   </h2> 
-
-<div class="post-meta-container">
-  <div class="post-meta-items">
-    
-    
-    
-    
-      
-      
-        
-  </div>
-  
-</div>
-
-    </header>
-    
-    <div class="post-body " itemprop="articleBody">
-      
-
-  
-  Akhirnya setelah menunggu cukup lama saya bisa mengikuti acara Opensource untuk pertama kali, acara kali ini adalah Indonesia Linux Confrence 2022 yang diselenggarakan di Universitas Muhammadiyah Sidoarjo pada hari Sabtu tanggal 5 November 2022. Day 0 (4 November 2022) Sekitar jam 4 sore saya berangkat dari kantor menuju rumah teman yang telah janjian untuk berangkat bareng, sebenanrnya kami akan berangkat ber 3 tapi ternyata salah satu teman saya sudah berangkat sejak pagi karena ada urusan pekerjaan.
-  
-
-
-    </div>
-    <footer class="post-footer">
-      
- 
-
-<div class="post-eof"></div>
-
-
-    </footer>
-  </article>
-</div>
-
-  <div class="post-block">
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    
-    <link itemprop="mainEntityOfPage" href="http://localhost:1313/posts/install-middleton-bios-thinkpad-x61/">
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="">
-      <meta itemprop="name" content="">
-    </span>
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="">
-      <meta itemprop="description" content="">
-    </span>
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="Install Middleton Bios Thinkpad X61">
-      <meta itemprop="description" content="Masih dengan mesin x61, setelah menyelam di reddit ketemu sebuah postingan tentang thinkpad x61 dengan bios mod. Setelah baca ternyata fiturnya lumayan banyak daripada bios bawaan. 2 fitur yang menarik adalah unlock SATA II dan RAM yang bisa max 8GB (Walaupun sekeping 4GB DDR2 harganya hampir sejuta).
-Proses Flash Ada 2 cara:
-Cara 1 Download Iso bios Burn ke flashdisk Boot ke flaskdisk Gabisa pakai cara ini karena harus ada baterai">
-    </span>
-    
-    <header class="post-header">
-      
- <h2  class="post-title" itemprop="name headline">
-  
-  
-  
-  <a href="/posts/install-middleton-bios-thinkpad-x61/" itemprop="url" class="post-title-link">Install Middleton Bios Thinkpad X61</a>
-  
-  
-   </h2> 
-
-<div class="post-meta-container">
-  <div class="post-meta-items">
-    
-    
-    
-    
-      
-      
-        
-  </div>
-  
-</div>
-
-    </header>
-    
-    <div class="post-body " itemprop="articleBody">
-      
-
-  
-  Masih dengan mesin x61, setelah menyelam di reddit ketemu sebuah postingan tentang thinkpad x61 dengan bios mod. Setelah baca ternyata fiturnya lumayan banyak daripada bios bawaan. 2 fitur yang menarik adalah unlock SATA II dan RAM yang bisa max 8GB (Walaupun sekeping 4GB DDR2 harganya hampir sejuta).
-Proses Flash Ada 2 cara:
-Cara 1 Download Iso bios Burn ke flashdisk Boot ke flaskdisk Gabisa pakai cara ini karena harus ada baterai
-  
-
-
-    </div>
-    <footer class="post-footer">
-      
- 
-
-<div class="post-eof"></div>
-
-
-    </footer>
-  </article>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-
-
-
-
-
-
-  
-  
-
-
-<nav class="pagination">
-  
-  <a class="extend prev" rel="prev" href="/page/2/">
-    <i class="fa fa-angle-left"></i>
-  </a>
-  
-  
-      
-      
-        <a class="page-number" href="/">1</a>
-      
-      
-  
-      
-      
-        <a class="page-number" href="/page/2/">2</a>
-      
-      
-  
-      
-      
-        <span class="page-number current">3</span>
-      
-      
-  
-  
-</nav>  
-
-      
-    </div>
-  </main>
-  <footer class="footer">
-    <div class="footer-inner">
-      
-
-<div class="copyright">
-  &copy;
-  <span itemprop="copyrightYear">
-    
-    
-    2024
-    
-  </span>
-  <span class="with-love">
-    <i class=""></i>
-  </span>
-  <span class="author" itemprop="copyrightHolder"></span>
-</div>
-
-
-
-
-
-
-
-    </div>
-  </footer>
-
-  
-
-
-
- 
-  
-  <script type="text/javascript" src="%25!s%28%3cnil%3e%29/animejs/3.2.2/anime.min.js" crossorigin="anonymous" defer></script>
- 
-  
-  <script type="text/javascript" src="%25!s%28%3cnil%3e%29/viewerjs/1.11.6/viewer.min.js" crossorigin="anonymous" defer></script>
-
-
-<script class="next-config" data-name="main" type="application/json">{"bookmark":null,"copybtn":null,"darkmode":null,"hostname":"http://localhost:1313/","i18n":{"ds_day":" Day Ago","ds_days":" Day ","ds_hour":" Hour Ago","ds_hours":" Hour ","ds_just":"Just","ds_min":" Min Ago","ds_mins":" Min","ds_month":" Month Ago","ds_years":" Year ","empty":"We didn't find any results for the search: ${query}","hits":"${hits} results found","hits_time":"${hits} results found in ${time} ms","placeholder":"Searching..."},"lang":"en-us","lazyload":null,"motion":null,"root":"/","scheme":null,"sidebar":null,"vendor":{"plugins":null,"router":{}},"version":"4.6.3"}</script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<script type="text/javascript" src="/js/main.js" defer></script>
-
-
-
-
-
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
 </body>
 
 </html>

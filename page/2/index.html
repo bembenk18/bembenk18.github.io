@@ -1,1160 +1,347 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <!DOCTYPE html>
-<html lang="en-us" data-theme="light">
+<html lang="en" dir="auto">
 
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
-  <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width">
+<head>
+	<meta name="generator" content="Hugo 0.131.0"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Just /var/log/</title>
 
-<meta name="theme-color" content="" media="(prefers-color-scheme: light)" />
+<meta name="description" content="Linux &amp; Cyber Security enthusiast">
+<meta name="author" content="Bembenk">
+<link rel="canonical" href="http://localhost:1313/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.f49d66caae9ea0fd43f21f29e71a8d3e284517ed770f2aa86fa012953ad3c9ef.css" integrity="sha256-9J1myq6eoP1D8h8p5xqNPihFF&#43;13Dyqob6ASlTrTye8=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/index.xml">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
 
-<meta name="generator" content="Hugo 0.131.0">
-<link rel="shortcut icon" type="image/x-icon" href="">
-<link rel="icon" type="image/x-icon" href="">
-<link rel="icon" type="image/png" sizes="16x16" href="">
-<link rel="icon" type="image/png" sizes="32x32" href="">
-<link rel="apple-touch-icon" sizes="180x180" href="">
-<meta itemprop="name" content="Just /var/log/" />
-<meta itemprop="description" content="" />
-<meta name="description" content="" />
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
 
+            .list {
+                background: var(--theme);
+            }
 
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
 
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
 
-<meta itemprop="image" content="http://localhost:1313/" />
-<meta itemprop="keywords" content="" />
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  <link type="text/css" rel="stylesheet" href="%25!s%28%3cnil%3e%29/font-awesome/6.6.0/css/all.min.css" /> 
-
-  
-  <link type="text/css" rel="stylesheet" href="%25!s%28%3cnil%3e%29/animate.css/4.1.1/animate.min.css" /> 
-
-  
-  <link type="text/css" rel="stylesheet" href="%25!s%28%3cnil%3e%29/viewerjs/1.11.6/viewer.min.css" /> 
-
-
-
-
-
-
-
-<link rel="stylesheet" href="/css/main.scss">
-
-
-
-
-  
-<script type="text/javascript">
-(function(){
-  localDB = {
-    set: function (key, value, ttl) {
-      if (ttl === 0) return;
-      const now = new Date();
-      const expiryDay = ttl * 86400000;
-      const item = {
-        value: value,
-        expiry: now.getTime() + expiryDay
-      };
-      localStorage.setItem(key, JSON.stringify(item));
-    },
-    get: function (key) {
-      const itemStr = localStorage.getItem(key);
-      if (!itemStr) {
-        return undefined;
-      }
-  
-      const item = JSON.parse(itemStr);
-      const now = new Date();
-  
-      if (now.getTime() > item.expiry) {
-        localStorage.removeItem(key);
-        return undefined;
-      }
-      return item.value;
-    }
-  };
-
-  theme = {
-    active: function() {
-      const localState = localDB.get('theme');
-      if (localState == undefined) return;
-      theme.toggle(localState);
-      window.matchMedia("(prefers-color-scheme: dark)").addListener(function (evt) {
-        theme.toggle(evt.matches ? 'dark' : 'light');
-      });
-    },
-
-    toggle: function (theme) {
-      document.documentElement.setAttribute('data-theme',  theme);
-      localDB.set('theme', theme, 2);
-      
-      const iframe = document.querySelector('iframe.giscus-frame');
-      if (iframe) {
-        const config = { setConfig: { theme: theme } };
-        iframe.contentWindow.postMessage({ giscus: config }, 'https://giscus.app');
-      }
-    }
-  };
-
-  theme.active();
-})(window);
-</script>
-
-
-
-
-
-
-
-
-
-
-
-<script class="next-config" data-name="page" type="application/json">{"comments":null,"isHome":true,"isPage":false,"path":"localhost:1313","permalink":"http://localhost:1313/","title":"Just /var/log/"}</script>
-
-
-
-
-
-
-  <title>Just /var/log/</title>
-  <noscript>
-    <link rel="stylesheet" href="/css/noscript.css">
-  </noscript>
+    </style>
+</noscript>
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" >
-  <div class="headband"></div>
-  <main class="main">
-    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner">
-        
-<div class="site-brand-container">
-  <div class="site-nav-toggle">
-    <div class="toggle" aria-label="" role="button">
-        <span class="toggle-line"></span>
-        <span class="toggle-line"></span>
-        <span class="toggle-line"></span>
-    </div>
+<body class="list" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Just /var/log/ (Alt + H)">Just /var/log/</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/" title="Home">
+                    <span class="active">Home</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/learn" title="Learn">
+                    <span>Learn</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/about" title="About">
+                    <span>About</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main"> 
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">RCE Upload CSV
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Abstraksi Bug ini memungkinkan attacker untuk mengupload file backdoor. Bug ini muncul karena tidak ada filtering type file yang diupload sehingga memungkinkan attacker untuk mengupload file backdoor berekstensi .php.
+&lt;div class=&#34;col-12 pb-2&#34;&gt; &lt;div class=&#34;input-group&#34;&gt; &lt;div class=&#34;custom-file&#34;&gt; &lt;input type=&#34;file&#34; class=&#34;custom-file-input&#34; name=&#34;filedata&#34; id=&#34;exampleInputF&#34;&gt; &lt;label class=&#34;custom-file-label&#34; for=&#34;exampleInput&#34;&gt;Choose file&lt;/label&gt; &lt;/div&gt; &lt;/div&gt; &lt;/div&gt; Impact Remote Code Execution
+Proof of Concept: Login ke https://www.redacted.com/ Masuk ke menu Upload data pelanggan Klik Choose file dan pilih file ....</p>
   </div>
+  <footer class="entry-footer"><span title='2023-09-07 13:33:53 +0700 WIB'>2023-09-07</span>&nbsp;·&nbsp;Bembenk</footer>
+  <a class="entry-link" aria-label="post link to RCE Upload CSV" href="http://localhost:1313/post/rce-upload-csv/"></a>
+</article>
 
-  <div class="site-meta">
-    
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Upgrade Debian 11 to 12
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Testing upgrade dari debian 11 ke debian 12 di STB HG680P
+Posisi sebelum update Ganti repo Ganti ke bullseye menjadi bookworm seperti berikut ini
+# sudo nano /etc/apt/sources.list deb http://deb.debian.org/debian bookworm main contrib non-free deb http://deb.debian.org/debian bookworm -updates main contrib non-free deb http://security.debian.org/debian-security bookworm-security main deb http://ftp.debian.org/debian bookworm-backports main contrib non-free Setelah ganti repository lakukan update repository baru sudo apt update Upgrade sudo apt upgrade --without-new-pkgs sudo apt full-upgrade Reboot sudo systemctl reboot Debian 11 berhasil terpasang Do it at your own risk...</p>
+  </div>
+  <footer class="entry-footer"><span title='2023-06-15 07:06:00 +0700 WIB'>2023-06-15</span>&nbsp;·&nbsp;Bembenk</footer>
+  <a class="entry-link" aria-label="post link to Upgrade Debian 11 to 12" href="http://localhost:1313/post/upgrade-debian-11-to-12/"></a>
+</article>
 
-    <a href="/" class="brand" rel="start">
-      <i class="logo-line"></i>
-      <h1 class="site-title">Just /var/log/</h1>
-      <i class="logo-line"></i>
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Mesin Tua
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Mesin tua 1 (Thinkpad x61) Spesifikasi Intel Core 2 Duo CPU T8100 (2.10 GHz) 2GB DDR2 128MB VRAM 80GB HDD Gak sengaja nemu di FB marketplace dengan harga 150k dengan kondisi matot, dugaan awal matot karena baterai konslet. Setelah beli dan oprek sana sini belum berhasil nyala juga, akhrinya ketemu teman di group tele Pegel Thinkpad yang nyaranin ganti mobo. Setelah ganti mobo akhirnya berhasil nyala.
+Mods Setelah nyala akhirnya niat iseng muncul juga untuk flash Midleton Bios agar bisa menggunakan ram 2x4GB (Walau pun sampai sekarang masih pakai 1x2GB karena harga sekeping 4GB hampir sejuta;v)....</p>
+  </div>
+  <footer class="entry-footer"><span title='2023-04-27 14:17:18 +0700 WIB'>2023-04-27</span>&nbsp;·&nbsp;Bembenk</footer>
+  <a class="entry-link" aria-label="post link to Mesin Tua" href="http://localhost:1313/post/mesin-tua/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Akses SSH Dengan Google Authenticator
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Ada banyak cara yang dapat dilakukan untuk mengamankan akses SSH ke server, salah satunya dengan Google Authenticator.
+Installasi sudo apt install libpam-google-authenticator -y Tambahkan Google Authenticator ke HP google-authenticator -s ~/.ssh/google_auth Setelah muncul QR code scan dengan Google Authenticator pada HP, Kemudian masukan kode yang muncul ke terminal
+dan ikuti panduannya hingga selesai.
+Konfigurasi 2FA SSH Tambahkan baris berikut pada file /etc/pam.d/sshd
+auth required pam_google_authenticator.so secret=/home/${USER}/.ssh/google_auth nullok Edit baris berikut pada file /etc/ssh/sshd_config...</p>
+  </div>
+  <footer class="entry-footer"><span title='2023-04-14 10:36:25 +0700 WIB'>2023-04-14</span>&nbsp;·&nbsp;Bembenk</footer>
+  <a class="entry-link" aria-label="post link to Akses SSH Dengan Google Authenticator" href="http://localhost:1313/post/ssh-dengan-google-authenticator/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">SSH Ke Mesin Lokal Dengan Tailscale
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Tailscale adalah aplikasi opensource berbasis WireGuard, tailscale memungkinkan untuk membangun jaringan peer to peer private. Dalam case saya gunakan untuk akses Home server.
+Installasi curl -fsSL https://tailscale.com/install.sh | sh Start Tailscale service sudo tailscale up Saat pertama kali akan diminta login, silahkan login dengan link yang muncul dikonsole, jika berhasil dijalankan kita akan mendapatkan ip seperti dibawah ini: Web Interface Untuk mempermudah mengelola service Tailscale menyediakan web interface di link berikut Test akses SSH Test akses SSH ke server Dokumentasi Repo dan dokumentasi tentang Tailscale bisa diakses di https://github....</p>
+  </div>
+  <footer class="entry-footer"><span title='2023-04-14 09:04:06 +0700 WIB'>2023-04-14</span>&nbsp;·&nbsp;Bembenk</footer>
+  <a class="entry-link" aria-label="post link to SSH Ke Mesin Lokal Dengan Tailscale" href="http://localhost:1313/post/ssh-ke-mesin-lokal-dengan-tailscale/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Home Server Armbian
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Armbian adalah salah satu distro linux yang mendukung processor arm64 dengan
+spesifikasi rendah, salah satunya adalah STB HG680P yang banyak beredar dengan harga under 300k. STB ini juga bisa dijadikan alternative dari Raspberry Pi yang harganya semakin naik.
+Spesifikasi RAM : 2 GB ROM Internal : 8 GB CPU : Quad Core Amlogic s905x Cortex-A53 @ up to 1.51 GHz Dengan spesifikasi tersebut sudah cukup untuk menjalankan Armbian. Untuk Armbian saya pasang pada microSD Sandisk Ultra UHS-I 32GB....</p>
+  </div>
+  <footer class="entry-footer"><span title='2023-04-10 14:48:52 +0700 WIB'>2023-04-10</span>&nbsp;·&nbsp;Bembenk</footer>
+  <a class="entry-link" aria-label="post link to Home Server Armbian" href="http://localhost:1313/post/home-server-armbian/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Cisco Packet Tracer Opensuse
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Di website netacad Cisco Packet Tracer hanya tersedia untuk Ubuntu/Debian dengan format .deb, jadi secara default tidak tersedia di distro rpm based. Untuk itu perlu memasang secara manual.
+1. Download Download file installasi untuk Ubuntu/Debian dari web netacad
+2. Unpack file .deb mkdir /tmp/cpt cp CiscoPacketTracer_820_Ubuntu_64bit.deb /tmp/cpt ar -xv CiscoPacketTracer_820_Ubuntu_64bit.deb mkdir control tar -C control -Jxf control.tar.xz mkdir data tar -C control -Jxf data.tar.xz cd data 3. Install cp -r usr / cp -r opt / Tumbleweed...</p>
+  </div>
+  <footer class="entry-footer"><span title='2023-03-27 15:20:56 +0700 WIB'>2023-03-27</span>&nbsp;·&nbsp;Bembenk</footer>
+  <a class="entry-link" aria-label="post link to Cisco Packet Tracer Opensuse" href="http://localhost:1313/post/cisco-packet-tracer-opensuse/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Setup Fail2Ban Zimbra
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>0. sudo -u zimbra - zmprov mcf &#43;zimbraMailTrustedIP 127.0.0.1 &#43;zimbraMailTrustedIP {IP of Server} zmcontrol restart 1. Install Fail2Ban yum install epel-release -y yum install fail2ban -y 2. Buat file jail.conf *Jika ingin whitelist IP tambahkan pada baris ignoreip
+nano /etc/fail2ban/jail.local
+[DEFAULT] # &#34;ignoreip&#34; can be a list of IP addresses, CIDR masks or DNS hosts. # Fail2ban will not ban a host which matches an address in this list. # Several addresses can be defined using space (and/or comma) separator....</p>
+  </div>
+  <footer class="entry-footer"><span title='2023-03-26 13:47:58 +0700 WIB'>2023-03-26</span>&nbsp;·&nbsp;Bembenk</footer>
+  <a class="entry-link" aria-label="post link to Setup Fail2Ban Zimbra" href="http://localhost:1313/post/setup-fail2ban-zimbra/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Expose jaringan lokal ke internet dengan SSH Forwading
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p></p>
+  </div>
+  <footer class="entry-footer"><span title='2023-03-26 11:40:48 +0700 WIB'>2023-03-26</span>&nbsp;·&nbsp;Bembenk</footer>
+  <a class="entry-link" aria-label="post link to Expose jaringan lokal ke internet dengan SSH Forwading" href="http://localhost:1313/post/ssh-forwading/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Build Kernel openSUSE 15.4
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Karena openSUSE Leap mengutamakan kestabilan maka untuk dapat mencoba kernel 6.* saya harus menunggu cukup lama, pada catatan kali ini saya akan coba build kernel 6.* di openSUSE Leap 15.4
+1. Persiapan Install Requirements dan buat folder yang diperlukan spesifikasi sudo zypper ref &amp;&amp; sudo zypper update sudo zypper in -t pattern devel_basis bc openssl openssl-devel dwarves rpm-build libelf-devel elfutils-libelf-devel sudo mkdir ~/kernel
+2. Download kernel Download kernel dari https://kernel....</p>
+  </div>
+  <footer class="entry-footer"><span title='2022-11-23 18:17:44 +0700 WIB'>2022-11-23</span>&nbsp;·&nbsp;Bembenk</footer>
+  <a class="entry-link" aria-label="post link to Build Kernel openSUSE 15.4" href="http://localhost:1313/post/build-kernel-opensuse-15-4/"></a>
+</article>
+<footer class="page-footer">
+  <nav class="pagination">
+    <a class="prev" href="http://localhost:1313/">
+      «&nbsp;Prev&nbsp;
     </a>
+    <a class="next" href="http://localhost:1313/page/3/">Next&nbsp;&nbsp;»
+    </a>
+  </nav>
+</footer>
+    </main>
     
-    
-  </div>
+<footer class="footer">
+        <span>Bembenk</span> · 
 
-  <div class="site-nav-right">
-    <div class="toggle popup-trigger">
-      
-    </div>
-  </div>
-</div>
-
-
-<nav class="site-nav">
-  <ul class="main-menu menu">    
-  
-    
-    <li class="menu-item menu-item-">
-      <a href="/" class=" hvr-icon-pulse " rel="section">
-        Home
-        
-        
-      </a>
-      
-    </li>
-  
-    
-    <li class="menu-item menu-item-">
-      <a href="/posts" class=" hvr-icon-pulse " rel="section">
-        Writings
-        
-        
-      </a>
-      
-    </li>
-  
-    
-    <li class="menu-item menu-item-">
-      <a href="/projects" class=" hvr-icon-pulse " rel="section">
-        Projects
-        
-        
-      </a>
-      
-    </li>
-  
-    
-    <li class="menu-item menu-item-">
-      <a href="/learn" class=" hvr-icon-pulse " rel="section">
-        Learn
-        
-        
-      </a>
-      
-    </li>
-  
-    
-    <li class="menu-item menu-item-">
-      <a href="/tags" class=" hvr-icon-pulse " rel="section">
-        Tags
-        
-        
-      </a>
-      
-    </li>
-  
-    
-    <li class="menu-item menu-item-">
-      <a href="/about" class=" hvr-icon-pulse " rel="section">
-        About
-        
-        
-      </a>
-      
-    </li>
-      
-
-  
-  </ul>
-</nav>
-
-      </div>
-      
-      
-      <div class="toggle sidebar-toggle" role="button">
-  <span class="toggle-line"></span>
-  <span class="toggle-line"></span>
-  <span class="toggle-line"></span>
-</div>
-
-<aside class="sidebar">
-  <div class="sidebar-inner sidebar-overview-active">
-    <ul class="sidebar-nav">
-      <li class="sidebar-nav-toc">
-        TOC
-      </li>
-      <li class="sidebar-nav-overview">
-        Overview
-      </li>
-    </ul>
-    <div class="sidebar-panel-container">
-      
-      <div class="post-toc-wrap sidebar-panel">
-        <div class="post-toc animated"><nav id="TableOfContents"></nav></div>
-      </div>
-      
-      <div class="site-overview-wrap sidebar-panel">
-        
-<div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
-  
-  <p class="site-author-name" itemprop="name"></p>
-  <div class="site-description" itemprop="description"></div>
-</div>
-
-
-
-<div class="links-of-social site-overview-item animated">
-
-
-</div>
-
-
-
-
-        
-        
-        
-      </div>
-    </div>
-  </div>
-
-  
-
-  
-</aside>
-<div class="sidebar-dimmer"></div>
-
-      
-    </header>
-    
-    <div class="tool-buttons" >
-    
-  
-  <div id="toggle-theme" class="button" title="Change Theme">
-    <i class="fas fa-adjust"></i>
-  </div>
-   
-</div>
-
-
-
-
-
-
-
-
-
-<noscript>
-  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
-</noscript>
-    <div class="main-inner index posts-expand">
-      
-      
-
-
-
-  <div class="post-block">
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    
-    <link itemprop="mainEntityOfPage" href="http://localhost:1313/posts/rce-upload-csv/">
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="">
-      <meta itemprop="name" content="">
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
     </span>
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="">
-      <meta itemprop="description" content="">
-    </span>
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="RCE Upload CSV">
-      <meta itemprop="description" content="Abstraksi Bug ini memungkinkan attacker untuk mengupload file backdoor. Bug ini muncul karena tidak ada filtering type file yang diupload sehingga memungkinkan attacker untuk mengupload file backdoor berekstensi .php.
-&lt;div class=&quot;col-12 pb-2&quot;&gt; &lt;div class=&quot;input-group&quot;&gt; &lt;div class=&quot;custom-file&quot;&gt; &lt;input type=&quot;file&quot; class=&quot;custom-file-input&quot; name=&quot;filedata&quot; id=&quot;exampleInputF&quot;&gt; &lt;label class=&quot;custom-file-label&quot; for=&quot;exampleInput&quot;&gt;Choose file&lt;/label&gt; &lt;/div&gt; &lt;/div&gt; &lt;/div&gt; Impact Remote Code Execution
-Proof of Concept: Login ke https://www.redacted.com/ Masuk ke menu Upload data pelanggan Klik Choose file dan pilih file .">
-    </span>
-    
-    <header class="post-header">
-      
- <h2  class="post-title" itemprop="name headline">
-  
-  
-  
-  <a href="/posts/rce-upload-csv/" itemprop="url" class="post-title-link">RCE Upload CSV</a>
-  
-  
-   </h2> 
-
-<div class="post-meta-container">
-  <div class="post-meta-items">
-    
-    
-    
-    
-      
-      
-        
-  </div>
-  
-</div>
-
-    </header>
-    
-    <div class="post-body " itemprop="articleBody">
-      
-
-  
-  Abstraksi Bug ini memungkinkan attacker untuk mengupload file backdoor. Bug ini muncul karena tidak ada filtering type file yang diupload sehingga memungkinkan attacker untuk mengupload file backdoor berekstensi .php.
-&lt;div class=&quot;col-12 pb-2&quot;&gt; &lt;div class=&quot;input-group&quot;&gt; &lt;div class=&quot;custom-file&quot;&gt; &lt;input type=&quot;file&quot; class=&quot;custom-file-input&quot; name=&quot;filedata&quot; id=&quot;exampleInputF&quot;&gt; &lt;label class=&quot;custom-file-label&quot; for=&quot;exampleInput&quot;&gt;Choose file&lt;/label&gt; &lt;/div&gt; &lt;/div&gt; &lt;/div&gt; Impact Remote Code Execution
-Proof of Concept: Login ke https://www.redacted.com/ Masuk ke menu Upload data pelanggan Klik Choose file dan pilih file .
-  
-
-
-    </div>
-    <footer class="post-footer">
-      
- 
-
-<div class="post-eof"></div>
-
-
-    </footer>
-  </article>
-</div>
-
-  <div class="post-block">
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    
-    <link itemprop="mainEntityOfPage" href="http://localhost:1313/posts/upgrade-debian-11-to-12/">
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="">
-      <meta itemprop="name" content="">
-    </span>
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="">
-      <meta itemprop="description" content="">
-    </span>
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="Upgrade Debian 11 to 12">
-      <meta itemprop="description" content="Testing upgrade dari debian 11 ke debian 12 di STB HG680P
-Posisi sebelum update Ganti repo Ganti ke bullseye menjadi bookworm seperti berikut ini
-# sudo nano /etc/apt/sources.list deb http://deb.debian.org/debian bookworm main contrib non-free deb http://deb.debian.org/debian bookworm -updates main contrib non-free deb http://security.debian.org/debian-security bookworm-security main deb http://ftp.debian.org/debian bookworm-backports main contrib non-free Setelah ganti repository lakukan update repository baru sudo apt update Upgrade sudo apt upgrade --without-new-pkgs sudo apt full-upgrade Reboot sudo systemctl reboot Debian 11 berhasil terpasang Do it at your own risk">
-    </span>
-    
-    <header class="post-header">
-      
- <h2  class="post-title" itemprop="name headline">
-  
-  
-  
-  <a href="/posts/upgrade-debian-11-to-12/" itemprop="url" class="post-title-link">Upgrade Debian 11 to 12</a>
-  
-  
-   </h2> 
-
-<div class="post-meta-container">
-  <div class="post-meta-items">
-    
-    
-    
-    
-      
-      
-        
-  </div>
-  
-</div>
-
-    </header>
-    
-    <div class="post-body " itemprop="articleBody">
-      
-
-  
-  Testing upgrade dari debian 11 ke debian 12 di STB HG680P
-Posisi sebelum update Ganti repo Ganti ke bullseye menjadi bookworm seperti berikut ini
-# sudo nano /etc/apt/sources.list deb http://deb.debian.org/debian bookworm main contrib non-free deb http://deb.debian.org/debian bookworm -updates main contrib non-free deb http://security.debian.org/debian-security bookworm-security main deb http://ftp.debian.org/debian bookworm-backports main contrib non-free Setelah ganti repository lakukan update repository baru sudo apt update Upgrade sudo apt upgrade --without-new-pkgs sudo apt full-upgrade Reboot sudo systemctl reboot Debian 11 berhasil terpasang Do it at your own risk
-  
-
-
-    </div>
-    <footer class="post-footer">
-      
- 
-
-<div class="post-eof"></div>
-
-
-    </footer>
-  </article>
-</div>
-
-  <div class="post-block">
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    
-    <link itemprop="mainEntityOfPage" href="http://localhost:1313/posts/mesin-tua/">
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="">
-      <meta itemprop="name" content="">
-    </span>
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="">
-      <meta itemprop="description" content="">
-    </span>
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="Mesin Tua">
-      <meta itemprop="description" content="Mesin tua 1 (Thinkpad x61) Spesifikasi Intel Core 2 Duo CPU T8100 (2.10 GHz) 2GB DDR2 128MB VRAM 80GB HDD Gak sengaja nemu di FB marketplace dengan harga 150k dengan kondisi matot, dugaan awal matot karena baterai konslet. Setelah beli dan oprek sana sini belum berhasil nyala juga, akhrinya ketemu teman di group tele Pegel Thinkpad yang nyaranin ganti mobo. Setelah ganti mobo akhirnya berhasil nyala.
-Mods Setelah nyala akhirnya niat iseng muncul juga untuk flash Midleton Bios agar bisa menggunakan ram 2x4GB (Walau pun sampai sekarang masih pakai 1x2GB karena harga sekeping 4GB hampir sejuta;v).">
-    </span>
-    
-    <header class="post-header">
-      
- <h2  class="post-title" itemprop="name headline">
-  
-  
-  
-  <a href="/posts/mesin-tua/" itemprop="url" class="post-title-link">Mesin Tua</a>
-  
-  
-   </h2> 
-
-<div class="post-meta-container">
-  <div class="post-meta-items">
-    
-    
-    
-    
-      
-      
-        
-  </div>
-  
-</div>
-
-    </header>
-    
-    <div class="post-body " itemprop="articleBody">
-      
-
-  
-  Mesin tua 1 (Thinkpad x61) Spesifikasi Intel Core 2 Duo CPU T8100 (2.10 GHz) 2GB DDR2 128MB VRAM 80GB HDD Gak sengaja nemu di FB marketplace dengan harga 150k dengan kondisi matot, dugaan awal matot karena baterai konslet. Setelah beli dan oprek sana sini belum berhasil nyala juga, akhrinya ketemu teman di group tele Pegel Thinkpad yang nyaranin ganti mobo. Setelah ganti mobo akhirnya berhasil nyala.
-Mods Setelah nyala akhirnya niat iseng muncul juga untuk flash Midleton Bios agar bisa menggunakan ram 2x4GB (Walau pun sampai sekarang masih pakai 1x2GB karena harga sekeping 4GB hampir sejuta;v).
-  
-
-
-    </div>
-    <footer class="post-footer">
-      
- 
-
-<div class="post-eof"></div>
-
-
-    </footer>
-  </article>
-</div>
-
-  <div class="post-block">
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    
-    <link itemprop="mainEntityOfPage" href="http://localhost:1313/posts/ssh-dengan-google-authenticator/">
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="">
-      <meta itemprop="name" content="">
-    </span>
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="">
-      <meta itemprop="description" content="">
-    </span>
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="Akses SSH Dengan Google Authenticator">
-      <meta itemprop="description" content="Ada banyak cara yang dapat dilakukan untuk mengamankan akses SSH ke server, salah satunya dengan Google Authenticator.
-Installasi sudo apt install libpam-google-authenticator -y Tambahkan Google Authenticator ke HP google-authenticator -s ~/.ssh/google_auth Setelah muncul QR code scan dengan Google Authenticator pada HP, Kemudian masukan kode yang muncul ke terminal
-dan ikuti panduannya hingga selesai.
-Konfigurasi 2FA SSH Tambahkan baris berikut pada file /etc/pam.d/sshd
-auth required pam_google_authenticator.so secret=/home/${USER}/.ssh/google_auth nullok Edit baris berikut pada file /etc/ssh/sshd_config">
-    </span>
-    
-    <header class="post-header">
-      
- <h2  class="post-title" itemprop="name headline">
-  
-  
-  
-  <a href="/posts/ssh-dengan-google-authenticator/" itemprop="url" class="post-title-link">Akses SSH Dengan Google Authenticator</a>
-  
-  
-   </h2> 
-
-<div class="post-meta-container">
-  <div class="post-meta-items">
-    
-    
-    
-    
-      
-      
-        
-  </div>
-  
-</div>
-
-    </header>
-    
-    <div class="post-body " itemprop="articleBody">
-      
-
-  
-  Ada banyak cara yang dapat dilakukan untuk mengamankan akses SSH ke server, salah satunya dengan Google Authenticator.
-Installasi sudo apt install libpam-google-authenticator -y Tambahkan Google Authenticator ke HP google-authenticator -s ~/.ssh/google_auth Setelah muncul QR code scan dengan Google Authenticator pada HP, Kemudian masukan kode yang muncul ke terminal
-dan ikuti panduannya hingga selesai.
-Konfigurasi 2FA SSH Tambahkan baris berikut pada file /etc/pam.d/sshd
-auth required pam_google_authenticator.so secret=/home/${USER}/.ssh/google_auth nullok Edit baris berikut pada file /etc/ssh/sshd_config
-  
-
-
-    </div>
-    <footer class="post-footer">
-      
- 
-
-<div class="post-eof"></div>
-
-
-    </footer>
-  </article>
-</div>
-
-  <div class="post-block">
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    
-    <link itemprop="mainEntityOfPage" href="http://localhost:1313/posts/ssh-ke-mesin-lokal-dengan-tailscale/">
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="">
-      <meta itemprop="name" content="">
-    </span>
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="">
-      <meta itemprop="description" content="">
-    </span>
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="SSH Ke Mesin Lokal Dengan Tailscale">
-      <meta itemprop="description" content="Tailscale adalah aplikasi opensource berbasis WireGuard, tailscale memungkinkan untuk membangun jaringan peer to peer private. Dalam case saya gunakan untuk akses Home server .
-Installasi curl -fsSL https://tailscale.com/install.sh | sh Start Tailscale service sudo tailscale up Saat pertama kali akan diminta login, silahkan login dengan link yang muncul dikonsole, jika berhasil dijalankan kita akan mendapatkan ip seperti dibawah ini: Web Interface Untuk mempermudah mengelola service Tailscale menyediakan web interface di link berikut Test akses SSH Test akses SSH ke server Dokumentasi Repo dan dokumentasi tentang Tailscale bisa diakses di https://github.">
-    </span>
-    
-    <header class="post-header">
-      
- <h2  class="post-title" itemprop="name headline">
-  
-  
-  
-  <a href="/posts/ssh-ke-mesin-lokal-dengan-tailscale/" itemprop="url" class="post-title-link">SSH Ke Mesin Lokal Dengan Tailscale</a>
-  
-  
-   </h2> 
-
-<div class="post-meta-container">
-  <div class="post-meta-items">
-    
-    
-    
-    
-      
-      
-        
-  </div>
-  
-</div>
-
-    </header>
-    
-    <div class="post-body " itemprop="articleBody">
-      
-
-  
-  Tailscale adalah aplikasi opensource berbasis WireGuard, tailscale memungkinkan untuk membangun jaringan peer to peer private. Dalam case saya gunakan untuk akses Home server .
-Installasi curl -fsSL https://tailscale.com/install.sh | sh Start Tailscale service sudo tailscale up Saat pertama kali akan diminta login, silahkan login dengan link yang muncul dikonsole, jika berhasil dijalankan kita akan mendapatkan ip seperti dibawah ini: Web Interface Untuk mempermudah mengelola service Tailscale menyediakan web interface di link berikut Test akses SSH Test akses SSH ke server Dokumentasi Repo dan dokumentasi tentang Tailscale bisa diakses di https://github.
-  
-
-
-    </div>
-    <footer class="post-footer">
-      
- 
-
-<div class="post-eof"></div>
-
-
-    </footer>
-  </article>
-</div>
-
-  <div class="post-block">
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    
-    <link itemprop="mainEntityOfPage" href="http://localhost:1313/posts/home-server-armbian/">
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="">
-      <meta itemprop="name" content="">
-    </span>
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="">
-      <meta itemprop="description" content="">
-    </span>
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="Home Server Armbian">
-      <meta itemprop="description" content="Armbian adalah salah satu distro linux yang mendukung processor arm64 dengan
-spesifikasi rendah, salah satunya adalah STB HG680P yang banyak beredar dengan harga under 300k. STB ini juga bisa dijadikan alternative dari Raspberry Pi yang harganya semakin naik.
-Spesifikasi RAM : 2 GB ROM Internal : 8 GB CPU : Quad Core Amlogic s905x Cortex-A53 @ up to 1.51 GHz Dengan spesifikasi tersebut sudah cukup untuk menjalankan Armbian. Untuk Armbian saya pasang pada microSD Sandisk Ultra UHS-I 32GB.">
-    </span>
-    
-    <header class="post-header">
-      
- <h2  class="post-title" itemprop="name headline">
-  
-  
-  
-  <a href="/posts/home-server-armbian/" itemprop="url" class="post-title-link">Home Server Armbian</a>
-  
-  
-   </h2> 
-
-<div class="post-meta-container">
-  <div class="post-meta-items">
-    
-    
-    
-    
-      
-      
-        
-  </div>
-  
-</div>
-
-    </header>
-    
-    <div class="post-body " itemprop="articleBody">
-      
-
-  
-  Armbian adalah salah satu distro linux yang mendukung processor arm64 dengan
-spesifikasi rendah, salah satunya adalah STB HG680P yang banyak beredar dengan harga under 300k. STB ini juga bisa dijadikan alternative dari Raspberry Pi yang harganya semakin naik.
-Spesifikasi RAM : 2 GB ROM Internal : 8 GB CPU : Quad Core Amlogic s905x Cortex-A53 @ up to 1.51 GHz Dengan spesifikasi tersebut sudah cukup untuk menjalankan Armbian. Untuk Armbian saya pasang pada microSD Sandisk Ultra UHS-I 32GB.
-  
-
-
-    </div>
-    <footer class="post-footer">
-      
- 
-
-<div class="post-eof"></div>
-
-
-    </footer>
-  </article>
-</div>
-
-  <div class="post-block">
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    
-    <link itemprop="mainEntityOfPage" href="http://localhost:1313/posts/cisco-packet-tracer-opensuse/">
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="">
-      <meta itemprop="name" content="">
-    </span>
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="">
-      <meta itemprop="description" content="">
-    </span>
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="Cisco Packet Tracer Opensuse">
-      <meta itemprop="description" content="Di website netacad Cisco Packet Tracer hanya tersedia untuk Ubuntu/Debian dengan format .deb, jadi secara default tidak tersedia di distro rpm based. Untuk itu perlu memasang secara manual.
-1. Download Download file installasi untuk Ubuntu/Debian dari web netacad 2. Unpack file .deb mkdir /tmp/cpt cp CiscoPacketTracer_820_Ubuntu_64bit.deb /tmp/cpt ar -xv CiscoPacketTracer_820_Ubuntu_64bit.deb mkdir control tar -C control -Jxf control.tar.xz mkdir data tar -C control -Jxf data.tar.xz cd data 3. Install cp -r usr / cp -r opt / Tumbleweed">
-    </span>
-    
-    <header class="post-header">
-      
- <h2  class="post-title" itemprop="name headline">
-  
-  
-  
-  <a href="/posts/cisco-packet-tracer-opensuse/" itemprop="url" class="post-title-link">Cisco Packet Tracer Opensuse</a>
-  
-  
-   </h2> 
-
-<div class="post-meta-container">
-  <div class="post-meta-items">
-    
-    
-    
-    
-      
-      
-        
-  </div>
-  
-</div>
-
-    </header>
-    
-    <div class="post-body " itemprop="articleBody">
-      
-
-  
-  Di website netacad Cisco Packet Tracer hanya tersedia untuk Ubuntu/Debian dengan format .deb, jadi secara default tidak tersedia di distro rpm based. Untuk itu perlu memasang secara manual.
-1. Download Download file installasi untuk Ubuntu/Debian dari web netacad 2. Unpack file .deb mkdir /tmp/cpt cp CiscoPacketTracer_820_Ubuntu_64bit.deb /tmp/cpt ar -xv CiscoPacketTracer_820_Ubuntu_64bit.deb mkdir control tar -C control -Jxf control.tar.xz mkdir data tar -C control -Jxf data.tar.xz cd data 3. Install cp -r usr / cp -r opt / Tumbleweed
-  
-
-
-    </div>
-    <footer class="post-footer">
-      
- 
-
-<div class="post-eof"></div>
-
-
-    </footer>
-  </article>
-</div>
-
-  <div class="post-block">
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    
-    <link itemprop="mainEntityOfPage" href="http://localhost:1313/posts/setup-fail2ban-zimbra/">
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="">
-      <meta itemprop="name" content="">
-    </span>
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="">
-      <meta itemprop="description" content="">
-    </span>
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="Setup Fail2Ban Zimbra">
-      <meta itemprop="description" content="0. sudo -u zimbra - zmprov mcf &#43;zimbraMailTrustedIP 127.0.0.1 &#43;zimbraMailTrustedIP {IP of Server} zmcontrol restart 1. Install Fail2Ban yum install epel-release -y yum install fail2ban -y 2. Buat file jail.conf *Jika ingin whitelist IP tambahkan pada baris ignoreip
-nano /etc/fail2ban/jail.local
-[DEFAULT] # &quot;ignoreip&quot; can be a list of IP addresses, CIDR masks or DNS hosts. # Fail2ban will not ban a host which matches an address in this list. # Several addresses can be defined using space (and/or comma) separator.">
-    </span>
-    
-    <header class="post-header">
-      
- <h2  class="post-title" itemprop="name headline">
-  
-  
-  
-  <a href="/posts/setup-fail2ban-zimbra/" itemprop="url" class="post-title-link">Setup Fail2Ban Zimbra</a>
-  
-  
-   </h2> 
-
-<div class="post-meta-container">
-  <div class="post-meta-items">
-    
-    
-    
-    
-      
-      
-        
-  </div>
-  
-</div>
-
-    </header>
-    
-    <div class="post-body " itemprop="articleBody">
-      
-
-  
-  0. sudo -u zimbra - zmprov mcf +zimbraMailTrustedIP 127.0.0.1 +zimbraMailTrustedIP {IP of Server} zmcontrol restart 1. Install Fail2Ban yum install epel-release -y yum install fail2ban -y 2. Buat file jail.conf *Jika ingin whitelist IP tambahkan pada baris ignoreip
-nano /etc/fail2ban/jail.local
-[DEFAULT] # &quot;ignoreip&quot; can be a list of IP addresses, CIDR masks or DNS hosts. # Fail2ban will not ban a host which matches an address in this list. # Several addresses can be defined using space (and/or comma) separator.
-  
-
-
-    </div>
-    <footer class="post-footer">
-      
- 
-
-<div class="post-eof"></div>
-
-
-    </footer>
-  </article>
-</div>
-
-  <div class="post-block">
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    
-    <link itemprop="mainEntityOfPage" href="http://localhost:1313/posts/ssh-forwading/">
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="">
-      <meta itemprop="name" content="">
-    </span>
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="">
-      <meta itemprop="description" content="">
-    </span>
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="Expose jaringan lokal ke internet dengan SSH Forwading">
-      <meta itemprop="description" content="">
-    </span>
-    
-    <header class="post-header">
-      
- <h2  class="post-title" itemprop="name headline">
-  
-  
-  
-  <a href="/posts/ssh-forwading/" itemprop="url" class="post-title-link">Expose jaringan lokal ke internet dengan SSH Forwading</a>
-  
-  
-   </h2> 
-
-<div class="post-meta-container">
-  <div class="post-meta-items">
-    
-    
-    
-    
-      
-      
-        
-  </div>
-  
-</div>
-
-    </header>
-    
-    <div class="post-body " itemprop="articleBody">
-      
-
-  
-  
-  
-
-
-    </div>
-    <footer class="post-footer">
-      
- 
-
-<div class="post-eof"></div>
-
-
-    </footer>
-  </article>
-</div>
-
-  <div class="post-block">
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    
-    <link itemprop="mainEntityOfPage" href="http://localhost:1313/posts/build-kernel-opensuse-15-4/">
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="">
-      <meta itemprop="name" content="">
-    </span>
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="">
-      <meta itemprop="description" content="">
-    </span>
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="Build Kernel openSUSE 15.4">
-      <meta itemprop="description" content="Karena openSUSE Leap mengutamakan kestabilan maka untuk dapat mencoba kernel 6.* saya harus menunggu cukup lama, pada catatan kali ini saya akan coba build kernel 6.* di openSUSE Leap 15.4
-1. Persiapan Install Requirements dan buat folder yang diperlukan spesifikasi sudo zypper ref &amp;&amp; sudo zypper update sudo zypper in -t pattern devel_basis bc openssl openssl-devel dwarves rpm-build libelf-devel elfutils-libelf-devel sudo mkdir ~/kernel
-2. Download kernel Download kernel dari https://kernel.">
-    </span>
-    
-    <header class="post-header">
-      
- <h2  class="post-title" itemprop="name headline">
-  
-  
-  
-  <a href="/posts/build-kernel-opensuse-15-4/" itemprop="url" class="post-title-link">Build Kernel openSUSE 15.4</a>
-  
-  
-   </h2> 
-
-<div class="post-meta-container">
-  <div class="post-meta-items">
-    
-    
-    
-    
-      
-      
-        
-  </div>
-  
-</div>
-
-    </header>
-    
-    <div class="post-body " itemprop="articleBody">
-      
-
-  
-  Karena openSUSE Leap mengutamakan kestabilan maka untuk dapat mencoba kernel 6.* saya harus menunggu cukup lama, pada catatan kali ini saya akan coba build kernel 6.* di openSUSE Leap 15.4
-1. Persiapan Install Requirements dan buat folder yang diperlukan spesifikasi sudo zypper ref &amp;&amp; sudo zypper update sudo zypper in -t pattern devel_basis bc openssl openssl-devel dwarves rpm-build libelf-devel elfutils-libelf-devel sudo mkdir ~/kernel
-2. Download kernel Download kernel dari https://kernel.
-  
-
-
-    </div>
-    <footer class="post-footer">
-      
- 
-
-<div class="post-eof"></div>
-
-
-    </footer>
-  </article>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-
-
-
-
-
-
-  
-  
-
-
-<nav class="pagination">
-  
-  <a class="extend prev" rel="prev" href="/">
-    <i class="fa fa-angle-left"></i>
-  </a>
-  
-  
-      
-      
-        <a class="page-number" href="/">1</a>
-      
-      
-  
-      
-      
-        <span class="page-number current">2</span>
-      
-      
-  
-      
-      
-        <a class="page-number" href="/page/3/">3</a>
-      
-      
-  
-  
-  <a class="extend next" rel="next" href="/page/3/">
-    <i class="fa fa-angle-right"></i>
-  </a>
-  
-</nav>  
-
-      
-    </div>
-  </main>
-  <footer class="footer">
-    <div class="footer-inner">
-      
-
-<div class="copyright">
-  &copy;
-  <span itemprop="copyrightYear">
-    
-    
-    2024
-    
-  </span>
-  <span class="with-love">
-    <i class=""></i>
-  </span>
-  <span class="author" itemprop="copyrightHolder"></span>
-</div>
-
-
-
-
-
-
-
-    </div>
-  </footer>
-
-  
-
-
-
- 
-  
-  <script type="text/javascript" src="%25!s%28%3cnil%3e%29/animejs/3.2.2/anime.min.js" crossorigin="anonymous" defer></script>
- 
-  
-  <script type="text/javascript" src="%25!s%28%3cnil%3e%29/viewerjs/1.11.6/viewer.min.js" crossorigin="anonymous" defer></script>
-
-
-<script class="next-config" data-name="main" type="application/json">{"bookmark":null,"copybtn":null,"darkmode":null,"hostname":"http://localhost:1313/","i18n":{"ds_day":" Day Ago","ds_days":" Day ","ds_hour":" Hour Ago","ds_hours":" Hour ","ds_just":"Just","ds_min":" Min Ago","ds_mins":" Min","ds_month":" Month Ago","ds_years":" Year ","empty":"We didn't find any results for the search: ${query}","hits":"${hits} results found","hits_time":"${hits} results found in ${time} ms","placeholder":"Searching..."},"lang":"en-us","lazyload":null,"motion":null,"root":"/","scheme":null,"sidebar":null,"vendor":{"plugins":null,"router":{}},"version":"4.6.3"}</script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<script type="text/javascript" src="/js/main.js" defer></script>
-
-
-
-
-
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
 </body>
 
 </html>
