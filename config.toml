@@ -13,8 +13,6 @@ name = "Home"
 url = "/"
 weight = 1
 
-
-
 [[menu.main]]
 name = "Tags"
 url = "/tags"
@@ -25,11 +23,6 @@ name = "About"
 url = "/about"
 weight = 6
 
- 
-[[menu.main]]
-name = "Projects"
-url = "/projects"
-weight = 3
 
 [[menu.main]]
 name = "Learn"
@@ -69,7 +62,7 @@ description = "Linux & Cyber Security enthusiast"
   showAllPostsArchive = false # default
 
   # Home page settings
-  mainSection = "posts" # your main section
+  mainSection = "home" # your main section
   showAllPostsOnHomePage = true # default
   postsOnHomePage = 5 # this option will be ignored if showAllPostsOnHomePage is set to true
   tagsOverview = true # show tags overview by default.
@@ -104,7 +97,7 @@ description = "Linux & Cyber Security enthusiast"
 
 [[params.social]]
   name = "email"
-  link = "mail@bembenk.tech" # no need for "mailto:" at the start
+  link = "mail@bembenk.net" # no need for "mailto:" at the start
 
 [[params.social]]
   name = "telegram"
