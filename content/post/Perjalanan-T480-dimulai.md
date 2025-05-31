@@ -1,7 +1,7 @@
 ---
 title: "Perjalanan T480 Dimulai"
 date: 2025-04-02T07:49:16+07:00
-draft: true
+draft: false
 ---
 Karena kebutuhan komputasi yg sudah tidak bisa di handle oleh T470, saya putuskan untuk upgrade laptop. Awalnya saya berniat membeli T14 gen 2 AMD atau P14s, tetapi batal karena setelah melihat opsi upgrade yg lebih luas di T480, terutama didukung oleh opsi dual storage.
 
