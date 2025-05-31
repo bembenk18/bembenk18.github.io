@@ -28,7 +28,7 @@ Total biaya:
 | 2  | SSD WD NVME 2242 512 GB | Rp 850.000 |
 |    | Total | Rp 4.522.000 |
 
-
+To be continued
 
 
 
