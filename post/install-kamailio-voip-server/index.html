@@ -8,8 +8,56 @@
     
     <meta content="Just /var/log/" name="keywords">
     
-    <meta content="Just /var/log/ - Pengenalan Kamailio adalah Server SIP Sumber Terbuka yang kuat, dapat menangani ribuan panggilan per detik. Dapat digunakan untuk membangun platform besar VoIP dan komunikasi real-time seperti pesan instan, keberadaan, dan WebRTC. Fiturnya mencakup komunikasi aman, penyeimbangan beban, otentikasi, dan dukungan untuk berbagai sistem backend. Cocok untuk gateway SIP, PBX, dan server media seperti Asterisk dan FreeSWITCH.
-Proses installasi Tambahkan repositori root@aml:~# cat /etc/apt/sources.list deb http://deb.kamailio.org/kamailio55 buster main deb-src http://deb.kamailio.org/kamailio55 buster main Install mariadb dan kamailio apt install mariadb-server kamailio kamailio-mysql-modules kamailio-ims-modules Edit file konfigurasi kamailio (edit baris berikut ini) root@aml:~# cat /etc/kamailio/kamctlrc SIP_DOMAIN=192." name="description">
+    <meta content="Just /var/log/ - 
+Pengenalan
+Kamailio adalah Server SIP Sumber Terbuka yang kuat, dapat menangani ribuan panggilan per detik. Dapat digunakan untuk membangun platform besar VoIP dan komunikasi real-time seperti pesan instan, keberadaan, dan WebRTC. Fiturnya mencakup komunikasi aman, penyeimbangan beban, otentikasi, dan dukungan untuk berbagai sistem backend. Cocok untuk gateway SIP, PBX, dan server media seperti Asterisk dan FreeSWITCH.
+Proses installasi
+Tambahkan repositori
+root@aml:~# cat /etc/apt/sources.list
+deb http://deb.kamailio.org/kamailio55 buster main
+deb-src http://deb.kamailio.org/kamailio55 buster main
+
+Install mariadb dan kamailio
+apt install mariadb-server kamailio kamailio-mysql-modules kamailio-ims-modules
+
+Edit file konfigurasi kamailio (edit baris berikut ini)
+root@aml:~# cat /etc/kamailio/kamctlrc 
+SIP_DOMAIN=192.168.0.100
+DBENGINE=MYSQL
+DBHOST=localhost
+DBPORT=3306
+DBNAME=kamailio
+DB_PATH=&quot;/usr/local/etc/kamailio/dbtext&quot;
+DBRWUSER=&quot;user&quot;
+DBRWPW=&quot;password&quot;
+DBROUSER=&quot;user&quot;
+DBROPW=&quot;password&quot;
+DBACCESSHOST=192.168.0.100
+DBROOTUSER=&quot;root&quot;
+
+Ini juga
+root@aml:~# cat /etc/default/kamailio
+RUN_KAMAILIO=yes
+USER=kamailio
+GROUP=kamailio
+root@aml:~# 
+
+Restart service
+sudo service kamailio restart
+netstat -ntulp | grep kamailio
+
+Jalankan perintah untuk membuat database (ikuti semua intruksi)
+root@aml:~# kamdbctl  create
+MySQL password for root: 
+root@aml:~# 
+
+Buat user baru
+kamctl add 1234 halo
+* 123: username, halo: password
+
+Pengujian pada VOIP client
+Login ke Linphone dengan user tadi seperti ini
+" name="description">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
     

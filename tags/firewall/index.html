@@ -160,8 +160,8 @@ layui.use('element', function(){
 
         <h3>
         	
-				Secara default winbox di openSUSE tidak menampilkan Neighbors karena terblokir oleh firewall. Kita harus allow manual.
-sudo firewall-cmd --permanent ...
+				<p>Secara default winbox di openSUSE tidak menampilkan Neighbors karena terblokir oleh firewall. Kita harus allow manual.</p>
+<pre><code>sudo firewall-cmd --permanent ...</code></pre>
              <a href="/post/allow-winbox-discovery/"><span style="color:#01AAED">Read More</span></a>
         </h3>
     </blockquote>
@@ -206,7 +206,14 @@ sudo firewall-cmd --permanent ...
 
         <h3>
         	
-				0. sudo -u zimbra - zmprov mcf +zimbraMailTrustedIP 127.0.0.1 +zimbraMailTrustedIP {IP of Server} zmcontrol restart 1. Install Fail2Ban yum install ...
+				<p><img src="https://upload.wikimedia.org/wikipedia/commons/d/db/Fail2ban_logo.png" alt="Logo"></p>
+<h2 id="0"><strong>0.</strong></h2>
+<pre><code>sudo -u zimbra -
+zmprov mcf +zimbraMailTrustedIP 127.0.0.1 +zimbraMailTrustedIP {IP of Server}
+zmcontrol restart
+</code></pre>
+<h2 id="1-install-fail2ban"><strong>1. Install Fail2Ban</strong></h2>
+<pre><code>yum install ...</code></pre>
              <a href="/post/setup-fail2ban-zimbra/"><span style="color:#01AAED">Read More</span></a>
         </h3>
     </blockquote>

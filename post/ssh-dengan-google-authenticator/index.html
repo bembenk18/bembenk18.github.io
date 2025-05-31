@@ -8,11 +8,24 @@
     
     <meta content="Linux, Log" name="keywords">
     
-    <meta content="Just /var/log/ - Ada banyak cara yang dapat dilakukan untuk mengamankan akses SSH ke server, salah satunya dengan Google Authenticator.
-Installasi sudo apt install libpam-google-authenticator -y Tambahkan Google Authenticator ke HP google-authenticator -s ~/.ssh/google_auth Setelah muncul QR code scan dengan Google Authenticator pada HP, Kemudian masukan kode yang muncul ke terminal
+    <meta content="Just /var/log/ - 
+Ada banyak cara yang dapat dilakukan untuk mengamankan akses SSH ke server, salah satunya dengan Google Authenticator.
+Installasi
+sudo apt install libpam-google-authenticator -y
+
+
+Tambahkan Google Authenticator ke HP
+google-authenticator -s ~/.ssh/google_auth
+
+Setelah muncul QR code scan dengan Google Authenticator pada HP, Kemudian masukan kode yang muncul ke terminal
+
 dan ikuti panduannya hingga selesai.
-Konfigurasi 2FA SSH Tambahkan baris berikut pada file /etc/pam.d/sshd
-auth required pam_google_authenticator.so secret=/home/${USER}/.ssh/google_auth nullok Edit baris berikut pada file /etc/ssh/sshd_config" name="description">
+
+Konfigurasi 2FA SSH
+Tambahkan baris berikut pada file  /etc/pam.d/sshd
+auth required pam_google_authenticator.so secret=/home/${USER}/.ssh/google_auth nullok
+
+" name="description">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
     

@@ -9,7 +9,10 @@
     <meta content="Linux, OpenSUSE, Firewall" name="keywords">
     
     <meta content="Just /var/log/ - Secara default winbox di openSUSE tidak menampilkan Neighbors karena terblokir oleh firewall. Kita harus allow manual.
-sudo firewall-cmd --permanent --service=winbox-discover --add-port=5678/udp sudo firewall-cmd --zone=public --add-service=winbox-discover --permanent sudo firewall-cmd --reload " name="description">
+sudo firewall-cmd --permanent --service=winbox-discover --add-port=5678/udp
+sudo firewall-cmd --zone=public --add-service=winbox-discover --permanent 
+sudo firewall-cmd --reload
+" name="description">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
     

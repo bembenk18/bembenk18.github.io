@@ -8,9 +8,30 @@
     
     <meta content="Linux, Server, Tutorial, Firewall" name="keywords">
     
-    <meta content="Just /var/log/ - 0. sudo -u zimbra - zmprov mcf &#43;zimbraMailTrustedIP 127.0.0.1 &#43;zimbraMailTrustedIP {IP of Server} zmcontrol restart 1. Install Fail2Ban yum install epel-release -y yum install fail2ban -y 2. Buat file jail.conf *Jika ingin whitelist IP tambahkan pada baris ignoreip
+    <meta content="Just /var/log/ - 
+0.
+sudo -u zimbra -
+zmprov mcf &#43;zimbraMailTrustedIP 127.0.0.1 &#43;zimbraMailTrustedIP {IP of Server}
+zmcontrol restart
+
+1. Install Fail2Ban
+yum install epel-release -y
+yum install fail2ban -y
+
+2. Buat file jail.conf
+*Jika ingin whitelist IP tambahkan pada baris ignoreip
 nano /etc/fail2ban/jail.local
-[DEFAULT] # &quot;ignoreip&quot; can be a list of IP addresses, CIDR masks or DNS hosts. # Fail2ban will not ban a host which matches an address in this list. # Several addresses can be defined using space (and/or comma) separator." name="description">
+[DEFAULT]
+# &quot;ignoreip&quot; can be a list of IP addresses, CIDR masks or DNS hosts.
+# Fail2ban will not ban a host which matches an address in this list.
+# Several addresses can be defined using space (and/or comma) separator.
+#ignoreip = 127.0.0.1/8 ::1 10.137.26.29/32
+ignoreip = 127.0.0.1/8 IP-ADDRESS-OF-ZIMBRA-SERVER/32 WHITELIST-IP
+
+banaction = route
+
+3. Buat file jail untuk Zimbra
+nano /etc/fail2ban/jail.d/zimbra.local" name="description">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
     
@@ -228,7 +249,7 @@ systemctl enable fail2ban
 <pre><code>fail2ban-client set sshd banip 10.137.26.29
 fail2ban-client set sshd unbanip 10.137.26.29
 </code></pre>
-<h1 id="sumber-httpsblogzimbracom202208configuring-fail2ban-on-zimbra">Sumber: <a href="https://blog.zimbra.com/2022/08/configuring-fail2ban-on-zimbra/">https://blog.zimbra.com/2022/08/configuring-fail2ban-on-zimbra/</a></h1>
+<h1 id="sumber">Sumber: <a href="https://blog.zimbra.com/2022/08/configuring-fail2ban-on-zimbra/">https://blog.zimbra.com/2022/08/configuring-fail2ban-on-zimbra/</a></h1>
 </div>
             </div>
         </div>

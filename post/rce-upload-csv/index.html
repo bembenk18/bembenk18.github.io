@@ -8,9 +8,34 @@
     
     <meta content="bugbounty" name="keywords">
     
-    <meta content="Just /var/log/ - Abstraksi Bug ini memungkinkan attacker untuk mengupload file backdoor. Bug ini muncul karena tidak ada filtering type file yang diupload sehingga memungkinkan attacker untuk mengupload file backdoor berekstensi .php.
-&lt;div class=&quot;col-12 pb-2&quot;&gt; &lt;div class=&quot;input-group&quot;&gt; &lt;div class=&quot;custom-file&quot;&gt; &lt;input type=&quot;file&quot; class=&quot;custom-file-input&quot; name=&quot;filedata&quot; id=&quot;exampleInputF&quot;&gt; &lt;label class=&quot;custom-file-label&quot; for=&quot;exampleInput&quot;&gt;Choose file&lt;/label&gt; &lt;/div&gt; &lt;/div&gt; &lt;/div&gt; Impact Remote Code Execution
-Proof of Concept: Login ke https://www.redacted.com/ Masuk ke menu Upload data pelanggan Klik Choose file dan pilih file ." name="description">
+    <meta content="Just /var/log/ - Abstraksi
+Bug ini memungkinkan attacker untuk mengupload file backdoor. Bug ini muncul karena tidak ada filtering type file yang diupload sehingga memungkinkan attacker untuk mengupload file backdoor berekstensi .php.
+&lt;div class=&quot;col-12 pb-2&quot;&gt;
+	&lt;div class=&quot;input-group&quot;&gt;
+			&lt;div class=&quot;custom-file&quot;&gt;
+				&lt;input type=&quot;file&quot; class=&quot;custom-file-input&quot; name=&quot;filedata&quot; id=&quot;exampleInputF&quot;&gt;
+						&lt;label class=&quot;custom-file-label&quot; for=&quot;exampleInput&quot;&gt;Choose file&lt;/label&gt;
+			&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+
+Impact
+Remote Code Execution
+Proof of Concept:
+
+Login ke https://www.redacted.com/
+Masuk ke menu Upload data pelanggan
+Klik Choose file dan pilih file .csv
+Intercept dengan Burp Suite dan klik Upload
+Ubah ektensi menjadi .php, kemudian forward request
+
+Timeline
+
+Report: 10/08/2023
+Response: 10/08/2023
+Rewards: -
+
+Demikian writeup yang tidak lengkap ini." name="description">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
     
