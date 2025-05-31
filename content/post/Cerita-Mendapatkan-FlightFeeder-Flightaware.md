@@ -3,7 +3,7 @@ title: "Cerita mendapatkan FlightFeeder dari FlightAware"
 date: 2025-03-29T04:50:07+07:00
 draft: false
 ---
-Test Deploy
+Test
 Saya kenal dunia ADS-B saat scroll post lama di group Orange Pi Indonesia dan tidak sengaja membaca post tentang ADS-B untuk tracking penerbangan. ADS-B (Automatic Dependent Surveillance-Broadcast) merupakan teknologi pengawasan penerbangan yang menggunakan transponder untuk memancarkan informasi posisi, kecepatan, ketinggian dan arah pesawat melalui gelombang radio.
 
 ![img](https://www.sportys.com//media/wysiwyg/blog/13_-_Navigating_and_Automation_in_the_21st_Century.png)
