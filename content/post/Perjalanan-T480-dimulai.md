@@ -17,8 +17,11 @@ Akhirnya saya putuskan membeli T480 dari seller Thinkpad Salatiga di tokopedia s
 | 5  | Adaptor | 65W Type C Original     |
 | 6  | Baterai | 2x24wh (20 & 19+ wh)    |
 
+#### 16 Maret 2025
 Laptop datang dengan Windows 11 Original, namun karena workflow pakai Linux jadi SSD Adata 512GB T470 di kanibal ke T480. SSD ini berisi openSUSE Tumbleweed yg telah saya pakai kurang lebih 1.5 tahun.
-Setelah kurang lebih 1 mingguan, free space di SSD Adata kurang dari 100GB, akhirnya saya putuskan upgrade ke SSD WD NVME via slot WWAN card. SSD yang cocok dengan WWAN T480 adalah type 2242, SSD yang saya beli sebenarnya adalah type 2280 kemudian dipotong menjadi 2242 agar masuk di slot WWAN. Setelah paket datang langung gas install Opensuse Tumbleweed lagi agar sesuai dengan workflow.
+#### 11 April 2025
+Setelah kurang lebih 1 bulan, free space di SSD Adata kurang dari 100GB, akhirnya saya putuskan upgrade ke SSD WD NVME via slot WWAN card. SSD yang cocok dengan WWAN T480 adalah type 2242, SSD yang saya beli sebenarnya adalah type 2280 kemudian dipotong menjadi 2242 agar masuk di slot WWAN. Setelah paket datang langung gas install Opensuse Tumbleweed lagi agar sesuai dengan workflow.
+#### 15 Juni 2025
 
 Total biaya:
 
