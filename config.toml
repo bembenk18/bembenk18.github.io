@@ -1,7 +1,7 @@
 baseURL = "https://bembenk18.github.io"
 languageCode = "en-us"
 title = "Just /var/log/"
-theme = ["hugo-chart", "erblog"]
+theme = ["hugo-chart", "PaperMod"]
 copyright = "Bembenk" 
 disqusShortname = "Bembenk"
 googleAnalytics = "G-438PNW325R"
@@ -23,11 +23,16 @@ name = "About"
 url = "/about"
 weight = 6
 
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
 
 [[menu.main]]
-name = "Learn"
-url = "/learn"
-weight = 4
+  identifier = "search"
+  name = "Search"
+  url = "/search/"
+  weight = 10
+
+
 
 
 [markup]

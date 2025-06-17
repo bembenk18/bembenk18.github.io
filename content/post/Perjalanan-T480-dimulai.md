@@ -2,6 +2,8 @@
 title: "Perjalanan T480 Dimulai"
 date: 2025-04-02T07:49:16+07:00
 draft: false
+tags:
+- Thinkpad
 ---
 
 ![img](https://raw.githubusercontent.com/bembenk18/Images/refs/heads/main/T480/Main.png)
