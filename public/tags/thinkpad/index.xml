@@ -45,11 +45,11 @@
 &lt;hr>
 &lt;h3 id="-16-maret-2025">📅 16 Maret 2025&lt;/h3>
 &lt;p>Laptop datang dengan Windows 11 Original. Namun, karena workflow saya lebih cocok di Linux, SSD Adata 512GB dari T470 saya kanibal dan pindahkan ke T480. SSD ini berisi openSUSE Tumbleweed yang telah saya gunakan selama kurang lebih 1,5 tahun.&lt;/p></description></item><item><title>Mesin Tua</title><link>https://bembenk18.github.io/post/mesin-tua/</link><pubDate>Thu, 27 Apr 2023 14:17:18 +0700</pubDate><guid>https://bembenk18.github.io/post/mesin-tua/</guid><description>&lt;div style="width: 90%;height: 200px;margin: 0 auto">
-&lt;canvas id="ac5ebac624844dcc1cc8d4deb8fc5ffd">&lt;/canvas>
+&lt;canvas id="ffcecccd44fe1da886cda84bbdc4c552">&lt;/canvas>
 &lt;/div>
 &lt;script src="https://cdn.jsdelivr.net/npm/chart.js/dist/chart.min.js">&lt;/script>
 &lt;script type="text/javascript">
-var ctx = document.getElementById('ac5ebac624844dcc1cc8d4deb8fc5ffd').getContext('2d');
+var ctx = document.getElementById('ffcecccd44fe1da886cda84bbdc4c552').getContext('2d');
 var options =
 {
 type: 'bar',
