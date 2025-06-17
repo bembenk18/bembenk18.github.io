@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Just /var/log/</title><link>https://bembenk18.github.io/</link><description>Recent content on Just /var/log/</description><generator>Hugo -- 0.146.7</generator><language>en-us</language><copyright>Bembenk</copyright><lastBuildDate>Wed, 02 Apr 2025 07:49:16 +0700</lastBuildDate><atom:link href="https://bembenk18.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>Perjalanan T480 Dimulai</title><link>https://bembenk18.github.io/post/perjalanan-t480-dimulai/</link><pubDate>Wed, 02 Apr 2025 07:49:16 +0700</pubDate><guid>https://bembenk18.github.io/post/perjalanan-t480-dimulai/</guid><description>&lt;p>&lt;img alt="img" loading="lazy" src="https://raw.githubusercontent.com/bembenk18/Images/refs/heads/main/T480/Main.png">&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Just /var/log/</title><link>https://bembenk18.github.io/</link><description>Recent content on Just /var/log/</description><generator>Hugo -- 0.146.7</generator><language>en-us</language><copyright>Bembenk</copyright><lastBuildDate>Wed, 02 Apr 2025 07:49:16 +0700</lastBuildDate><atom:link href="https://bembenk18.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>Perjalanan T480 Dimulai TEST</title><link>https://bembenk18.github.io/post/perjalanan-t480-dimulai/</link><pubDate>Wed, 02 Apr 2025 07:49:16 +0700</pubDate><guid>https://bembenk18.github.io/post/perjalanan-t480-dimulai/</guid><description>&lt;p>&lt;img alt="img" loading="lazy" src="https://raw.githubusercontent.com/bembenk18/Images/refs/heads/main/T480/Main.png">&lt;/p>
 &lt;p>Karena kebutuhan komputasi sudah tidak lagi bisa ditangani oleh T470, saya memutuskan untuk upgrade laptop. Awalnya saya berniat membeli ThinkPad T14 Gen 2 AMD atau P14s, tetapi batal setelah melihat bahwa T480 memiliki opsi upgrade yang lebih luas—terutama dukungan untuk dual storage.&lt;/p>
 &lt;p>Akhirnya, saya memilih membeli T480 dari seller ThinkPad Salatiga di Tokopedia dengan harga Rp 3.672.000. Unitnya masih sangat mulus, dan konfigurasi awalnya adalah sebagai berikut:&lt;/p>
 &lt;table>
@@ -348,11 +348,11 @@ sudo apt full-upgrade
 &lt;/code>&lt;/pre>
 &lt;h5 id="debian-11-berhasil-terpasang">Debian 11 berhasil terpasang&lt;/h5>
 &lt;p>&lt;img alt="Logo" loading="lazy" src="https://raw.githubusercontent.com/bembenk18/Images/main/upgrade-debian/home.png">&lt;/p></description></item><item><title>Mesin Tua</title><link>https://bembenk18.github.io/post/mesin-tua/</link><pubDate>Thu, 27 Apr 2023 14:17:18 +0700</pubDate><guid>https://bembenk18.github.io/post/mesin-tua/</guid><description>&lt;div style="width: 90%;height: 200px;margin: 0 auto">
-&lt;canvas id="ffcecccd44fe1da886cda84bbdc4c552">&lt;/canvas>
+&lt;canvas id="14dcba25cffc4dc8deacc6bfd8c85e44">&lt;/canvas>
 &lt;/div>
 &lt;script src="https://cdn.jsdelivr.net/npm/chart.js/dist/chart.min.js">&lt;/script>
 &lt;script type="text/javascript">
-var ctx = document.getElementById('ffcecccd44fe1da886cda84bbdc4c552').getContext('2d');
+var ctx = document.getElementById('14dcba25cffc4dc8deacc6bfd8c85e44').getContext('2d');
 var options =
 {
 type: 'bar',
