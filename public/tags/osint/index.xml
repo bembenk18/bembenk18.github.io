@@ -1,81 +1,62 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
-  <channel>
-    <title>Osint on Just /var/log/</title>
-    <link>https://bembenk18.github.io/tags/osint/</link>
-    <description>Recent content in Osint on Just /var/log/</description>
-    <generator>Hugo -- 0.146.7</generator>
-    <language>en-us</language>
-    <copyright>Bembenk</copyright>
-    <lastBuildDate>Wed, 27 Sep 2023 16:15:20 +0700</lastBuildDate>
-    <atom:link href="https://bembenk18.github.io/tags/osint/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Bongkar Apk Undangan Online</title>
-      <link>https://bembenk18.github.io/post/bongkar-apk-undangan-online/</link>
-      <pubDate>Wed, 27 Sep 2023 16:15:20 +0700</pubDate>
-      <guid>https://bembenk18.github.io/post/bongkar-apk-undangan-online/</guid>
-      <description>&lt;h1 id=&#34;abstraksi&#34;&gt;Abstraksi&lt;/h1&gt;
-&lt;p&gt;Sudah lama saya ingin bongkar aplikasi penipuan semacam ini, tetapi tak kunjunag ada penipu yang mengirimkannya wkwkw. Akhirnya ada seseorang yang mengirimkan aplikasi dengan nama UNDANGAN.apk di salah satu group, lalu tanpa pikir panjang saya memutuskan untuk mencoba bongkar aplikasi ini.&lt;/p&gt;
-&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://github.com/bembenk18/Images/blob/main/Bongkar%20apk%20undangan%20online/WhatsApp%20Image%202023-09-27%20at%205.27.18%20PM.jpeg?raw=true&#34;&gt;&lt;/p&gt;
-&lt;h2 id=&#34;informasi-dasar-file&#34;&gt;Informasi dasar file&lt;/h2&gt;
-&lt;table&gt;
-  &lt;thead&gt;
-      &lt;tr&gt;
-          &lt;th&gt;Nama      :&lt;/th&gt;
-          &lt;th&gt;UNDANGAN.apk&lt;/th&gt;
-      &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-      &lt;tr&gt;
-          &lt;td&gt;&lt;/td&gt;
-          &lt;td&gt;&lt;/td&gt;
-      &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-&lt;table&gt;
-  &lt;thead&gt;
-      &lt;tr&gt;
-          &lt;th&gt;MD5        :&lt;/th&gt;
-          &lt;th&gt;5668b313d21604a67e2b50f58d516dff&lt;/th&gt;
-      &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-      &lt;tr&gt;
-          &lt;td&gt;&lt;/td&gt;
-          &lt;td&gt;&lt;/td&gt;
-      &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-&lt;table&gt;
-  &lt;thead&gt;
-      &lt;tr&gt;
-          &lt;th&gt;SHA1        :&lt;/th&gt;
-          &lt;th&gt;b60bf67c109ed43a7af4a70ca3a18f8d212a2598&lt;/th&gt;
-      &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-      &lt;tr&gt;
-          &lt;td&gt;&lt;/td&gt;
-          &lt;td&gt;&lt;/td&gt;
-      &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-&lt;table&gt;
-  &lt;thead&gt;
-      &lt;tr&gt;
-          &lt;th&gt;SHA256       :&lt;/th&gt;
-          &lt;th&gt;125c855d439895581bedf1b30bb779313058feb7f114f32167d45d427f27fe0c&lt;/th&gt;
-      &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-      &lt;tr&gt;
-          &lt;td&gt;&lt;/td&gt;
-          &lt;td&gt;&lt;/td&gt;
-      &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-&lt;h2 id=&#34;hasil-decompile-file-apk&#34;&gt;Hasil decompile file apk&lt;/h2&gt;
-&lt;p&gt;Setelah decompile bisa kita lihat terdapat file Manifest dengan nama AndroidManifest.xml, difile ini berisi informasi dasar terkait aplikasi android seperti izin dan nama package&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Osint on Just /var/log/</title><link>https://bembenk18.github.io/tags/osint/</link><description>Recent content in Osint on Just /var/log/</description><generator>Hugo -- 0.146.7</generator><language>en-us</language><copyright>Bembenk</copyright><lastBuildDate>Wed, 27 Sep 2023 16:15:20 +0700</lastBuildDate><atom:link href="https://bembenk18.github.io/tags/osint/index.xml" rel="self" type="application/rss+xml"/><item><title>Bongkar Apk Undangan Online</title><link>https://bembenk18.github.io/post/bongkar-apk-undangan-online/</link><pubDate>Wed, 27 Sep 2023 16:15:20 +0700</pubDate><guid>https://bembenk18.github.io/post/bongkar-apk-undangan-online/</guid><description>&lt;h1 id="abstraksi">Abstraksi&lt;/h1>
+&lt;p>Sudah lama saya ingin bongkar aplikasi penipuan semacam ini, tetapi tak kunjunag ada penipu yang mengirimkannya wkwkw. Akhirnya ada seseorang yang mengirimkan aplikasi dengan nama UNDANGAN.apk di salah satu group, lalu tanpa pikir panjang saya memutuskan untuk mencoba bongkar aplikasi ini.&lt;/p>
+&lt;p>&lt;img loading="lazy" src="https://github.com/bembenk18/Images/blob/main/Bongkar%20apk%20undangan%20online/WhatsApp%20Image%202023-09-27%20at%205.27.18%20PM.jpeg?raw=true">&lt;/p>
+&lt;h2 id="informasi-dasar-file">Informasi dasar file&lt;/h2>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Nama :&lt;/th>
+&lt;th>UNDANGAN.apk&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>MD5 :&lt;/th>
+&lt;th>5668b313d21604a67e2b50f58d516dff&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>SHA1 :&lt;/th>
+&lt;th>b60bf67c109ed43a7af4a70ca3a18f8d212a2598&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>SHA256 :&lt;/th>
+&lt;th>125c855d439895581bedf1b30bb779313058feb7f114f32167d45d427f27fe0c&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h2 id="hasil-decompile-file-apk">Hasil decompile file apk&lt;/h2>
+&lt;p>Setelah decompile bisa kita lihat terdapat file Manifest dengan nama AndroidManifest.xml, difile ini berisi informasi dasar terkait aplikasi android seperti izin dan nama package&lt;/p></description></item></channel></rss>

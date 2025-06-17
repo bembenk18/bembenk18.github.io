@@ -1,27 +1,11 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
-  <channel>
-    <title>Mikrotik on Just /var/log/</title>
-    <link>https://bembenk18.github.io/tags/mikrotik/</link>
-    <description>Recent content in Mikrotik on Just /var/log/</description>
-    <generator>Hugo -- 0.146.7</generator>
-    <language>en-us</language>
-    <copyright>Bembenk</copyright>
-    <lastBuildDate>Sun, 25 Aug 2024 05:46:19 +0700</lastBuildDate>
-    <atom:link href="https://bembenk18.github.io/tags/mikrotik/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Setup Cloudflare Warp on Mikrotik</title>
-      <link>https://bembenk18.github.io/post/cloudflare-warp-on-mikrotik/</link>
-      <pubDate>Sun, 25 Aug 2024 05:46:19 +0700</pubDate>
-      <guid>https://bembenk18.github.io/post/cloudflare-warp-on-mikrotik/</guid>
-      <description>&lt;p&gt;Sesuai sabda pak Anton Wibowo tentang VPN dibawah ini, maka saya akan coba setup Cloudflare Warp di Mikrotik
-&lt;img loading=&#34;lazy&#34; src=&#34;https://raw.githubusercontent.com/bembenk18/Images/main/WARP/1.png&#34;&gt;&lt;/p&gt;
-&lt;p&gt;Karena disini kita akan pakai Wireguard maka wajib menggunakan RouterOS versi 7.&lt;/p&gt;
-&lt;h1 id=&#34;buat-akun-warp&#34;&gt;Buat akun Warp&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;Untuk membuat akun disini saya akan pakai tools ini &lt;a href=&#34;https://github.com/ViRb3/wgcf&#34;&gt;https://github.com/ViRb3/wgcf&lt;/a&gt; (Silahkan dibaca sendiri tutorialnya:v)&lt;/li&gt;
-&lt;li&gt;Setelah itu kita akan mendapatkan file wgcf-profile.conf yang berisi
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;➜  Network cat wgcf-profile.conf 
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Mikrotik on Just /var/log/</title><link>https://bembenk18.github.io/tags/mikrotik/</link><description>Recent content in Mikrotik on Just /var/log/</description><generator>Hugo -- 0.146.7</generator><language>en-us</language><copyright>Bembenk</copyright><lastBuildDate>Sun, 25 Aug 2024 05:46:19 +0700</lastBuildDate><atom:link href="https://bembenk18.github.io/tags/mikrotik/index.xml" rel="self" type="application/rss+xml"/><item><title>Setup Cloudflare Warp on Mikrotik</title><link>https://bembenk18.github.io/post/cloudflare-warp-on-mikrotik/</link><pubDate>Sun, 25 Aug 2024 05:46:19 +0700</pubDate><guid>https://bembenk18.github.io/post/cloudflare-warp-on-mikrotik/</guid><description>&lt;p>Sesuai sabda pak Anton Wibowo tentang VPN dibawah ini, maka saya akan coba setup Cloudflare Warp di Mikrotik
+&lt;img loading="lazy" src="https://raw.githubusercontent.com/bembenk18/Images/main/WARP/1.png">&lt;/p>
+&lt;p>Karena disini kita akan pakai Wireguard maka wajib menggunakan RouterOS versi 7.&lt;/p>
+&lt;h1 id="buat-akun-warp">Buat akun Warp&lt;/h1>
+&lt;ul>
+&lt;li>Untuk membuat akun disini saya akan pakai tools ini &lt;a href="https://github.com/ViRb3/wgcf">https://github.com/ViRb3/wgcf&lt;/a> (Silahkan dibaca sendiri tutorialnya:v)&lt;/li>
+&lt;li>Setelah itu kita akan mendapatkan file wgcf-profile.conf yang berisi
+&lt;pre tabindex="0">&lt;code>➜ Network cat wgcf-profile.conf
 [Interface]
 PrivateKey = mAmDoyJ8Qf/2sEyuhjhPytLDtx8ioiEaJh3q8K8iE3u2U=
 Address = 172.16.0.2/32
@@ -33,32 +17,29 @@ PublicKey = bmXOC+F1FxEHF9jjiK2H5/1SUtzH0JuVo51h2wPfgyo=
 AllowedIPs = 0.0.0.0/0
 AllowedIPs = ::/0
 Endpoint = engage.cloudflareclient.com:2408
-➜  Network 
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1 id=&#34;setup-mikrotik&#34;&gt;Setup Mikrotik&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;Buat Wireguard baru dan sesuaikan dengan config profile yang sudah kita dapatkan (Edit pada bagian MTU &amp;amp; Private key)
-&lt;img loading=&#34;lazy&#34; src=&#34;https://raw.githubusercontent.com/bembenk18/Images/main/WARP/2.png&#34;&gt;&lt;/li&gt;
-&lt;li&gt;Buat Wireguard Peer sesuaikan juga Public Key, Endpoint dan Endpoint Port dengan profile
-&lt;img loading=&#34;lazy&#34; src=&#34;https://raw.githubusercontent.com/bembenk18/Images/main/WARP/3.png&#34;&gt;&lt;/li&gt;
-&lt;li&gt;Buat address baru dengan IP 172.16.0.2/32 dan Interface &lt;strong&gt;WARP&lt;/strong&gt;
-&lt;img loading=&#34;lazy&#34; src=&#34;https://raw.githubusercontent.com/bembenk18/Images/main/WARP/4.png&#34;&gt;&lt;/li&gt;
-&lt;li&gt;Ubah DNS ke 1.1.1.1&lt;/li&gt;
-&lt;li&gt;Buat Routing Table baru dengan nama &lt;strong&gt;Cloudflare&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;Tambahkan Route baru dengan gateway &lt;strong&gt;WARP&lt;/strong&gt;
-&lt;img loading=&#34;lazy&#34; src=&#34;https://raw.githubusercontent.com/bembenk18/Images/main/WARP/5.png&#34;&gt;&lt;/li&gt;
-&lt;li&gt;Buat NAT baru dengan Out Interface &lt;strong&gt;WARP&lt;/strong&gt; dan action masquerade (Pastikan nat ini berada paling atas)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt; /ip firewall nat add action=masquerade chain=srcnat disabled=no log=no log-prefix=&amp;#34;&amp;#34; out-interface=WARP
-&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
-&lt;li&gt;Tambahkan mange baru&lt;/li&gt;
-&lt;/ul&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;/ip firewall mangle set *1 action=mark-routing chain=prerouting disabled=no log=no log-prefix=&amp;#34;&amp;#34; new-routing-mark=Cloudflare  passthrough=no src-address=192.168.xx.xx-192.168.xx.xx
-&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;testing&#34;&gt;Testing&lt;/h1&gt;
-&lt;h3 id=&#34;sebelum-routing&#34;&gt;Sebelum Routing&lt;/h3&gt;
-&lt;p&gt;Terlihat traffic masih mengarah ke ISP
-&lt;img loading=&#34;lazy&#34; src=&#34;https://raw.githubusercontent.com/bembenk18/Images/main/WARP/6.png&#34;&gt;&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+➜ Network
+&lt;/code>&lt;/pre>&lt;/li>
+&lt;/ul>
+&lt;h1 id="setup-mikrotik">Setup Mikrotik&lt;/h1>
+&lt;ul>
+&lt;li>Buat Wireguard baru dan sesuaikan dengan config profile yang sudah kita dapatkan (Edit pada bagian MTU &amp;amp; Private key)
+&lt;img loading="lazy" src="https://raw.githubusercontent.com/bembenk18/Images/main/WARP/2.png">&lt;/li>
+&lt;li>Buat Wireguard Peer sesuaikan juga Public Key, Endpoint dan Endpoint Port dengan profile
+&lt;img loading="lazy" src="https://raw.githubusercontent.com/bembenk18/Images/main/WARP/3.png">&lt;/li>
+&lt;li>Buat address baru dengan IP 172.16.0.2/32 dan Interface &lt;strong>WARP&lt;/strong>
+&lt;img loading="lazy" src="https://raw.githubusercontent.com/bembenk18/Images/main/WARP/4.png">&lt;/li>
+&lt;li>Ubah DNS ke 1.1.1.1&lt;/li>
+&lt;li>Buat Routing Table baru dengan nama &lt;strong>Cloudflare&lt;/strong>&lt;/li>
+&lt;li>Tambahkan Route baru dengan gateway &lt;strong>WARP&lt;/strong>
+&lt;img loading="lazy" src="https://raw.githubusercontent.com/bembenk18/Images/main/WARP/5.png">&lt;/li>
+&lt;li>Buat NAT baru dengan Out Interface &lt;strong>WARP&lt;/strong> dan action masquerade (Pastikan nat ini berada paling atas)&lt;/li>
+&lt;/ul>
+&lt;pre tabindex="0">&lt;code> /ip firewall nat add action=masquerade chain=srcnat disabled=no log=no log-prefix=&amp;#34;&amp;#34; out-interface=WARP
+&lt;/code>&lt;/pre>&lt;ul>
+&lt;li>Tambahkan mange baru&lt;/li>
+&lt;/ul>
+&lt;pre tabindex="0">&lt;code>/ip firewall mangle set *1 action=mark-routing chain=prerouting disabled=no log=no log-prefix=&amp;#34;&amp;#34; new-routing-mark=Cloudflare passthrough=no src-address=192.168.xx.xx-192.168.xx.xx
+&lt;/code>&lt;/pre>&lt;h1 id="testing">Testing&lt;/h1>
+&lt;h3 id="sebelum-routing">Sebelum Routing&lt;/h3>
+&lt;p>Terlihat traffic masih mengarah ke ISP
+&lt;img loading="lazy" src="https://raw.githubusercontent.com/bembenk18/Images/main/WARP/6.png">&lt;/p></description></item></channel></rss>

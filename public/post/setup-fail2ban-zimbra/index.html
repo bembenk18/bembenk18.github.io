@@ -1,285 +1,59 @@
-<!DOCTYPE html>
-<html lang="en" dir="auto">
-
-<head><meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="index, follow">
-<title>Setup Fail2Ban Zimbra | Just /var/log/</title>
-<meta name="keywords" content="Linux, Server, Tutorial, Firewall">
-<meta name="description" content="
+<!doctype html><html lang=en dir=auto><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name=robots content="index, follow"><title>Setup Fail2Ban Zimbra | Just /var/log/</title>
+<meta name=keywords content="Linux,Server,Tutorial,Firewall"><meta name=description content='
 0.
 sudo -u zimbra -
-zmprov mcf &#43;zimbraMailTrustedIP 127.0.0.1 &#43;zimbraMailTrustedIP {IP of Server}
-zmcontrol restart
-
-1. Install Fail2Ban
-yum install epel-release -y
-yum install fail2ban -y
-
-2. Buat file jail.conf
-*Jika ingin whitelist IP tambahkan pada baris ignoreip
-nano /etc/fail2ban/jail.local
-[DEFAULT]
-# &quot;ignoreip&quot; can be a list of IP addresses, CIDR masks or DNS hosts.
-# Fail2ban will not ban a host which matches an address in this list.
-# Several addresses can be defined using space (and/or comma) separator.
-#ignoreip = 127.0.0.1/8 ::1 10.137.26.29/32
-ignoreip = 127.0.0.1/8 IP-ADDRESS-OF-ZIMBRA-SERVER/32 WHITELIST-IP
-
-banaction = route
-
-3. Buat file jail untuk Zimbra
-nano /etc/fail2ban/jail.d/zimbra.local">
-<meta name="author" content="Bembenk">
-<link rel="canonical" href="https://bembenk18.github.io/post/setup-fail2ban-zimbra/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.2211ca3164be7830024f6aad2b3a2e520843a64f8f048445c3401c1249aa051d.css" integrity="sha256-IhHKMWS&#43;eDACT2qtKzouUghDpk&#43;PBIRFw0AcEkmqBR0=" rel="preload stylesheet" as="style">
-<link rel="icon" href="https://bembenk18.github.io/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="https://bembenk18.github.io/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="https://bembenk18.github.io/favicon-32x32.png">
-<link rel="apple-touch-icon" href="https://bembenk18.github.io/apple-touch-icon.png">
-<link rel="mask-icon" href="https://bembenk18.github.io/safari-pinned-tab.svg">
-<meta name="theme-color" content="#2e2e33">
-<meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="https://bembenk18.github.io/post/setup-fail2ban-zimbra/">
-<noscript>
-    <style>
-        #theme-toggle,
-        .top-link {
-            display: none;
-        }
-
-    </style>
-    <style>
-        @media (prefers-color-scheme: dark) {
-            :root {
-                --theme: rgb(29, 30, 32);
-                --entry: rgb(46, 46, 51);
-                --primary: rgb(218, 218, 219);
-                --secondary: rgb(155, 156, 157);
-                --tertiary: rgb(65, 66, 68);
-                --content: rgb(196, 196, 197);
-                --code-block-bg: rgb(46, 46, 51);
-                --code-bg: rgb(55, 56, 62);
-                --border: rgb(51, 51, 51);
-            }
-
-            .list {
-                background: var(--theme);
-            }
-
-            .list:not(.dark)::-webkit-scrollbar-track {
-                background: 0 0;
-            }
-
-            .list:not(.dark)::-webkit-scrollbar-thumb {
-                border-color: var(--theme);
-            }
-        }
-
-    </style>
-</noscript>
-      <script async src="https://www.googletagmanager.com/gtag/js?id=G-438PNW325R"></script>
-      <script>
-        var doNotTrack = false;
-        if ( false ) {
-          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
-          var doNotTrack = (dnt == "1" || dnt == "yes");
-        }
-        if (!doNotTrack) {
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'G-438PNW325R');
-        }
-      </script><meta property="og:url" content="https://bembenk18.github.io/post/setup-fail2ban-zimbra/">
-  <meta property="og:site_name" content="Just /var/log/">
-  <meta property="og:title" content="Setup Fail2Ban Zimbra">
-  <meta property="og:description" content="
-0. sudo -u zimbra - zmprov mcf &#43;zimbraMailTrustedIP 127.0.0.1 &#43;zimbraMailTrustedIP {IP of Server} zmcontrol restart 1. Install Fail2Ban yum install epel-release -y yum install fail2ban -y 2. Buat file jail.conf *Jika ingin whitelist IP tambahkan pada baris ignoreip
-nano /etc/fail2ban/jail.local
-[DEFAULT] # &#34;ignoreip&#34; can be a list of IP addresses, CIDR masks or DNS hosts. # Fail2ban will not ban a host which matches an address in this list. # Several addresses can be defined using space (and/or comma) separator. #ignoreip = 127.0.0.1/8 ::1 10.137.26.29/32 ignoreip = 127.0.0.1/8 IP-ADDRESS-OF-ZIMBRA-SERVER/32 WHITELIST-IP banaction = route 3. Buat file jail untuk Zimbra nano /etc/fail2ban/jail.d/zimbra.local">
-  <meta property="og:locale" content="en-us">
-  <meta property="og:type" content="article">
-    <meta property="article:section" content="post">
-    <meta property="article:published_time" content="2023-03-26T13:47:58+07:00">
-    <meta property="article:modified_time" content="2023-03-26T13:47:58+07:00">
-    <meta property="article:tag" content="Linux">
-    <meta property="article:tag" content="Server">
-    <meta property="article:tag" content="Tutorial">
-    <meta property="article:tag" content="Firewall">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Setup Fail2Ban Zimbra">
-<meta name="twitter:description" content="
-0.
-sudo -u zimbra -
-zmprov mcf &#43;zimbraMailTrustedIP 127.0.0.1 &#43;zimbraMailTrustedIP {IP of Server}
-zmcontrol restart
-
-1. Install Fail2Ban
-yum install epel-release -y
-yum install fail2ban -y
-
-2. Buat file jail.conf
-*Jika ingin whitelist IP tambahkan pada baris ignoreip
-nano /etc/fail2ban/jail.local
-[DEFAULT]
-# &quot;ignoreip&quot; can be a list of IP addresses, CIDR masks or DNS hosts.
-# Fail2ban will not ban a host which matches an address in this list.
-# Several addresses can be defined using space (and/or comma) separator.
-#ignoreip = 127.0.0.1/8 ::1 10.137.26.29/32
-ignoreip = 127.0.0.1/8 IP-ADDRESS-OF-ZIMBRA-SERVER/32 WHITELIST-IP
-
-banaction = route
-
-3. Buat file jail untuk Zimbra
-nano /etc/fail2ban/jail.d/zimbra.local">
-
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position":  1 ,
-      "name": "Posts",
-      "item": "https://bembenk18.github.io/post/"
-    }, 
-    {
-      "@type": "ListItem",
-      "position":  2 ,
-      "name": "Setup Fail2Ban Zimbra",
-      "item": "https://bembenk18.github.io/post/setup-fail2ban-zimbra/"
-    }
-  ]
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "headline": "Setup Fail2Ban Zimbra",
-  "name": "Setup Fail2Ban Zimbra",
-  "description": "\n0. sudo -u zimbra - zmprov mcf +zimbraMailTrustedIP 127.0.0.1 +zimbraMailTrustedIP {IP of Server} zmcontrol restart 1. Install Fail2Ban yum install epel-release -y yum install fail2ban -y 2. Buat file jail.conf *Jika ingin whitelist IP tambahkan pada baris ignoreip\nnano /etc/fail2ban/jail.local\n[DEFAULT] # \u0026quot;ignoreip\u0026quot; can be a list of IP addresses, CIDR masks or DNS hosts. # Fail2ban will not ban a host which matches an address in this list. # Several addresses can be defined using space (and/or comma) separator. #ignoreip = 127.0.0.1/8 ::1 10.137.26.29/32 ignoreip = 127.0.0.1/8 IP-ADDRESS-OF-ZIMBRA-SERVER/32 WHITELIST-IP banaction = route 3. Buat file jail untuk Zimbra nano /etc/fail2ban/jail.d/zimbra.local\n",
-  "keywords": [
-    "Linux", "Server", "Tutorial", "Firewall"
-  ],
-  "articleBody": "\n0. sudo -u zimbra - zmprov mcf +zimbraMailTrustedIP 127.0.0.1 +zimbraMailTrustedIP {IP of Server} zmcontrol restart 1. Install Fail2Ban yum install epel-release -y yum install fail2ban -y 2. Buat file jail.conf *Jika ingin whitelist IP tambahkan pada baris ignoreip\nnano /etc/fail2ban/jail.local\n[DEFAULT] # \"ignoreip\" can be a list of IP addresses, CIDR masks or DNS hosts. # Fail2ban will not ban a host which matches an address in this list. # Several addresses can be defined using space (and/or comma) separator. #ignoreip = 127.0.0.1/8 ::1 10.137.26.29/32 ignoreip = 127.0.0.1/8 IP-ADDRESS-OF-ZIMBRA-SERVER/32 WHITELIST-IP banaction = route 3. Buat file jail untuk Zimbra nano /etc/fail2ban/jail.d/zimbra.local\n[zimbra-smtp] enabled = true filter = zimbra-smtp port = 25,465,587 logpath = /var/log/zimbra.log maxretry = 3 findtime = 86400 bantime = 86400 action = route [zimbra-web] enabled = true filter = zimbra-web port = 80,443,7071,9071 logpath = /opt/zimbra/log/mailbox.log maxretry = 5 findtime = 86400 bantime = 86400 action = route 4. Buat file jail untuk SSH nano /etc/fail2ban/jail.d/sshd.local\n[sshd] enabled = true port = 22 maxretry = 3 findtime = 600 bantime = 3600 5. Buat filter untuk Zimbra nano /etc/fail2ban/filter.d/zimbra-web.conf\n[Definition] failregex = .*ip=;.*authentication failed for .*$ ignoreregex = nano /etc/fail2ban/filter.d/zimbra-smtp.conf\n[Definition] failregex = postfix\\/submission\\/smtpd\\[\\d+\\]: warning: .*\\[\\]: SASL \\w+ authentication failed: authentication failure$ postfix\\/smtps\\/smtpd\\[\\d+\\]: warning: .*\\[\\]: SASL \\w+ authentication failed: authentication failure$ ignoreregex = 6. Enable systemctl restart fail2ban systemctl status fail2ban systemctl enable fail2ban 7. Cek status fail2ban-client status Ban \u0026 Unban fail2ban-client set sshd banip 10.137.26.29 fail2ban-client set sshd unbanip 10.137.26.29 Sumber: https://blog.zimbra.com/2022/08/configuring-fail2ban-on-zimbra/ ",
-  "wordCount" : "247",
-  "inLanguage": "en",
-  "datePublished": "2023-03-26T13:47:58+07:00",
-  "dateModified": "2023-03-26T13:47:58+07:00",
-  "author":{
-    "@type": "Person",
-    "name": "Bembenk"
-  },
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://bembenk18.github.io/post/setup-fail2ban-zimbra/"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Just /var/log/",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://bembenk18.github.io/favicon.ico"
-    }
-  }
-}
-</script>
-</head>
-
-<body class="" id="top">
-<script>
-    if (localStorage.getItem("pref-theme") === "dark") {
-        document.body.classList.add('dark');
-    } else if (localStorage.getItem("pref-theme") === "light") {
-        document.body.classList.remove('dark')
-    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.body.classList.add('dark');
-    }
-
-</script>
-
-<header class="header">
-    <nav class="nav">
-        <div class="logo">
-            <a href="https://bembenk18.github.io/" accesskey="h" title="Just /var/log/ (Alt + H)">Just /var/log/</a>
-            <div class="logo-switches">
-                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
-                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
-                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-                    </svg>
-                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
-                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <circle cx="12" cy="12" r="5"></circle>
-                        <line x1="12" y1="1" x2="12" y2="3"></line>
-                        <line x1="12" y1="21" x2="12" y2="23"></line>
-                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-                        <line x1="1" y1="12" x2="3" y2="12"></line>
-                        <line x1="21" y1="12" x2="23" y2="12"></line>
-                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-                    </svg>
-                </button>
-            </div>
-        </div>
-        <ul id="menu">
-            <li>
-                <a href="https://bembenk18.github.io/" title="Home">
-                    <span>Home</span>
-                </a>
-            </li>
-            <li>
-                <a href="https://bembenk18.github.io/tags" title="Tags">
-                    <span>Tags</span>
-                </a>
-            </li>
-            <li>
-                <a href="https://bembenk18.github.io/about" title="About">
-                    <span>About</span>
-                </a>
-            </li>
-            <li>
-                <a href="https://bembenk18.github.io/search/" title="Search (Alt &#43; /)" accesskey=/>
-                    <span>Search</span>
-                </a>
-            </li>
-        </ul>
-    </nav>
-</header>
-<main class="main">
-
-<article class="post-single">
-  <header class="post-header">
-    
-    <h1 class="post-title entry-hint-parent">
-      Setup Fail2Ban Zimbra
-    </h1>
-    <div class="post-meta"><span title='2023-03-26 13:47:58 +0700 WIB'>2023-03-26</span>&nbsp;·&nbsp;Bembenk
-
-</div>
-  </header> 
-  <div class="post-content"><p><img alt="Logo" loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/d/db/Fail2ban_logo.png"></p>
-<h2 id="0"><strong>0.</strong><a hidden class="anchor" aria-hidden="true" href="#0">#</a></h2>
-<pre><code>sudo -u zimbra -
 zmprov mcf +zimbraMailTrustedIP 127.0.0.1 +zimbraMailTrustedIP {IP of Server}
 zmcontrol restart
-</code></pre>
-<h2 id="1-install-fail2ban"><strong>1. Install Fail2Ban</strong><a hidden class="anchor" aria-hidden="true" href="#1-install-fail2ban">#</a></h2>
-<pre><code>yum install epel-release -y
+
+1. Install Fail2Ban
+yum install epel-release -y
 yum install fail2ban -y
-</code></pre>
-<h2 id="2-buat-file-jailconf"><strong>2. Buat file jail.conf</strong><a hidden class="anchor" aria-hidden="true" href="#2-buat-file-jailconf">#</a></h2>
-<p>*Jika ingin whitelist IP tambahkan pada baris ignoreip</p>
-<p>nano /etc/fail2ban/jail.local</p>
-<pre><code>[DEFAULT]
+
+2. Buat file jail.conf
+*Jika ingin whitelist IP tambahkan pada baris ignoreip
+nano /etc/fail2ban/jail.local
+[DEFAULT]
+# "ignoreip" can be a list of IP addresses, CIDR masks or DNS hosts.
+# Fail2ban will not ban a host which matches an address in this list.
+# Several addresses can be defined using space (and/or comma) separator.
+#ignoreip = 127.0.0.1/8 ::1 10.137.26.29/32
+ignoreip = 127.0.0.1/8 IP-ADDRESS-OF-ZIMBRA-SERVER/32 WHITELIST-IP
+
+banaction = route
+
+3. Buat file jail untuk Zimbra
+nano /etc/fail2ban/jail.d/zimbra.local'><meta name=author content="Bembenk"><link rel=canonical href=https://bembenk18.github.io/post/setup-fail2ban-zimbra/><link crossorigin=anonymous href=/assets/css/stylesheet.2211ca3164be7830024f6aad2b3a2e520843a64f8f048445c3401c1249aa051d.css integrity="sha256-IhHKMWS+eDACT2qtKzouUghDpk+PBIRFw0AcEkmqBR0=" rel="preload stylesheet" as=style><link rel=icon href=https://bembenk18.github.io/favicon.ico><link rel=icon type=image/png sizes=16x16 href=https://bembenk18.github.io/favicon-16x16.png><link rel=icon type=image/png sizes=32x32 href=https://bembenk18.github.io/favicon-32x32.png><link rel=apple-touch-icon href=https://bembenk18.github.io/apple-touch-icon.png><link rel=mask-icon href=https://bembenk18.github.io/safari-pinned-tab.svg><meta name=theme-color content="#2e2e33"><meta name=msapplication-TileColor content="#2e2e33"><link rel=alternate hreflang=en href=https://bembenk18.github.io/post/setup-fail2ban-zimbra/><noscript><style>#theme-toggle,.top-link{display:none}</style><style>@media(prefers-color-scheme:dark){:root{--theme:rgb(29, 30, 32);--entry:rgb(46, 46, 51);--primary:rgb(218, 218, 219);--secondary:rgb(155, 156, 157);--tertiary:rgb(65, 66, 68);--content:rgb(196, 196, 197);--code-block-bg:rgb(46, 46, 51);--code-bg:rgb(55, 56, 62);--border:rgb(51, 51, 51)}.list{background:var(--theme)}.list:not(.dark)::-webkit-scrollbar-track{background:0 0}.list:not(.dark)::-webkit-scrollbar-thumb{border-color:var(--theme)}}</style></noscript><script async src="https://www.googletagmanager.com/gtag/js?id=G-438PNW325R"></script><script>var dnt,doNotTrack=!1;if(!1&&(dnt=navigator.doNotTrack||window.doNotTrack||navigator.msDoNotTrack,doNotTrack=dnt=="1"||dnt=="yes"),!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-438PNW325R")}</script><meta property="og:url" content="https://bembenk18.github.io/post/setup-fail2ban-zimbra/"><meta property="og:site_name" content="Just /var/log/"><meta property="og:title" content="Setup Fail2Ban Zimbra"><meta property="og:description" content='
+0. sudo -u zimbra - zmprov mcf +zimbraMailTrustedIP 127.0.0.1 +zimbraMailTrustedIP {IP of Server} zmcontrol restart 1. Install Fail2Ban yum install epel-release -y yum install fail2ban -y 2. Buat file jail.conf *Jika ingin whitelist IP tambahkan pada baris ignoreip
+nano /etc/fail2ban/jail.local
+[DEFAULT] # "ignoreip" can be a list of IP addresses, CIDR masks or DNS hosts. # Fail2ban will not ban a host which matches an address in this list. # Several addresses can be defined using space (and/or comma) separator. #ignoreip = 127.0.0.1/8 ::1 10.137.26.29/32 ignoreip = 127.0.0.1/8 IP-ADDRESS-OF-ZIMBRA-SERVER/32 WHITELIST-IP banaction = route 3. Buat file jail untuk Zimbra nano /etc/fail2ban/jail.d/zimbra.local'><meta property="og:locale" content="en-us"><meta property="og:type" content="article"><meta property="article:section" content="post"><meta property="article:published_time" content="2023-03-26T13:47:58+07:00"><meta property="article:modified_time" content="2023-03-26T13:47:58+07:00"><meta property="article:tag" content="Linux"><meta property="article:tag" content="Server"><meta property="article:tag" content="Tutorial"><meta property="article:tag" content="Firewall"><meta name=twitter:card content="summary"><meta name=twitter:title content="Setup Fail2Ban Zimbra"><meta name=twitter:description content='
+0.
+sudo -u zimbra -
+zmprov mcf +zimbraMailTrustedIP 127.0.0.1 +zimbraMailTrustedIP {IP of Server}
+zmcontrol restart
+
+1. Install Fail2Ban
+yum install epel-release -y
+yum install fail2ban -y
+
+2. Buat file jail.conf
+*Jika ingin whitelist IP tambahkan pada baris ignoreip
+nano /etc/fail2ban/jail.local
+[DEFAULT]
+# "ignoreip" can be a list of IP addresses, CIDR masks or DNS hosts.
+# Fail2ban will not ban a host which matches an address in this list.
+# Several addresses can be defined using space (and/or comma) separator.
+#ignoreip = 127.0.0.1/8 ::1 10.137.26.29/32
+ignoreip = 127.0.0.1/8 IP-ADDRESS-OF-ZIMBRA-SERVER/32 WHITELIST-IP
+
+banaction = route
+
+3. Buat file jail untuk Zimbra
+nano /etc/fail2ban/jail.d/zimbra.local'><script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Posts","item":"https://bembenk18.github.io/post/"},{"@type":"ListItem","position":2,"name":"Setup Fail2Ban Zimbra","item":"https://bembenk18.github.io/post/setup-fail2ban-zimbra/"}]}</script><script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"Setup Fail2Ban Zimbra","name":"Setup Fail2Ban Zimbra","description":"\n0. sudo -u zimbra - zmprov mcf +zimbraMailTrustedIP 127.0.0.1 +zimbraMailTrustedIP {IP of Server} zmcontrol restart 1. Install Fail2Ban yum install epel-release -y yum install fail2ban -y 2. Buat file jail.conf *Jika ingin whitelist IP tambahkan pada baris ignoreip\nnano /etc/fail2ban/jail.local\n[DEFAULT] # \u0026quot;ignoreip\u0026quot; can be a list of IP addresses, CIDR masks or DNS hosts. # Fail2ban will not ban a host which matches an address in this list. # Several addresses can be defined using space (and/or comma) separator. #ignoreip = 127.0.0.1/8 ::1 10.137.26.29/32 ignoreip = 127.0.0.1/8 IP-ADDRESS-OF-ZIMBRA-SERVER/32 WHITELIST-IP banaction = route 3. Buat file jail untuk Zimbra nano /etc/fail2ban/jail.d/zimbra.local\n","keywords":["Linux","Server","Tutorial","Firewall"],"articleBody":"\n0. sudo -u zimbra - zmprov mcf +zimbraMailTrustedIP 127.0.0.1 +zimbraMailTrustedIP {IP of Server} zmcontrol restart 1. Install Fail2Ban yum install epel-release -y yum install fail2ban -y 2. Buat file jail.conf *Jika ingin whitelist IP tambahkan pada baris ignoreip\nnano /etc/fail2ban/jail.local\n[DEFAULT] # \"ignoreip\" can be a list of IP addresses, CIDR masks or DNS hosts. # Fail2ban will not ban a host which matches an address in this list. # Several addresses can be defined using space (and/or comma) separator. #ignoreip = 127.0.0.1/8 ::1 10.137.26.29/32 ignoreip = 127.0.0.1/8 IP-ADDRESS-OF-ZIMBRA-SERVER/32 WHITELIST-IP banaction = route 3. Buat file jail untuk Zimbra nano /etc/fail2ban/jail.d/zimbra.local\n[zimbra-smtp] enabled = true filter = zimbra-smtp port = 25,465,587 logpath = /var/log/zimbra.log maxretry = 3 findtime = 86400 bantime = 86400 action = route [zimbra-web] enabled = true filter = zimbra-web port = 80,443,7071,9071 logpath = /opt/zimbra/log/mailbox.log maxretry = 5 findtime = 86400 bantime = 86400 action = route 4. Buat file jail untuk SSH nano /etc/fail2ban/jail.d/sshd.local\n[sshd] enabled = true port = 22 maxretry = 3 findtime = 600 bantime = 3600 5. Buat filter untuk Zimbra nano /etc/fail2ban/filter.d/zimbra-web.conf\n[Definition] failregex = .*ip=;.*authentication failed for .*$ ignoreregex = nano /etc/fail2ban/filter.d/zimbra-smtp.conf\n[Definition] failregex = postfix\\/submission\\/smtpd\\[\\d+\\]: warning: .*\\[\\]: SASL \\w+ authentication failed: authentication failure$ postfix\\/smtps\\/smtpd\\[\\d+\\]: warning: .*\\[\\]: SASL \\w+ authentication failed: authentication failure$ ignoreregex = 6. Enable systemctl restart fail2ban systemctl status fail2ban systemctl enable fail2ban 7. Cek status fail2ban-client status Ban \u0026 Unban fail2ban-client set sshd banip 10.137.26.29 fail2ban-client set sshd unbanip 10.137.26.29 Sumber: https://blog.zimbra.com/2022/08/configuring-fail2ban-on-zimbra/ ","wordCount":"247","inLanguage":"en","datePublished":"2023-03-26T13:47:58+07:00","dateModified":"2023-03-26T13:47:58+07:00","author":{"@type":"Person","name":"Bembenk"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://bembenk18.github.io/post/setup-fail2ban-zimbra/"},"publisher":{"@type":"Organization","name":"Just /var/log/","logo":{"@type":"ImageObject","url":"https://bembenk18.github.io/favicon.ico"}}}</script></head><body id=top><script>localStorage.getItem("pref-theme")==="dark"?document.body.classList.add("dark"):localStorage.getItem("pref-theme")==="light"?document.body.classList.remove("dark"):window.matchMedia("(prefers-color-scheme: dark)").matches&&document.body.classList.add("dark")</script><header class=header><nav class=nav><div class=logo><a href=https://bembenk18.github.io/ accesskey=h title="Just /var/log/ (Alt + H)">Just /var/log/</a><div class=logo-switches><button id=theme-toggle accesskey=t title="(Alt + T)" aria-label="Toggle theme"><svg id="moon" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg><svg id="sun" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></button></div></div><ul id=menu><li><a href=https://bembenk18.github.io/ title=Home><span>Home</span></a></li><li><a href=https://bembenk18.github.io/tags title=Tags><span>Tags</span></a></li><li><a href=https://bembenk18.github.io/about title=About><span>About</span></a></li><li><a href=https://bembenk18.github.io/search/ title="Search (Alt + /)" accesskey=/><span>Search</span></a></li></ul></nav></header><main class=main><article class=post-single><header class=post-header><h1 class="post-title entry-hint-parent">Setup Fail2Ban Zimbra</h1><div class=post-meta><span title='2023-03-26 13:47:58 +0700 WIB'>2023-03-26</span>&nbsp;·&nbsp;Bembenk</div></header><div class=post-content><p><img alt=Logo loading=lazy src=https://upload.wikimedia.org/wikipedia/commons/d/db/Fail2ban_logo.png></p><h2 id=0><strong>0.</strong><a hidden class=anchor aria-hidden=true href=#0>#</a></h2><pre><code>sudo -u zimbra -
+zmprov mcf +zimbraMailTrustedIP 127.0.0.1 +zimbraMailTrustedIP {IP of Server}
+zmcontrol restart
+</code></pre><h2 id=1-install-fail2ban><strong>1. Install Fail2Ban</strong><a hidden class=anchor aria-hidden=true href=#1-install-fail2ban>#</a></h2><pre><code>yum install epel-release -y
+yum install fail2ban -y
+</code></pre><h2 id=2-buat-file-jailconf><strong>2. Buat file jail.conf</strong><a hidden class=anchor aria-hidden=true href=#2-buat-file-jailconf>#</a></h2><p>*Jika ingin whitelist IP tambahkan pada baris ignoreip</p><p>nano /etc/fail2ban/jail.local</p><pre><code>[DEFAULT]
 # &quot;ignoreip&quot; can be a list of IP addresses, CIDR masks or DNS hosts.
 # Fail2ban will not ban a host which matches an address in this list.
 # Several addresses can be defined using space (and/or comma) separator.
@@ -287,10 +61,7 @@ yum install fail2ban -y
 ignoreip = 127.0.0.1/8 IP-ADDRESS-OF-ZIMBRA-SERVER/32 WHITELIST-IP
 
 banaction = route
-</code></pre>
-<h2 id="3-buat-file-jail-untuk-zimbra"><strong>3. Buat file jail untuk Zimbra</strong><a hidden class="anchor" aria-hidden="true" href="#3-buat-file-jail-untuk-zimbra">#</a></h2>
-<p>nano /etc/fail2ban/jail.d/zimbra.local</p>
-<pre><code>[zimbra-smtp]
+</code></pre><h2 id=3-buat-file-jail-untuk-zimbra><strong>3. Buat file jail untuk Zimbra</strong><a hidden class=anchor aria-hidden=true href=#3-buat-file-jail-untuk-zimbra>#</a></h2><p>nano /etc/fail2ban/jail.d/zimbra.local</p><pre><code>[zimbra-smtp]
 enabled = true
 filter = zimbra-smtp
 port = 25,465,587
@@ -309,127 +80,29 @@ maxretry = 5
 findtime = 86400
 bantime = 86400
 action = route
-</code></pre>
-<h2 id="4-buat-file-jail-untuk-ssh"><strong>4. Buat file jail untuk SSH</strong><a hidden class="anchor" aria-hidden="true" href="#4-buat-file-jail-untuk-ssh">#</a></h2>
-<p>nano /etc/fail2ban/jail.d/sshd.local</p>
-<pre><code>[sshd]
+</code></pre><h2 id=4-buat-file-jail-untuk-ssh><strong>4. Buat file jail untuk SSH</strong><a hidden class=anchor aria-hidden=true href=#4-buat-file-jail-untuk-ssh>#</a></h2><p>nano /etc/fail2ban/jail.d/sshd.local</p><pre><code>[sshd]
 enabled = true
 port = 22
 maxretry = 3
 findtime = 600
 bantime = 3600
-</code></pre>
-<h2 id="5-buat-filter-untuk-zimbra"><strong>5. Buat filter untuk Zimbra</strong><a hidden class="anchor" aria-hidden="true" href="#5-buat-filter-untuk-zimbra">#</a></h2>
-<p>nano /etc/fail2ban/filter.d/zimbra-web.conf</p>
-<pre><code>[Definition]
+</code></pre><h2 id=5-buat-filter-untuk-zimbra><strong>5. Buat filter untuk Zimbra</strong><a hidden class=anchor aria-hidden=true href=#5-buat-filter-untuk-zimbra>#</a></h2><p>nano /etc/fail2ban/filter.d/zimbra-web.conf</p><pre><code>[Definition]
 failregex = .*ip=&lt;HOST&gt;;.*authentication failed for .*$
 
 ignoreregex =
-</code></pre>
-<p>nano /etc/fail2ban/filter.d/zimbra-smtp.conf</p>
-<pre><code>[Definition]
+</code></pre><p>nano /etc/fail2ban/filter.d/zimbra-smtp.conf</p><pre><code>[Definition]
 failregex = postfix\/submission\/smtpd\[\d+\]: warning: .*\[&lt;HOST&gt;\]: SASL \w+ authentication failed: authentication failure$
             postfix\/smtps\/smtpd\[\d+\]: warning: .*\[&lt;HOST&gt;\]: SASL \w+ authentication failed: authentication failure$
 
 ignoreregex =
-</code></pre>
-<h2 id="6-enable"><strong>6. Enable</strong><a hidden class="anchor" aria-hidden="true" href="#6-enable">#</a></h2>
-<pre><code>systemctl restart fail2ban
+</code></pre><h2 id=6-enable><strong>6. Enable</strong><a hidden class=anchor aria-hidden=true href=#6-enable>#</a></h2><pre><code>systemctl restart fail2ban
 systemctl status fail2ban
 systemctl enable fail2ban
-</code></pre>
-<h2 id="7-cek-status"><strong>7. Cek status</strong><a hidden class="anchor" aria-hidden="true" href="#7-cek-status">#</a></h2>
-<pre><code>fail2ban-client status
-</code></pre>
-<h2 id="ban--unban"><em><strong>Ban &amp; Unban</strong></em><a hidden class="anchor" aria-hidden="true" href="#ban--unban">#</a></h2>
-<pre><code>fail2ban-client set sshd banip 10.137.26.29
+</code></pre><h2 id=7-cek-status><strong>7. Cek status</strong><a hidden class=anchor aria-hidden=true href=#7-cek-status>#</a></h2><pre><code>fail2ban-client status
+</code></pre><h2 id=ban--unban><em><strong>Ban & Unban</strong></em><a hidden class=anchor aria-hidden=true href=#ban--unban>#</a></h2><pre><code>fail2ban-client set sshd banip 10.137.26.29
 fail2ban-client set sshd unbanip 10.137.26.29
-</code></pre>
-<h1 id="sumber">Sumber: <a href="https://blog.zimbra.com/2022/08/configuring-fail2ban-on-zimbra/">https://blog.zimbra.com/2022/08/configuring-fail2ban-on-zimbra/</a><a hidden class="anchor" aria-hidden="true" href="#sumber">#</a></h1>
-
-
-  </div>
-
-  <footer class="post-footer">
-    <ul class="post-tags">
-      <li><a href="https://bembenk18.github.io/tags/linux/">Linux</a></li>
-      <li><a href="https://bembenk18.github.io/tags/server/">Server</a></li>
-      <li><a href="https://bembenk18.github.io/tags/tutorial/">Tutorial</a></li>
-      <li><a href="https://bembenk18.github.io/tags/firewall/">Firewall</a></li>
-    </ul>
-  </footer>
-</article>
-    </main>
-    
-<footer class="footer">
-        <span>Bembenk</span> · 
-
-    <span>
-        Powered by
-        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
-        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
-    </span>
-</footer>
-<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
-        <path d="M12 6H0l6-6z" />
-    </svg>
-</a>
-
-<script>
-    let menu = document.getElementById('menu')
-    if (menu) {
-        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
-        menu.onscroll = function () {
-            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
-        }
-    }
-
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener("click", function (e) {
-            e.preventDefault();
-            var id = this.getAttribute("href").substr(1);
-            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
-                    behavior: "smooth"
-                });
-            } else {
-                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
-            }
-            if (id === "top") {
-                history.replaceState(null, null, " ");
-            } else {
-                history.pushState(null, null, `#${id}`);
-            }
-        });
-    });
-
-</script>
-<script>
-    var mybutton = document.getElementById("top-link");
-    window.onscroll = function () {
-        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
-            mybutton.style.visibility = "visible";
-            mybutton.style.opacity = "1";
-        } else {
-            mybutton.style.visibility = "hidden";
-            mybutton.style.opacity = "0";
-        }
-    };
-
-</script>
-<script>
-    document.getElementById("theme-toggle").addEventListener("click", () => {
-        if (document.body.className.includes("dark")) {
-            document.body.classList.remove('dark');
-            localStorage.setItem("pref-theme", 'light');
-        } else {
-            document.body.classList.add('dark');
-            localStorage.setItem("pref-theme", 'dark');
-        }
-    })
-
-</script>
-</body>
-
-</html>
+</code></pre><h1 id=sumber>Sumber: <a href=https://blog.zimbra.com/2022/08/configuring-fail2ban-on-zimbra/>https://blog.zimbra.com/2022/08/configuring-fail2ban-on-zimbra/</a><a hidden class=anchor aria-hidden=true href=#sumber>#</a></h1></div><footer class=post-footer><ul class=post-tags><li><a href=https://bembenk18.github.io/tags/linux/>Linux</a></li><li><a href=https://bembenk18.github.io/tags/server/>Server</a></li><li><a href=https://bembenk18.github.io/tags/tutorial/>Tutorial</a></li><li><a href=https://bembenk18.github.io/tags/firewall/>Firewall</a></li></ul></footer></article></main><footer class=footer><span>Bembenk</span> ·
+<span>Powered by
+<a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a> &
+        <a href=https://github.com/adityatelange/hugo-PaperMod/ rel=noopener target=_blank>PaperMod</a></span></footer><a href=#top aria-label="go to top" title="Go to Top (Alt + G)" class=top-link id=top-link accesskey=g><svg viewBox="0 0 12 6" fill="currentcolor"><path d="M12 6H0l6-6z"/></svg>
+</a><script>let menu=document.getElementById("menu");menu&&(menu.scrollLeft=localStorage.getItem("menu-scroll-position"),menu.onscroll=function(){localStorage.setItem("menu-scroll-position",menu.scrollLeft)}),document.querySelectorAll('a[href^="#"]').forEach(e=>{e.addEventListener("click",function(e){e.preventDefault();var t=this.getAttribute("href").substr(1);window.matchMedia("(prefers-reduced-motion: reduce)").matches?document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView():document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView({behavior:"smooth"}),t==="top"?history.replaceState(null,null," "):history.pushState(null,null,`#${t}`)})})</script><script>var mybutton=document.getElementById("top-link");window.onscroll=function(){document.body.scrollTop>800||document.documentElement.scrollTop>800?(mybutton.style.visibility="visible",mybutton.style.opacity="1"):(mybutton.style.visibility="hidden",mybutton.style.opacity="0")}</script><script>document.getElementById("theme-toggle").addEventListener("click",()=>{document.body.className.includes("dark")?(document.body.classList.remove("dark"),localStorage.setItem("pref-theme","light")):(document.body.classList.add("dark"),localStorage.setItem("pref-theme","dark"))})</script></body></html>

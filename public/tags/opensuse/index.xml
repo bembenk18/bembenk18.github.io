@@ -1,24 +1,5 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
-  <channel>
-    <title>OpenSUSE on Just /var/log/</title>
-    <link>https://bembenk18.github.io/tags/opensuse/</link>
-    <description>Recent content in OpenSUSE on Just /var/log/</description>
-    <generator>Hugo -- 0.146.7</generator>
-    <language>en-us</language>
-    <copyright>Bembenk</copyright>
-    <lastBuildDate>Sat, 18 Nov 2023 13:18:23 +0700</lastBuildDate>
-    <atom:link href="https://bembenk18.github.io/tags/opensuse/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Allow Winbox Discovery</title>
-      <link>https://bembenk18.github.io/post/allow-winbox-discovery/</link>
-      <pubDate>Sat, 18 Nov 2023 13:18:23 +0700</pubDate>
-      <guid>https://bembenk18.github.io/post/allow-winbox-discovery/</guid>
-      <description>&lt;p&gt;Secara default winbox di openSUSE tidak menampilkan Neighbors karena terblokir oleh firewall. Kita harus allow manual.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;sudo firewall-cmd --permanent --service=winbox-discover --add-port=5678/udp
-sudo firewall-cmd --zone=public --add-service=winbox-discover --permanent 
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>OpenSUSE on Just /var/log/</title><link>https://bembenk18.github.io/tags/opensuse/</link><description>Recent content in OpenSUSE on Just /var/log/</description><generator>Hugo -- 0.146.7</generator><language>en-us</language><copyright>Bembenk</copyright><lastBuildDate>Sat, 18 Nov 2023 13:18:23 +0700</lastBuildDate><atom:link href="https://bembenk18.github.io/tags/opensuse/index.xml" rel="self" type="application/rss+xml"/><item><title>Allow Winbox Discovery</title><link>https://bembenk18.github.io/post/allow-winbox-discovery/</link><pubDate>Sat, 18 Nov 2023 13:18:23 +0700</pubDate><guid>https://bembenk18.github.io/post/allow-winbox-discovery/</guid><description>&lt;p>Secara default winbox di openSUSE tidak menampilkan Neighbors karena terblokir oleh firewall. Kita harus allow manual.&lt;/p>
+&lt;pre>&lt;code>sudo firewall-cmd --permanent --service=winbox-discover --add-port=5678/udp
+sudo firewall-cmd --zone=public --add-service=winbox-discover --permanent
 sudo firewall-cmd --reload
-&lt;/code&gt;&lt;/pre&gt;</description>
-    </item>
-  </channel>
-</rss>
+&lt;/code>&lt;/pre></description></item></channel></rss>
