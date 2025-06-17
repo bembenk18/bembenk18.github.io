@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Networking on Just /var/log/</title>
+    <link>https://bembenk18.github.io/tags/networking/</link>
+    <description>Recent content in Networking on Just /var/log/</description>
+    <generator>Hugo -- 0.146.7</generator>
+    <language>en-us</language>
+    <copyright>Bembenk</copyright>
+    <lastBuildDate>Sat, 14 Sep 2024 14:57:38 +0700</lastBuildDate>
+    <atom:link href="https://bembenk18.github.io/tags/networking/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Flash OpenWrt TP Link WR1043ND</title>
+      <link>https://bembenk18.github.io/post/flash-openwrt-tp-link-wr1043nd/</link>
+      <pubDate>Sat, 14 Sep 2024 14:57:38 +0700</pubDate>
+      <guid>https://bembenk18.github.io/post/flash-openwrt-tp-link-wr1043nd/</guid>
+      <description>&lt;h1 id=&#34;pendahuluan&#34;&gt;Pendahuluan&lt;/h1&gt;
+&lt;p&gt;Saat ini internet di rumah saya memiliki kecepatan 30Mb/s, namun baru sadar kalau speed wireless dari mikrotik RB941 mentok 15Mb/s pada jarak 5 meter (mungkin karena cuma pakai antena internal saja). Setelah mencari router yang cocok, ada 2 pilihan sebagai berikut:&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Model&lt;/th&gt;
+          &lt;th&gt;Wireless&lt;/th&gt;
+          &lt;th&gt;Port RJ45&lt;/th&gt;
+          &lt;th&gt;Harga&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Mi 4 Gigabit&lt;/td&gt;
+          &lt;td&gt;2.4G &amp;amp; 5G&lt;/td&gt;
+          &lt;td&gt;3 / Gigabit&lt;/td&gt;
+          &lt;td&gt;350k&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;TP-Link TL WR1043ND v2.1&lt;/td&gt;
+          &lt;td&gt;2.4G&lt;/td&gt;
+          &lt;td&gt;5 / Gigabit&lt;/td&gt;
+          &lt;td&gt;&amp;lt; 150K (Bekas)&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Setelah beberapa pertimbangan akhirnya pilih TP-Link dengan harga 128k (diskon jadi 78k wkwkwk), karena ini router tua jadi beberapa fitur sudah tertinggal, jadi agar lebih optimal maka saya akan coba flash dengan firmware OpenWrt. Disini saya pakai firmware ROOter&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Setup Cloudflare Warp on Mikrotik</title>
+      <link>https://bembenk18.github.io/post/cloudflare-warp-on-mikrotik/</link>
+      <pubDate>Sun, 25 Aug 2024 05:46:19 +0700</pubDate>
+      <guid>https://bembenk18.github.io/post/cloudflare-warp-on-mikrotik/</guid>
+      <description>&lt;p&gt;Sesuai sabda pak Anton Wibowo tentang VPN dibawah ini, maka saya akan coba setup Cloudflare Warp di Mikrotik
+&lt;img loading=&#34;lazy&#34; src=&#34;https://raw.githubusercontent.com/bembenk18/Images/main/WARP/1.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Karena disini kita akan pakai Wireguard maka wajib menggunakan RouterOS versi 7.&lt;/p&gt;
+&lt;h1 id=&#34;buat-akun-warp&#34;&gt;Buat akun Warp&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Untuk membuat akun disini saya akan pakai tools ini &lt;a href=&#34;https://github.com/ViRb3/wgcf&#34;&gt;https://github.com/ViRb3/wgcf&lt;/a&gt; (Silahkan dibaca sendiri tutorialnya:v)&lt;/li&gt;
+&lt;li&gt;Setelah itu kita akan mendapatkan file wgcf-profile.conf yang berisi
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;➜  Network cat wgcf-profile.conf 
+[Interface]
+PrivateKey = mAmDoyJ8Qf/2sEyuhjhPytLDtx8ioiEaJh3q8K8iE3u2U=
+Address = 172.16.0.2/32
+Address = 2606:4700:110:84ca:7d82:b1d:7534:56f9/128
+DNS = 1.1.1.1, 1.0.0.1, 2606:4700:4700::1111, 2606:4700:4700::1001
+MTU = 1280
+[Peer]
+PublicKey = bmXOC+F1FxEHF9jjiK2H5/1SUtzH0JuVo51h2wPfgyo=
+AllowedIPs = 0.0.0.0/0
+AllowedIPs = ::/0
+Endpoint = engage.cloudflareclient.com:2408
+➜  Network 
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;setup-mikrotik&#34;&gt;Setup Mikrotik&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Buat Wireguard baru dan sesuaikan dengan config profile yang sudah kita dapatkan (Edit pada bagian MTU &amp;amp; Private key)
+&lt;img loading=&#34;lazy&#34; src=&#34;https://raw.githubusercontent.com/bembenk18/Images/main/WARP/2.png&#34;&gt;&lt;/li&gt;
+&lt;li&gt;Buat Wireguard Peer sesuaikan juga Public Key, Endpoint dan Endpoint Port dengan profile
+&lt;img loading=&#34;lazy&#34; src=&#34;https://raw.githubusercontent.com/bembenk18/Images/main/WARP/3.png&#34;&gt;&lt;/li&gt;
+&lt;li&gt;Buat address baru dengan IP 172.16.0.2/32 dan Interface &lt;strong&gt;WARP&lt;/strong&gt;
+&lt;img loading=&#34;lazy&#34; src=&#34;https://raw.githubusercontent.com/bembenk18/Images/main/WARP/4.png&#34;&gt;&lt;/li&gt;
+&lt;li&gt;Ubah DNS ke 1.1.1.1&lt;/li&gt;
+&lt;li&gt;Buat Routing Table baru dengan nama &lt;strong&gt;Cloudflare&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Tambahkan Route baru dengan gateway &lt;strong&gt;WARP&lt;/strong&gt;
+&lt;img loading=&#34;lazy&#34; src=&#34;https://raw.githubusercontent.com/bembenk18/Images/main/WARP/5.png&#34;&gt;&lt;/li&gt;
+&lt;li&gt;Buat NAT baru dengan Out Interface &lt;strong&gt;WARP&lt;/strong&gt; dan action masquerade (Pastikan nat ini berada paling atas)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt; /ip firewall nat add action=masquerade chain=srcnat disabled=no log=no log-prefix=&amp;#34;&amp;#34; out-interface=WARP
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;Tambahkan mange baru&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;/ip firewall mangle set *1 action=mark-routing chain=prerouting disabled=no log=no log-prefix=&amp;#34;&amp;#34; new-routing-mark=Cloudflare  passthrough=no src-address=192.168.xx.xx-192.168.xx.xx
+&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;testing&#34;&gt;Testing&lt;/h1&gt;
+&lt;h3 id=&#34;sebelum-routing&#34;&gt;Sebelum Routing&lt;/h3&gt;
+&lt;p&gt;Terlihat traffic masih mengarah ke ISP
+&lt;img loading=&#34;lazy&#34; src=&#34;https://raw.githubusercontent.com/bembenk18/Images/main/WARP/6.png&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Cisco Packet Tracer Opensuse</title>
+      <link>https://bembenk18.github.io/post/cisco-packet-tracer-opensuse/</link>
+      <pubDate>Mon, 27 Mar 2023 15:20:56 +0700</pubDate>
+      <guid>https://bembenk18.github.io/post/cisco-packet-tracer-opensuse/</guid>
+      <description>&lt;p&gt;&lt;img alt=&#34;Image alt&#34; loading=&#34;lazy&#34; src=&#34;https://raw.githubusercontent.com/bembenk18/Images/main/CPT/1.png&#34;&gt;
+Di website &lt;a href=&#34;https://www.netacad.com/&#34;&gt;netacad&lt;/a&gt; Cisco Packet Tracer hanya tersedia untuk Ubuntu/Debian dengan format .deb, jadi secara default tidak tersedia di distro rpm based. Untuk itu perlu memasang secara manual.&lt;/p&gt;
+&lt;h2 id=&#34;1-download&#34;&gt;1. Download&lt;/h2&gt;
+&lt;p&gt;Download file installasi untuk Ubuntu/Debian dari web &lt;a href=&#34;https://www.netacad.com/&#34;&gt;netacad&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;2-unpack-file-deb&#34;&gt;2. Unpack file .deb&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;mkdir /tmp/cpt
+cp CiscoPacketTracer_820_Ubuntu_64bit.deb /tmp/cpt 
+ar -xv CiscoPacketTracer_820_Ubuntu_64bit.deb 
+mkdir control
+tar -C control -Jxf control.tar.xz 
+mkdir data
+tar -C control -Jxf data.tar.xz 
+cd data
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;3-install&#34;&gt;3. Install&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;cp -r usr /
+cp -r opt /
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;Tumbleweed&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

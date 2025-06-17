@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Event | Just /var/log/</title>
+<meta name="keywords" content="">
+<meta name="description" content="Linux &amp; Cyber Security enthusiast">
+<meta name="author" content="Bembenk">
+<link rel="canonical" href="https://bembenk18.github.io/tags/event/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.2211ca3164be7830024f6aad2b3a2e520843a64f8f048445c3401c1249aa051d.css" integrity="sha256-IhHKMWS&#43;eDACT2qtKzouUghDpk&#43;PBIRFw0AcEkmqBR0=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://bembenk18.github.io/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://bembenk18.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://bembenk18.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://bembenk18.github.io/apple-touch-icon.png">
+<link rel="mask-icon" href="https://bembenk18.github.io/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" type="application/rss+xml" href="https://bembenk18.github.io/tags/event/index.xml">
+<link rel="alternate" hreflang="en" href="https://bembenk18.github.io/tags/event/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-438PNW325R"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-438PNW325R');
+        }
+      </script><meta property="og:url" content="https://bembenk18.github.io/tags/event/">
+  <meta property="og:site_name" content="Just /var/log/">
+  <meta property="og:title" content="Event">
+  <meta property="og:description" content="Linux &amp; Cyber Security enthusiast">
+  <meta property="og:locale" content="en-us">
+  <meta property="og:type" content="website">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Event">
+<meta name="twitter:description" content="Linux &amp; Cyber Security enthusiast">
+
+</head>
+
+<body class="list" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://bembenk18.github.io/" accesskey="h" title="Just /var/log/ (Alt + H)">Just /var/log/</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://bembenk18.github.io/" title="Home">
+                    <span>Home</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://bembenk18.github.io/tags" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://bembenk18.github.io/about" title="About">
+                    <span>About</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://bembenk18.github.io/search/" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main"> 
+<header class="page-header">
+  <h1>
+    Event
+  </h1>
+</header>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Solo to Solo | LOUCA 2023
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>
+Halo semua, disini aku mau berbagi pengalaman ikut LibreOffice Conf. Asia UbuCon Asia 2023 atau bisa disingkat LOUCA23.
+Sebenarnya aku mau berangkat berdua dengan temanku tapi dia batal berangkat karena sakit, yo wes lah karena sudah booking tiket kereta dan penginapan mau gak mau aku harus berangkat sendiri biar gak terlalu rugi wkwkwk.
+Day 0 (Jumat 06 Oktober 2023) Sekitar jam 14:30 aku berangkat dari tempat kerja ke stasiun dan kereta berangkat dari stasiun Jombang jam 15:10. Singkat cerita sekitar jam 18:10 sampai di Stasiun Solo Balapan, Jarak stasiun ke penginapan ±3KM lumayan juga kalo jalan, yo wes lah naik Gojek aja paling gak sampai 20k. ...</p>
+  </div>
+  <footer class="entry-footer"><span title='2023-10-17 16:05:36 +0700 WIB'>2023-10-17</span>&nbsp;·&nbsp;Bembenk</footer>
+  <a class="entry-link" aria-label="post link to Solo to Solo | LOUCA 2023" href="https://bembenk18.github.io/post/louca23/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Indonesia Linux Confrence 2022
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>
+Akhirnya setelah menunggu cukup lama saya bisa mengikuti acara Opensource untuk pertama kali, acara kali ini adalah Indonesia Linux Confrence 2022 yang diselenggarakan di Universitas Muhammadiyah Sidoarjo pada hari Sabtu tanggal 5 November 2022. Day 0 (4 November 2022) Sekitar jam 4 sore saya berangkat dari kantor menuju rumah teman yang telah janjian untuk berangkat bareng, sebenanrnya kami akan berangkat ber 3 tapi ternyata salah satu teman saya sudah berangkat sejak pagi karena ada urusan pekerjaan. Setelah sampai dirumah teman saya baru sadar tidak membawa STNK :), akhirnya kami berangkat menuju Sidoarjo pukul 5 sore. Singkat cerita kami sampai Sidoarjo pukul 7 malam, sampai penginapan pukul 7.45 karena beberapa kali nyasar. Ternyata di penginapan kamar yang saya booking telah penuh dan terpaksa booking lagi lewat aplikasi lain. Sampai disini semua masih normal hingga saya saya baru sadar ternyata kamar yang saya booking ulang bukan penginapan saat ini melainkan penginapan di Jambi lol, akhirnya kami memutuskan untuk booking kamar ulang.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2022-11-07 18:13:33 +0700 WIB'>2022-11-07</span>&nbsp;·&nbsp;Bembenk</footer>
+  <a class="entry-link" aria-label="post link to Indonesia Linux Confrence 2022" href="https://bembenk18.github.io/post/indonesia-linux-confrence-2022/"></a>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>Bembenk</span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>
