@@ -3,7 +3,8 @@
 	url = https://github.com/adityatelange/hugo-PaperMod.git
 [submodule "Images"]
 	path = Images
-	url = https://github.com/bembenk18/Images.git
+	url = https://github.com/bembenk18/Images
+	branch = main
 [submodule "public"]
 	path = public
 	url = https://github.com/bembenk18/bembenk18.github.io
