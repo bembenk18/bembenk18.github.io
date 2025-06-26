@@ -1,4 +1,14 @@
-<html><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><title>Just /var/log/ - Flash OpenWrt TP Link WR1043ND </title><meta content="Linux,Networking" name=keywords><meta content="Just /var/log/ - Pendahuluan
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Just /var/log/ - Flash OpenWrt TP Link WR1043ND </title>
+    
+    
+    <meta content="Linux, Networking" name="keywords">
+    
+    <meta content="Just /var/log/ - Pendahuluan
 Saat ini internet di rumah saya memiliki kecepatan 30Mb/s, namun baru sadar kalau speed wireless dari mikrotik RB941 mentok 15Mb/s pada jarak 5 meter (mungkin karena cuma pakai antena internal saja). Setelah mencari router yang cocok, ada 2 pilihan sebagai berikut:
 
   
@@ -12,7 +22,7 @@ Saat ini internet di rumah saya memiliki kecepatan 30Mb/s, namun baru sadar kala
   
       
           Mi 4 Gigabit
-          2.4G & 5G
+          2.4G &amp; 5G
           3 / Gigabit
           350k
       
@@ -20,49 +30,602 @@ Saat ini internet di rumah saya memiliki kecepatan 30Mb/s, namun baru sadar kala
           TP-Link TL WR1043ND v2.1
           2.4G
           5 / Gigabit
-          < 150K (Bekas)
+          &lt; 150K (Bekas)
       
   
 
-Setelah beberapa pertimbangan akhirnya pilih TP-Link dengan harga 128k (diskon jadi 78k wkwkwk), karena ini router tua jadi beberapa fitur sudah tertinggal, jadi agar lebih optimal maka saya akan coba flash dengan firmware OpenWrt. Disini saya pakai firmware ROOter" name=description><meta name=viewport content="width=device-width,initial-scale=1"><script async src="https://www.googletagmanager.com/gtag/js?id=G-438PNW325R"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-438PNW325R")</script><link rel=stylesheet href=/layui/css/layui.css><link rel=stylesheet href=/self/css/default.css><script src=/layui/layui.js></script><link rel=stylesheet async href=/self/css/markdown.min.css><link rel=stylesheet async href=/self/css/gallery.css><script src=https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin=anonymous></script><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin=anonymous><script async src=https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js integrity="sha256-PZEg+mIdptYTwWmLcBTsa99GIDZujyt7VHBZ9Lb2Jys=" crossorigin=anonymous></script></head><body><header class="layui-header layui-bg-cyan"><a class=nav-self-logo href=/>Just /var/log/</a><ul class="layui-nav layui-layout-right layui-bg-cyan" lay-filter><li class=layui-nav-item id=nav_big><a href=/post/>Posts</a></li><li class=layui-nav-item id=nav_big><a href=/>Home</a></li><li class=layui-nav-item id=nav_big><a href=/tags>Tags</a></li><li class=layui-nav-item id=nav_big><a href=/about>About</a></li><li class=layui-nav-item id=nav_big><a href=/search/>Search</a></li><li class=layui-nav-item id=nav_small><a href=javascript:;><i class="layui-icon layui-icon-app" style=font-size:24px></i></a><dl class=layui-nav-child><dd><a href=/post/>Posts</a></dd><dd><a href=/>Home</a></dd><dd><a href=/tags>Tags</a></dd><dd><a href=/about>About</a></dd><dd><a href=/search/>Search</a></dd></dl></li></ul></header><script>layui.use("element",function(){var e=layui.element})</script><div id=content style=min-height:80%><div class=layui-container style=margin-bottom:10px><div class="layui-row layui-col-space10"><div class="layui-col-md8 layui-col-sm12 layui-col-xs12"><div class="layui-card single-card"><br><blockquote class="self-elem-quote markdown-body single-title"><h1>Flash OpenWrt TP Link WR1043ND</h1><h3 style=margin-top:10px;margin-bottom:10px><i class="layui-icon layui-icon-date" style=font-size:28px;vertical-align:-2px></i>
-<span>2024-09-14</span>
-<i class="layui-icon layui-icon-tabs" style=font-size:22px;vertical-align:1px;margin-right:2px></i>
-<a href=/tags/linux/><span class=layui-badge style=vertical-align:2px>Linux</span>
-</a><a href=/tags/networking/><span class=layui-badge style=vertical-align:2px>Networking</span></a></h3></blockquote><div class="layui-card-body markdown-body single-content"><h1 id=pendahuluan>Pendahuluan</h1><p>Saat ini internet di rumah saya memiliki kecepatan 30Mb/s, namun baru sadar kalau speed wireless dari mikrotik RB941 mentok 15Mb/s pada jarak 5 meter (mungkin karena cuma pakai antena internal saja). Setelah mencari router yang cocok, ada 2 pilihan sebagai berikut:</p><table><thead><tr><th>Model</th><th>Wireless</th><th>Port RJ45</th><th>Harga</th></tr></thead><tbody><tr><td>Mi 4 Gigabit</td><td>2.4G & 5G</td><td>3 / Gigabit</td><td>350k</td></tr><tr><td>TP-Link TL WR1043ND v2.1</td><td>2.4G</td><td>5 / Gigabit</td><td>&lt; 150K (Bekas)</td></tr></tbody></table><p>Setelah beberapa pertimbangan akhirnya pilih TP-Link dengan harga 128k (diskon jadi 78k wkwkwk), karena ini router tua jadi beberapa fitur sudah tertinggal, jadi agar lebih optimal maka saya akan coba flash dengan firmware OpenWrt. Disini saya pakai firmware ROOter</p><h3 id=spesifikasi>Spesifikasi</h3><table><thead><tr><th>Model</th><th>TL-WR1043ND v2.1</th></tr></thead><tbody><tr><td>CPU</td><td>Qualcomm Atheros QCA955</td></tr><tr><td>CPU MHz</td><td>720</td></tr><tr><td>CPU Core</td><td>1</td></tr><tr><td>Flash</td><td>8MB</td></tr><tr><td>RAM</td><td>64MB</td></tr><tr><td>Ethernet 1Gbit ports</td><td>5</td></tr><tr><td>USB</td><td>1x2.0</td></tr></tbody></table><h1 id=instalasi-firmware>Instalasi firmware</h1><h3 id=persiapan>Persiapan</h3><ol><li>Download firmware dari <a href=https://www.ofmodemsandmen.com/>https://www.ofmodemsandmen.com/</a> (sesuaikan versi atau akan brick)</li><li>Ekstrak file yang sudah didownload</li><li>Ada beberapa firmware, untuk pertama flash pakai yang ada label factory (baca pdf agar jelas)</li></ol><h2 id=install-firmware>Install firmware</h2><ol><li><p>Login ke web interface router</p></li><li><p>Masuk ke <strong>System Tools &#187; Firmware Upgrade</strong></p><p><img src=https://raw.githubusercontent.com/bembenk18/Images/main/Openwrt-WR1043ND/2.png alt=img></p></li><li></li><li><p>Klik <strong>Chose File</strong> dan pilih image yang ada label factory nya, kemudian klik <strong>Upgrade</strong> dan tunggu sampai router terhubung kembali</p><p><img src=https://raw.githubusercontent.com/bembenk18/Images/main/Openwrt-WR1043ND/3.png alt=img></p><p><img src=https://raw.githubusercontent.com/bembenk18/Images/main/Openwrt-WR1043ND/4.png alt=img></p><p><img src=https://raw.githubusercontent.com/bembenk18/Images/main/Openwrt-WR1043ND/5.png alt=img></p></li><li><p>Jika berhasil maka router akan reboot, dan terhubung kembali dengan IP 192.168.1.*</p></li><li><p>Akses halaman login, user default root dan password kosong</p><p><img src=https://raw.githubusercontent.com/bembenk18/Images/main/Openwrt-WR1043ND/6.png alt=img></p></li><li><p>Selamat router sudah Floss anti spy spy sesuai sabda pak Anton</p><p><img src=https://raw.githubusercontent.com/bembenk18/Images/main/Openwrt-WR1043ND/7.png alt=img></p></li></ol></div></div></div><div class="layui-col-md4 layui-col-sm12 layui-col-xs12"><div class="layui-card single-card"><h2 class=single-title>Relevant Topics</h2><div style=margin-left:10px><blockquote class=self-elem-quote style=background-color:#fff;margin-top:10px><a href=/post/cisco-packet-tracer-opensuse/><h3>Cisco Packet Tracer Opensuse</h3></a><h3 style=margin-top:10px;margin-bottom:10px><i class="layui-icon layui-icon-date" style=font-size:28px;vertical-align:-2px></i>
-<span>2023-03-27</span>
-<i class="layui-icon layui-icon-tabs" style=font-size:22px;vertical-align:1px;margin-right:2px></i>
-<a href=/tags/linux/><span class=layui-badge style=vertical-align:2px>Linux</span>
-</a><a href=/tags/networking/><span class=layui-badge style=vertical-align:2px>Networking</span></a></h3></blockquote></div><div style=margin-left:10px><blockquote class=self-elem-quote style=background-color:#fff;margin-top:10px><a href=/post/cloudflare-warp-on-mikrotik/><h3>Setup Cloudflare Warp on Mikrotik</h3></a><h3 style=margin-top:10px;margin-bottom:10px><i class="layui-icon layui-icon-date" style=font-size:28px;vertical-align:-2px></i>
-<span>2024-08-25</span>
-<i class="layui-icon layui-icon-tabs" style=font-size:22px;vertical-align:1px;margin-right:2px></i>
-<a href=/tags/mikrotik/><span class=layui-badge style=vertical-align:2px>Mikrotik</span>
-</a><a href=/tags/networking/><span class=layui-badge style=vertical-align:2px>Networking</span></a></h3></blockquote></div><div style=margin-left:10px><blockquote class=self-elem-quote style=background-color:#fff;margin-top:10px><a href=/post/allow-winbox-discovery/><h3>Allow Winbox Discovery</h3></a><h3 style=margin-top:10px;margin-bottom:10px><i class="layui-icon layui-icon-date" style=font-size:28px;vertical-align:-2px></i>
-<span>2023-11-18</span>
-<i class="layui-icon layui-icon-tabs" style=font-size:22px;vertical-align:1px;margin-right:2px></i>
-<a href=/tags/linux/><span class=layui-badge style=vertical-align:2px>Linux</span>
-</a><a href=/tags/opensuse/><span class=layui-badge style=vertical-align:2px>OpenSUSE</span>
-</a><a href=/tags/firewall/><span class=layui-badge style=vertical-align:2px>Firewall</span></a></h3></blockquote></div><div style=margin-left:10px><blockquote class=self-elem-quote style=background-color:#fff;margin-top:10px><a href=/post/upgrade-debian-11-to-12/><h3>Upgrade Debian 11 to 12</h3></a><h3 style=margin-top:10px;margin-bottom:10px><i class="layui-icon layui-icon-date" style=font-size:28px;vertical-align:-2px></i>
-<span>2023-06-15</span>
-<i class="layui-icon layui-icon-tabs" style=font-size:22px;vertical-align:1px;margin-right:2px></i>
-<a href=/tags/log/><span class=layui-badge style=vertical-align:2px>Log</span>
-</a><a href=/tags/linux/><span class=layui-badge style=vertical-align:2px>Linux</span></a></h3></blockquote></div><div style=margin-left:10px><blockquote class=self-elem-quote style=background-color:#fff;margin-top:10px><a href=/post/ssh-dengan-google-authenticator/><h3>Akses SSH Dengan Google Authenticator</h3></a><h3 style=margin-top:10px;margin-bottom:10px><i class="layui-icon layui-icon-date" style=font-size:28px;vertical-align:-2px></i>
-<span>2023-04-14</span>
-<i class="layui-icon layui-icon-tabs" style=font-size:22px;vertical-align:1px;margin-right:2px></i>
-<a href=/tags/linux/><span class=layui-badge style=vertical-align:2px>Linux</span>
-</a><a href=/tags/log/><span class=layui-badge style=vertical-align:2px>Log</span></a></h3></blockquote></div><br></div><div class="layui-card single-card"><h2 class=single-title>Recent Posts</h2><div style=margin-left:10px><blockquote class=self-elem-quote style=background-color:#fff;margin-top:10px><a href=/post/perjalanan-t480-dimulai/><h3>Perjalanan T480 Dimulai TEST</h3></a><h3 style=margin-top:10px;margin-bottom:10px><i class="layui-icon layui-icon-date" style=font-size:28px;vertical-align:-2px></i>
-<span>2025-04-02</span>
-<i class="layui-icon layui-icon-tabs" style=font-size:22px;vertical-align:1px;margin-right:2px></i>
-<a href=/tags/thinkpad/><span class=layui-badge style=vertical-align:2px>Thinkpad</span></a></h3></blockquote></div><div style=margin-left:10px><blockquote class=self-elem-quote style=background-color:#fff;margin-top:10px><a href=/post/cerita-mendapatkan-flightfeeder-flightaware/><h3>Cerita mendapatkan FlightFeeder dari FlightAware</h3></a><h3 style=margin-top:10px;margin-bottom:10px><i class="layui-icon layui-icon-date" style=font-size:28px;vertical-align:-2px></i>
-<span>2025-03-29</span></h3></blockquote></div><div style=margin-left:10px><blockquote class=self-elem-quote style=background-color:#fff;margin-top:10px><a href=/post/upgrade-home-server/><h3>Upgrade Home Server</h3></a><h3 style=margin-top:10px;margin-bottom:10px><i class="layui-icon layui-icon-date" style=font-size:28px;vertical-align:-2px></i>
-<span>2024-10-31</span>
-<i class="layui-icon layui-icon-tabs" style=font-size:22px;vertical-align:1px;margin-right:2px></i>
-<a href=/tags/server/><span class=layui-badge style=vertical-align:2px>Server</span>
-</a><a href=/tags/linux/><span class=layui-badge style=vertical-align:2px>Linux</span></a></h3></blockquote></div><div style=margin-left:10px><blockquote class=self-elem-quote style=background-color:#fff;margin-top:10px><a href=/post/flash-openwrt-tp-link-wr1043nd/><h3>Flash OpenWrt TP Link WR1043ND</h3></a><h3 style=margin-top:10px;margin-bottom:10px><i class="layui-icon layui-icon-date" style=font-size:28px;vertical-align:-2px></i>
-<span>2024-09-14</span>
-<i class="layui-icon layui-icon-tabs" style=font-size:22px;vertical-align:1px;margin-right:2px></i>
-<a href=/tags/linux/><span class=layui-badge style=vertical-align:2px>Linux</span>
-</a><a href=/tags/networking/><span class=layui-badge style=vertical-align:2px>Networking</span></a></h3></blockquote></div><div style=margin-left:10px><blockquote class=self-elem-quote style=background-color:#fff;margin-top:10px><a href=/post/cloudflare-warp-on-mikrotik/><h3>Setup Cloudflare Warp on Mikrotik</h3></a><h3 style=margin-top:10px;margin-bottom:10px><i class="layui-icon layui-icon-date" style=font-size:28px;vertical-align:-2px></i>
-<span>2024-08-25</span>
-<i class="layui-icon layui-icon-tabs" style=font-size:22px;vertical-align:1px;margin-right:2px></i>
-<a href=/tags/mikrotik/><span class=layui-badge style=vertical-align:2px>Mikrotik</span>
-</a><a href=/tags/networking/><span class=layui-badge style=vertical-align:2px>Networking</span></a></h3></blockquote></div><br></div></div></div></div></div><footer><div class=layui-container><p class=copyright>&copy; All rights reserved. Powered by <a href=https://gohugo.io style=color:#fff>Hugo</a> and <a href=https://github.com/ertuil/erblog style=color:#fff>Erblog</a>.</p></div></footer></body></html>
+Setelah beberapa pertimbangan akhirnya pilih TP-Link dengan harga 128k (diskon jadi 78k wkwkwk), karena ini router tua jadi beberapa fitur sudah tertinggal, jadi agar lebih optimal maka saya akan coba flash dengan firmware OpenWrt. Disini saya pakai firmware ROOter" name="description">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    
+
+    
+
+    
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-438PNW325R"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments)};
+          gtag('js', new Date());
+          gtag('config', 'G-438PNW325R');
+        </script>
+    
+
+    
+
+    <link rel="stylesheet" href="/layui/css/layui.css">
+    <link rel="stylesheet" href="/self/css/default.css">
+    <script src=" /layui/layui.js"></script>
+
+    <link rel="stylesheet" async href="/self/css/markdown.min.css">
+    <link rel="stylesheet" async href="/self/css/gallery.css">
+    
+    
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous">
+    <script async src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js" integrity="sha256-PZEg+mIdptYTwWmLcBTsa99GIDZujyt7VHBZ9Lb2Jys=" crossorigin="anonymous"></script></head>
+
+<body>
+    
+    <header class="layui-header layui-bg-cyan">
+
+    
+    
+    <a class="nav-self-logo" href="/">
+        Just /var/log/
+    </a>
+
+    <ul class="layui-nav layui-layout-right layui-bg-cyan" lay-filter="">
+        
+        
+        <li class="layui-nav-item" id="nav_big"><a href="/post/">Posts</a></li>
+        
+
+        
+            
+                <li class="layui-nav-item" id="nav_big"><a href="/">Home</a></li>
+            
+                <li class="layui-nav-item" id="nav_big"><a href="/tags">Tags</a></li>
+            
+                <li class="layui-nav-item" id="nav_big"><a href="/about">About</a></li>
+            
+                <li class="layui-nav-item" id="nav_big"><a href="/search/">Search</a></li>
+            
+        
+
+        
+        <li class="layui-nav-item" id="nav_small">
+            <a href="javascript:;">
+                <i class="layui-icon layui-icon-app" style="font-size: 24px;"></i>
+            </a>
+
+            <dl class="layui-nav-child">
+                
+                <dd><a href="/post/">Posts</a></dd>
+                
+
+                
+                    
+                        <dd><a href="/">Home</a></dd>
+                    
+                        <dd><a href="/tags">Tags</a></dd>
+                    
+                        <dd><a href="/about">About</a></dd>
+                    
+                        <dd><a href="/search/">Search</a></dd>
+                    
+                
+            </dl>
+        </li>
+    </ul>
+</header>
+
+<script>
+layui.use('element', function(){
+  var element = layui.element;
+});
+</script>
+
+        <div id="content" style="min-height:80%">
+<div class="layui-container" style="margin-bottom: 10px">
+    
+
+    <div class="layui-row layui-col-space10">
+        <div class="layui-col-md8 layui-col-sm12 layui-col-xs12">
+            <div class="layui-card single-card">
+                <br />
+                <blockquote class="self-elem-quote  markdown-body single-title" >
+                    <h1>Flash OpenWrt TP Link WR1043ND</h1>
+                    <h3 style="margin-top:10px; margin-bottom:10px"> 
+    <i class="layui-icon layui-icon-date" style="font-size: 28px; vertical-align: -2px;"></i>
+    <span>2024-09-14</span>
+
+    
+    
+
+    
+
+    
+    <i class="layui-icon layui-icon-tabs" style="font-size: 22px; vertical-align: 1px;margin-right:2px;"></i>
+    
+
+    
+        <a href="/tags/linux/">
+            <span class="layui-badge " style="vertical-align: 2px;">Linux</span>
+        </a>
+    
+        <a href="/tags/networking/">
+            <span class="layui-badge " style="vertical-align: 2px;">Networking</span>
+        </a>
+    
+    
+</h3>
+
+                </blockquote>
+                <div class="layui-card-body markdown-body single-content">
+                    <h1 id="pendahuluan">Pendahuluan</h1>
+<p>Saat ini internet di rumah saya memiliki kecepatan 30Mb/s, namun baru sadar kalau speed wireless dari mikrotik RB941 mentok 15Mb/s pada jarak 5 meter (mungkin karena cuma pakai antena internal saja). Setelah mencari router yang cocok, ada 2 pilihan sebagai berikut:</p>
+<table>
+  <thead>
+      <tr>
+          <th>Model</th>
+          <th>Wireless</th>
+          <th>Port RJ45</th>
+          <th>Harga</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Mi 4 Gigabit</td>
+          <td>2.4G &amp; 5G</td>
+          <td>3 / Gigabit</td>
+          <td>350k</td>
+      </tr>
+      <tr>
+          <td>TP-Link TL WR1043ND v2.1</td>
+          <td>2.4G</td>
+          <td>5 / Gigabit</td>
+          <td>&lt; 150K (Bekas)</td>
+      </tr>
+  </tbody>
+</table>
+<p>Setelah beberapa pertimbangan akhirnya pilih TP-Link dengan harga 128k (diskon jadi 78k wkwkwk), karena ini router tua jadi beberapa fitur sudah tertinggal, jadi agar lebih optimal maka saya akan coba flash dengan firmware OpenWrt. Disini saya pakai firmware ROOter</p>
+<h3 id="spesifikasi">Spesifikasi</h3>
+<table>
+  <thead>
+      <tr>
+          <th>Model</th>
+          <th>TL-WR1043ND v2.1</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>CPU</td>
+          <td>Qualcomm Atheros QCA955</td>
+      </tr>
+      <tr>
+          <td>CPU MHz</td>
+          <td>720</td>
+      </tr>
+      <tr>
+          <td>CPU Core</td>
+          <td>1</td>
+      </tr>
+      <tr>
+          <td>Flash</td>
+          <td>8MB</td>
+      </tr>
+      <tr>
+          <td>RAM</td>
+          <td>64MB</td>
+      </tr>
+      <tr>
+          <td>Ethernet 1Gbit ports</td>
+          <td>5</td>
+      </tr>
+      <tr>
+          <td>USB</td>
+          <td>1x2.0</td>
+      </tr>
+  </tbody>
+</table>
+<h1 id="instalasi-firmware">Instalasi firmware</h1>
+<h3 id="persiapan">Persiapan</h3>
+<ol>
+<li>Download firmware dari <a href="https://www.ofmodemsandmen.com/">https://www.ofmodemsandmen.com/</a> (sesuaikan versi atau akan brick)</li>
+<li>Ekstrak file yang sudah didownload</li>
+<li>Ada beberapa firmware, untuk pertama flash pakai yang ada label factory (baca pdf agar jelas)</li>
+</ol>
+<h2 id="install-firmware">Install firmware</h2>
+<ol>
+<li>
+<p>Login ke web interface router</p>
+</li>
+<li>
+<p>Masuk ke <strong>System Tools &raquo; Firmware Upgrade</strong></p>
+<p><img src="https://raw.githubusercontent.com/bembenk18/Images/main/Openwrt-WR1043ND/2.png" alt="img"></p>
+</li>
+<li></li>
+<li>
+<p>Klik <strong>Chose File</strong> dan pilih image yang ada label factory nya, kemudian klik <strong>Upgrade</strong> dan tunggu sampai router terhubung kembali</p>
+<p><img src="https://raw.githubusercontent.com/bembenk18/Images/main/Openwrt-WR1043ND/3.png" alt="img"></p>
+<p><img src="https://raw.githubusercontent.com/bembenk18/Images/main/Openwrt-WR1043ND/4.png" alt="img"></p>
+<p><img src="https://raw.githubusercontent.com/bembenk18/Images/main/Openwrt-WR1043ND/5.png" alt="img"></p>
+</li>
+<li>
+<p>Jika berhasil maka router akan reboot, dan terhubung kembali dengan IP 192.168.1.*</p>
+</li>
+<li>
+<p>Akses halaman login, user default root dan password kosong</p>
+<p><img src="https://raw.githubusercontent.com/bembenk18/Images/main/Openwrt-WR1043ND/6.png" alt="img"></p>
+</li>
+<li>
+<p>Selamat router sudah Floss anti spy spy sesuai sabda pak Anton</p>
+<p><img src="https://raw.githubusercontent.com/bembenk18/Images/main/Openwrt-WR1043ND/7.png" alt="img"></p>
+</li>
+</ol>
+</div>
+            </div>
+        </div>
+
+        <div class="layui-col-md4 layui-col-sm12 layui-col-xs12">
+            
+            <div class="layui-card single-card">
+                <h2 class="single-title">Relevant Topics</h2>
+                
+                	
+                    <div style="margin-left: 10px;">
+                        <blockquote class="self-elem-quote " style="background-color:#FFFFFF;margin-top: 10px;">
+                            <a href="/post/cisco-packet-tracer-opensuse/">
+                                <h3 class="">Cisco Packet Tracer Opensuse</h3>
+                            </a>
+                            
+                            <h3 style="margin-top:10px; margin-bottom:10px"> 
+    <i class="layui-icon layui-icon-date" style="font-size: 28px; vertical-align: -2px;"></i>
+    <span>2023-03-27</span>
+
+    
+    
+
+    
+
+    
+    <i class="layui-icon layui-icon-tabs" style="font-size: 22px; vertical-align: 1px;margin-right:2px;"></i>
+    
+
+    
+        <a href="/tags/linux/">
+            <span class="layui-badge " style="vertical-align: 2px;">Linux</span>
+        </a>
+    
+        <a href="/tags/networking/">
+            <span class="layui-badge " style="vertical-align: 2px;">Networking</span>
+        </a>
+    
+    
+</h3>
+
+                        </blockquote>
+                    </div>
+                	
+                    <div style="margin-left: 10px;">
+                        <blockquote class="self-elem-quote " style="background-color:#FFFFFF;margin-top: 10px;">
+                            <a href="/post/cloudflare-warp-on-mikrotik/">
+                                <h3 class="">Setup Cloudflare Warp on Mikrotik</h3>
+                            </a>
+                            
+                            <h3 style="margin-top:10px; margin-bottom:10px"> 
+    <i class="layui-icon layui-icon-date" style="font-size: 28px; vertical-align: -2px;"></i>
+    <span>2024-08-25</span>
+
+    
+    
+
+    
+
+    
+    <i class="layui-icon layui-icon-tabs" style="font-size: 22px; vertical-align: 1px;margin-right:2px;"></i>
+    
+
+    
+        <a href="/tags/mikrotik/">
+            <span class="layui-badge " style="vertical-align: 2px;">Mikrotik</span>
+        </a>
+    
+        <a href="/tags/networking/">
+            <span class="layui-badge " style="vertical-align: 2px;">Networking</span>
+        </a>
+    
+    
+</h3>
+
+                        </blockquote>
+                    </div>
+                	
+                    <div style="margin-left: 10px;">
+                        <blockquote class="self-elem-quote " style="background-color:#FFFFFF;margin-top: 10px;">
+                            <a href="/post/allow-winbox-discovery/">
+                                <h3 class="">Allow Winbox Discovery</h3>
+                            </a>
+                            
+                            <h3 style="margin-top:10px; margin-bottom:10px"> 
+    <i class="layui-icon layui-icon-date" style="font-size: 28px; vertical-align: -2px;"></i>
+    <span>2023-11-18</span>
+
+    
+    
+
+    
+
+    
+    <i class="layui-icon layui-icon-tabs" style="font-size: 22px; vertical-align: 1px;margin-right:2px;"></i>
+    
+
+    
+        <a href="/tags/linux/">
+            <span class="layui-badge " style="vertical-align: 2px;">Linux</span>
+        </a>
+    
+        <a href="/tags/opensuse/">
+            <span class="layui-badge " style="vertical-align: 2px;">OpenSUSE</span>
+        </a>
+    
+        <a href="/tags/firewall/">
+            <span class="layui-badge " style="vertical-align: 2px;">Firewall</span>
+        </a>
+    
+    
+</h3>
+
+                        </blockquote>
+                    </div>
+                	
+                    <div style="margin-left: 10px;">
+                        <blockquote class="self-elem-quote " style="background-color:#FFFFFF;margin-top: 10px;">
+                            <a href="/post/upgrade-debian-11-to-12/">
+                                <h3 class="">Upgrade Debian 11 to 12</h3>
+                            </a>
+                            
+                            <h3 style="margin-top:10px; margin-bottom:10px"> 
+    <i class="layui-icon layui-icon-date" style="font-size: 28px; vertical-align: -2px;"></i>
+    <span>2023-06-15</span>
+
+    
+    
+
+    
+
+    
+    <i class="layui-icon layui-icon-tabs" style="font-size: 22px; vertical-align: 1px;margin-right:2px;"></i>
+    
+
+    
+        <a href="/tags/log/">
+            <span class="layui-badge " style="vertical-align: 2px;">Log</span>
+        </a>
+    
+        <a href="/tags/linux/">
+            <span class="layui-badge " style="vertical-align: 2px;">Linux</span>
+        </a>
+    
+    
+</h3>
+
+                        </blockquote>
+                    </div>
+                	
+                    <div style="margin-left: 10px;">
+                        <blockquote class="self-elem-quote " style="background-color:#FFFFFF;margin-top: 10px;">
+                            <a href="/post/ssh-dengan-google-authenticator/">
+                                <h3 class="">Akses SSH Dengan Google Authenticator</h3>
+                            </a>
+                            
+                            <h3 style="margin-top:10px; margin-bottom:10px"> 
+    <i class="layui-icon layui-icon-date" style="font-size: 28px; vertical-align: -2px;"></i>
+    <span>2023-04-14</span>
+
+    
+    
+
+    
+
+    
+    <i class="layui-icon layui-icon-tabs" style="font-size: 22px; vertical-align: 1px;margin-right:2px;"></i>
+    
+
+    
+        <a href="/tags/linux/">
+            <span class="layui-badge " style="vertical-align: 2px;">Linux</span>
+        </a>
+    
+        <a href="/tags/log/">
+            <span class="layui-badge " style="vertical-align: 2px;">Log</span>
+        </a>
+    
+    
+</h3>
+
+                        </blockquote>
+                    </div>
+                	
+                
+                <br />
+            </div>
+            
+
+            <div class="layui-card single-card">
+                <h2 class="single-title">Recent Posts</h2>
+            
+                
+                <div style="margin-left: 10px;">
+                    <blockquote class="self-elem-quote " style="background-color:#FFFFFF;margin-top: 10px;">
+                    <a href="/post/perjalanan-t480-dimulai/">
+                        <h3 class="">Perjalanan T480 Dimulai TEST</h3>
+                    </a>
+                    <h3 style="margin-top:10px; margin-bottom:10px"> 
+    <i class="layui-icon layui-icon-date" style="font-size: 28px; vertical-align: -2px;"></i>
+    <span>2025-04-02</span>
+
+    
+    
+
+    
+
+    
+    <i class="layui-icon layui-icon-tabs" style="font-size: 22px; vertical-align: 1px;margin-right:2px;"></i>
+    
+
+    
+        <a href="/tags/thinkpad/">
+            <span class="layui-badge " style="vertical-align: 2px;">Thinkpad</span>
+        </a>
+    
+    
+</h3>
+
+                    </blockquote>
+                </div>
+                
+                <div style="margin-left: 10px;">
+                    <blockquote class="self-elem-quote " style="background-color:#FFFFFF;margin-top: 10px;">
+                    <a href="/post/cerita-mendapatkan-flightfeeder-flightaware/">
+                        <h3 class="">Cerita mendapatkan FlightFeeder dari FlightAware</h3>
+                    </a>
+                    <h3 style="margin-top:10px; margin-bottom:10px"> 
+    <i class="layui-icon layui-icon-date" style="font-size: 28px; vertical-align: -2px;"></i>
+    <span>2025-03-29</span>
+
+    
+    
+
+    
+
+    
+
+    
+    
+</h3>
+
+                    </blockquote>
+                </div>
+                
+                <div style="margin-left: 10px;">
+                    <blockquote class="self-elem-quote " style="background-color:#FFFFFF;margin-top: 10px;">
+                    <a href="/post/upgrade-home-server/">
+                        <h3 class="">Upgrade Home Server</h3>
+                    </a>
+                    <h3 style="margin-top:10px; margin-bottom:10px"> 
+    <i class="layui-icon layui-icon-date" style="font-size: 28px; vertical-align: -2px;"></i>
+    <span>2024-10-31</span>
+
+    
+    
+
+    
+
+    
+    <i class="layui-icon layui-icon-tabs" style="font-size: 22px; vertical-align: 1px;margin-right:2px;"></i>
+    
+
+    
+        <a href="/tags/server/">
+            <span class="layui-badge " style="vertical-align: 2px;">Server</span>
+        </a>
+    
+        <a href="/tags/linux/">
+            <span class="layui-badge " style="vertical-align: 2px;">Linux</span>
+        </a>
+    
+    
+</h3>
+
+                    </blockquote>
+                </div>
+                
+                <div style="margin-left: 10px;">
+                    <blockquote class="self-elem-quote " style="background-color:#FFFFFF;margin-top: 10px;">
+                    <a href="/post/flash-openwrt-tp-link-wr1043nd/">
+                        <h3 class="">Flash OpenWrt TP Link WR1043ND</h3>
+                    </a>
+                    <h3 style="margin-top:10px; margin-bottom:10px"> 
+    <i class="layui-icon layui-icon-date" style="font-size: 28px; vertical-align: -2px;"></i>
+    <span>2024-09-14</span>
+
+    
+    
+
+    
+
+    
+    <i class="layui-icon layui-icon-tabs" style="font-size: 22px; vertical-align: 1px;margin-right:2px;"></i>
+    
+
+    
+        <a href="/tags/linux/">
+            <span class="layui-badge " style="vertical-align: 2px;">Linux</span>
+        </a>
+    
+        <a href="/tags/networking/">
+            <span class="layui-badge " style="vertical-align: 2px;">Networking</span>
+        </a>
+    
+    
+</h3>
+
+                    </blockquote>
+                </div>
+                
+                <div style="margin-left: 10px;">
+                    <blockquote class="self-elem-quote " style="background-color:#FFFFFF;margin-top: 10px;">
+                    <a href="/post/cloudflare-warp-on-mikrotik/">
+                        <h3 class="">Setup Cloudflare Warp on Mikrotik</h3>
+                    </a>
+                    <h3 style="margin-top:10px; margin-bottom:10px"> 
+    <i class="layui-icon layui-icon-date" style="font-size: 28px; vertical-align: -2px;"></i>
+    <span>2024-08-25</span>
+
+    
+    
+
+    
+
+    
+    <i class="layui-icon layui-icon-tabs" style="font-size: 22px; vertical-align: 1px;margin-right:2px;"></i>
+    
+
+    
+        <a href="/tags/mikrotik/">
+            <span class="layui-badge " style="vertical-align: 2px;">Mikrotik</span>
+        </a>
+    
+        <a href="/tags/networking/">
+            <span class="layui-badge " style="vertical-align: 2px;">Networking</span>
+        </a>
+    
+    
+</h3>
+
+                    </blockquote>
+                </div>
+                
+            
+            <br />
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+        </div><footer>
+    
+    
+    <div class="layui-container">
+        <p class="copyright">&copy; All rights reserved. Powered by <a href='https://gohugo.io' style='color:#FFFFFF'>Hugo</a> and <a href='https://github.com/ertuil/erblog' style='color:#FFFFFF'>Erblog</a>.</p>
+    </div>
+</footer>
+
+</body>
+</html>

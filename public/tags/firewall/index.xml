@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Firewall on Just /var/log/</title>
+    <link>https://bembenk18.github.io/tags/firewall/</link>
+    <description>Recent content in Firewall on Just /var/log/</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <copyright>Bembenk</copyright>
+    <lastBuildDate>Sat, 18 Nov 2023 13:18:23 +0700</lastBuildDate>
+    <atom:link href="https://bembenk18.github.io/tags/firewall/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Allow Winbox Discovery</title>
+      <link>https://bembenk18.github.io/post/allow-winbox-discovery/</link>
+      <pubDate>Sat, 18 Nov 2023 13:18:23 +0700</pubDate>
+      <guid>https://bembenk18.github.io/post/allow-winbox-discovery/</guid>
+      <description>&lt;p&gt;Secara default winbox di openSUSE tidak menampilkan Neighbors karena terblokir oleh firewall. Kita harus allow manual.&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;sudo firewall-cmd --permanent --service=winbox-discover --add-port=5678/udp&#xA;sudo firewall-cmd --zone=public --add-service=winbox-discover --permanent &#xA;sudo firewall-cmd --reload&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+    <item>
+      <title>Setup Fail2Ban Zimbra</title>
+      <link>https://bembenk18.github.io/post/setup-fail2ban-zimbra/</link>
+      <pubDate>Sun, 26 Mar 2023 13:47:58 +0700</pubDate>
+      <guid>https://bembenk18.github.io/post/setup-fail2ban-zimbra/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://upload.wikimedia.org/wikipedia/commons/d/db/Fail2ban_logo.png&#34; alt=&#34;Logo&#34;&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;0&#34;&gt;&lt;strong&gt;0.&lt;/strong&gt;&lt;/h2&gt;&#xA;&lt;pre&gt;&lt;code&gt;sudo -u zimbra -&#xA;zmprov mcf +zimbraMailTrustedIP 127.0.0.1 +zimbraMailTrustedIP {IP of Server}&#xA;zmcontrol restart&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;h2 id=&#34;1-install-fail2ban&#34;&gt;&lt;strong&gt;1. Install Fail2Ban&lt;/strong&gt;&lt;/h2&gt;&#xA;&lt;pre&gt;&lt;code&gt;yum install epel-release -y&#xA;yum install fail2ban -y&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;h2 id=&#34;2-buat-file-jailconf&#34;&gt;&lt;strong&gt;2. Buat file jail.conf&lt;/strong&gt;&lt;/h2&gt;&#xA;&lt;p&gt;*Jika ingin whitelist IP tambahkan pada baris ignoreip&lt;/p&gt;&#xA;&lt;p&gt;nano /etc/fail2ban/jail.local&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;[DEFAULT]&#xA;# &amp;quot;ignoreip&amp;quot; can be a list of IP addresses, CIDR masks or DNS hosts.&#xA;# Fail2ban will not ban a host which matches an address in this list.&#xA;# Several addresses can be defined using space (and/or comma) separator.&#xA;#ignoreip = 127.0.0.1/8 ::1 10.137.26.29/32&#xA;ignoreip = 127.0.0.1/8 IP-ADDRESS-OF-ZIMBRA-SERVER/32 WHITELIST-IP&#xA;&#xA;banaction = route&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;h2 id=&#34;3-buat-file-jail-untuk-zimbra&#34;&gt;&lt;strong&gt;3. Buat file jail untuk Zimbra&lt;/strong&gt;&lt;/h2&gt;&#xA;&lt;p&gt;nano /etc/fail2ban/jail.d/zimbra.local&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

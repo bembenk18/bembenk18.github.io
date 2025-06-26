@@ -1,4 +1,14 @@
-<html><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><title>Just /var/log/ - Install Kamailio VOIP Server </title><meta content="Just /var/log/" name=keywords><meta content='Just /var/log/ - 
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Just /var/log/ - Install Kamailio VOIP Server </title>
+    
+    
+    <meta content="Just /var/log/" name="keywords">
+    
+    <meta content="Just /var/log/ - 
 Pengenalan
 Kamailio adalah Server SIP Sumber Terbuka yang kuat, dapat menangani ribuan panggilan per detik. Dapat digunakan untuk membangun platform besar VoIP dan komunikasi real-time seperti pesan instan, keberadaan, dan WebRTC. Fiturnya mencakup komunikasi aman, penyeimbangan beban, otentikasi, dan dukungan untuk berbagai sistem backend. Cocok untuk gateway SIP, PBX, dan server media seperti Asterisk dan FreeSWITCH.
 Proses installasi
@@ -17,13 +27,13 @@ DBENGINE=MYSQL
 DBHOST=localhost
 DBPORT=3306
 DBNAME=kamailio
-DB_PATH="/usr/local/etc/kamailio/dbtext"
-DBRWUSER="user"
-DBRWPW="password"
-DBROUSER="user"
-DBROPW="password"
+DB_PATH=&quot;/usr/local/etc/kamailio/dbtext&quot;
+DBRWUSER=&quot;user&quot;
+DBRWPW=&quot;password&quot;
+DBROUSER=&quot;user&quot;
+DBROPW=&quot;password&quot;
 DBACCESSHOST=192.168.0.100
-DBROOTUSER="root"
+DBROOTUSER=&quot;root&quot;
 
 Ini juga
 root@aml:~# cat /etc/default/kamailio
@@ -47,12 +57,141 @@ kamctl add 1234 halo
 
 Pengujian pada VOIP client
 Login ke Linphone dengan user tadi seperti ini
-' name=description><meta name=viewport content="width=device-width,initial-scale=1"><script async src="https://www.googletagmanager.com/gtag/js?id=G-438PNW325R"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-438PNW325R")</script><link rel=stylesheet href=/layui/css/layui.css><link rel=stylesheet href=/self/css/default.css><script src=/layui/layui.js></script><link rel=stylesheet async href=/self/css/markdown.min.css><link rel=stylesheet async href=/self/css/gallery.css><script src=https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin=anonymous></script><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin=anonymous><script async src=https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js integrity="sha256-PZEg+mIdptYTwWmLcBTsa99GIDZujyt7VHBZ9Lb2Jys=" crossorigin=anonymous></script></head><body><header class="layui-header layui-bg-cyan"><a class=nav-self-logo href=/>Just /var/log/</a><ul class="layui-nav layui-layout-right layui-bg-cyan" lay-filter><li class=layui-nav-item id=nav_big><a href=/post/>Posts</a></li><li class=layui-nav-item id=nav_big><a href=/>Home</a></li><li class=layui-nav-item id=nav_big><a href=/tags>Tags</a></li><li class=layui-nav-item id=nav_big><a href=/about>About</a></li><li class=layui-nav-item id=nav_big><a href=/search/>Search</a></li><li class=layui-nav-item id=nav_small><a href=javascript:;><i class="layui-icon layui-icon-app" style=font-size:24px></i></a><dl class=layui-nav-child><dd><a href=/post/>Posts</a></dd><dd><a href=/>Home</a></dd><dd><a href=/tags>Tags</a></dd><dd><a href=/about>About</a></dd><dd><a href=/search/>Search</a></dd></dl></li></ul></header><script>layui.use("element",function(){var e=layui.element})</script><div id=content style=min-height:80%><div class=layui-container style=margin-bottom:10px><div class="layui-row layui-col-space10"><div class="layui-col-md8 layui-col-sm12 layui-col-xs12"><div class="layui-card single-card"><br><blockquote class="self-elem-quote markdown-body single-title"><h1>Install Kamailio VOIP Server</h1><h3 style=margin-top:10px;margin-bottom:10px><i class="layui-icon layui-icon-date" style=font-size:28px;vertical-align:-2px></i>
-<span>2024-05-13</span></h3></blockquote><div class="layui-card-body markdown-body single-content"><p><img src=https://www.kamailio.org/wp-images/kamailio-rock-logo.png alt=Logo></p><h2 id=pengenalan>Pengenalan</h2><p>Kamailio adalah Server SIP Sumber Terbuka yang kuat, dapat menangani ribuan panggilan per detik. Dapat digunakan untuk membangun platform besar VoIP dan komunikasi real-time seperti pesan instan, keberadaan, dan WebRTC. Fiturnya mencakup komunikasi aman, penyeimbangan beban, otentikasi, dan dukungan untuk berbagai sistem backend. Cocok untuk gateway SIP, PBX, dan server media seperti Asterisk dan FreeSWITCH.</p><h2 id=proses-installasi>Proses installasi</h2><h3 id=tambahkan-repositori>Tambahkan repositori</h3><pre><code>root@aml:~# cat /etc/apt/sources.list
+" name="description">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    
+
+    
+
+    
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-438PNW325R"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments)};
+          gtag('js', new Date());
+          gtag('config', 'G-438PNW325R');
+        </script>
+    
+
+    
+
+    <link rel="stylesheet" href="/layui/css/layui.css">
+    <link rel="stylesheet" href="/self/css/default.css">
+    <script src=" /layui/layui.js"></script>
+
+    <link rel="stylesheet" async href="/self/css/markdown.min.css">
+    <link rel="stylesheet" async href="/self/css/gallery.css">
+    
+    
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous">
+    <script async src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js" integrity="sha256-PZEg+mIdptYTwWmLcBTsa99GIDZujyt7VHBZ9Lb2Jys=" crossorigin="anonymous"></script></head>
+
+<body>
+    
+    <header class="layui-header layui-bg-cyan">
+
+    
+    
+    <a class="nav-self-logo" href="/">
+        Just /var/log/
+    </a>
+
+    <ul class="layui-nav layui-layout-right layui-bg-cyan" lay-filter="">
+        
+        
+        <li class="layui-nav-item" id="nav_big"><a href="/post/">Posts</a></li>
+        
+
+        
+            
+                <li class="layui-nav-item" id="nav_big"><a href="/">Home</a></li>
+            
+                <li class="layui-nav-item" id="nav_big"><a href="/tags">Tags</a></li>
+            
+                <li class="layui-nav-item" id="nav_big"><a href="/about">About</a></li>
+            
+                <li class="layui-nav-item" id="nav_big"><a href="/search/">Search</a></li>
+            
+        
+
+        
+        <li class="layui-nav-item" id="nav_small">
+            <a href="javascript:;">
+                <i class="layui-icon layui-icon-app" style="font-size: 24px;"></i>
+            </a>
+
+            <dl class="layui-nav-child">
+                
+                <dd><a href="/post/">Posts</a></dd>
+                
+
+                
+                    
+                        <dd><a href="/">Home</a></dd>
+                    
+                        <dd><a href="/tags">Tags</a></dd>
+                    
+                        <dd><a href="/about">About</a></dd>
+                    
+                        <dd><a href="/search/">Search</a></dd>
+                    
+                
+            </dl>
+        </li>
+    </ul>
+</header>
+
+<script>
+layui.use('element', function(){
+  var element = layui.element;
+});
+</script>
+
+        <div id="content" style="min-height:80%">
+<div class="layui-container" style="margin-bottom: 10px">
+    
+
+    <div class="layui-row layui-col-space10">
+        <div class="layui-col-md8 layui-col-sm12 layui-col-xs12">
+            <div class="layui-card single-card">
+                <br />
+                <blockquote class="self-elem-quote  markdown-body single-title" >
+                    <h1>Install Kamailio VOIP Server</h1>
+                    <h3 style="margin-top:10px; margin-bottom:10px"> 
+    <i class="layui-icon layui-icon-date" style="font-size: 28px; vertical-align: -2px;"></i>
+    <span>2024-05-13</span>
+
+    
+    
+
+    
+
+    
+
+    
+    
+</h3>
+
+                </blockquote>
+                <div class="layui-card-body markdown-body single-content">
+                    <p><img src="https://www.kamailio.org/wp-images/kamailio-rock-logo.png" alt="Logo"></p>
+<h2 id="pengenalan">Pengenalan</h2>
+<p>Kamailio adalah Server SIP Sumber Terbuka yang kuat, dapat menangani ribuan panggilan per detik. Dapat digunakan untuk membangun platform besar VoIP dan komunikasi real-time seperti pesan instan, keberadaan, dan WebRTC. Fiturnya mencakup komunikasi aman, penyeimbangan beban, otentikasi, dan dukungan untuk berbagai sistem backend. Cocok untuk gateway SIP, PBX, dan server media seperti Asterisk dan FreeSWITCH.</p>
+<h2 id="proses-installasi">Proses installasi</h2>
+<h3 id="tambahkan-repositori">Tambahkan repositori</h3>
+<pre><code>root@aml:~# cat /etc/apt/sources.list
 deb http://deb.kamailio.org/kamailio55 buster main
 deb-src http://deb.kamailio.org/kamailio55 buster main
-</code></pre><h3 id=install-mariadb-dan-kamailio>Install mariadb dan kamailio</h3><pre><code>apt install mariadb-server kamailio kamailio-mysql-modules kamailio-ims-modules
-</code></pre><h3 id=edit-file-konfigurasi-kamailio-edit-baris-berikut-ini>Edit file konfigurasi kamailio (edit baris berikut ini)</h3><pre><code>root@aml:~# cat /etc/kamailio/kamctlrc 
+</code></pre>
+<h3 id="install-mariadb-dan-kamailio">Install mariadb dan kamailio</h3>
+<pre><code>apt install mariadb-server kamailio kamailio-mysql-modules kamailio-ims-modules
+</code></pre>
+<h3 id="edit-file-konfigurasi-kamailio-edit-baris-berikut-ini">Edit file konfigurasi kamailio (edit baris berikut ini)</h3>
+<pre><code>root@aml:~# cat /etc/kamailio/kamctlrc 
 SIP_DOMAIN=192.168.0.100
 DBENGINE=MYSQL
 DBHOST=localhost
@@ -65,33 +204,208 @@ DBROUSER=&quot;user&quot;
 DBROPW=&quot;password&quot;
 DBACCESSHOST=192.168.0.100
 DBROOTUSER=&quot;root&quot;
-</code></pre><h3 id=ini-juga>Ini juga</h3><pre><code>root@aml:~# cat /etc/default/kamailio
+</code></pre>
+<h3 id="ini-juga">Ini juga</h3>
+<pre><code>root@aml:~# cat /etc/default/kamailio
 RUN_KAMAILIO=yes
 USER=kamailio
 GROUP=kamailio
 root@aml:~# 
-</code></pre><h3 id=restart-service>Restart service</h3><pre><code>sudo service kamailio restart
+</code></pre>
+<h3 id="restart-service">Restart service</h3>
+<pre><code>sudo service kamailio restart
 netstat -ntulp | grep kamailio
-</code></pre><h3 id=jalankan-perintah-untuk-membuat-database-ikuti-semua-intruksi>Jalankan perintah untuk membuat database (ikuti semua intruksi)</h3><pre><code>root@aml:~# kamdbctl  create
+</code></pre>
+<h3 id="jalankan-perintah-untuk-membuat-database-ikuti-semua-intruksi">Jalankan perintah untuk membuat database (ikuti semua intruksi)</h3>
+<pre><code>root@aml:~# kamdbctl  create
 MySQL password for root: 
 root@aml:~# 
-</code></pre><h3 id=buat-user-baru>Buat user baru</h3><pre><code>kamctl add 1234 halo
+</code></pre>
+<h3 id="buat-user-baru">Buat user baru</h3>
+<pre><code>kamctl add 1234 halo
 * 123: username, halo: password
-</code></pre><h1 id=pengujian-pada-voip-client>Pengujian pada VOIP client</h1><p>Login ke Linphone dengan user tadi seperti ini
-<img src=https://raw.githubusercontent.com/bembenk18/Images/main/Kamailio/1.png alt=Linphone></p></div></div></div><div class="layui-col-md4 layui-col-sm12 layui-col-xs12"><div class="layui-card single-card"><h2 class=single-title>Recent Posts</h2><div style=margin-left:10px><blockquote class=self-elem-quote style=background-color:#fff;margin-top:10px><a href=/post/perjalanan-t480-dimulai/><h3>Perjalanan T480 Dimulai TEST</h3></a><h3 style=margin-top:10px;margin-bottom:10px><i class="layui-icon layui-icon-date" style=font-size:28px;vertical-align:-2px></i>
-<span>2025-04-02</span>
-<i class="layui-icon layui-icon-tabs" style=font-size:22px;vertical-align:1px;margin-right:2px></i>
-<a href=/tags/thinkpad/><span class=layui-badge style=vertical-align:2px>Thinkpad</span></a></h3></blockquote></div><div style=margin-left:10px><blockquote class=self-elem-quote style=background-color:#fff;margin-top:10px><a href=/post/cerita-mendapatkan-flightfeeder-flightaware/><h3>Cerita mendapatkan FlightFeeder dari FlightAware</h3></a><h3 style=margin-top:10px;margin-bottom:10px><i class="layui-icon layui-icon-date" style=font-size:28px;vertical-align:-2px></i>
-<span>2025-03-29</span></h3></blockquote></div><div style=margin-left:10px><blockquote class=self-elem-quote style=background-color:#fff;margin-top:10px><a href=/post/upgrade-home-server/><h3>Upgrade Home Server</h3></a><h3 style=margin-top:10px;margin-bottom:10px><i class="layui-icon layui-icon-date" style=font-size:28px;vertical-align:-2px></i>
-<span>2024-10-31</span>
-<i class="layui-icon layui-icon-tabs" style=font-size:22px;vertical-align:1px;margin-right:2px></i>
-<a href=/tags/server/><span class=layui-badge style=vertical-align:2px>Server</span>
-</a><a href=/tags/linux/><span class=layui-badge style=vertical-align:2px>Linux</span></a></h3></blockquote></div><div style=margin-left:10px><blockquote class=self-elem-quote style=background-color:#fff;margin-top:10px><a href=/post/flash-openwrt-tp-link-wr1043nd/><h3>Flash OpenWrt TP Link WR1043ND</h3></a><h3 style=margin-top:10px;margin-bottom:10px><i class="layui-icon layui-icon-date" style=font-size:28px;vertical-align:-2px></i>
-<span>2024-09-14</span>
-<i class="layui-icon layui-icon-tabs" style=font-size:22px;vertical-align:1px;margin-right:2px></i>
-<a href=/tags/linux/><span class=layui-badge style=vertical-align:2px>Linux</span>
-</a><a href=/tags/networking/><span class=layui-badge style=vertical-align:2px>Networking</span></a></h3></blockquote></div><div style=margin-left:10px><blockquote class=self-elem-quote style=background-color:#fff;margin-top:10px><a href=/post/cloudflare-warp-on-mikrotik/><h3>Setup Cloudflare Warp on Mikrotik</h3></a><h3 style=margin-top:10px;margin-bottom:10px><i class="layui-icon layui-icon-date" style=font-size:28px;vertical-align:-2px></i>
-<span>2024-08-25</span>
-<i class="layui-icon layui-icon-tabs" style=font-size:22px;vertical-align:1px;margin-right:2px></i>
-<a href=/tags/mikrotik/><span class=layui-badge style=vertical-align:2px>Mikrotik</span>
-</a><a href=/tags/networking/><span class=layui-badge style=vertical-align:2px>Networking</span></a></h3></blockquote></div><br></div></div></div></div></div><footer><div class=layui-container><p class=copyright>&copy; All rights reserved. Powered by <a href=https://gohugo.io style=color:#fff>Hugo</a> and <a href=https://github.com/ertuil/erblog style=color:#fff>Erblog</a>.</p></div></footer></body></html>
+</code></pre>
+<h1 id="pengujian-pada-voip-client">Pengujian pada VOIP client</h1>
+<p>Login ke Linphone dengan user tadi seperti ini
+<img src="https://raw.githubusercontent.com/bembenk18/Images/main/Kamailio/1.png" alt="Linphone"></p>
+</div>
+            </div>
+        </div>
+
+        <div class="layui-col-md4 layui-col-sm12 layui-col-xs12">
+            
+
+            <div class="layui-card single-card">
+                <h2 class="single-title">Recent Posts</h2>
+            
+                
+                <div style="margin-left: 10px;">
+                    <blockquote class="self-elem-quote " style="background-color:#FFFFFF;margin-top: 10px;">
+                    <a href="/post/perjalanan-t480-dimulai/">
+                        <h3 class="">Perjalanan T480 Dimulai TEST</h3>
+                    </a>
+                    <h3 style="margin-top:10px; margin-bottom:10px"> 
+    <i class="layui-icon layui-icon-date" style="font-size: 28px; vertical-align: -2px;"></i>
+    <span>2025-04-02</span>
+
+    
+    
+
+    
+
+    
+    <i class="layui-icon layui-icon-tabs" style="font-size: 22px; vertical-align: 1px;margin-right:2px;"></i>
+    
+
+    
+        <a href="/tags/thinkpad/">
+            <span class="layui-badge " style="vertical-align: 2px;">Thinkpad</span>
+        </a>
+    
+    
+</h3>
+
+                    </blockquote>
+                </div>
+                
+                <div style="margin-left: 10px;">
+                    <blockquote class="self-elem-quote " style="background-color:#FFFFFF;margin-top: 10px;">
+                    <a href="/post/cerita-mendapatkan-flightfeeder-flightaware/">
+                        <h3 class="">Cerita mendapatkan FlightFeeder dari FlightAware</h3>
+                    </a>
+                    <h3 style="margin-top:10px; margin-bottom:10px"> 
+    <i class="layui-icon layui-icon-date" style="font-size: 28px; vertical-align: -2px;"></i>
+    <span>2025-03-29</span>
+
+    
+    
+
+    
+
+    
+
+    
+    
+</h3>
+
+                    </blockquote>
+                </div>
+                
+                <div style="margin-left: 10px;">
+                    <blockquote class="self-elem-quote " style="background-color:#FFFFFF;margin-top: 10px;">
+                    <a href="/post/upgrade-home-server/">
+                        <h3 class="">Upgrade Home Server</h3>
+                    </a>
+                    <h3 style="margin-top:10px; margin-bottom:10px"> 
+    <i class="layui-icon layui-icon-date" style="font-size: 28px; vertical-align: -2px;"></i>
+    <span>2024-10-31</span>
+
+    
+    
+
+    
+
+    
+    <i class="layui-icon layui-icon-tabs" style="font-size: 22px; vertical-align: 1px;margin-right:2px;"></i>
+    
+
+    
+        <a href="/tags/server/">
+            <span class="layui-badge " style="vertical-align: 2px;">Server</span>
+        </a>
+    
+        <a href="/tags/linux/">
+            <span class="layui-badge " style="vertical-align: 2px;">Linux</span>
+        </a>
+    
+    
+</h3>
+
+                    </blockquote>
+                </div>
+                
+                <div style="margin-left: 10px;">
+                    <blockquote class="self-elem-quote " style="background-color:#FFFFFF;margin-top: 10px;">
+                    <a href="/post/flash-openwrt-tp-link-wr1043nd/">
+                        <h3 class="">Flash OpenWrt TP Link WR1043ND</h3>
+                    </a>
+                    <h3 style="margin-top:10px; margin-bottom:10px"> 
+    <i class="layui-icon layui-icon-date" style="font-size: 28px; vertical-align: -2px;"></i>
+    <span>2024-09-14</span>
+
+    
+    
+
+    
+
+    
+    <i class="layui-icon layui-icon-tabs" style="font-size: 22px; vertical-align: 1px;margin-right:2px;"></i>
+    
+
+    
+        <a href="/tags/linux/">
+            <span class="layui-badge " style="vertical-align: 2px;">Linux</span>
+        </a>
+    
+        <a href="/tags/networking/">
+            <span class="layui-badge " style="vertical-align: 2px;">Networking</span>
+        </a>
+    
+    
+</h3>
+
+                    </blockquote>
+                </div>
+                
+                <div style="margin-left: 10px;">
+                    <blockquote class="self-elem-quote " style="background-color:#FFFFFF;margin-top: 10px;">
+                    <a href="/post/cloudflare-warp-on-mikrotik/">
+                        <h3 class="">Setup Cloudflare Warp on Mikrotik</h3>
+                    </a>
+                    <h3 style="margin-top:10px; margin-bottom:10px"> 
+    <i class="layui-icon layui-icon-date" style="font-size: 28px; vertical-align: -2px;"></i>
+    <span>2024-08-25</span>
+
+    
+    
+
+    
+
+    
+    <i class="layui-icon layui-icon-tabs" style="font-size: 22px; vertical-align: 1px;margin-right:2px;"></i>
+    
+
+    
+        <a href="/tags/mikrotik/">
+            <span class="layui-badge " style="vertical-align: 2px;">Mikrotik</span>
+        </a>
+    
+        <a href="/tags/networking/">
+            <span class="layui-badge " style="vertical-align: 2px;">Networking</span>
+        </a>
+    
+    
+</h3>
+
+                    </blockquote>
+                </div>
+                
+            
+            <br />
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+        </div><footer>
+    
+    
+    <div class="layui-container">
+        <p class="copyright">&copy; All rights reserved. Powered by <a href='https://gohugo.io' style='color:#FFFFFF'>Hugo</a> and <a href='https://github.com/ertuil/erblog' style='color:#FFFFFF'>Erblog</a>.</p>
+    </div>
+</footer>
+
+</body>
+</html>

